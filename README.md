@@ -8,6 +8,8 @@ If you are still unfamiliar with Web3, blockchain, Bitcoin, and IC, don't worry,
 
 **This project is currently under rapid development...** 
 
+## Coming Soon ...
+
 <br>
 
 ### Why write this book?
