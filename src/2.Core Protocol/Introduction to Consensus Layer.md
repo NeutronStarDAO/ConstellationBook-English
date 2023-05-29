@@ -158,7 +158,7 @@ The leader produces a block and broadcasts it to everyone. After notarization is
 
 If after waiting for a period of time, the leader's block has not been received, it may be that the leader has a poor network or the machine has malfunctioned. Only then will members accept block from 2nd member or 3rd member and notarize their blocks.
 
-![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/bdd30331-b60b-4467-b649-9dbacf8b302e)
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/e3a7df99-5823-4536-a10c-7e026a8849c9)
 
 The system has an agreed upon waiting time. If the leader's block is not received within a period of time, it will expect block 2 in the second time period. Then in the third time period, block 3 is expected. If block 3 is its own, then produce the block itself ...
 
