@@ -44,11 +44,12 @@ The method: Rely on some means to select a node to pack the block, and others co
 
 Let us analyse the purpose only. Since the purpose is to maintain data consistency between nodes, as long as the nodes receive messages at the same time, the problem will be solved.
 
-//IMG1
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/fe3ed3d7-ae5b-43e2-8436-b06815e15c40)
+
 
 In the actual network environment ,it could not be achieved. Information transmission always has varying delays, not to mention that nodes are not located in a same place. The locations of clients are also far and near,the transmission distances are different. It is chaotic and sounds impossible to guarantee that all nodes receive messages at the same time. What should we do?
 
-//IMG2
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/f162c208-3fbe-41c0-85fc-fd8381775760)
 
 The answer is simple. Building a "relay station" can solve this problem. No matter where the messages come from, they are first queued in the relay station, then the relay station sends the messages and execution order to the nodes. As long as the nodes execute the operations in the order received from the relay station, data consistency can be guaranteed!
 
@@ -62,7 +63,7 @@ IC is designed like this: (IC abstracts nodes into replicas in subnets)
 
 We could not rely on a relay station. Although the time for messages to arrive at each replica may be different (that is, the time of executing messages is different), all replicas must execute messages in the same order.
 
-//IMG3
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/6748452b-c774-40f5-bd91-d28a6ed85520)
 
 Then if everyone's order is different, which order should be executed? It will use random number to decide! (IC's Random Beacon)
 
@@ -72,7 +73,7 @@ VRF uses threshold BLS signature scheme. The threshold BLS signature algorithm u
 
 If a message is confirmed, no matter which private key shares participate in the signature, as long as the threshold quantity is reached (the threshold for generating the Random Beacon is one-third), the final unique signature information can be aggregated. For example, the threshold in the following figure is 6. In order for the 16 replicas to generate the random beacon signature for this round, as long as the signature is greater than 6, it can be aggregated.
 
-//IMG4
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/91d33324-818d-4a12-9d88-8a6a63e884dd)
 
 As long as the bad guys get less than one-third of the private key shares, they cannot interfere with the threshold BLS signature. It is also impossible to predict the signature result because the private key shares are not enough. That is to say, no one knows the signature result.
 
@@ -95,11 +96,11 @@ Let us take a closer look on how IC's consensus protocol produces a block
 
 The consensus protocol produce block by rounds. For example, consensus is reached on the genesis block in round 1, and round 6 for block 6.
 
-//IMG5
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/f31ef6bf-b877-4548-9fdc-143f2f8e4685)
 
 Before start, the subnet first randomly selects some replicas to form a "consensus committee" according to the number of replicas. If the number of replicas is too low, all replicas will join the committee. The members in the committee are responsible for producing the blocks, so even if there are a large number of replicas in the subnet, it will not affect performance.
 
-//IMG6 (Check from here)
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/6af04a3f-b9b1-44b5-b0ff-87fcfddbe9ee)
 
 There is also the concept of "epoch" in the subnet. An epoch is approximately a few hundred rounds. The NNS can adjust the epochs for each subnet.
 
@@ -134,7 +135,7 @@ Under normal circumstances, the leader is honest and the network connection is n
 
 At the same time, the random beacon committee will also package, sign and broadcast the hash of the previous round's beacon and the NiDKG record of this round. When the signature reaches the threshold, this round's random beacon is generated, which also determines the block production weight for the next round.
 
-//IMG8
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/da8665cc-aef3-41ad-9af5-34c71fbc43db)
 
 A non-genesis block generally contains:
 
@@ -149,7 +150,7 @@ After the block is assembled, the replica responsible for producing the block wi
 - Its own identity.
 - Its own signature on this block.
 
-//IMG9
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/e8ad34e1-b042-46b8-af32-4da9f28d88ac)
 
 Then broadcast the block proposal to other members.
 
@@ -157,7 +158,7 @@ The leader produces a block and broadcasts it to everyone. After notarization is
 
 If after waiting for a period of time, the leader's block has not been received, it may be that the leader has a poor network or the machine has malfunctioned. Only then will members accept block from 2nd member or 3rd member and notarize their blocks.
 
-//IMG10
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/bdd30331-b60b-4467-b649-9dbacf8b302e)
 
 The system has an agreed upon waiting time. If the leader's block is not received within a period of time, it will expect block 2 in the second time period. Then in the third time period, block 3 is expected. If block 3 is its own, then produce the block itself ...
 
@@ -177,25 +178,25 @@ During notarization, the members of the consensus committee verify the following
 
 If the block information is correct, the replica responsible for verification first signs the block height and block hash, and then forms a "**notarization share**" with the just signed signature, hash, height, and its own identity. Broadcast the notarized shares.
 
-//IMG11
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/8e6bd975-3231-4078-b57f-bcac23ab2fa3)
 
 Notarization also uses BLS threshold signatures. When a replica receives enough (the threshold is two-thirds) notarization share, it aggregates the signature share to form a notarization for this block.
 
-//IMG12
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/0bb81f7e-bcf8-4625-a835-833ace7da411)
 
 The aggregated notarization information includes the block hash, block height, aggregated signature, and more than two-thirds of the identity identifiers. Replicas either find that they have collected enough notarization shares and aggregate them into notarizations themselves; or they receive aggregated notarizations from others.
 
-//IMG13
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/ebb8aa45-a9a7-412f-8c18-68b0c80f5ccf)
 
 After notarization, the block is still broadcast. When other members receive the already notarized block, they re-broadcast the notarized block and do not generate notarization shares for other blocks.
 
 For example, in the figure below, the girl holding the cell phone and the blue hat enter the next round of consensus. When the girl sends messages to the other three people, the network is interrupted for 700 milliseconds. The message forwarded by the little blue hat plays a key role. Otherwise, five missing three would not be able to work.
 
-//IMG14
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/0a476c14-a9ca-4a25-83e8-bea3d7eff1c8)
 
 If the leader's block has a problem and the notarization fails, the weighting of the second block will now be the largest. If the blocks of the second and the third have both passed notarization, the leader of the next round will choose to block after the block with the greatest weight. As in rounds 5 and 6 below, the weight of the second block is greater than the weight of the third block. Adding up the weights of all blocks, the chain composed of yellow and purple blocks is the chain with the greatest weight.
 
-//IMG15
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/6a44e5fe-493d-4cb2-85c7-afd1a0c472f0)
 
 
 
@@ -203,7 +204,7 @@ If the leader's block has a problem and the notarization fails, the weighting of
 
 Because sometimes more than one block may be generated (when the leader does not respond, the second and the third may produce block to save time). This requires a decisive stage. The decisive stage will determine the only block that everyone has notarized. Then the blocks before the block that everyone agrees with will also be implicitly finalized, and other branches will become invalid.
 
-//IMG16
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/a47ea62b-5d12-4b59-afd1-df442fab6669)
 
 The decisive process is specifically:
 
@@ -217,7 +218,7 @@ For example, after a replica receives the decisive share of round 10 in round 11
 
 If after a while, if you receive the decisive of the block in round 10, you can implicitly consider all previous blocks as decisive.
 
-//IMG17
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/8c8d110e-a0f5-4e11-aaff-4045102ce239)
 
 These decisively blocks can be considered as safe confirmed by everyone, meaning that all replicas agree with the branch where the decisive block is located. At the height of block 10, only this block has passed notarization. Then the replica reaches consensus at this height.
 
@@ -227,7 +228,7 @@ If a replica only generates a notarization share for one block in Round 5, the r
 
 It is possible that in Round 4, half of the replicas generated notarization shares for the leader and the second blocks, and the other half of the replicas only generated notarization shares for the leader's block. Then the decisive share proposed by the replicas that only notarized the leader's block cannot reach the threshold and cannot obtain decisive. Only half of the replicas generate notarization shares for the second member's block, so the second member's block does not obtain notarization.
 
-//IMG18
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/2c6fa7b4-6732-4ccb-9375-9f4b5ae2c659)
 
 Compared with many other blockchains, the advantage of the IC consensus protocol is that it adopts asynchronous decisive. In other blockchains, nodes usually need to find the longest chain. If the chain forks, the nodes need to wait for a while to find the longest chain. If some blocks are missed due to network failures, the longest chain cannot be found, and data from other nodes needs to be synchronized.
 
