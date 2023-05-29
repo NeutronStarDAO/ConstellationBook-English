@@ -106,7 +106,7 @@ There is also the concept of "epoch" in the subnet. An epoch is approximately a 
 
 Each subnet operates within epochs that contain multiple rounds (typically around a few hundred rounds). Different replicas make up the committees in each epoch.
 
-//IMG7
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/47e1f2e9-5717-4b5d-b1a2-1b788b10803b)
 
 At the end of each epoch, the consensus committee members for the next epoch are selected through the random beacon, and the current consensus committee members will all become random beacon committee members in the next epoch.
 
