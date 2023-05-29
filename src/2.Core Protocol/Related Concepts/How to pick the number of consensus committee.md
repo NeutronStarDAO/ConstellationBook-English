@@ -32,9 +32,7 @@ Here:
 - x:  The maximum number allowed of honest people in the small group G
 
 Then, we can calculate the probability of honest people in the randomly selected small group G by the following formula:
-$$
-Prob[G honest] = CDFhg(⌈n/2⌉ − 1, n, ⌊|U|/β⌋, |U|)
-$$
+$Prob[G honest] = CDFhg(⌈n/2⌉ − 1, n, ⌊|U|/β⌋, |U|)$
 This formula tells that: given the number of honest and dishonest people in a group U, we can calculate the probability of getting honest people when drawing a specific sized small group G.
 
 
@@ -50,9 +48,7 @@ Here:
 - x: The maximum number allowed of honest people in the small group G
 
 We can calculate the probability of honest people in the randomly selected small group G by the following formula:
-$$
-Prob[G honest] ≥ CDFbinom(⌈n/2⌉ − 1, n, 1/β)
-$$
+$Prob[G honest] ≥ CDFbinom(⌈n/2⌉ − 1, n, 1/β)$
 This formula tells that in a very large group , what are the probabilities of getting honest people when drawing a specific sized small group G.
 
 These two formulas are both used to calculate the probability of honest people in a random sample group G. CDFhg is for a finite sized group U, while CDFbinom is suitable for an infinite large froup U. These formulas help us find an appropriate group size to ensure the probability of honest people is higher than an acceptable threshold we can accept.
