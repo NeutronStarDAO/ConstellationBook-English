@@ -133,7 +133,7 @@ To understand why chaining states is so important, consider the following exampl
 - In round 2, $P_1$ and $P_3$ both start computing message $m_2$ to send to subnet $B$, while $P_2$ computes message $m'_2$ to send to subnet $B$.
 - In round 3, $P_2$ and $P_3$ both start computing message $m_3$ to send to subnet $C$, while $P_1$ computes message $m'_3$ to send to subnet $C$.
 
-As shown in the table below:
+As express below:
 
 $$ P_1\ \ m_1 \rightarrow A\ \ m_2 \rightarrow B\ \ m'_3 \rightarrow C \ P_2\ \ m_1 \rightarrow A\ \ m'_2 \rightarrow B\ \ m_3 \rightarrow C \ P_3\ \ m'_1 \rightarrow A\ \ m_2 \rightarrow B\ \ m_3 \rightarrow C \ $$ 
 
