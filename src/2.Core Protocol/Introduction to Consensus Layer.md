@@ -135,7 +135,7 @@ Under normal circumstances, the leader is honest and the network connection is n
 
 At the same time, the random beacon committee will also package, sign and broadcast the hash of the previous round's beacon and the NiDKG record of this round. When the signature reaches the threshold, this round's random beacon is generated, which also determines the block production weight for the next round.
 
-![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/da8665cc-aef3-41ad-9af5-34c71fbc43db)
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/6686cda7-0c23-4ae3-aa95-f2f7dffd836b)
 
 A non-genesis block generally contains:
 
@@ -158,7 +158,7 @@ The leader produces a block and broadcasts it to everyone. After notarization is
 
 If after waiting for a period of time, the leader's block has not been received, it may be that the leader has a poor network or the machine has malfunctioned. Only then will members accept block from 2nd member or 3rd member and notarize their blocks.
 
-![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/e3a7df99-5823-4536-a10c-7e026a8849c9)
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/bb3cce3c-7016-4f4e-94b2-1b41c2c0ea21)
 
 The system has an agreed upon waiting time. If the leader's block is not received within a period of time, it will expect block 2 in the second time period. Then in the third time period, block 3 is expected. If block 3 is its own, then produce the block itself ...
 
@@ -218,7 +218,7 @@ For example, after a replica receives the decisive share of round 10 in round 11
 
 If after a while, if you receive the decisive of the block in round 10, you can implicitly consider all previous blocks as decisive.
 
-![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/8c8d110e-a0f5-4e11-aaff-4045102ce239)
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/3142ef13-478b-4683-bbf4-10cea35414fa)
 
 These decisively blocks can be considered as safe confirmed by everyone, meaning that all replicas agree with the branch where the decisive block is located. At the height of block 10, only this block has passed notarization. Then the replica reaches consensus at this height.
 
@@ -228,7 +228,7 @@ If a replica only generates a notarization share for one block in Round 5, the r
 
 It is possible that in Round 4, half of the replicas generated notarization shares for the leader and the second blocks, and the other half of the replicas only generated notarization shares for the leader's block. Then the decisive share proposed by the replicas that only notarized the leader's block cannot reach the threshold and cannot obtain decisive. Only half of the replicas generate notarization shares for the second member's block, so the second member's block does not obtain notarization.
 
-![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/2c6fa7b4-6732-4ccb-9375-9f4b5ae2c659)
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/3925837b-88e0-4d66-b75f-51ebe3794b74)
 
 Compared with many other blockchains, the advantage of the IC consensus protocol is that it adopts asynchronous decisive. In other blockchains, nodes usually need to find the longest chain. If the chain forks, the nodes need to wait for a while to find the longest chain. If some blocks are missed due to network failures, the longest chain cannot be found, and data from other nodes needs to be synchronized.
 
