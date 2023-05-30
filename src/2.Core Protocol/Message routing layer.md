@@ -18,7 +18,7 @@ The message routing layer, as its name suggests, is responsible for message tran
 
 The consensus layer packages messages into block payloads. Once a block is finalized, each replica in the subnet parses the payloads in the block. The message routing layer then passes the messages to the corresponding canisters in the execution layer. After executing the messages, the canisters update their internal state and return message responses to the message routing layer.
 
-//IMG19
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/8167f771-b702-447f-ae30-1207e0835cba)
 
 The messages received by the message routing layer are of two types:
 
@@ -28,13 +28,13 @@ The messages **sent** by the message routing layer are also of two types:
 
 One is responses to user messages, called **ingress message responses**. The other type is still **cross-subnet messages**, which are messages sent by canisters in its own subnet to canisters in other subnets.
 
-//IMG20
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/891ec713-e47f-4b70-970c-7d7e505df08d)
 
 ### Message queues
 
 Each canister in the execution layer has an input queue and an output queue. The message routing layer routes the payloads in the blocks to the input queues of the target canisters.
 
-//IMG21
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/3f798bf7-1ba8-49d5-a5a4-f09e48f2d7d0)
 
 Each canister has its own **input queues** and **output queues**.
 
@@ -58,7 +58,7 @@ In addition to the output queues, there is an **ingress history** data structure
 
 Looking at the message routing and execution layers separately, it looks like this:
 
-//IMG22
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/8b57f5d6-cf5e-4ed6-9fd9-6667d856e0a4)
 
 ### Intra-subnet cross-canister call
 
@@ -72,17 +72,17 @@ Think about it, the data states in the replicas are the same, and consensus is a
 
 Consensus is used when everyone faces different choices to make everyone execute the same operation.
 
-//IMG23
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/3e47a2ac-169e-4c55-a9f7-dc8d2d1cf2e2)
 
 So when a canister in a subnet calls another canister within the same subnet, each replica will make the same cross-canister call. Each replica stores all the data in the subnet. When the replicas execute cross-canister calls, the consistency of data in the subnet is still maintained.
 
-//IMG24
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/e2f15403-bf6c-4c6c-9aca-620e36e48660)
 
 ### Summary
 
 The state of a subnet's replica  includes the state of canisters and the "system state". The "system state" includes the input and output queues of canisters, subnet-to-subnet streams, and ingress history data structures.
 
-//IMG25
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/185c0898-ee51-4b8d-a4cd-fe5098f79d74)
 
 In other words, the message routing layer and the execution layer together maintain the state of a replica. And the state of the replica is updated in a completely deterministic manner, so that all replicas in the subnet maintain the same state. The consensus layer does not need to keep exactly the same progress as the message routing layer.
 
@@ -92,7 +92,7 @@ In each round, the state of each replica in the subnet will change.
 
 Of course, the parts that change in each round also need to be recorded separately. Because IC's consensus only guarantees that honest replicas process messages in the same order. Consensus only acts as a "gatekeeper" before messages enter the execution layer, but after message processing, the output is still lacking a "guard": What if message responses are not sent successfully due to network issues? How does the client verify the authenticity of messages after receiving them? If the message response is made by a hacker, there will be some troubles. What if a strange bug in the server system causes the message not to execute...
 
-//IMG26
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/ea94caeb-d8f0-4c24-8ec9-10085f8a75ac)
 
 Replicas need to check the state again after processing messages. The per-round certified state, also known as the system state tree, acts as this guard and is the last link in a complete round. The per-round certified state can record the state changes of replicas in a round and rebroadcast it to everyone for threshold signature verification, which requires confirmation from two-thirds of the replicas.
 
@@ -116,7 +116,7 @@ The third branch stores information about subnet-to-subnet data streams, includi
 
 Other branches store other types of metadata, which are not discussed here. This tree structure can then be hashed into a Merkle tree.
 
-//IMG27
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/71453f34-e375-4f10-a0f3-9cd16c92a648)
 
 Per-round state certification in IC has the following use cases:
 
@@ -169,7 +169,7 @@ The consensus layer ensures that replicas process messages in a same order. Howe
 
 Therefore, to ensure that each replica processes messages correctly, after a canister executes a message, the executed message must be recorded so that replicas can verify each other.
 
-//IMG28
+![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/0460952c-91c5-4c58-9380-3671b3393c1b)
 
 //From WhitePaper.
 
