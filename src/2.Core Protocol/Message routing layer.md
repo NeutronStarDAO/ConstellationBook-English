@@ -137,7 +137,7 @@ As shown in the table below:
 
 $$ P_1\ \ m_1 \rightarrow A\ \ m_2 \rightarrow B\ \ m'_3 \rightarrow C \ P_2\ \ m_1 \rightarrow A\ \ m'_2 \rightarrow B\ \ m_3 \rightarrow C \ P_3\ \ m'_1 \rightarrow A\ \ m_2 \rightarrow B\ \ m_3 \rightarrow C \ $$ 
 
-我们假设节点 $P_1,P_2,P_3$ each executes a valid sequence of computations, but due to non-determinism, these sequences are not the same. (Even though there should be no non-determinism, we still assume its existence in this example.)
+Let's say $P_1,P_2,P_3$ each executes a valid sequence of computations, but due to non-determinism, these sequences are not the same. (Even though there should be no non-determinism, we still assume its existence in this example.)
 
 Now suppose we do not chain these states. Because $P_4$ is malicious and can sign anything, it can create a $3/4$ threshold signature in state round 1 claiming "$m_1\rightarrow A$", similarly claim "$m2 \rightarrow B$" in state round 2, and claim "$m_3\rightarrow C$​" in state round 3, despite the corresponding sequence$$ m_1 \rightarrow A, m_2 \rightarrow B, m_3 \rightarrow C $$  may not be compatible with any valid sequence. Worse yet, this invalid computation sequence may have led to inconsistent states across other subnets.
 
