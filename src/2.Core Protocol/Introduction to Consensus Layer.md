@@ -202,37 +202,37 @@ If the leader's block has a problem and the notarization fails, the weighting of
 
 ### Finalization
 
-Because sometimes more than one block may be generated (when the leader does not respond, the second and the third may produce block to save time). This requires a decisive stage. The decisive stage will determine the only block that everyone has notarized. Then the blocks before the block that everyone agrees with will also be implicitly finalized, and other branches will become invalid.
+Because sometimes more than one block may be generated (when the leader does not respond, the second and the third may produce block to save time). This requires a finalization. The finalization stage will determine the only block that everyone has notarized. Then the blocks before the block that everyone agrees with will also be implicitly finalized, and other branches will become invalid.
 
 ![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/a47ea62b-5d12-4b59-afd1-df442fab6669)
 
-The decisive process is specifically:
+The finalization process is specifically:
 
-After a replica finds a notarized block, it will start checking whether it has notarized any other blocks in this round. If it has not notarized any other blocks, it will broadcast a "decisive share" for the block. To prove that it has only issued a notarization share for this block.
+After a replica finds a notarized block, it will start checking whether it has notarized any other blocks in this round. If it has not notarized any other blocks, it will broadcast a "finalization share" for the block. To prove that it has only issued a notarization share for this block.
 
-To achieve the decisive of a block, two-thirds of different replicas need to issue decisive share, and then aggregate for the decisive of a block. The format of the decisive share is exactly the same as the notarization share (but marked in a specific way to prevent confusion). After receiving the decisive block, like the notarization process, it will broadcast to other members again.
+To achieve the finalization of a block, two-thirds of different replicas need to issue finalization share, and then aggregate for the finalization of a block. The format of the finalization share is exactly the same as the notarization share (but marked in a specific way to prevent confusion). After receiving the finalized block, like the notarization process, it will broadcast to other members again.
 
-Note: The replica does not deliberately wait for the aggregation of the decisive share into the final decisive before entering the next round. After receiving a decisive share of a certain height, the replica only checks whether it has notarized blocks other than that block, and then broadcasts its own signed decisive share; or forwards the decisive share intact.
+Note: The replica does not deliberately wait for the aggregation of the finalization share into the finalized before entering the next round. After receiving a finalization share of a certain height, the replica only checks whether it has notarized blocks other than that block, and then broadcasts its own signed finalization share; or forwards the finalization share intact.
 
-For example, after a replica receives the decisive share of round 10 in round 11, it will check its behaviour at that time and then broadcast a reply.
+For example, after a replica receives the finalization share of round 10 in round 11, it will check its behaviour at that time and then broadcast a reply.
 
-If after a while, if you receive the decisive of the block in round 10, you can implicitly consider all previous blocks as decisive.
+If after a while, if you receive the finalization of the block in round 10, you can implicitly consider all previous blocks as finalized.
 
 ![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/3142ef13-478b-4683-bbf4-10cea35414fa)
 
-These decisively blocks can be considered as safe confirmed by everyone, meaning that all replicas agree with the branch where the decisive block is located. At the height of block 10, only this block has passed notarization. Then the replica reaches consensus at this height.
+These finalized blocks can be considered as safe confirmed by everyone, meaning that all replicas agree with the branch where the finalized block is located. At the height of block 10, only this block has passed notarization. Then the replica reaches consensus at this height.
 
 For example:
 
-If a replica only generates a notarization share for one block in Round 5, the replica will also issue a decisive share and then enter Round 6 consensus. If the final decisive is received later, the branch containing the decisive is considered valid. If the decisive block does not fork afterwards, there will be no problem without decisive.
+If a replica only generates a notarization share for one block in Round 5, the replica will also issue a finalization share and then enter Round 6 consensus. If the finalization is received later, the branch containing the finalization is considered valid. If the finalization does not fork afterwards, there will be no problem without finalization.
 
-It is possible that in Round 4, half of the replicas generated notarization shares for the leader and the second blocks, and the other half of the replicas only generated notarization shares for the leader's block. Then the decisive share proposed by the replicas that only notarized the leader's block cannot reach the threshold and cannot obtain decisive. Only half of the replicas generate notarization shares for the second member's block, so the second member's block does not obtain notarization.
+It is possible that in Round 4, half of the replicas generated notarization shares for the leader and the second blocks, and the other half of the replicas only generated notarization shares for the leader's block. Then the finalization share proposed by the replicas that only notarized the leader's block cannot reach the threshold and cannot obtain finalization. Only half of the replicas generate notarization shares for the second member's block, so the second member's block does not obtain notarization.
 
 ![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/3925837b-88e0-4d66-b75f-51ebe3794b74)
 
-Compared with many other blockchains, the advantage of the IC consensus protocol is that it adopts asynchronous decisive. In other blockchains, nodes usually need to find the longest chain. If the chain forks, the nodes need to wait for a while to find the longest chain. If some blocks are missed due to network failures, the longest chain cannot be found, and data from other nodes needs to be synchronized.
+Compared with many other blockchains, the advantage of the IC consensus protocol is that it adopts asynchronous finalization. In other blockchains, nodes usually need to find the longest chain. If the chain forks, the nodes need to wait for a while to find the longest chain. If some blocks are missed due to network failures, the longest chain cannot be found, and data from other nodes needs to be synchronized.
 
-The IC protocol does not rely on finding the "longest chain" to eventually confirm the block. IC's finality method only relies on cryptographic signatures, not on the confirmation of the entire chain. A small number of signatures can observe a block consensus formed without waiting for the confirmation of the entire chain. Forks can be eliminated in a short time, and decisive speeds can be achieved in less than one second.
+The IC protocol does not rely on finding the "longest chain" to eventually confirm the block. IC's finality method only relies on cryptographic signatures, not on the confirmation of the entire chain. A small number of signatures can observe a block consensus formed without waiting for the confirmation of the entire chain. Forks can be eliminated in a short time, and finalization speeds can be achieved in less than one second.
 
 **The consensus process is over here!**
 
@@ -246,7 +246,7 @@ To summarize, the members of the Consensus Committee need to do 3 things when en
 
 The Consensus Committee will become a random beacon committee in the next period and be responsible for generating random beacons for each round.
 
-The consensus process is for the leader to block, everyone verifies and then issues a notarization share, the notarization share reaches the threshold and aggregates into notarization, and enters the next round. Decisive does not have to be completed every round.
+The consensus process is for the leader to block, everyone verifies and then issues a notarization share, the notarization share reaches the threshold and aggregates into notarization, and enters the next round. Finalization does not have to be completed every round.
 
 The IC consensus protocol ensures that when there are individual malicious attacks, IC's performance will flexibly decrease instead of directly freezing. The consensus protocol currently tends to maximize performance as much as possible in the "optimistic case" without failures.
 
