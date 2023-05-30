@@ -125,7 +125,7 @@ Per-round state certification in IC has the following use cases:
 
 However, IC adds an extra layer of robustness by design to detect and prevent any (unintended) non-deterministic computation if it actually occurs.
 
-Among them, the per-round certified state is part of this mechanism, because we use $(n-f)/n$ threshold signatures to certify, and $f <n/3$, so only a single state sequence can be certified.
+Among them, the per-round certified state is part of this mechanism, because we use $(n-f)/n$ threshold signatures to certify, and $f < n/3$, so only a single state sequence can be certified.
 
 To understand why chaining states is so important, consider the following example. Suppose we have 4 replica nodes $P_1, P_2, P_3, P_4$, where one replica $P_4$ is malicious. $P_1, P_2, P_3$ start with the same initial state.
 
