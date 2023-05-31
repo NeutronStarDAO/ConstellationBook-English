@@ -26,7 +26,7 @@ Additionally, IC's content updates quickly, and open-source contributions help k
 
 <br>
 
-### Why call it "The IC Cooking Guide"?
+### Why call it "ICCookbook"?
 
 I hope to be a chef of knowledge, carefully preparing, marinating, and stewing knowledge into a work of art. I want to make knowledge extremely user-friendly, accessible, easy to understand, and engaging for beginners. I will explain complex and large concepts using simple language, including the underlying logic behind them.
 
