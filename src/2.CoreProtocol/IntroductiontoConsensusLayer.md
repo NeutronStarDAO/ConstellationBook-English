@@ -8,7 +8,7 @@ Consensus on IC ? Take a look at this term: PoUW, Proof of Useful Work.
 
 Does it looks familiar to you?
 
-<img src="assets/Introduction to Consensus Layer/image-20230131200036914.png" alt="image-20230131200036914" style="zoom:20%;" />
+<img src="assets/IntroductiontoConsensusLayer/image-20230131200036914.png" alt="image-20230131200036914" style="zoom:20%;" />
 
 Proof of Work (PoW) is the consensus algorithm of Bitcoin, which is very inefficient from today's perspective, but still it is relatively secure. 
 
