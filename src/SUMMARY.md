@@ -1,35 +1,32 @@
 # ICCookbook
-
 [ICCookbook](./README.md)
-
-[Journey of the Dream Weaver](./JourneytoWeb3/JourneyoftheDreamWeaver.md)
+[What is the Blockchain?](./0.JourneytoWeb3/1.md)
+[Journey of the Dream Weaver](./0.JourneytoWeb3/2.md)
 
 # Overview of IC
-
-  - [Internet Computer](./OverviewofIC/OverviewofIC.md)
-  - [Glossary](./Glossary.md)
+- [Internet Computer](./1.OverviewofIC/1.md)
 
 ---
 
 # Core Protocol
-
 - [Peer-to-peer layer](./2.CoreProtocol/Peer-to-peerLayer.md)
-- [Consensus Layer](./2.CoreProtocol/IntroductiontoConsensusLayer.md)
+- [Consensus layer](./2.CoreProtocol/IntroductiontoConsensusLayer.md)
 - [Message routing layer](./2.CoreProtocol/Messageroutinglayer.md)
-- [Execution Layer](./2.CoreProtocol/ExecutionLayer.md)
+- [Execution layer](./2.CoreProtocol/ExecutionLayer.md)
 
----
+- [Related Concepts](./2.CoreProtocol/RelatedConcepts/0.md)
+  - [How to pick the number of consensus committee?](./2.CoreProtocol/RelatedConcepts/1.md)
 
-# Chain key
+# Chain-Key Cryptography
 
 
-# NNS
+# Network Nervous System
+
+
+# Canister
 
 
 # Economic Model
-
-
-# canister
 
 
 # Internet Identity
@@ -41,8 +38,7 @@
 # Dapp Development
 
 
-
 ---
-
+[Glossary](./Glossary.md)
 [Contributors](./Contributors.md)
 [References](./References.md)
