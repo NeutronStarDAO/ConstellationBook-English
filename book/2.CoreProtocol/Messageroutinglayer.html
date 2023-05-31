@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Message routing layer - ICCookbook</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="The IC cookbook for you.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/style.css">
+
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">ICCookbook</a></li><li class="chapter-item expanded affix "><a href="../JourneytoWeb3/JourneyoftheDreamWeaver.html">Journey of the Dream Weaver</a></li><li class="chapter-item expanded affix "><li class="part-title">Overview of IC</li><li class="chapter-item expanded "><a href="../OverviewofIC/OverviewofIC.html"><strong aria-hidden="true">1.</strong> Internet Computer</a></li><li class="chapter-item expanded "><a href="../Glossary.html"><strong aria-hidden="true">2.</strong> Glossary</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Core Protocol</li><li class="chapter-item expanded "><a href="../2.CoreProtocol/Peer-to-peerLayer.html"><strong aria-hidden="true">3.</strong> Peer-to-peer layer</a></li><li class="chapter-item expanded "><a href="../2.CoreProtocol/IntroductiontoConsensusLayer.html"><strong aria-hidden="true">4.</strong> Consensus Layer</a></li><li class="chapter-item expanded "><a href="../2.CoreProtocol/Messageroutinglayer.html" class="active"><strong aria-hidden="true">5.</strong> Message routing layer</a></li><li class="chapter-item expanded "><a href="../2.CoreProtocol/ExecutionLayer.html"><strong aria-hidden="true">6.</strong> Execution Layer</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Chain key</li><li class="chapter-item expanded affix "><li class="part-title">NNS</li><li class="chapter-item expanded affix "><li class="part-title">Economic Model</li><li class="chapter-item expanded affix "><li class="part-title">canister</li><li class="chapter-item expanded affix "><li class="part-title">Internet Identity</li><li class="chapter-item expanded affix "><li class="part-title">Cryptography in IC</li><li class="chapter-item expanded affix "><li class="part-title">Dapp Development</li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../Contributors.html">Contributors</a></li><li class="chapter-item expanded affix "><a href="../References.html">References</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">ICCookbook</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/NeutronStarDAO/ICCookBook-English" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+
+                    // Get viewed page store
+                    var viewed_key = 'mdbook-viewed';
+                    var viewed_map = {};
+                    try {
+                        var viewed_storage = localStorage.getItem(viewed_key);
+                        if (viewed_storage) {
+                            viewed_map = JSON.parse(viewed_storage)
+                        }
+                    } catch (e) { }
+
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                        
+                        // Apply viewed style
+                        if (viewed_map[link.pathname]) {
+                            link.classList.add('md-viewed')
+                        }
+                    }); 
+
+                    // Mark viewed after 30s
+                    setTimeout(function() {
+                        viewed_map[location.pathname] = 1;
+                        localStorage.setItem(viewed_key, JSON.stringify(viewed_map));
+                    }, 30000)
+                </script>
+
+                <div id="content" class="content">
+                    <!-- Page table of contents -->
+                    <div class="sidetoc"><nav class="pagetoc"></nav></div>
+                    <main>
+                        <h1 id="message-routing-layer"><a class="header" href="#message-routing-layer">Message routing layer</a></h1>
+<h2 id="message-relay-station-in-the-replica"><a class="header" href="#message-relay-station-in-the-replica">Message relay station in the replica</a></h2>
+<p>The message routing layer, as its name suggests, is responsible for message transimission within a replica. It acts as an intermediary, interfacing between upper and lower layers.</p>
+<h3 id="introduction"><a class="header" href="#introduction">Introduction</a></h3>
+<p>The consensus layer packages messages into block payloads. Once a block is finalized, each replica in the subnet parses the payloads in the block. The message routing layer then passes the messages to the corresponding canisters in the execution layer. After executing the messages, the canisters update their internal state and return message responses to the message routing layer.</p>
+<img src="assets/Messageroutinglayer/8167f771-b702-447f-ae30-1207e0835cba.png" alt="image" style="zoom:75%;" />
+<p>The messages received by the message routing layer are of two types:</p>
+<p>One type is messages from users, called <strong>ingress messages</strong>. The other type is messages from canisters in other subnets, called <strong>cross-subnet messages</strong>.</p>
+<p>The messages <strong>sent</strong> by the message routing layer are also of two types:</p>
+<p>One is responses to user messages, called <strong>ingress message responses</strong>. The other type is still <strong>cross-subnet messages</strong>, which are messages sent by canisters in its own subnet to canisters in other subnets.</p>
+<p><img src="https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/891ec713-e47f-4b70-970c-7d7e505df08d" alt="image" /></p>
+<h3 id="message-queues"><a class="header" href="#message-queues">Message queues</a></h3>
+<p>Each canister in the execution layer has an input queue and an output queue. The message routing layer routes the payloads in the blocks to the input queues of the target canisters.</p>
+<p><img src="https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/3f798bf7-1ba8-49d5-a5a4-f09e48f2d7d0" alt="image" /></p>
+<p>Each canister has its own <strong>input queues</strong> and <strong>output queues</strong>.</p>
+<ul>
+<li><strong>Input queues</strong>:</li>
+</ul>
+<p>The input queues contain: messages from users, inter-subnet messages from canisters in other subnets, and messages from other canisters in the subnet.</p>
+<p>Each round, the canister executes some messages from the input queues and puts the message responses into the canister's <strong>output queue</strong>.</p>
+<ul>
+<li><strong>Output queues</strong>:</li>
+</ul>
+<p>The output queues contain: responses to user messages, messages sent to canisters in other subnets, and messages sent to other canisters within the subnet.</p>
+<p>When the message routing layer takes messages from the message queues and puts them into the <strong>subnet-to-subnet streams</strong>, the <strong>crossnet transfer protocol</strong> is responsible for actually transferring these messages to other subnets.</p>
+<p>In addition to the output queues, there is an <strong>ingress history</strong> data structure. It records in a hash tree called the &quot;<strong>Per-round certified state</strong>&quot;. The ingress history only records the responses after the canister executes the messages so that users can get responses to their messages.</p>
+<blockquote>
+<p>Note: The ingress history does not retain a complete history of all ingress messages. It only retains the response messages after execution.</p>
+</blockquote>
+<p>Looking at the message routing and execution layers separately, it looks like this:</p>
+<p><img src="https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/8b57f5d6-cf5e-4ed6-9fd9-6667d856e0a4" alt="image" /></p>
+<h3 id="intra-subnet-cross-canister-call"><a class="header" href="#intra-subnet-cross-canister-call">Intra-subnet cross-canister call</a></h3>
+<p>In addition to cross-subnet messages, there are also messages from one canister calling another canister in the same subnet, called <strong>intra-subnet messages</strong>. The message routing layer forwards these messages directly from the output queue to the input queue of the corresponding canister without an extra round of consensus.</p>
+<p>Q: So why do messages from canisters to other subnets require consensus, but messages from canisters to the same subnet do not need consensus?</p>
+<p>A: Because these state-changing operations are within the subnet. 😂</p>
+<p>Think about it, the data states in the replicas are the same, and consensus is also to ensure the consistency of the data in the replicas. After the replicas reach consensus, each honest replica will execute intra-subnet cross-canister calls, and everyone will execute cross-canister calls together. This is still a consistent operation.</p>
+<p>Consensus is used when everyone faces different choices to make everyone execute the same operation.</p>
+<p><img src="https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/3e47a2ac-169e-4c55-a9f7-dc8d2d1cf2e2" alt="image" /></p>
+<p>So when a canister in a subnet calls another canister within the same subnet, each replica will make the same cross-canister call. Each replica stores all the data in the subnet. When the replicas execute cross-canister calls, the consistency of data in the subnet is still maintained.</p>
+<p><img src="https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/e2f15403-bf6c-4c6c-9aca-620e36e48660" alt="image" /></p>
+<h3 id="summary"><a class="header" href="#summary">Summary</a></h3>
+<p>The state of a subnet's replica  includes the state of canisters and the &quot;system state&quot;. The &quot;system state&quot; includes the input and output queues of canisters, subnet-to-subnet streams, and ingress history data structures.</p>
+<p><img src="https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/185c0898-ee51-4b8d-a4cd-fe5098f79d74" alt="image" /></p>
+<p>In other words, the message routing layer and the execution layer together maintain the state of a replica. And the state of the replica is updated in a completely deterministic manner, so that all replicas in the subnet maintain the same state. The consensus layer does not need to keep exactly the same progress as the message routing layer.</p>
+<h3 id="per-round-certified-state"><a class="header" href="#per-round-certified-state">Per-round certified state</a></h3>
+<p>In each round, the state of each replica in the subnet will change.</p>
+<p>Of course, the parts that change in each round also need to be recorded separately. Because IC's consensus only guarantees that honest replicas process messages in the same order. Consensus only acts as a &quot;gatekeeper&quot; before messages enter the execution layer, but after message processing, the output is still lacking a &quot;guard&quot;: What if message responses are not sent successfully due to network issues? How does the client verify the authenticity of messages after receiving them? If the message response is made by a hacker, there will be some troubles. What if a strange bug in the server system causes the message not to execute...</p>
+<p><img src="https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/ea94caeb-d8f0-4c24-8ec9-10085f8a75ac" alt="image" /></p>
+<p>Replicas need to check the state again after processing messages. The per-round certified state, also known as the system state tree, acts as this guard and is the last link in a complete round. The per-round certified state can record the state changes of replicas in a round and rebroadcast it to everyone for threshold signature verification, which requires confirmation from two-thirds of the replicas.</p>
+<p>After executing messages in every one round, each replica hashes its own generated per-round certified state, packages it into a Merkle tree, and signs it with a private key share. Once two-thirds of the signature share are collected, they are aggregated into a complete signature as the certificate of the per-round certified state for that round.</p>
+<blockquote>
+<p>Q: Does this consensus algorithm reach agreement only on the inputs to computation, or also on the outputs of computation?</p>
+<p>A:  For inputs, they are blocks. For outputs, they are ceritifications. So yes, both inputs and outputs must go through consensus, otherwise we risk divergence.</p>
+</blockquote>
+<p>The per-round certified state includes:</p>
+<ul>
+<li>Cross-subnet messages added to subnet-to-subnet data streams in this round</li>
+<li>Other metadata, including the ingress history data structure</li>
+<li>The root hash of the Merkle tree of the previous per-round certified state</li>
+</ul>
+<p>The first branch stores various metadata about each canister (but not the full replica state of the canister).</p>
+<p>The second branch stores the ingress history data structure.</p>
+<p>The third branch stores information about subnet-to-subnet data streams, including a &quot;view&quot; of new cross-subnet messages added to each stream.</p>
+<p>Other branches store other types of metadata, which are not discussed here. This tree structure can then be hashed into a Merkle tree.</p>
+<p><img src="https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/71453f34-e375-4f10-a0f3-9cd16c92a648" alt="image" /></p>
+<p>Per-round state certification in IC has the following use cases:</p>
+<ul>
+<li><strong>Output authentication</strong>. Cross-subnet messages and ingress message responses can be authenticated using per-round certified state. Using the Merkle tree structure, a single output (cross-subnet message or ingress message response) can be authenticated by any party by providing the threshold signature on the root and the hashes on the path (and adjacent) from the root to the leaf in the Merkle tree. Therefore, the number of hashes required to authenticate a single output is proportional to the depth of the Merkle tree, which is usually very small even for very large hash trees. Thus, a single threshold signature can be effectively used to verify many individual outputs.</li>
+<li><strong>Preventing and detecting non-determinism</strong>. Consensus ensures that each node processes inputs in the same order. Because each replica deterministically processes these inputs, each replica should reach the same state.</li>
+</ul>
+<p>However, IC adds an extra layer of robustness by design to detect and prevent any (unintended) non-deterministic computation if it actually occurs.</p>
+<p>Among them, the per-round certified state is part of this mechanism, because we use $(n-f)/n$ threshold signatures to certify, and $f &lt; n/3$, so only a single state sequence can be certified.</p>
+<p>To understand why chaining states is so important, consider the following example. Suppose we have 4 replica nodes $P_1, P_2, P_3, P_4$, where one replica $P_4$ is malicious. $P_1, P_2, P_3$ start with the same initial state.</p>
+<ul>
+<li>In round 1, due to non-deterministic computation, $P_1$ and $P_2$ both start computing a message $m_1$ to send to subnet A, while $P_3$ computes $m'_1$ to send to subnet A.</li>
+<li>In round 2, $P_1$ and $P_3$ both start computing message $m_2$ to send to subnet $B$, while $P_2$ computes message $m'_2$ to send to subnet $B$.</li>
+<li>In round 3, $P_2$ and $P_3$ both start computing message $m_3$ to send to subnet $C$, while $P_1$ computes message $m'_3$ to send to subnet $C$.</li>
+</ul>
+<p>As express below:</p>
+<p>$$ P_1\ \ m_1 \rightarrow A\ \ m_2 \rightarrow B\ \ m'_3 \rightarrow C \ P_2\ \ m_1 \rightarrow A\ \ m'_2 \rightarrow B\ \ m_3 \rightarrow C \ P_3\ \ m'_1 \rightarrow A\ \ m_2 \rightarrow B\ \ m_3 \rightarrow C \ $$ </p>
+<p>Let's say $P_1,P_2,P_3$ each executes a valid sequence of computations, but due to non-determinism, these sequences are not the same. (Even though there should be no non-determinism, we still assume its existence in this example.)</p>
+<p>Now suppose we do not chain these states. Because $P_4$ is malicious and can sign anything, it can create a $3/4$ threshold signature in state round 1 claiming &quot;$m_1\rightarrow A$&quot;, similarly claim &quot;$m2 \rightarrow B$&quot; in state round 2, and claim &quot;$m_3\rightarrow C$​&quot; in state round 3, despite the corresponding sequence$$ m_1 \rightarrow A, m_2 \rightarrow B, m_3 \rightarrow C $$  may not be compatible with any valid sequence. Worse yet, this invalid computation sequence may have led to inconsistent states across other subnets.</p>
+<p>By chaining, we ensure that even with some degree of non-determinism, any authenticated sequence of states corresponds to some valid sequence executed by honest nodes.</p>
+<p>Suppose there are 4 replicas, namely $P_1$, $P_2$, $P_3$ and $P_4$, where $P_4$ is assumed to be malicious. Initially, the states of $P_1$, $P_2$, and $P_3$ are the same.</p>
+<p>Over the next few rounds, each replica starts computing some messages and sending them to different subnets, namely A, B and C.</p>
+<ul>
+<li>However, in round 1, $P_1$ and $P_2$ start computing message $m_1$ while $P_3$ computes a different message $m'_1$.</li>
+<li>In round 2, $P_1$ and $P_3$ start computing message $m_2$ while $P_2$ computes a different message $m'_2$.</li>
+<li>Finally, in round 3, $P_2$ and $P_3$ start computing message $m_3$ while $P_1$ computes a different message $m'_3$.</li>
+</ul>
+<p>Therefore, each replica computes different messages and their state sequences are not the same. In this example, we assume that there is some non-determinism in the computation that leads each replica to compute different messages and state sequences.</p>
+<p>Without addressing this issue, replica $P_4$ can sign whatever it wants since it is malicious.</p>
+<p>If we did not chain the states, $P_4$ could:</p>
+<ul>
+<li>Sign a threshold signature claiming “$m_1\rightarrow A$” in round 1,</li>
+<li>Sign a threshold signature claiming “$m_2\rightarrow B$” in round 2,</li>
+<li>Finally sign a threshold signature claiming “$m_3\rightarrow C$” in round 3.</li>
+</ul>
+<p>Even though this sequence of signed messages is invalid and incompatible with any valid sequence, the malicious replica can still forge signatures.</p>
+<p>By chaining the states, we ensure that any authenticated sequence of states corresponds to some valid sequence executed by honest replicas, even with some degree of non-determinism. This prevents the malicious replica from abusing its signing rights to nake invalid state sequences and prevents inconsistent states across subnets.</p>
+<p>The consensus layer ensures that replicas process messages in a same order. However, during execution, machine failures, unknown system bugs, etc. Could interfere, resulting in failure to execute certain messages.</p>
+<p>Therefore, to ensure that each replica processes messages correctly, after a canister executes a message, the executed message must be recorded so that replicas can verify each other.</p>
+<p><img src="https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/0460952c-91c5-4c58-9380-3671b3393c1b" alt="image" /></p>
+<p>//From WhitePaper.</p>
+<p><strong>Coordination with consensus.</strong> The per-round certified state is also used to coordinate the execution and consensus layers, in two different ways: </p>
+<ol>
+<li>Consensus throttling. Each replica will keep track of the latest round for which it has a certified state — this is called the certified height. It will also keep track of the latest round for which it has a notarized block — this is called the notarized height. If the notarized height is significantly greater than the certified height, this is a signal that execution is lagging consensus, and that consensus needs to be throttled. This lagging could be due to non-deterministic computation, or it could just be due to a more benign performance mismatch between the layers. Consensus is throttled by means of the delay functions discussed in Section 5.9 — specifically, each replica will increase the “governor” value  as the gap between notarized height and certified height grows (this makes use of the notion of “locally adjusted delay functions, as in Section 5.12.2). </li>
+<li>State-specific payload validation. As discussed in Section 5.7, the inputs in a payload must pass certain validity checks. In fact, these validity checks may depend to a certain degree on the state. A detail we skipped is that each block includes a round number, with the understanding that these validity checks should be made with respect to the certified state for that round number. A replica that needs to perform this validation will wait until the state for that round number has been certified, and then use the certified state for that round to perform the validation. This ensures that even with non-deterministic computation, all replicas are performing the same validity tests (as otherwise, consensus could get stuck).</li>
+</ol>
+<h3 id="query-calls--update-calls"><a class="header" href="#query-calls--update-calls">Query calls &amp; Update calls</a></h3>
+<p>As we have described it so far, ingress messages must pass through consensus so that they are processed in the same order by all replicas on a subnet. However, an important optimization is available to those ingress messages whose processing does not modify the replicated state of a subnet. These are called <strong>query calls</strong> — as opposed to other ingress messages, which are called <strong>update calls</strong>. </p>
+<p>Query calls are allowed to perform computations which read and possibly update the state of a canister, but any updates to the state of a canister are never committed to the replicated state. As such, a query call may be processed directly by a single replica without passing through consensus, which greatly reduces the latency for obtaining a response from a query call. </p>
+<p>Note that a response to a query call is not recorded in the ingress history data structure. As such, we cannot directly use the per-round certified state mechanism to authenticate responses to query calls. </p>
+<p>However, a separate mechanism for authenticating such responses is provided: <strong>certified variables</strong>. As a part of the per-round certified state, each canister on a subnet is allocated a small number of bytes, which is the certified variable for that canister, whose value may be updated via update calls, and may be authenticated using the per-round certified state mechanism. Moreover, a canister may use its certified variable to store a root of a Merkle tree. In this way, a response to a query call to a canister may be authenticated so long the response is a leaf in the Merkle tree rooted at the certified variable for that canister.</p>
+<p>.....//Unfinished here</p>
+
+                        <div id="giscus-container"></div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../2.CoreProtocol/IntroductiontoConsensusLayer.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../2.CoreProtocol/ExecutionLayer.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../2.CoreProtocol/IntroductiontoConsensusLayer.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../2.CoreProtocol/ExecutionLayer.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" charset="utf-8">
+        var pagePath = "2.CoreProtocol/Messageroutinglayer.md"
+        </script>
+
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../assets/custom.js"></script>
+        <script type="text/javascript" src="../assets/bigPicture.js"></script>
+
+
+    </body>
+</html>
