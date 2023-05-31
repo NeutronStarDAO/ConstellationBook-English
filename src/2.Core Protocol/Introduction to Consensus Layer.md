@@ -178,7 +178,7 @@ During notarization, the members of the consensus committee verify the following
 
 If the block information is correct, the replica responsible for verification first signs the block height and block hash, and then forms a "**notarization share**" with the just signed signature, hash, height, and its own identity. Broadcast the notarized shares.
 
-![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/8e6bd975-3231-4078-b57f-bcac23ab2fa3)
+![image](./assets/IMG11.png)
 
 Notarization also uses BLS threshold signatures. When a replica receives enough (the threshold is two-thirds) notarization share, it aggregates the signature share to form a notarization for this block.
 
