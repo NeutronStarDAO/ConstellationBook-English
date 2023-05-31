@@ -73,7 +73,7 @@ VRF uses threshold BLS signature scheme. The threshold BLS signature algorithm u
 
 If a message is confirmed, no matter which private key shares participate in the signature, as long as the threshold quantity is reached (the threshold for generating the Random Beacon is one-third), the final unique signature information can be aggregated. For example, the threshold in the following figure is 6. In order for the 16 replicas to generate the random beacon signature for this round, as long as the signature is greater than 6, it can be aggregated.
 
-![image](https://github.com/NeutronStarDAO/ICCookBook-English/assets/89145158/91d33324-818d-4a12-9d88-8a6a63e884dd)
+![image](./assets/IMG4.png)
 
 As long as the bad guys get less than one-third of the private key shares, they cannot interfere with the threshold BLS signature. It is also impossible to predict the signature result because the private key shares are not enough. That is to say, no one knows the signature result.
 
