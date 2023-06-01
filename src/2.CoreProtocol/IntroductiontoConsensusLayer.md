@@ -30,7 +30,7 @@ PoUW adds a 'U' to PoW, it significantly improves performance and reduces useles
 
 ## How is consensus reached?
 
-No matter what, Bitcoin is one of ancestors of the blockchain. Even though the consensus is inefficient, it is a solution to distributed system issues.
+No matter what, Bitcoin is one of ancestors of the blockchain. Even though the consensus reaching speed is inefficient, it is a solution to distributed system issues.
 
 Satoshi Nakamoto's Bitcoin is a feasible solution to the "Byzantine generals problem".
 
@@ -161,7 +161,7 @@ Once the preparation is complete, blocks can be produced.
 
 At the start of each round, the random beacon generated from the previous round produces a ranking to determine the weight of members to produce blocks. The leader with the highest weight is given priority to produce blocks. (As shown in the figure below, the ranking assigns a number from 0 to 4 to the 5 consensus committee members, with 0 having the highest weight)
 
-Under normal circumstances, the leader is honest and the network connection is normal. The leader is responsible for producing blocks. Others are waiting to notarize the leader's block. Even if block from the 2nd maker is received, it will not be notarized until the leader's block is received.
+Under normal circumstances, the leader is honest and the network connection is normal. The leader is responsible for producing blocks. Others are waiting to notarize the leader's block. Even if block from the 2nd member is received, it will not be notarized until the leader's block is received.
 
 At the same time, the random beacon committee will also package, sign and broadcast the hash of the previous round's beacon and the NiDKG record of this round. When the signature reaches the threshold, this round's random beacon is generated, which also determines the block production weight for the next round.
 
@@ -210,7 +210,7 @@ During notarization, the members of the consensus committee verify the following
 
 1. The block should contain the hash of the block already notarized in the previous round.
 2. The payload of the block must meet certain conditions (specific regulations on the payload content, these conditions are independent of the consensus protocol).
-3. The ranking of the replica responsible for producing this block must correspond to the ranking in the random beacon (for example, if the replica ranked second claims to be ranked first, then this block will not be notarized).
+3. The ranking of the replica responsible for producing this block must correspond to the ranking in the random beacon (for example, if the replica ranked 2nd claims to be ranked first, then this block will not be notarized).
 
 <br>
 
@@ -226,15 +226,15 @@ The aggregated notarization information includes the block hash, block height, a
 
 <img src="assets/IntroductiontoConsensusLayer/ebb8aa45-a9a7-412f-8c18-68b0c80f5ccf.png" alt="image" style="zoom:75%;" />
 
-After notarization, the block is still broadcast. When other members receive the already notarized block, they re-broadcast the notarized block and do not generate notarization shares for other blocks.
+After notarization, the block is still broadcast. When other members receive the notarized block, they will re-broadcast the notarized block and will not generate notarization shares for other blocks.
 
 <br>
 
-For example, in the figure below, the girl holding the cell phone and the blue hat enter the next round of consensus. When the girl sends messages to the other three people, the network is interrupted for 700 milliseconds. The message forwarded by the little blue hat plays a key role. Otherwise, five missing three would not be able to work.
+For example, in the figure below, the girl holding the cell phone and the blue hat enter the next round of consensus. When the girl sends messages to the other three people, the network is interrupted for 700 milliseconds. The message forwarded by the blue hat plays a key role. Otherwise, five missing three would not be able to work.
 
 <img src="assets/IntroductiontoConsensusLayer/0a476c14-a9ca-4a25-83e8-bea3d7eff1c8.png" alt="image" style="zoom:25%;" />
 
-If the leader's block has a problem and the notarization fails, the weighting of the second block will now be the largest. If the blocks of the second and the third have both passed notarization, the leader of the next round will choose to block after the block with the greatest weight. As in rounds 5 and 6 below, the weight of the second block is greater than the weight of the third block. Adding up the weights of all blocks, the chain composed of yellow and purple blocks is the chain with the greatest weight.
+If the leader's block has a problem and the notarization fails, the weighting of the second block will now be the largest. If the blocks of the second member and the third member have both passed notarization, the leader of the next round will choose to produce block after the block with the greatest weight. As in round 5 and 6 below, the weight of the 2nd block is greater than the weight of the 3rd block. Adding up the weights of all blocks, the chain composed of yellow and purple blocks is the chain with the greatest weight.
 
 <img src="assets/IntroductiontoConsensusLayer/6a44e5fe-493d-4cb2-85c7-afd1a0c472f0.png" alt="image" style="zoom:70%;" />
 
@@ -248,7 +248,7 @@ Because sometimes more than one block may be generated (when the leader does not
 
 The finalization process is specifically:
 
-After a replica finds a notarized block, it will start checking whether it has notarized any other blocks in this round. If it has not notarized any other blocks, it will broadcast a "finalization share" for the block. To prove that it has only issued a notarization share for this block.
+After a replica finds a notarized block, it will check whether it has notarized any other blocks in this round. If it has not notarized any other blocks, it will broadcast a "finalization share" for the block. To prove that it has only issued a notarization share for this block.
 
 To achieve the finalization of a block, two-thirds of different replicas need to issue finalization share, and then aggregate for the finalization of a block. The format of the finalization share is exactly the same as the notarization share (but marked in a specific way to prevent confusion). After receiving the finalized block, like the notarization process, it will broadcast to other members again.
 
@@ -268,9 +268,9 @@ These finalized blocks can be considered as safe confirmed by everyone, meaning 
 
 For example:
 
-If a replica only generates a notarization share for one block in Round 5, the replica will also issue a finalization share and then enter Round 6 consensus. If the finalization is received later, the branch containing the finalization is considered valid. If the finalization does not fork afterwards, there will be no problem without finalization.
+If a replica only generates a notarization share for one block in Round 5, the replica will also issue a finalization share and then enter Round 6 consensus. If the finalization is received later, the branch containing the finalization is considered valid. If the block after finalization does not fork , there will be no problem without finalization.
 
-It is possible that in Round 4, half of the replicas generated notarization shares for the leader and the second blocks, and the other half of the replicas only generated notarization shares for the leader's block. Then the finalization share proposed by the replicas that only notarized the leader's block cannot reach the threshold and cannot obtain finalization. Only half of the replicas generate notarization shares for the second member's block, so the second member's block does not obtain notarization.
+It is possible that in Round 4, half of the replicas generated notarization shares for the leader and the 2nd blocks, and the other half of the replicas only generated notarization shares for the leader's block. Then the finalization share proposed by the replicas that only notarized the leader's block cannot reach the threshold and cannot obtain finalization. Only half of the replicas generate notarization shares for the 2nd member's block, so the 2nd member's block does not obtain notarization.
 
 <img src="assets/IntroductiontoConsensusLayer/3925837b-88e0-4d66-b75f-51ebe3794b74.png" alt="image" style="zoom:67%;" />
 
