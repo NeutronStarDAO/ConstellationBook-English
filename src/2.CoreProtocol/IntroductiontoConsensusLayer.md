@@ -149,7 +149,7 @@ The number of consensus committees is related to the total number of replica mem
 
 The number of consensus committee members cannot be too large or too small. Too few are insecure, too many affect the consensus speed.
 
-So the relationship between the number of committees and the total number of members has a mathematical model to describe: When the total number of members in the subnet tends to infinity, the hypergeometric distribution tends to the binomial distribution, that is, non-replacement random sampling tends to replacement random sampling. Because the total number of replica members is infinite, there is no difference between replacement and non-replacement. If you are interested, you can read the introduction **here**.
+So the relationship between the number of committees and the total number of members has a mathematical model to describe: When the total number of members in the subnet tends to infinity, the hypergeometric distribution tends to the binomial distribution, that is, non-replacement random sampling tends to replacement random sampling. Because the total number of replica members is infinite, there is no difference between replacement and non-replacement. If you are interested, you can read the introduction [here](https://github.com/NeutronStarDAO/ICCookBook-English/blob/main/src/2.CoreProtocol/RelatedConcepts/1.md).
 
 <br>
 
