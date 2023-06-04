@@ -2,6 +2,7 @@
 [ICCookbook](./README.md)
 [What is the Blockchain?](./0.JourneytoWeb3/1.md)
 [Journey of the Dream Weaver](./0.JourneytoWeb3/2.md)
+[Navigating the Frontiers of Tomorrow](./0.JourneytoWeb3/0.md)
 
 # Overview of IC
 - [Internet Computer](./1.OverviewofIC/1.md)
@@ -14,7 +15,7 @@
 - [Message routing layer](./2.CoreProtocol/Messageroutinglayer.md)
 - [Execution layer](./2.CoreProtocol/ExecutionLayer.md)
 
-- [Related Concepts](./2.CoreProtocol/RelatedConcepts/0.md)
+- [Related concepts](./2.CoreProtocol/RelatedConcepts/0.md)
   - [How to pick the number of consensus committee?](./2.CoreProtocol/RelatedConcepts/1.md)
 
 # Chain-Key Cryptography
