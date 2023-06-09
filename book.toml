@@ -21,4 +21,4 @@ copy-js = true
 
 [output.html.fold]
 enable = true
-level = 1
+level = 0 // 折叠目录文件夹
