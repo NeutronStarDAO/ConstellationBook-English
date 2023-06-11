@@ -1,5 +1,7 @@
 # Constellation Book: Your Journey to the Internet Computer
 
+<img src="assets/README/Book0.jpg" alt="Book" />
+
 <img src="assets/README/iclogo.png" align="right" alt="DFINITY logo" width="270" />
 
 If you have only heard of IC but have been busy with Ethereum and Polkadot projects without delving into IC, then you've come to the right place to learn more about it [here](./src/OverviewofIC/OverviewofIC.md)!
