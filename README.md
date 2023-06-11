@@ -1,4 +1,4 @@
-# ICCookbook
+# Constellation Book: Your Journey to the Internet Computer
 
 <img src="assets/README/iclogo.png" align="right" alt="DFINITY logo" width="270" />
 
