@@ -1,4 +1,6 @@
-# ICCookbook
+# Constellation Book: Your Journey to the Internet Computer
+
+<img src="assets/README/Book0.jpg" alt="Book" />
 
 <img src="assets/README/iclogo.png" align="right" alt="DFINITY logo" width="270" />
 
@@ -25,10 +27,6 @@ I love the Rust open-source community, which has many open-source books and proj
 Additionally, IC's content updates quickly, and open-source contributions help keep the content fresh and up-to-date.
 
 <br>
-
-### Why call it "ICCookbook"?
-
-I hope to be a chef of knowledge, carefully preparing, marinating, and stewing knowledge into a work of art. I want to make knowledge extremely user-friendly, accessible, easy to understand, and engaging for beginners. I will explain complex and large concepts using simple language, including the underlying logic behind them.
 
 <br>
 
