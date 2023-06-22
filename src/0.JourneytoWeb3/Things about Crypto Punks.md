@@ -1,6 +1,6 @@
 To talk about this, we have to start before Bitcoin.
 
-If you're not familiar with Bitcoin, you can take a look at this first.
+If you're not familiar with Bitcoin, you can take a look at [this](Bitcoin.md) first.
 
 Bitcoin is completely virtual. It has no actual value and cannot create any value; it's just a virtual currency. Why do people go crazy sending money to buy Bitcoin? Let's dig a bit deeper: why does Bitcoin even exist?
 
