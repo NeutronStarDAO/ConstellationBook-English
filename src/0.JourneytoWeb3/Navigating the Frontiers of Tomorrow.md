@@ -34,11 +34,11 @@ Instead, let's look at some similar situations from history and see what happene
 
 During the late '90s Internet bubble, the market experienced several ups and downs. In '96, '97, and '98, there were several fluctuations. The last and largest surge occurred from October '98 to March 2000 when the Nasdaq index rose from just over 2000 points to around 4900 points. This gradual climb instilled a resolute belief in speculators: no matter how badly the market falls, it will always bounce back.
 
-![image-20230603203923583](assets/Future has come/image-20230603203923583.png)
+![image-20230603203923583](assets/Navigating the Frontiers of Tomorrow/image-20230603203923583.png)
 
 As people went through several bull and bear cycles, this unwavering belief was further reinforced. When the real, prolonged bear market began, they continued to follow their own summarized experience, doubling down and buying at what they thought were the lowest points...
 
-![image-20230603205835532](assets/Future has come/image-20230603205835532.png)
+![image-20230603205835532](assets/Navigating the Frontiers of Tomorrow/image-20230603205835532.png)
 
 When the bubble burst, stock prices plummeted more than 50% in just a few days, with most stocks eventually losing 99% of their value and going straight to zero. Many people who had quickly become wealthy by leveraging their investments bet their entire net worth on bottom-picking during the bear market, only to end up losing everything.
 
@@ -48,7 +48,7 @@ The essence of the Internet is to reduce the cost of searching and interacting w
 
 After the dot-com bubble burst in 2001, the maturation of infrastructure and the decrease in various costs led to the emergence of new applications (such as Taobao, YouTube, Netflix, Facebook, Amazon, AWS, iPhone, Uber, TikTok, and so on). Their explosive growth and massive scale far surpassed even the most pessimistic imaginations.
 
-![image-20230603211039212](assets/Future has come/image-20230603211039212.png)
+![image-20230603211039212](assets/Navigating the Frontiers of Tomorrow/image-20230603211039212.png)
 
 Similarly, a large number of overly advanced blockchain projects that cannot directly generate value for end users will eventually wither away, giving rise to various pessimistic and negative emotions.
 
@@ -119,7 +119,7 @@ Therefore, solving the scalability problem of blockchain has become one of the i
 
 Once blockchain solves the problems of scalability and throughput, achieves breakthroughs in underlying technology, it may become the new infrastructure of the Internet and reshape the future Internet landscape.
 
-![image-20230622142513532](assets/Future has come/image-20230622142513532.png)
+![image-20230622143029402](assets/Navigating the Frontiers of Tomorrow/image-20230622143029402.png)
 
 Dfinity elected to reinvent blockchain's underlying technology, developed a superior decentralized network service through innovation, and fostered more Dapps to cultivate an entirely new decentralized Internet ecosystem.
 

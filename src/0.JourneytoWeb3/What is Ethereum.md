@@ -53,5 +53,3 @@ Compared to Ethereum, IC has the following features that can solve some of Ether
 9. **Developer experience**: IC provides a set of friendly development tools and resources, including the Motoko programming language and SDK. Code debugging can also be done locally without the need for a testnet. This makes it easier for developers to build and deploy applications to the Internet Computer. Compared to other public chains, IC is committed to simplifying the development process of decentralized applications.
 
 IC aims to become an infinitely scalable, decentralized global compute infrastructure. **IC's goal and vision**: IC's goal is to create a new type of Internet infrastructure that can support various decentralized applications while having high scalability, security and performance. Like other public chains, IC is committed to solving the limitations of traditional blockchain technology; but its vision is to create a larger Internet ecosystem, not just a blockchain platform.
-
-[Read 6-21]

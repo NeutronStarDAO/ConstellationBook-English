@@ -14,13 +14,13 @@ Don't worry, let me explain it one step at a time.
 
 Suppose a few neutron star beings want to establish an online banking system called "Neutron Star Bank." They purchase a server to handle all requests. The balance and transaction information for all users are stored on this single server. Thus, Neutron Star Bank begins its operations.
 
-![image-20230512185621148](assets/What is Blockchain/image-20230512185621148.png)
+![image-20230512185621148](assets/What is the Blockchain/image-20230512185621148.png)
 
 As online payments become increasingly popular, the number of users and use cases continue to grow, leading to exponential growth in transaction data.
 
 The capabilities of a single server are continuously challenged, and it starts to struggle: 
 
-![image-20230512162525366](assets/What is Blockchain/image-20230512162525366.png)
+![image-20230512162525366](assets/What is the Blockchain/image-20230512162525366.png)
 
 On one hand, storage capacity is insufficient to meet the massive storage demands of transaction data; on the other hand, during shopping frenzies like Double 11 and 618, system access volume surges, CPU loads continue to climb, and overload situations occur frequently. Even more severe, server failures sometimes occur, resulting in the entire system becoming paralyzed and transaction data being lost.
 
@@ -30,13 +30,13 @@ The growth in business is putting a heavy strain on the system, and to prevent s
 
 They purchase one server to act as an "administrator" and several additional servers dedicated to data storage. When the administrator server receives transaction data, it forwards it to the servers responsible for data storage. Once one server is full, the data is stored in another server.
 
-![image-20230622130157337](assets/What is Blockchain/image-20230622130157337.png)
+![image-20230622130157337](assets/What is the Blockchain/image-20230622130157337.png)
 
 If the administrator becomes overwhelmed, more administrator servers can be added. In this way, the system is finally expanded.
 
 However, at this point, a group of hackers set their sights on Neutron Star Bank. After all, money is just a string of numbers, and by secretly infiltrating the bank's database to modify account balances and transaction records, they could achieve financial freedom.
 
-![image-20230622130259974](assets/What is Blockchain/image-20230622130259974.png)
+![image-20230622130259974](assets/What is the Blockchain/image-20230622130259974.png)
 
 Initially, the bank's system lacked proper protection measures, making it vulnerable to attacks.
 
@@ -72,7 +72,7 @@ If the hackers managed to cut off the power supply to the data centre, the entir
 
 To address this concern, two power plants were set up near the data centre to provide electricity simultaneously. Each power plant could meet the data centre's entire power demand, with a backup power supply in case both power plants experienced outages. Each power plant was equipped with an independent power distribution room.
 
-![image-20230622131852832](assets/What is Blockchain/image-20230622131852832.png)
+![image-20230622131852832](assets/What is the Blockchain/image-20230622131852832.png)
 
 No, it's still not reassuring enough. What if, after a city-wide power grid interruption, both power plants experience accidents and can't generate electricity?
 
@@ -110,7 +110,7 @@ You see, having another data centre would be beneficial in such situations.
 
 This is what's known as a "dual-active data centre," where two data centres operate simultaneously. If one is destroyed, the other continues to function, leaving the system virtually unaffected.
 
-![image-20230622133204080](assets/What is Blockchain/image-20230622133204080.png)
+![image-20230622133204080](assets/What is the Blockchain/image-20230622133204080.png)
 
 What if, by chance, an asteroid strikes the very area where the data centre is located? Wouldn't everything be wiped out in one fell swoop?
 

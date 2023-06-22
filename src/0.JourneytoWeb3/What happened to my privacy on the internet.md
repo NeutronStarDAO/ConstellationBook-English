@@ -2,11 +2,11 @@ This is a rather serious problem. Although the Internet can store your data, you
 
 For example, TikTok is like this:
 
-![QmdntMWgDMfqHCyCzZWfDDrcvwHQoCLempCAk3rCdh3CkH](assets/What happend to my network privacy/QmdntMWgDMfqHCyCzZWfDDrcvwHQoCLempCAk3rCdh3CkH.png)
+![QmdntMWgDMfqHCyCzZWfDDrcvwHQoCLempCAk3rCdh3CkH](assets/What happened to my privacy on the internet/QmdntMWgDMfqHCyCzZWfDDrcvwHQoCLempCAk3rCdh3CkH.png)
 
 Each company's servers provide users with their own network services:
 
-![QmRbMqtLf8Y7eYWeUdmRxeswrmRRUHLnc5UPMTuaCnBnPH](assets/What happend to my network privacy/QmRbMqtLf8Y7eYWeUdmRxeswrmRRUHLnc5UPMTuaCnBnPH.png)
+![QmRbMqtLf8Y7eYWeUdmRxeswrmRRUHLnc5UPMTuaCnBnPH](assets/What happened to my privacy on the internet/QmRbMqtLf8Y7eYWeUdmRxeswrmRRUHLnc5UPMTuaCnBnPH.png)
 
 While data brings convenience to the information age, it also leads to data abuse, personal privacy leaks, infringement of corporate trade secrets and many other problems. Your data has been dumped into their servers in one swoop. They control the servers and have the final say in how to handle the data in the servers. Although engineers are only responsible for studying AI recommendation algorithms and do not peek at your data. Only AI knows what you like, stored in servers, and there are too many user data to see. But when they want to find someone, the management can still see all kinds of data.
 
@@ -22,7 +22,7 @@ No one knows what they have done with the data.
 
 We already know about PRISM, Facebook's leak of hundreds of millions of user data in 2018, Amazon was fined 746 million euros by the EU privacy regulator in July 2020 for violating the EU General Data Protection Regulation, which was also the largest data privacy leak fine in EU history. Domestic takeaway platforms such as Meituan and Ele.me have also been exposed to user information leaks and resales, down to order contents, addresses and other private information; Li Yanhong: Chinese people can be more open to data privacy and are willing to exchange privacy for efficiency...
 
-![QmakePKSRkDQSQx79BT7PzgqSJzekQ7nz63nG9Sr2coHw5](assets/What happend to my network privacy/QmakePKSRkDQSQx79BT7PzgqSJzekQ7nz63nG9Sr2coHw5.png)
+![QmakePKSRkDQSQx79BT7PzgqSJzekQ7nz63nG9Sr2coHw5](assets/What happened to my privacy on the internet/QmakePKSRkDQSQx79BT7PzgqSJzekQ7nz63nG9Sr2coHw5.png)
 
 (Screenshot of Li Yan Hong's claim on the internet:"Users are willing to exchange privacy for efficiency!)
 
@@ -36,11 +36,11 @@ The large-scale disclosure of personal privacy data has become a major global so
 
 Just last week, on March 21, 2023, Pinduoduo was forcibly removed from Google Play and prompted existing Pinduoduo users to uninstall it as soon as possible. This was the first time Google prompted users to uninstall an app. Subsequently, the well-known antivirus software laboratory Kaspersky confirmed that Pinduoduo recklessly collected user information by exploiting vulnerabilities in the Android system, cracked system shielding mechanisms, tampered with mobile phone system records, concealed its own whereabouts, ran in the background of the system to monitor mobile phones, evaded system cleanup processes, and read mobile phone input method information.
 
-![QmTLR4GV6fiZFQb9DEj7MpAC1NRJ2eT4Y9VZ7LbPQf2Joa](assets/What happend to my network privacy/QmTLR4GV6fiZFQb9DEj7MpAC1NRJ2eT4Y9VZ7LbPQf2Joa.png)
+![QmTLR4GV6fiZFQb9DEj7MpAC1NRJ2eT4Y9VZ7LbPQf2Joa](assets/What happened to my privacy on the internet/QmTLR4GV6fiZFQb9DEj7MpAC1NRJ2eT4Y9VZ7LbPQf2Joa.png)
 
 (A famous shopping app in China: Pinduoduo. Had been exposed that they implemented malicious code in users' device for purpose of tracking and collecting users' information)
 
-![QmQ3RstyXP52LdWbDLdmrLyTKLbz8kkaKeEN3mbsBpRKxV](assets/What happend to my network privacy/QmQ3RstyXP52LdWbDLdmrLyTKLbz8kkaKeEN3mbsBpRKxV.png)
+![QmQ3RstyXP52LdWbDLdmrLyTKLbz8kkaKeEN3mbsBpRKxV](assets/What happened to my privacy on the internet/QmQ3RstyXP52LdWbDLdmrLyTKLbz8kkaKeEN3mbsBpRKxV.png)
 
 > The malicious behaviours and functions of Pinduoduo including:
 >
