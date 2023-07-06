@@ -6,7 +6,7 @@ If you are still unfamiliar with Web3, blockchain, Bitcoin, and IC, don't worry,
 
 <img src="assets/README/Book0.jpg" alt="Book" />
 
-<img src="assets/README/iclogo.png" align="right" alt="DFINITY logo" width="270" />
+
 
 
 
