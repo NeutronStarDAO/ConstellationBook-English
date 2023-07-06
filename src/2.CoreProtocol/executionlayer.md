@@ -104,7 +104,7 @@ Since it is a reverse gas model, Canisters pay for their own Gas fees for runnin
 
   In addition, query calls, cross-Canister calls, and Canister management calls do not check the **canister_inspect_message** method.
 
-- When a Canister sends a message to another Canister, it is called a cross-Canister message. The sending Canister must pay for the transmission of the request and the final response. See **here** for operating fees.
+- When a Canister sends a message to another Canister, it is called a cross-Canister message. The sending Canister must pay for the transmission of the request and the final response. See [here](https://github.com/dfinity/ic/blob/master/rs/config/src/subnet_config.rs#L120) for operating fees.
 
   
 
