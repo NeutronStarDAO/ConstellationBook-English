@@ -1,10 +1,10 @@
 [book]
 authors = ["NeutronStarPRO"]
-language = "zh-CN"
+language = "en"
 multilingual = false
 src = "src"
-title = "ICCookbook"
-description = "The IC cookbook for you."
+title = "Constellation Book"
+description = "The constellation book for you."
 
 [rust]
 edition = "2021"
@@ -12,7 +12,8 @@ edition = "2021"
 [output.html]
 additional-css = ["theme/style.css"]
 additional-js = ["assets/custom.js", "assets/bigPicture.js"]
-git-repository-url = "https://github.com/NeutronStarDAO/ICCookBook-English"
+git-repository-url = "https://github.com/NeutronStarDAO/ConstellationBook-English"
+mathjax-support = true
 
 [output.html.playground]
 editable = true
