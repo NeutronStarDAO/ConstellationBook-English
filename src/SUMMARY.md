@@ -1,8 +1,16 @@
-# ICCookbook
-[ICCookbook](./README.md)
-[What is the Blockchain?](./0.JourneytoWeb3/1.md)
-[Journey of the Dream Weaver](./0.JourneytoWeb3/2.md)
-[Navigating the Frontiers of Tomorrow](./0.JourneytoWeb3/0.md)
+# Constellation Book
+- [Constellation Book](./README.md)
+
+
+# Journey of the Dream Weaver
+
+- [Journey of the Dream Weaver](0.JourneytoWeb3/JourneyoftheDreamWeaver.md)
+  - [Future has come](0.JourneytoWeb3/NavigatingtheFrontiersofTomorrow.md)
+  - [Things about Crypto Punks](0.JourneytoWeb3/ThingsaboutCryptoPunks.md)
+  - [What is the Blockchain?](0.JourneytoWeb3/ThingsaboutCryptoPunks.md)
+  - [What is Ethereum?](0.JourneytoWeb3/WhatisEthereum.md)
+  - [Where happened to my privacy on the internet?](0.JourneytoWeb3/Whathappenedtomyprivacyontheinternet.md)
+  - [Bitcoin](0.JourneytoWeb3/Bitcoin.md)
 
 # Overview of IC
 - [Internet Computer](./1.OverviewofIC/1.md)
@@ -10,13 +18,13 @@
 ---
 
 # Core Protocol
-- [Peer-to-peer layer](./2.CoreProtocol/Peer-to-peerLayer.md)
+- [Peer-to-peer layer](./2.CoreProtocol/P2Player.md)
 - [Consensus layer](./2.CoreProtocol/IntroductiontoConsensusLayer.md)
 - [Message routing layer](./2.CoreProtocol/Messageroutinglayer.md)
-- [Execution layer](./2.CoreProtocol/ExecutionLayer.md)
-
-- [Related concepts](./2.CoreProtocol/RelatedConcepts/0.md)
+- [Execution layer](./2.CoreProtocol/executionLayer.md)
+- [Related concepts](./2.CoreProtocol/RelatedConcepts/introduction.md)
   - [How to pick the number of consensus committee?](./2.CoreProtocol/RelatedConcepts/1.md)
+  - [How does P2P layer reduce malicious attack?](./2.CoreProtocol/Relatedconcepts/P2PLayerAndMaliciousAttack.md)
 
 # Chain-Key Cryptography
 

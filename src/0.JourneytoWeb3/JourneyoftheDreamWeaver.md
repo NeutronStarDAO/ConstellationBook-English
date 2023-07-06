@@ -427,7 +427,7 @@ In the decentralized finance (DeFi) field, the IC ecosystem also has some very g
 
 There is also the decentralized NFT market [Yumi](https://tppkg-ziaaa-aaaal-qatrq-cai.raw.ic0.app/). Users can create, buy and trade digital artworks, providing artists and collectors with new opportunities and markets.
 
-The IC ecosystem has already emerged with many impressive Dapps, covering social, finance, NFT markets and wallets, providing rich and diverse experiences and services. As the IC ecosystem continues to grow and innovate, we look forward to more excellent applications. There are more interesting projects waiting for you to discover on the [official website](https://internetcomputer.org/ecosystem).
+The IC ecosystem has already emerged with many impressive Dapps, covering social, finance, NFT markets and wallets, providing rich and diverse experiences and services. As the IC ecosystem continues to grow and innovate, we look forward to more excellent applications. There are more interesting projects waiting for you to discover on the [official website](https://internetcomputer.org/ecosystem).![image-20230704224645360](assets/JourneyoftheDreamWeaver/image-20230704224645360.png)
 
 Switzerland is now a prominent "Crypto Valley", where many well-known blockchain projects have been born. Dfinity is the first completely non-profit foundation here.
 
@@ -481,6 +481,6 @@ Maybe it was just a dream.
 
 Or maybe it was something that could change the world.
 
-<br>
+![image-20230705214715102](assets/JourneyoftheDreamWeaver/image-20230705214715102.png)<br>
 
 <br>
