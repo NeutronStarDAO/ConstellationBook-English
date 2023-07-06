@@ -174,7 +174,7 @@ Next, I need to introduce what the Dfinity team is doing in detail.
 
 ## Point. Line. Surface. Solid!
 
-We know that Bitcoin is the pioneer of blockchain. Bitcoin itself emerged slowly in the long-term pursuit of decentralized currency projects by cypherpunks.
+We know that Bitcoin is the pioneer of blockchain. Bitcoin itself emerged slowly in the long-term pursuit of decentralized currency projects by cypherpunks. Click [here](WhatistheBlockchain.md) to see more about Blockchain.
 
 It created an open ledger system: people from all over the world can join or leave at any time, rely on consensus algorithms to keep everyone's data consistent, and create a co-creation, co-construction, and shared decentralized network. People just need to download the Bitcoin software (downloading the source code and compiling it is also possible), and then start running it on their own machines to join the Bitcoin network. Bitcoin will enable computers around the world to reach a consensus and jointly record every transaction. With everyone's record, the legendary feature of "immutability" in blockchain is achieved, which is actually a matter of majority rule and not being able to cheat everyone.
 
@@ -186,7 +186,7 @@ In the traditional network architecture, user data is indiscriminately stuffed i
 
 So the Bitcoin network can be seen as a "**line**", it connects isolated points into a line, making the internet more fair and open. What Bitcoin does is to combine computers from all over the world to form a huge "**world ledger**". So what if you want to record something else? Just imitate Bitcoin and create a new one!
 
-Six years after the birth of Bitcoin, a "**surface**" that can deploy software on a decentralized network gradually emerged, called Ethereum. Ethereum is not a replica of Bitcoin's world ledger. Ethereum has created a shared and universal virtual "**world computer**", with Ethereum's virtual machine running on everyone's computer. Like the Bitcoin ledger, it is tamper-proof and cannot be modified. Everyone can write software and deploy it on the virtual machine, as long as they pay a bit of ether to the miners. (There are no miners anymore, but that's another article 😋)
+Six years after the birth of Bitcoin, a "**surface**" that can deploy software on a decentralized network gradually emerged, called [Ethereum](WhatisEthereum.md). Ethereum is not a replica of Bitcoin's world ledger. Ethereum has created a shared and universal virtual "**world computer**", with Ethereum's virtual machine running on everyone's computer. Like the Bitcoin ledger, it is tamper-proof and cannot be modified. Everyone can write software and deploy it on the virtual machine, as long as they pay a bit of ether to the miners. (There are no miners anymore, but that's another article 😋)
 
 <img src="https://s1.imagehub.cc/images/2023/01/26/38d3219e513911f18db5c8468841e030.png" alt="image-20230124190858096" style="zoom:27%;" />
 
