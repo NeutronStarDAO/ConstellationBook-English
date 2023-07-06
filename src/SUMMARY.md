@@ -7,7 +7,7 @@
 - [Journey of the Dream Weaver](0.JourneytoWeb3/JourneyoftheDreamWeaver.md)
   - [Future has come](0.JourneytoWeb3/NavigatingtheFrontiersofTomorrow.md)
   - [Things about Crypto Punks](0.JourneytoWeb3/ThingsaboutCryptoPunks.md)
-  - [What is the Blockchain?](0.JourneytoWeb3/ThingsaboutCryptoPunks.md)
+  - [What is the Blockchain?](0.JourneytoWeb3/WhatistheBlockchain.md)
   - [What is Ethereum?](0.JourneytoWeb3/WhatisEthereum.md)
   - [Where happened to my privacy on the internet?](0.JourneytoWeb3/Whathappenedtomyprivacyontheinternet.md)
   - [Bitcoin](0.JourneytoWeb3/Bitcoin.md)
