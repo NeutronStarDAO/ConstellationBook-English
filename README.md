@@ -4,9 +4,9 @@
 
 <img src="assets/README/iclogo.png" align="right" alt="DFINITY logo" width="270" />
 
-If you have only heard of IC but have been busy with Ethereum and Polkadot projects without delving into IC, then you've come to the right place to learn more about it [here](./src/OverviewofIC/OverviewofIC.md)!
+If you have only heard of IC but have been busy with Ethereum and Polkadot projects without delving into IC, then you've come to the right place to learn more about it [here](./src/1.OverviewofIC/OverviewofIC.md)!
 
-If you are still unfamiliar with Web3, blockchain, Bitcoin, and IC, don't worry, start [here](./src/JourneytoWeb3/JourneyoftheDreamWeaver.md). Let me guide you through the history of encryption and quickly get you started in Web3 development!
+If you are still unfamiliar with Web3, blockchain, Bitcoin, and IC, don't worry, start [here](./src/0.JourneytoWeb3/JourneyoftheDreamWeaver.md). Let me guide you through the history of encryption and quickly get you started in Web3 development!
 
 **This project is currently under rapid development...** 
 
