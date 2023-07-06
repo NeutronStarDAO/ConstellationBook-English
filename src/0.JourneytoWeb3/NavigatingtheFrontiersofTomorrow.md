@@ -56,7 +56,7 @@ However, once the infrastructure matures, many of the boasts and dreams of the p
 
 <br>
 
-Blockchains sit at the intersection of three major themes in modern society: technology, finance and democracy. Blockchains are a technology that uses the progress of encryption and computing to "democratize" money and many aspects of our daily lives. Its purpose is to improve the way our economy works, make it easier for us to control our own information, data and ultimately take control of our lives. In this tech age, this is what democracy should look like. We often hear people complain about tech giants (like Apple, Google and Facebook) snooping on our privacy data. The best way to solve this problem and give power back to the people.
+Blockchains sit at the intersection of three major themes in modern society: technology, finance and democracy. Blockchains are a technology that uses the progress of encryption and computing to "democratize" money and many aspects of our daily lives. Its purpose is to improve the way our economy works, make it easier for us to control our own information, data and ultimately take control of our lives. In this tech age, this is what democracy should look like. [We often hear people complain about tech giants (like Apple, Google and Facebook) snooping on our privacy data](Whathappenedtomyprivacyontheinternet.md). The best way to solve this problem and give power back to the people.
 
 Blockchain technology's essence is to reduce the barriers and costs of value exchange between global individuals and machines to almost zero.
 
