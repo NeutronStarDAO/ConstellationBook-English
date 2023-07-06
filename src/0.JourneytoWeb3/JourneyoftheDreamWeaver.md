@@ -116,7 +116,7 @@ Wei Dai wrote in [b-money](http://www.weidai.com/bmoney.txt):
 
 "I am fascinated by Tim May's crypto-anarchy. Unlike the typical understanding of 'anarchy', in a crypto-anarchy the government is not temporarily destroyed but permanently forbidden and unnecessary. It's a community where the threat of violence is impotent because violence is impossible, and violence is impossible because its participants cannot be linked to their true names or physical locations through cryptography". 
 
-Click here to see more about Crypto Punks.
+Click [here](ThingsaboutCryptoPunks.md) to see more about Crypto Punks.
 
 <br>
 
