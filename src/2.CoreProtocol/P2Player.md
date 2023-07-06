@@ -48,7 +48,7 @@ But don't be careless. In order to ensure that each parcel is complete, secure a
 
 Of course, relying solely on hashes is not secure enough. Malicious distribution points may send an advertisement and then send a forged parcel with a hash value that matches the hash value in the advertisement. At this time, the distribution point needs to check that the parcel meets the requirements (for example, check if the parcel has the correct signature) before further processing or forwarding it to other distribution points to ensure that the parcel is secure.
 
-When it is found that the received advertisement has a problem or when joining a new subnet, the distribution point will send a retransmission request to other distribution points. This request can be sent to a specific distribution point or to all distribution points. The request contains information about the current status, and other distribution points can help the distribution point update its status by sending advertisements. Learn more **here**.
+When it is found that the received advertisement has a problem or when joining a new subnet, the distribution point will send a retransmission request to other distribution points. This request can be sent to a specific distribution point or to all distribution points. The request contains information about the current status, and other distribution points can help the distribution point update its status by sending advertisements. Learn more [here](Relatedconcepts/P2PLayerAndMaliciousAttack.md).
 
 
 
