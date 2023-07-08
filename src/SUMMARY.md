@@ -23,7 +23,7 @@
 - [Message routing layer](./2.CoreProtocol/Messageroutinglayer.md)
 - [Execution layer](./2.CoreProtocol/executionLayer.md)
 - [Related concepts](./2.CoreProtocol/RelatedConcepts/introduction.md)
-  - [How to pick the number of consensus committee?](./2.CoreProtocol/RelatedConcepts/HowToPickNumberInConsensus.md)
+  - [How to pick the number of consensus committee?](./2.CoreProtocol/Relatedconcepts/HowToPickNumberInConsensus.md)
   - [How does P2P layer reduce malicious attack?](./2.CoreProtocol/Relatedconcepts/P2PLayerAndMaliciousAttack.md)
 
 # Chain-Key Cryptography
