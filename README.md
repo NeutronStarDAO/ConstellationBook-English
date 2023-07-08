@@ -1,3 +1,17 @@
+# How to run locally
+Please check if Rust and [mdbook](https://rust-lang.github.io/mdBook/) are installed on your computer.
+Then open the directory and use the command line to enter `mdbook serve`.
+
+<br>
+
+The Chinese version of the book predates the English version. After the Chinese version was completed, it was translated into the English version.
+
+If you see any errors in the English version of the book, it has not been changed yet. We will complete the optimization of the English version within the next 2 days.
+
+Especially the bugs in the pictures. If you are interested in images, you can open the Chinese version of the book, translate it into English using a browser, and then find the corresponding image. You can see the latest pictures there.
+
+<br>
+
 # Constellation Book: Your Journey to the Internet Computer
 
 <img src="src/assets/README/Book0.jpg">
