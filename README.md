@@ -1,12 +1,12 @@
 # Constellation Book: Your Journey to the Internet Computer
 
-<img src="src/assets/README/0.jpg">
+<img src="src/assets/README/Book0.jpg">
 
 If you have only heard of IC but have been busy with Ethereum and Polkadot projects without delving into IC, then you've come to the right place to learn more about it [here](./src/1.OverviewofIC/1.md)!
 
 If you are still unfamiliar with Web3, blockchain, Bitcoin, and IC, don't worry, start [here](./src/0.JourneytoWeb3/JourneyoftheDreamWeaver.md). Let me guide you through the history of encryption and quickly get you started in Web3 development!
 
-<img src="assets/README/iclogo.png" alt="DFINITY logo" width="377px" />
+<img src="src/assets/README/iclogo.png" alt="DFINITY logo" width="377px" />
 
 The structure of the "Internet Computer Roaming Guide": the first half is vivid and interesting, and the second half is concise; the first half talks about IC principles, and the second half discusses development in practice.
 
