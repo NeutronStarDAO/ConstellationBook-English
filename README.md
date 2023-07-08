@@ -1,35 +1,41 @@
 # Constellation Book: Your Journey to the Internet Computer
 
-<img src="assets/README/Book0.jpg" alt="Book" />
-
-<img src="assets/README/iclogo.png" align="right" alt="DFINITY logo" width="270" />
+<img src="src/assets/README/0.jpg">
 
 If you have only heard of IC but have been busy with Ethereum and Polkadot projects without delving into IC, then you've come to the right place to learn more about it [here](./src/1.OverviewofIC/1.md)!
 
 If you are still unfamiliar with Web3, blockchain, Bitcoin, and IC, don't worry, start [here](./src/0.JourneytoWeb3/JourneyoftheDreamWeaver.md). Let me guide you through the history of encryption and quickly get you started in Web3 development!
 
-**This project is currently under rapid development...** 
+<img src="assets/README/iclogo.png" alt="DFINITY logo" width="377px" />
 
-## Coming Soon ...
+The structure of the "Internet Computer Roaming Guide": the first half is vivid and interesting, and the second half is concise; the first half talks about IC principles, and the second half discusses development in practice.
 
-<br>
+## Why write this book?
 
-### Why write this book?
-
-Initially, after learning about IC, I collected and organized information from the IC whitepaper, Medium, ICPL Forum, and IC Developer Forum. After explaining the IC architecture to a friend, I told her that I was compiling notes on IC information to share once I finished organizing them. Unexpectedly, it took a year to organize them after a long period of procrastination. Later, after learning more, I finally compiled the first version of my notes. After further study, I thought it would be best to share these notes as an open-source book to help everyone learn about IC and contribute to the IC developer community.
+Initially, after learning about IC, I collected and organized materials from IC whitepapers, Medium, ICPL forums, and IC Developer Forums. After talking to a friend about the IC architecture, I told her that I was organizing notes on IC resources and would share them when they were ready. I didn't expect that it would take a year. After experiencing the long years of procrastination, and with what I learned later, I finally put together the first version of the notes. After a period of further study, I thought it would be better to share these notes. Making it an open-source book helps everyone learn about IC and contributes to the IC developer community.
 
 <br>
 
-### Why make it open source?
+Learn blockchain with zero thresholds and level the learning field for IC.
 
-I love the Rust open-source community, which has many open-source books and projects that have been very helpful to me. I have learned a lot from the Rust open-source community. Projects like Bitcoin, Ethereum, and related ones also have a strong open-source atmosphere, and I hope that the IC community will also have more and more open-source projects for everyone to learn from.
+<img src="src/assets/README/1.jpg">
 
-Additionally, IC's content updates quickly, and open-source contributions help keep the content fresh and up-to-date.
+## Why open source?
+
+I really like the Rust open-source community. There are many open-source books and high-quality projects in the Rust community, which have helped me a lot. I have learned a lot from the Rust open-source community. Projects like Bitcoin, Ethereum, and their related projects also have a strong open-source atmosphere, and I hope that more and more open-source projects will emerge in the IC community for everyone to learn from each other.
 
 <br>
 
+In addition, the IC content is updated and iterated quickly. With open-source, everyone can contribute, keeping the content fresh and up-to-date.
+
 <br>
 
-Join the developer discussion group for this book, make corrections, suggest changes, and contribute to this open-source book together!
+Join the developer discussion group for this book, correct errors, make modifications, suggest improvements, and contribute to the open-source book together!
 
-Discord: https://discord.gg/5Y8QPHvR
+<br>
+
+[OpenChat](https://oc.app/4jwox-pyaaa-aaaar-amjbq-cai/?ref=3iq22-xyaaa-aaaar-amjrq-cai&code=834791b392db154c), [Discord](https://discord.gg/5Y8QPHvR), [Github](https://github.com/NeutronStarDAO/ConstellationBook-English)
+
+<img src="src/assets/README/2.jpg">
+
+<br>
