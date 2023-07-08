@@ -39,10 +39,3 @@ Join the developer discussion group for this book, correct errors, make modifica
 <img src="assets/README/2.jpg">
 
 <br>
-
-
-Join the developer discussion group for this book, make corrections, suggest changes, and contribute to this open-source book together!
-
-<br>
-
-Discord: https://discord.gg/5Y8QPHvR![2](assets/README/2.jpg)
