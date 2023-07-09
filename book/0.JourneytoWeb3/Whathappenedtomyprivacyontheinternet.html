@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Where happened to my privacy on the internet? - Constellation Book</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="The constellation book for you.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/style.css">
+
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="../index.html"><strong aria-hidden="true">1.</strong> Constellation Book</a></li><li class="chapter-item affix "><li class="part-title">Journey of the Dream Weaver</li><li class="chapter-item expanded "><a href="../0.JourneytoWeb3/JourneyoftheDreamWeaver.html"><strong aria-hidden="true">2.</strong> Journey of the Dream Weaver</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../0.JourneytoWeb3/NavigatingtheFrontiersofTomorrow.html"><strong aria-hidden="true">2.1.</strong> Future has come</a></li><li class="chapter-item "><a href="../0.JourneytoWeb3/ThingsaboutCryptoPunks.html"><strong aria-hidden="true">2.2.</strong> Things about Crypto Punks</a></li><li class="chapter-item "><a href="../0.JourneytoWeb3/WhatistheBlockchain.html"><strong aria-hidden="true">2.3.</strong> What is the Blockchain?</a></li><li class="chapter-item "><a href="../0.JourneytoWeb3/WhatisEthereum.html"><strong aria-hidden="true">2.4.</strong> What is Ethereum?</a></li><li class="chapter-item expanded "><a href="../0.JourneytoWeb3/Whathappenedtomyprivacyontheinternet.html" class="active"><strong aria-hidden="true">2.5.</strong> Where happened to my privacy on the internet?</a></li><li class="chapter-item "><a href="../0.JourneytoWeb3/Bitcoin.html"><strong aria-hidden="true">2.6.</strong> Bitcoin</a></li></ol></li><li class="chapter-item "><li class="part-title">Overview of IC</li><li class="chapter-item "><a href="../1.OverviewofIC/1.html"><strong aria-hidden="true">3.</strong> Internet Computer</a></li><li class="spacer"></li><li class="chapter-item affix "><li class="part-title">Core Protocol</li><li class="chapter-item "><a href="../2.CoreProtocol/P2Player.html"><strong aria-hidden="true">4.</strong> Peer-to-peer layer</a></li><li class="chapter-item "><a href="../2.CoreProtocol/IntroductiontoConsensusLayer.html"><strong aria-hidden="true">5.</strong> Consensus layer</a></li><li class="chapter-item "><a href="../2.CoreProtocol/Messageroutinglayer.html"><strong aria-hidden="true">6.</strong> Message routing layer</a></li><li class="chapter-item "><a href="../2.CoreProtocol/executionLayer.html"><strong aria-hidden="true">7.</strong> Execution layer</a></li><li class="chapter-item "><a href="../2.CoreProtocol/RelatedConcepts/introduction.html"><strong aria-hidden="true">8.</strong> Related concepts</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../2.CoreProtocol/Relatedconcepts/HowToPickNumberInConsensus.html"><strong aria-hidden="true">8.1.</strong> How to pick the number of consensus committee?</a></li><li class="chapter-item "><a href="../2.CoreProtocol/Relatedconcepts/P2PLayerAndMaliciousAttack.html"><strong aria-hidden="true">8.2.</strong> How does P2P layer reduce malicious attack?</a></li></ol></li><li class="chapter-item "><li class="part-title">Chain-Key Cryptography</li><li class="chapter-item affix "><li class="part-title">Network Nervous System</li><li class="chapter-item affix "><li class="part-title">Canister</li><li class="chapter-item affix "><li class="part-title">Economic Model</li><li class="chapter-item affix "><li class="part-title">Internet Identity</li><li class="chapter-item affix "><li class="part-title">Cryptography in IC</li><li class="chapter-item affix "><li class="part-title">Dapp Development</li><li class="spacer"></li><li class="chapter-item affix "><a href="../Glossary.html">Glossary</a></li><li class="chapter-item affix "><a href="../Contributors.html">Contributors</a></li><li class="chapter-item affix "><a href="../References.html">References</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Constellation Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/NeutronStarDAO/ConstellationBook-English" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+
+                    // Get viewed page store
+                    var viewed_key = 'mdbook-viewed';
+                    var viewed_map = {};
+                    try {
+                        var viewed_storage = localStorage.getItem(viewed_key);
+                        if (viewed_storage) {
+                            viewed_map = JSON.parse(viewed_storage)
+                        }
+                    } catch (e) { }
+
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                        
+                        // Apply viewed style
+                        if (viewed_map[link.pathname]) {
+                            link.classList.add('md-viewed')
+                        }
+                    }); 
+
+                    // Mark viewed after 30s
+                    setTimeout(function() {
+                        viewed_map[location.pathname] = 1;
+                        localStorage.setItem(viewed_key, JSON.stringify(viewed_map));
+                    }, 30000)
+                </script>
+
+                <div id="content" class="content">
+                    <!-- Page table of contents -->
+                    <div class="sidetoc"><nav class="pagetoc"></nav></div>
+                    <main>
+                        <p>This is a rather serious problem. Although the Internet can store your data, your data will not necessarily be permanently preserved by the Internet. Because now most applications' back-ends are &quot;independent&quot;. Each company has its own maintained servers, either self-built computer rooms or cloud services. All users transmit network information and interact with other users by accessing their servers. Once the company announces service termination, your data will be gone.</p>
+<p>For example, TikTok is like this:</p>
+<p><img src="assets/Whathappenedtomyprivacyontheinternet/QmdntMWgDMfqHCyCzZWfDDrcvwHQoCLempCAk3rCdh3CkH.png" alt="QmdntMWgDMfqHCyCzZWfDDrcvwHQoCLempCAk3rCdh3CkH" /></p>
+<p>Each company's servers provide users with their own network services:</p>
+<p><img src="assets/Whathappenedtomyprivacyontheinternet/QmRbMqtLf8Y7eYWeUdmRxeswrmRRUHLnc5UPMTuaCnBnPH.png" alt="QmRbMqtLf8Y7eYWeUdmRxeswrmRRUHLnc5UPMTuaCnBnPH" /></p>
+<p>While data brings convenience to the information age, it also leads to data abuse, personal privacy leaks, infringement of corporate trade secrets and many other problems. Your data has been dumped into their servers in one swoop. They control the servers and have the final say in how to handle the data in the servers. Although engineers are only responsible for studying AI recommendation algorithms and do not peek at your data. Only AI knows what you like, stored in servers, and there are too many user data to see. But when they want to find someone, the management can still see all kinds of data.</p>
+<p>The data contains your privacy, <strong>what you bought today, what you chatted about, what you like to watch, what you want to eat at night, taste preferences, height and weight when buying clothes, map positioning</strong>... can all be analysed through data. They can completely monitor your every move on the network.</p>
+<p>You may say: Who asked them to see my data! Indecent! Help! Is anyone in charge?</p>
+<p>But I still have to say a fair word. In fact, when you first installed the app, they would let you check a &quot;User Agreement&quot; or more euphemistically called &quot;User Experience Improvement Program&quot;. Although almost no one will read the entire &quot;User Agreement&quot; in full, you have already &quot;agreed&quot; to give them your usage data. Otherwise, you can't use it!😡</p>
+<p>Although on the surface, you agreed to the &quot;User Agreement&quot; first, and then they used your data to improve the experience.</p>
+<p>No one knows what they have done with the data.</p>
+<p>We already know about PRISM, Facebook's leak of hundreds of millions of user data in 2018, Amazon was fined 746 million euros by the EU privacy regulator in July 2020 for violating the EU General Data Protection Regulation, which was also the largest data privacy leak fine in EU history. Domestic takeaway platforms such as Meituan and Ele.me have also been exposed to user information leaks and resales, down to order contents, addresses and other private information; Li Yanhong: Chinese people can be more open to data privacy and are willing to exchange privacy for efficiency...</p>
+<p><img src="assets/Whathappenedtomyprivacyontheinternet/QmakePKSRkDQSQx79BT7PzgqSJzekQ7nz63nG9Sr2coHw5.png" alt="QmakePKSRkDQSQx79BT7PzgqSJzekQ7nz63nG9Sr2coHw5" /></p>
+<p>(Screenshot of Li Yan Hong's claim on the internet:&quot;Users are willing to exchange privacy for efficiency!)</p>
+<p>And they think that unfavorable content to them can be deleted directly without your consent. (Of course, illegal content must be deleted)</p>
+<p>The current situation of the Internet can be said to be: When I open my mobile phone, my apps want to read through my private information. Otherwise, you can't use it.</p>
+<p><img src="assets/Whathappenedtomyprivacyontheinternet/7q6n5u.jpg" alt="7q6n5u" /></p>
+<p>The large-scale disclosure of personal privacy data has become a major global social problem in the era of big data. Internet platforms massively collect user data and centrally store users' personal information for a long time. Once the data is leaked, it will be a large-scale group incident, not only violating the user's right to privacy, infringing on the life and property safety of citizens, but also causing unpredictable economic losses to Internet companies themselves. The negative impact on corporate reputation after data leakage is also difficult to eliminate.</p>
+<p>Just last week, on March 21, 2023, Pinduoduo was forcibly removed from Google Play and prompted existing Pinduoduo users to uninstall it as soon as possible. This was the first time Google prompted users to uninstall an app. Subsequently, the well-known antivirus software laboratory Kaspersky confirmed that Pinduoduo recklessly collected user information by exploiting vulnerabilities in the Android system, cracked system shielding mechanisms, tampered with mobile phone system records, concealed its own whereabouts, ran in the background of the system to monitor mobile phones, evaded system cleanup processes, and read mobile phone input method information.</p>
+<p><img src="assets/Whathappenedtomyprivacyontheinternet/QmTLR4GV6fiZFQb9DEj7MpAC1NRJ2eT4Y9VZ7LbPQf2Joa.png" alt="QmTLR4GV6fiZFQb9DEj7MpAC1NRJ2eT4Y9VZ7LbPQf2Joa" /></p>
+<p>(A famous shopping app in China: Pinduoduo. Had been exposed that they implemented malicious code in users' device for purpose of tracking and collecting users' information)</p>
+<p><img src="assets/Whathappenedtomyprivacyontheinternet/QmQ3RstyXP52LdWbDLdmrLyTKLbz8kkaKeEN3mbsBpRKxV.png" alt="QmQ3RstyXP52LdWbDLdmrLyTKLbz8kkaKeEN3mbsBpRKxV" /></p>
+<blockquote>
+<p>The malicious behaviours and functions of Pinduoduo including:</p>
+<ol>
+<li>Collect user's images and social relationships.</li>
+<li>Install apps in the background when users clicked on certain links</li>
+<li>Reading information from user's phone keyboard.</li>
+<li>Produce fake notifications by hijacking Alarm,wallpaper and calander.</li>
+<li>Making fake icons in the main page which users are unable to uninstall, keep running and consume battery in the background.</li>
+<li>Delete record of access to system information when Pinduoduo's app is running, or a virus detecting app is on.</li>
+<li>Act as communication app such as Wechat and mislead users to run it.</li>
+<li>Stealing message records from communication apps, browser history, ban users from using apps from competitors. </li>
+</ol>
+</blockquote>
+<p>Damn it! It's so hard to store information, it's better to engrave it on stone!</p>
+<p>The essence of this phenomenon lies in the fact that users do not have their own data rights. Your own data, you don't even have the data rights!</p>
+<p>Users should have the right to know how their personal information is collected, used and shared, the right to decide how their personal information is used and shared, and the right to control how their personal information is collected, stored and used. Then if I want to delete some privacy data, hey hey, you don't even know if they will really delete the content you want to delete. They can even hide the information and secretly save it themselves.</p>
+
+                        <div id="giscus-container"></div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../0.JourneytoWeb3/WhatisEthereum.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../0.JourneytoWeb3/Bitcoin.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../0.JourneytoWeb3/WhatisEthereum.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../0.JourneytoWeb3/Bitcoin.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" charset="utf-8">
+        var pagePath = "0.JourneytoWeb3/Whathappenedtomyprivacyontheinternet.md"
+        </script>
+
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../assets/custom.js"></script>
+        <script type="text/javascript" src="../assets/bigPicture.js"></script>
+
+
+    </body>
+</html>

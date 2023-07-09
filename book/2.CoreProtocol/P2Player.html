@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Peer-to-peer layer - Constellation Book</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="The constellation book for you.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/style.css">
+
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="../index.html"><strong aria-hidden="true">1.</strong> Constellation Book</a></li><li class="chapter-item affix "><li class="part-title">Journey of the Dream Weaver</li><li class="chapter-item "><a href="../0.JourneytoWeb3/JourneyoftheDreamWeaver.html"><strong aria-hidden="true">2.</strong> Journey of the Dream Weaver</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../0.JourneytoWeb3/NavigatingtheFrontiersofTomorrow.html"><strong aria-hidden="true">2.1.</strong> Future has come</a></li><li class="chapter-item "><a href="../0.JourneytoWeb3/ThingsaboutCryptoPunks.html"><strong aria-hidden="true">2.2.</strong> Things about Crypto Punks</a></li><li class="chapter-item "><a href="../0.JourneytoWeb3/WhatistheBlockchain.html"><strong aria-hidden="true">2.3.</strong> What is the Blockchain?</a></li><li class="chapter-item "><a href="../0.JourneytoWeb3/WhatisEthereum.html"><strong aria-hidden="true">2.4.</strong> What is Ethereum?</a></li><li class="chapter-item "><a href="../0.JourneytoWeb3/Whathappenedtomyprivacyontheinternet.html"><strong aria-hidden="true">2.5.</strong> Where happened to my privacy on the internet?</a></li><li class="chapter-item "><a href="../0.JourneytoWeb3/Bitcoin.html"><strong aria-hidden="true">2.6.</strong> Bitcoin</a></li></ol></li><li class="chapter-item "><li class="part-title">Overview of IC</li><li class="chapter-item "><a href="../1.OverviewofIC/1.html"><strong aria-hidden="true">3.</strong> Internet Computer</a></li><li class="spacer"></li><li class="chapter-item affix "><li class="part-title">Core Protocol</li><li class="chapter-item expanded "><a href="../2.CoreProtocol/P2Player.html" class="active"><strong aria-hidden="true">4.</strong> Peer-to-peer layer</a></li><li class="chapter-item "><a href="../2.CoreProtocol/IntroductiontoConsensusLayer.html"><strong aria-hidden="true">5.</strong> Consensus layer</a></li><li class="chapter-item "><a href="../2.CoreProtocol/Messageroutinglayer.html"><strong aria-hidden="true">6.</strong> Message routing layer</a></li><li class="chapter-item "><a href="../2.CoreProtocol/executionLayer.html"><strong aria-hidden="true">7.</strong> Execution layer</a></li><li class="chapter-item "><a href="../2.CoreProtocol/RelatedConcepts/introduction.html"><strong aria-hidden="true">8.</strong> Related concepts</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../2.CoreProtocol/Relatedconcepts/HowToPickNumberInConsensus.html"><strong aria-hidden="true">8.1.</strong> How to pick the number of consensus committee?</a></li><li class="chapter-item "><a href="../2.CoreProtocol/Relatedconcepts/P2PLayerAndMaliciousAttack.html"><strong aria-hidden="true">8.2.</strong> How does P2P layer reduce malicious attack?</a></li></ol></li><li class="chapter-item "><li class="part-title">Chain-Key Cryptography</li><li class="chapter-item affix "><li class="part-title">Network Nervous System</li><li class="chapter-item affix "><li class="part-title">Canister</li><li class="chapter-item affix "><li class="part-title">Economic Model</li><li class="chapter-item affix "><li class="part-title">Internet Identity</li><li class="chapter-item affix "><li class="part-title">Cryptography in IC</li><li class="chapter-item affix "><li class="part-title">Dapp Development</li><li class="spacer"></li><li class="chapter-item affix "><a href="../Glossary.html">Glossary</a></li><li class="chapter-item affix "><a href="../Contributors.html">Contributors</a></li><li class="chapter-item affix "><a href="../References.html">References</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Constellation Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/NeutronStarDAO/ConstellationBook-English" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+
+                    // Get viewed page store
+                    var viewed_key = 'mdbook-viewed';
+                    var viewed_map = {};
+                    try {
+                        var viewed_storage = localStorage.getItem(viewed_key);
+                        if (viewed_storage) {
+                            viewed_map = JSON.parse(viewed_storage)
+                        }
+                    } catch (e) { }
+
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                        
+                        // Apply viewed style
+                        if (viewed_map[link.pathname]) {
+                            link.classList.add('md-viewed')
+                        }
+                    }); 
+
+                    // Mark viewed after 30s
+                    setTimeout(function() {
+                        viewed_map[location.pathname] = 1;
+                        localStorage.setItem(viewed_key, JSON.stringify(viewed_map));
+                    }, 30000)
+                </script>
+
+                <div id="content" class="content">
+                    <!-- Page table of contents -->
+                    <div class="sidetoc"><nav class="pagetoc"></nav></div>
+                    <main>
+                        <h1 id="brief-description-of-the-p2p-layer"><a class="header" href="#brief-description-of-the-p2p-layer">Brief Description of the P2P Layer</a></h1>
+<p>The P2P layer is primarily responsible for transmitting protocol messages between replicas within a subnet. These messages include those required to reach consensus, such as block proposals and attestations, as well as ingress messages from the message routing layer. When edge nodes send messages, the P2P layer of the replica receives and broadcasts these messages.</p>
+<p>There are two main types of these messages: one is the signed messages used to reach consensus, and the other is the input messages sent by user clients. For input messages sent by users, the P2P layer will arrange them in order so that the consensus layer can package the data into payloads and generate blocks in order.</p>
+<p><img src="assets/P2Player/1.png" alt="1" /></p>
+<h2 id="artefacts"><a class="header" href="#artefacts">Artefacts</a></h2>
+<p>For example, we have a neutron star express company (IC), and the P2P layer is the distribution network of the express company, responsible for transmitting parcels (information) between distribution points (replicas) in different regions (subnets).</p>
+<p>The P2P layer is a broadcast channel. The design of the P2P layer ensures that if an honest distribution point (replica) broadcasts a message, the message will eventually be received by all honest replicas in the subnet. Even if someone tries to maliciously interfere or the network is occasionally interrupted, the parcel can still be delivered efficiently to the recipient. Even if some replicas fail, it cannot affect the mutual communication between honest replicas.</p>
+<p><img src="assets/P2Player/image-20230706125203576.png" alt="image-20230706125203576" /></p>
+<p>Each distribution point (replica) has some parcels, these parcels are &quot;artefacts&quot;. So each distribution point (replica) has an &quot;artefact pool&quot; to store its own information. Artefacts are the information used by the distribution points to create, verify and reach consensus. This information can be consensus block proposals, user ingress information or response signatures for HTTPS external calls. The distribution points will distribute these parcels to other distribution points so that they all know the status of the subnet.</p>
+<p><img src="assets/P2Player/image-20230706125440848.png" alt="image-20230706125440848" /></p>
+<p>distribution points, the P2P layer is called. This is like a express company manager (such as a component of the consensus layer) notifying the delivery staff that they need to send out a new parcel. For example, now a distribution point (replica) has created a new block proposal and needs to send it to other distribution points in the subnet. Or, for example, a distribution point (replica) receives a parcel from another distribution point and then forwards it elsewhere.</p>
+<h2 id="advertise-request-deliver"><a class="header" href="#advertise-request-deliver">Advertise-Request-Deliver</a></h2>
+<blockquote>
+<p>The P2P layer is responsible for ensuring high throughput, which is more important than low latency.</p>
+<p>However, in the consensus protocol, some messages, especially block proposals, are very large. And according to the consensus protocol, for security reasons, these messages will be repeatedly broadcast by all replicas.</p>
+</blockquote>
+<p>They hope to deliver a large number of parcels as fast as possible (high throughput), but also consider transportation costs (bandwidth).</p>
+<p><img src="assets/P2Player/image-20230706125840480.png" alt="image-20230706125840480" /></p>
+<p>The express company adopts a advertise-request-deliver mechanism to improve efficiency. When a distribution point (replica) has an important parcel (large message) to send, they will not send the parcel directly. Instead, they will send a parcel list (advertisement/Adverts) to inform other distribution points that there is an important parcel. When other distribution points receive this list and confirm that this is the parcel they need, they will actively contact the sending distribution point (request) and request to deliver the parcel (deliver). This process may sacrifice some time (latency), but it can save transportation costs (reduce bandwidth usage). For small parcels (messages), it is not worth sacrificing latency to pursue bandwidth. You can skip the advertisement and send the message directly.</p>
+<blockquote>
+<p>In order to save bandwidth, the P2P layer will create a short message called Advertisements, which is very small and only contains the hash value of the artefact and some metadata. Then these messages are broadcast to other replicas. When other replicas receive the advertisement, they will determine whether they want to download the relevant artefact. If the answer is yes, they will send an explicit request message to the replica that issued the advertisement.</p>
+</blockquote>
+<p><img src="assets/P2Player/image-20230706131135475.png" alt="image-20230706131135475" /></p>
+<p>If this express company operates well and develops into a very large scale, containing many distribution points. At this time, the advertise-request-deliver mechanism can run on an overlay network. In this <strong>overlay network</strong>, each distribution point only sends parcels to their partners (peer nodes/peers). When a distribution point wants to broadcast a parcel, it will first tell the parcel list to its partners. Those partners may request the delivery of the parcel after receiving the list, and under certain conditions, tell the parcel list to their partners. This is like a gossip network, one passes ten, ten passes a hundred. If the number of replicas in the subnet is small, the advertisement will be sent to all replicas in the subnet.</p>
+<p>The express company (P2P network) can effectively reduce transportation costs (bandwidth usage) at the cost of a certain delay, achieving the goal of high throughput. This is very important for an efficient express company (distributed network system).<img src="assets/P2Player/1.png" alt="1" /></p>
+<p>But don't be careless. In order to ensure that each parcel is complete, secure and efficiently delivered, each advertisement contains an integrity hash value, like the barcode of the parcel. After downloading the parcel, the distribution point will check the downloaded content to ensure that it matches the hash value in the advertisement, so as to ensure the integrity of the parcel.</p>
+<p>Of course, relying solely on hashes is not secure enough. Malicious distribution points may send an advertisement and then send a forged parcel with a hash value that matches the hash value in the advertisement. At this time, the distribution point needs to check that the parcel meets the requirements (for example, check if the parcel has the correct signature) before further processing or forwarding it to other distribution points to ensure that the parcel is secure.</p>
+<p>When it is found that the received advertisement has a problem or when joining a new subnet, the distribution point will send a retransmission request to other distribution points. This request can be sent to a specific distribution point or to all distribution points. The request contains information about the current status, and other distribution points can help the distribution point update its status by sending advertisements. Learn more <a href="Relatedconcepts/P2PLayerAndMaliciousAttack.html">here</a>.</p>
+<h2 id="chunks"><a class="header" href="#chunks">Chunks</a></h2>
+<p>Sometimes some parcels (such as state synchronization artefacts) are too large to send as a whole. We can cut them into several small data blocks (Chunks), and then use an advertisement to represent these data blocks.</p>
+<p><img src="assets/P2Player/image-20230706130824275.png" alt="image-20230706130824275" /></p>
+<p>When downloading these data blocks, the distribution point will try to download the corresponding data blocks from multiple distribution points that have issued advertisements. This can speed up the download speed and make better use of bandwidth. Blocked parcels will undergo verification of individual blocks and the whole, and the corresponding distribution points will be responsible for verifying individual blocks.</p>
+<h2 id="re-request"><a class="header" href="#re-request">Re-request</a></h2>
+<p>Courier companies need to ensure that parcels are delivered on time. Sometimes, for some reason, the parcel list (announcement) may have problems during the journey, such as the courier forgetting to scan the bar code of the parcel, the delivery is overdue or the parcel list is lost. Or when new distribution points are added to the subnet.</p>
+<p>At this time, the distribution point needs to send a &quot;re-request&quot;, similar to asking: &quot;Hey, did I miss any parcels? Did I miss any information? Please send it to me again.&quot;</p>
+<p>Other distribution points can send the information he missed to him. Although re-requests are mainly to help distribution points synchronize missed parcels, distribution points will regularly send such requests to ensure accurate parcel delivery.</p>
+<h2 id="transport"><a class="header" href="#transport">Transport</a></h2>
+<p>The core business of courier companies is to transport parcels between locations. The transport component at the P2P layer, which is the transport tool (trucks, airplanes, etc.) of the courier company, is responsible for transporting parcels from one place to another. These means of transport create TLS-based TCP connections between distribution points, and both parties verify their identities with their own private keys. The transport layer protocol will choose appropriate methods according to network conditions, parcel size and other factors to ensure that parcels can be smoothly transported (Transport). The protocol has certain fault tolerance and ability to handle network failures.</p>
+<p>In order for distribution points to know which distribution points they should connect with, courier companies need to maintain a &quot;roster&quot; (NNS Canister registration) containing information about all distribution points. This roster will contain the address of the distribution point and a special identifier for identity verification.</p>
+<blockquote>
+<p>Each replica has its own public key, stored in a place called the &quot;Network Nervous System&quot; (NNS). To prevent DOS attacks, replicas only connect with other replicas in the same subnet. Connections between replicas will be adjusted according to NNS records.</p>
+<p>The NNS registry also contains the latest subnet membership information (which replicas belong to which subnet) and historical information. Replicas query the NNS registry to learn about their own membership, replicas, IP addresses, and public keys. When establishing a TLS connection, replicas can ensure that they only connect to other replicas in the same subnet, enabling two-way identity verification.</p>
+</blockquote>
+<p><img src="assets/P2Player/image-20230706131300134.png" alt="image-20230706131300134" /></p>
+<p>Over time, courier companies may open new distribution points or close some old distribution points. Therefore, the transport component needs to constantly track these changes and accordingly adjust the connections with the distribution points.</p>
+<p>In addition, the transport component also needs to ensure that communication lines are unobstructed and automatically re-establish contact in case of problems. The transport component provides a mechanism to maintain stable connections, can quickly detect connection problems (through heartbeat mechanisms), and automatically re-establish connections when connections are disconnected. When a TCP connection is idle for more than 200 milliseconds, the system will send a heartbeat message. On the receiving end, if no data (including heartbeat messages) is received within 5 seconds, the connection will be disconnected and reconnection will be attempted. This avoids the possibly very long timeout of the TCP protocol, which sometimes occurs when Internet routing changes. After successfully re-establishing the connection, a retransmission request will be sent to the corresponding replica.</p>
+<p>Sometimes, the transport component will also connect with distribution points (replicas) that have just been deleted from the registry until the consensus layer no longer needs such connections.</p>
+<h2 id="summary"><a class="header" href="#summary">Summary</a></h2>
+<p>The P2P layer efficiently transports parcels through the announcement-request-delivery mechanism, while using integrity hash values and other checks to ensure the correctness of parcels. The transport component is responsible for transmitting parcel information between couriers and sorting centers. It uses a method called retransmission request to ensure that no critical information is missed, and performs identity verification and reconnection when needed. It provides an efficient, secure and stable communication basis for information transmission through various mechanisms.</p>
+<h2 id="code-analysis"><a class="header" href="#code-analysis">Code analysis</a></h2>
+<p>//to be done here</p>
+
+                        <div id="giscus-container"></div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../1.OverviewofIC/1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../2.CoreProtocol/IntroductiontoConsensusLayer.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../1.OverviewofIC/1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../2.CoreProtocol/IntroductiontoConsensusLayer.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" charset="utf-8">
+        var pagePath = "2.CoreProtocol/P2Player.md"
+        </script>
+
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../assets/custom.js"></script>
+        <script type="text/javascript" src="../assets/bigPicture.js"></script>
+
+
+    </body>
+</html>

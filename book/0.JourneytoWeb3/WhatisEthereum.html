@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>What is Ethereum? - Constellation Book</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="The constellation book for you.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/style.css">
+
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="../index.html"><strong aria-hidden="true">1.</strong> Constellation Book</a></li><li class="chapter-item affix "><li class="part-title">Journey of the Dream Weaver</li><li class="chapter-item expanded "><a href="../0.JourneytoWeb3/JourneyoftheDreamWeaver.html"><strong aria-hidden="true">2.</strong> Journey of the Dream Weaver</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../0.JourneytoWeb3/NavigatingtheFrontiersofTomorrow.html"><strong aria-hidden="true">2.1.</strong> Future has come</a></li><li class="chapter-item "><a href="../0.JourneytoWeb3/ThingsaboutCryptoPunks.html"><strong aria-hidden="true">2.2.</strong> Things about Crypto Punks</a></li><li class="chapter-item "><a href="../0.JourneytoWeb3/WhatistheBlockchain.html"><strong aria-hidden="true">2.3.</strong> What is the Blockchain?</a></li><li class="chapter-item expanded "><a href="../0.JourneytoWeb3/WhatisEthereum.html" class="active"><strong aria-hidden="true">2.4.</strong> What is Ethereum?</a></li><li class="chapter-item "><a href="../0.JourneytoWeb3/Whathappenedtomyprivacyontheinternet.html"><strong aria-hidden="true">2.5.</strong> Where happened to my privacy on the internet?</a></li><li class="chapter-item "><a href="../0.JourneytoWeb3/Bitcoin.html"><strong aria-hidden="true">2.6.</strong> Bitcoin</a></li></ol></li><li class="chapter-item "><li class="part-title">Overview of IC</li><li class="chapter-item "><a href="../1.OverviewofIC/1.html"><strong aria-hidden="true">3.</strong> Internet Computer</a></li><li class="spacer"></li><li class="chapter-item affix "><li class="part-title">Core Protocol</li><li class="chapter-item "><a href="../2.CoreProtocol/P2Player.html"><strong aria-hidden="true">4.</strong> Peer-to-peer layer</a></li><li class="chapter-item "><a href="../2.CoreProtocol/IntroductiontoConsensusLayer.html"><strong aria-hidden="true">5.</strong> Consensus layer</a></li><li class="chapter-item "><a href="../2.CoreProtocol/Messageroutinglayer.html"><strong aria-hidden="true">6.</strong> Message routing layer</a></li><li class="chapter-item "><a href="../2.CoreProtocol/executionLayer.html"><strong aria-hidden="true">7.</strong> Execution layer</a></li><li class="chapter-item "><a href="../2.CoreProtocol/RelatedConcepts/introduction.html"><strong aria-hidden="true">8.</strong> Related concepts</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../2.CoreProtocol/Relatedconcepts/HowToPickNumberInConsensus.html"><strong aria-hidden="true">8.1.</strong> How to pick the number of consensus committee?</a></li><li class="chapter-item "><a href="../2.CoreProtocol/Relatedconcepts/P2PLayerAndMaliciousAttack.html"><strong aria-hidden="true">8.2.</strong> How does P2P layer reduce malicious attack?</a></li></ol></li><li class="chapter-item "><li class="part-title">Chain-Key Cryptography</li><li class="chapter-item affix "><li class="part-title">Network Nervous System</li><li class="chapter-item affix "><li class="part-title">Canister</li><li class="chapter-item affix "><li class="part-title">Economic Model</li><li class="chapter-item affix "><li class="part-title">Internet Identity</li><li class="chapter-item affix "><li class="part-title">Cryptography in IC</li><li class="chapter-item affix "><li class="part-title">Dapp Development</li><li class="spacer"></li><li class="chapter-item affix "><a href="../Glossary.html">Glossary</a></li><li class="chapter-item affix "><a href="../Contributors.html">Contributors</a></li><li class="chapter-item affix "><a href="../References.html">References</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Constellation Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/NeutronStarDAO/ConstellationBook-English" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+
+                    // Get viewed page store
+                    var viewed_key = 'mdbook-viewed';
+                    var viewed_map = {};
+                    try {
+                        var viewed_storage = localStorage.getItem(viewed_key);
+                        if (viewed_storage) {
+                            viewed_map = JSON.parse(viewed_storage)
+                        }
+                    } catch (e) { }
+
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                        
+                        // Apply viewed style
+                        if (viewed_map[link.pathname]) {
+                            link.classList.add('md-viewed')
+                        }
+                    }); 
+
+                    // Mark viewed after 30s
+                    setTimeout(function() {
+                        viewed_map[location.pathname] = 1;
+                        localStorage.setItem(viewed_key, JSON.stringify(viewed_map));
+                    }, 30000)
+                </script>
+
+                <div id="content" class="content">
+                    <!-- Page table of contents -->
+                    <div class="sidetoc"><nav class="pagetoc"></nav></div>
+                    <main>
+                        <p>Ethereum is a decentralized platform that allows developers to build various applications on top of it. You can imagine it as a global computer that does not rely on any central server. This computer runs smart contracts - programs that automatically execute predetermined tasks.</p>
+<p>First, you can imagine it as a giant computer that can run all sorts of applications. But this computer is not a physical entity, but a virtual network maintained by many people. These people, whom we call &quot;nodes&quot;, are distributed all over the world and collectively maintain the Ethereum network.</p>
+<p>So what's the difference between Ethereum and computers we commonly use? The biggest difference is that Ethereum is decentralized. That means data is not stored on a central server, but distributed across many different nodes. This makes the data difficult to tamper with and attack because an attacker would need to compromise thousands of nodes simultaneously.</p>
+<p>Now we know Ethereum is a decentralized and giant computer. So how do we run applications on this computer? The applications running on Ethereum are called smart contracts. A smart contract is essentially a piece of program code that executes automatically when certain conditions are met. This automatic execution feature makes smart contracts applicable in many fields like finance, gaming, and voting.</p>
+<p>As a simple example, we can use a smart contract to implement an automatic payment system. For example, you need to pay someone but you want to pay only after they complete a task. You can deposit the money into the smart contract and set a trigger condition. When the other party completes the task, the smart contract will automatically transfer the money to them. This way you don't have to worry about them taking the money without doing the work or you forgetting to pay.</p>
+<p>In order to run smart contracts on Ethereum, we need a digital currency as &quot;fuel&quot;. This currency is called &quot;Ether&quot; (ETH for short). Every time we execute an operation on Ethereum, we need to consume a certain amount of Ether. This Ether is awarded to the nodes that maintain the Ethereum network as a reward. This process is called &quot;mining&quot;.</p>
+<p>Smart contracts on Ethereum can not only perform simple transfers, they can also create an entirely new digital currency, which we call a token. Tokens can represent anything, like stocks, points, properties, etc. Through smart contracts, we can easily issue our own tokens on Ethereum and then use these tokens to transact.</p>
+<p>There are many types of tokens on Ethereum, the most common being ERC-20 tokens. ERC-20 tokens are tokens that follow a uniform standard, which specifies how the tokens are created and transacted. With this standard, different tokens can interexchange and transact with each other, just like fiat currencies from different countries can still be exchanged.</p>
+<p>In addition to ERC-20 tokens, there is also a token standard called ERC-721. These tokens are unique in that they represent unique and non-fungible assets. These assets can be artwork, collectibles, properties, etc. With ERC-721 tokens, we can transact unique assets on Ethereum without worries of forgery or replication. This is also why many crypto arts and collectibles are traded on Ethereum.</p>
+<p>So what are the practical applications of Ethereum? In fact, Ethereum has had an impact in many fields. For example:</p>
+<p>Ethereum can be used for financial services. Through smart contracts, we can create decentralized financial products such as lending, insurance, and derivatives. These financial products do not require intermediaries, so they can reduce costs and improve efficiency. At the same time, the transparency of smart contracts can also reduce the risk of fraud.</p>
+<p>Ethereum can be used for supply chain management. Through smart contracts, we can track information about the source and distribution channels of goods in real time. This allows consumers to ensure that the products they buy are genuine and reliable, and allows companies to better monitor supply chains and improve efficiency.</p>
+<p>Ethereum can also be used for identity authentication. Through smart contracts, we can create a decentralized identity system that allows users to share authentication information across different platforms. This way, users do not have to resubmit their personal information each time, while still being able to protect their privacy.</p>
+<p>Although Ethereum has many advantages, it also has some limitations. For example, Ethereum's current transaction speed and scalability still needs to improve. In order to solve these problems, the Ethereum team is carrying out a series of upgrades. Ethereum 2.0 aims to address the performance bottlenecks and scalability issues in Ethereum 1.0. This upgrade will have the following impacts on Ethereum's performance:</p>
+<ol>
+<li>Higher throughput: Ethereum 1.0's current transaction processing speed is limited to around 30 transactions per second. Ethereum 2.0 introduces sharding technology, which splits the network into multiple independent sub-chains, greatly improving the overall network's transaction processing capability. Ethereum 2.0's throughput is expected to reach thousands of transactions per second.</li>
+<li>Lower latency: In Ethereum 1.0, each block takes about 15 seconds to produce. This means that users have to wait for their transactions to be confirmed. Ethereum 2.0 will adopt a new consensus mechanism to reduce block time and thus reduce users' waiting time for transaction confirmation.</li>
+<li>More eco-friendly consensus mechanism: Ethereum 1.0 uses the energy-intensive Proof of Work (PoW) consensus mechanism. Ethereum 2.0 will gradually transition to the more eco-friendly and efficient Proof of Stake (PoS) consensus mechanism. Under the PoS mechanism, validating nodes (validators) have to stake a certain amount of Ether as collateral to gain block production rights, which reduces energy consumption and improves network security.</li>
+<li>Higher security: Ethereum 2.0 introduces a new role called &quot;validators,&quot; which replaces the miners in Ethereum 1.0. By requiring validators to stake a certain amount of Ether to participate in consensus, it becomes more costly to attack the Ethereum 2.0 network, thus improving security.</li>
+<li>Higher scalability: Ethereum 2.0's sharding technology and other optimizations can improve the network's scalability.</li>
+</ol>
+<p>While Ethereum has brought many innovations to the blockchain world, it still has some shortcomings, mainly including the following points:</p>
+<ol>
+<li><strong>Scalability issues</strong>: Although Ethereum has upgraded its scalability, this does not mean that the scalability issue is permanently solved. This is not a one-time engineering effort, if the number of users continues to increase, engineers still need to further scale and improve Ethereum.</li>
+<li><strong>Transaction fees are still relatively high</strong>: Because Ethereum's processing capacity is limited, users usually have to pay higher fees for their transactions to be processed faster. This has led to expensive transaction fees on Ethereum, making it difficult for some users and developers to bear. During network congestion, transaction confirmation may take a long time, which can also lead to rising transaction fees.</li>
+<li><strong>Centralization issues</strong>: Although the original intent of blockchain is decentralization, traditional blockchain technology has some degree of centralization issues, which gives some nodes too much control over the entire network, bringing security and manipulation risks.</li>
+<li><strong>Privacy protection issues</strong>: Traditional blockchain technology has privacy protection issues. Once transaction data is recorded on the blockchain, it will be permanently saved, which will pose a great risk of privacy leakage.</li>
+<li><strong>Development and maintenance costs</strong>: Building and maintaining blockchain applications may require high development and operational costs. In addition, the constant development of blockchain technology means that developers need to continually update and optimize existing applications.</li>
+</ol>
+<p>Compared to Ethereum, IC has the following features that can solve some of Ethereum's issues:</p>
+<ol>
+<li><strong>Infinite scalability</strong>: IC uses a technology called &quot;Chain Key&quot; that allows the network to run more efficiently. IC also divides the network into many subnets, each subnet handling a portion of messages.This greatly improves the network's processing capability to better cope with high transaction volume.</li>
+<li><strong>Lower transaction fees</strong>: Due to IC's better scalability, the network can process more transactions, meaning users no longer need to pay high fees to speed up transactions. Therefore, Dfinity's transaction fees will be relatively low.</li>
+<li><strong>Consensus algorithm</strong>: IC uses a consensus algorithm called PoUW, which is a random consensus algorithm based on BLS threshold signatures. Compared to other Proof-of-stake (PoS) or Proof-of-work (PoW) systems, PoUW aims to provide higher security and performance.</li>
+<li><strong>Scalability and performance</strong>: IC's design gives it a high degree of scalability and performance. Through adopting a tiered architecture, subnets and parallel processing technologies, IC's Internet Computer can support a large number of concurrent transactions and smart contract executions. IC's goal is to achieve higher throughput and lower latency compared to other public chains.</li>
+<li><strong>Interoperability</strong>: IC's Internet Computer is designed to be a platform that supports various decentralized applications and services. Although interoperability is not its primary focus, IC's design allows developers to easily build and deploy various applications on the Internet Computer, thereby enabling interoperability across applications.</li>
+<li><strong>Simpler development process and easier maintenance</strong>: IC aims to lower the learning cost and development difficulty for developers. It allows developers to write smart contracts using more familiar programming languages. This makes it easier for developers to get started and develop decentralized applications.</li>
+<li><strong>Better security</strong>: IC also provides a network autonomy mechanism whereby the network can self-repair and upgrade, which helps improve the overall security and stability of the network.</li>
+<li><strong>Security and decentralization</strong>: IC's consensus algorithm and network design aims to achieve a high degree of security and decentralization. Compared to other public chains, IC uses some innovative technologies such as threshold relays and distributed key generation to improve the network's resistance to attacks.</li>
+<li><strong>Developer experience</strong>: IC provides a set of friendly development tools and resources, including the Motoko programming language and SDK. Code debugging can also be done locally without the need for a testnet. This makes it easier for developers to build and deploy applications to the Internet Computer. Compared to other public chains, IC is committed to simplifying the development process of decentralized applications.</li>
+</ol>
+<p>IC aims to become an infinitely scalable, decentralized global compute infrastructure. <strong>IC's goal and vision</strong>: IC's goal is to create a new type of Internet infrastructure that can support various decentralized applications while having high scalability, security and performance. Like other public chains, IC is committed to solving the limitations of traditional blockchain technology; but its vision is to create a larger Internet ecosystem, not just a blockchain platform.</p>
+
+                        <div id="giscus-container"></div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../0.JourneytoWeb3/WhatistheBlockchain.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../0.JourneytoWeb3/Whathappenedtomyprivacyontheinternet.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../0.JourneytoWeb3/WhatistheBlockchain.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../0.JourneytoWeb3/Whathappenedtomyprivacyontheinternet.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" charset="utf-8">
+        var pagePath = "0.JourneytoWeb3/WhatisEthereum.md"
+        </script>
+
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../assets/custom.js"></script>
+        <script type="text/javascript" src="../assets/bigPicture.js"></script>
+
+
+    </body>
+</html>

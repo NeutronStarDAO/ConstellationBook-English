@@ -4,21 +4,21 @@ The P2P layer is primarily responsible for transmitting protocol messages betwee
 
 There are two main types of these messages: one is the signed messages used to reach consensus, and the other is the input messages sent by user clients. For input messages sent by users, the P2P layer will arrange them in order so that the consensus layer can package the data into payloads and generate blocks in order.
 
-![1](assets/P2Player/1.png)
+<img src="assets/P2Player/image-20230709112450955.png" style="zoom:40%;" />
 
 
 
 ## Artefacts
 
-For example, we have a neutron star express company (IC), and the P2P layer is the distribution network of the express company, responsible for transmitting parcels (information) between distribution points (replicas) in different regions (subnets).
+For example, we have a neutron star express company (IC), and the P2P layer is the distribution network of the express company, responsible for transmitting parcels (information) between distribution points (replicas) in different regions (subnets). 
 
-The P2P layer is a broadcast channel. The design of the P2P layer ensures that if an honest distribution point (replica) broadcasts a message, the message will eventually be received by all honest replicas in the subnet. Even if someone tries to maliciously interfere or the network is occasionally interrupted, the parcel can still be delivered efficiently to the recipient. Even if some replicas fail, it cannot affect the mutual communication between honest replicas.
+The P2P layer is a broadcast channel. The design of the P2P layer ensures that if an honest distribution point (replica) broadcasts a message, the message will eventually be received by all honest replicas in the subnet. Even if someone tries to maliciously interfere or the network is occasionally interrupted, the parcel can still be delivered efficiently to the recipient. Even if some replicas fail, it cannot affect the mutual communication between honest replicas. 
 
-![image-20230706125203576](assets/P2Player/image-20230706125203576.png)
+<img src="assets/P2Player/2023-06-12-2125.png" style="zoom:50%;" />
 
 Each distribution point (replica) has some parcels, these parcels are "artefacts". So each distribution point (replica) has an "artefact pool" to store its own information. Artefacts are the information used by the distribution points to create, verify and reach consensus. This information can be consensus block proposals, user ingress information or response signatures for HTTPS external calls. The distribution points will distribute these parcels to other distribution points so that they all know the status of the subnet.
 
-![image-20230706125440848](assets/P2Player/image-20230706125440848.png)
+<img src="assets/P2Player/23-06-12-2125.png" alt="23-06-12-2125" style="zoom:50%;" />
 
 distribution points, the P2P layer is called. This is like a express company manager (such as a component of the consensus layer) notifying the delivery staff that they need to send out a new parcel. For example, now a distribution point (replica) has created a new block proposal and needs to send it to other distribution points in the subnet. Or, for example, a distribution point (replica) receives a parcel from another distribution point and then forwards it elsewhere.
 
@@ -32,17 +32,19 @@ distribution points, the P2P layer is called. This is like a express company man
 
 They hope to deliver a large number of parcels as fast as possible (high throughput), but also consider transportation costs (bandwidth).
 
-![image-20230706125840480](assets/P2Player/image-20230706125840480.png)
+<img src="assets/P2Player/2-2125.png" alt="2-2125" style="zoom:50%;" />
 
 The express company adopts a advertise-request-deliver mechanism to improve efficiency. When a distribution point (replica) has an important parcel (large message) to send, they will not send the parcel directly. Instead, they will send a parcel list (advertisement/Adverts) to inform other distribution points that there is an important parcel. When other distribution points receive this list and confirm that this is the parcel they need, they will actively contact the sending distribution point (request) and request to deliver the parcel (deliver). This process may sacrifice some time (latency), but it can save transportation costs (reduce bandwidth usage). For small parcels (messages), it is not worth sacrificing latency to pursue bandwidth. You can skip the advertisement and send the message directly.
 
 > In order to save bandwidth, the P2P layer will create a short message called Advertisements, which is very small and only contains the hash value of the artefact and some metadata. Then these messages are broadcast to other replicas. When other replicas receive the advertisement, they will determine whether they want to download the relevant artefact. If the answer is yes, they will send an explicit request message to the replica that issued the advertisement.
 
-![image-20230706131135475](assets/P2Player/image-20230706131135475.png)
+<img src="assets/P2Player/image-20230709111757557.png" alt="image-20230709111757557" style="zoom:50%;" />
 
 If this express company operates well and develops into a very large scale, containing many distribution points. At this time, the advertise-request-deliver mechanism can run on an overlay network. In this **overlay network**, each distribution point only sends parcels to their partners (peer nodes/peers). When a distribution point wants to broadcast a parcel, it will first tell the parcel list to its partners. Those partners may request the delivery of the parcel after receiving the list, and under certain conditions, tell the parcel list to their partners. This is like a gossip network, one passes ten, ten passes a hundred. If the number of replicas in the subnet is small, the advertisement will be sent to all replicas in the subnet.
 
-The express company (P2P network) can effectively reduce transportation costs (bandwidth usage) at the cost of a certain delay, achieving the goal of high throughput. This is very important for an efficient express company (distributed network system).![1](assets/P2Player/1.png)
+The express company (P2P network) can effectively reduce transportation costs (bandwidth usage) at the cost of a certain delay, achieving the goal of high throughput. This is very important for an efficient express company (distributed network system).
+
+<img src="assets/P2Player/023-06-12-2125.png" alt="023-06-12-2125" style="zoom:50%;" />
 
 But don't be careless. In order to ensure that each parcel is complete, secure and efficiently delivered, each advertisement contains an integrity hash value, like the barcode of the parcel. After downloading the parcel, the distribution point will check the downloaded content to ensure that it matches the hash value in the advertisement, so as to ensure the integrity of the parcel.
 
@@ -56,7 +58,7 @@ When it is found that the received advertisement has a problem or when joining a
 
 Sometimes some parcels (such as state synchronization artefacts) are too large to send as a whole. We can cut them into several small data blocks (Chunks), and then use an advertisement to represent these data blocks.
 
-![image-20230706130824275](assets/P2Player/image-20230706130824275.png)
+<img src="assets/P2Player/image-20230706130824275.png" alt="image-20230706130824275" style="zoom:50%;" />
 
 When downloading these data blocks, the distribution point will try to download the corresponding data blocks from multiple distribution points that have issued advertisements. This can speed up the download speed and make better use of bandwidth. Blocked parcels will undergo verification of individual blocks and the whole, and the corresponding distribution points will be responsible for verifying individual blocks.
 
@@ -82,7 +84,7 @@ In order for distribution points to know which distribution points they should c
 >
 > The NNS registry also contains the latest subnet membership information (which replicas belong to which subnet) and historical information. Replicas query the NNS registry to learn about their own membership, replicas, IP addresses, and public keys. When establishing a TLS connection, replicas can ensure that they only connect to other replicas in the same subnet, enabling two-way identity verification.
 
-![image-20230706131300134](assets/P2Player/image-20230706131300134.png)
+<img src="assets/P2Player/125.png" alt="125" style="zoom:37%;" />
 
 Over time, courier companies may open new distribution points or close some old distribution points. Therefore, the transport component needs to constantly track these changes and accordingly adjust the connections with the distribution points.
 
@@ -97,7 +99,3 @@ Sometimes, the transport component will also connect with distribution points (r
 The P2P layer efficiently transports parcels through the announcement-request-delivery mechanism, while using integrity hash values and other checks to ensure the correctness of parcels. The transport component is responsible for transmitting parcel information between couriers and sorting centers. It uses a method called retransmission request to ensure that no critical information is missed, and performs identity verification and reconnection when needed. It provides an efficient, secure and stable communication basis for information transmission through various mechanisms.
 
 
-
-## Code analysis
-
-//to be done here
