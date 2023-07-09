@@ -26,7 +26,7 @@ After comparing HBase, Cassandra, and other databases, Dominic chose the early C
 
 Dominic wanted to connect millions of users worldwide through a distributed system, which was a significant innovation at the time. After several test runs, the game was officially launched on New Year's Day in 2011, and in just two weeks, it gained 30,000 users, skyrocketing to 300,000 users in just a few months.
 
-![c84b1d3c76e8d4f51a2189ca557f2e4c-1674887452158-1](assets/JourneyoftheDreamWeaver/c84b1d3c76e8d4f51a2189ca557f2e4c-1674887452158-1.jpg)
+<img src="assets/JourneyoftheDreamWeaver/c84b1d3c76e8d4f51a2189ca557f2e4c-1674887452158-1.jpg" alt="c84b1d3c76e8d4f51a2189ca557f2e4c-1674887452158-1" style="zoom:35%;" />
 
 The team achieved remarkable success in scaling up their business despite having a meager budget. However, they had overlooked one crucial factor - the development of a large-scale online game required an army of specialists, including Flash developers, database administrators, network engineers, payment system experts, operations and maintenance personnel, complexity analysts, cartoon artists, sound engineers, music composers, animation experts, advertising gurus, and more.
 
@@ -52,7 +52,7 @@ Was it because they weren't working hard enough?
 
 Since Cassandra was also in early development, at the end of 2011, due to bugs in Cassandra beta code, Fight My Monster's user data was almost lost. It took several days and nights of work from Cassandra senior engineers and Dominic's team to save the data, ultimately resolving this horrific incident.
 
-![e2727ae940125d7ce368730cda151745](assets/JourneyoftheDreamWeaver/e2727ae940125d7ce368730cda151745.png)
+<img src="assets/JourneyoftheDreamWeaver/e2727ae940125d7ce368730cda151745.png" alt="e2727ae940125d7ce368730cda151745" style="zoom:33%;" />
 
 <br>
 
@@ -66,7 +66,7 @@ The team relied heavily on him, and his workload became overwhelmingly heavy - a
 
 Dominic's photos.
 
-<img src="https://s1.imagehub.cc/images/2023/01/26/d5fa82e6a76e2272bcdad16a8cf7692c.jpeg" alt="Image" style="zoom:32%;" />
+<img src="https://s1.imagehub.cc/images/2023/01/26/d5fa82e6a76e2272bcdad16a8cf7692c.jpeg" alt="Image" style="zoom: 33%;" />
 
 <br>
 
@@ -90,7 +90,7 @@ From a financial return perspective, Fight My Monster was a failure, with the us
 
 However, this experience was very valuable, and the most precious part was finding a group of capable colleagues who were also obsessed with the distributed system that Dominic loved. Dominic admired Fight My Monster's designer Jon Ball, who was always able to create a bunch of beautiful models using the team's design system, and later set the record for the highest ad viewing rate. There was also Aaron Morton, the Cassandra engineer who said "We work together, believe each other", who worked with Dominic to build the "engine" behind the game - a distributed database. 
 
-<img src="https://s1.imagehub.cc/images/2023/01/26/c509771324246de22e736b76c24b2343.png" alt="image-20230124164720298" style="zoom:37%;" />
+<img src="https://s1.imagehub.cc/images/2023/01/26/c509771324246de22e736b76c24b2343.png" alt="image-20230124164720298" style="zoom: 37%;" />
 
 In hindsight, Dominic's Flash game was no longer popular as people were gradually shifting towards mobile games and tablets. In 2010, Steve Jobs announced that Apple would no longer support Flash on its devices due to its impact on device performance. Additionally, due to frequent security vulnerabilities, BBC published an article titled "How much longer can Flash survive?" Shortly after, Adobe announced that it was abandoning the Flash project and switching to Animate for professional animation.
 

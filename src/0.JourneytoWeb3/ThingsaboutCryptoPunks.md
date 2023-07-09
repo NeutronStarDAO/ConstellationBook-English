@@ -25,7 +25,7 @@ The basic position of "anarchism" is to oppose all forms of domination and autho
 - Then, when there are a large number of "profitable" organizations, someone will stand up to protect everyone. The emergence of violent organizations to prevent violence - the army. Everyone pays a little money (taxes) in exchange for protection. People form governments to provide protection services more efficiently. People deposit their money in banks because banks can provide protection: vaults, safe deposit boxes, security guards, police, etc. This system relies on the government to operate, banks, police, either accept government regulation or are established by the government. My money is not on me, it's in the bank, haha you can't rob it.
 - In this way, two large organizations (governments) will engage in larger-scale wars due to collective interest conflicts if the benefits outweigh the costs of launching the war. Recruit more armies to protect collective property...The violent conflicts become larger and larger, where is the peace? Nuclear deterrence.
 
-![image-20230622122919949](assets/ThingsaboutCryptoPunks/image-20230622122919949.png)
+<img src="assets/ThingsaboutCryptoPunks/image-20230622122919949.png" alt="image-20230622122919949" style="zoom:25%;" />
 
 By the 21st century, people's property, including social and entertainment, gradually shifted to the Internet. So the organizations that protect people's property also migrated online: online banks, Alipay.
 
@@ -89,7 +89,7 @@ Cypherpunks remain vigilant about these threats. They are trying to weaken the g
 
 In the eyes of cypherpunks, the main problem of the Internet age is that governments and companies have become too powerful, posing a serious threat to individual privacy. In addition, the US government and companies abuse their power and status, charging consumers too much and imposing heavy taxes. The answer lies in decentralizing power—distributing power and decision making from a few to many. But before Bitcoin appeared, it was unclear how to achieve this, and Satoshi Nakamoto provided the solution.
 
-![OIG](assets/ThingsaboutCryptoPunks/OIG.jpeg)
+<img src="assets/ThingsaboutCryptoPunks/OIG.jpeg" alt="OIG" style="zoom:30%;" />
 
 Is Bitcoin absolutely safe? Of course not. If you want to rob someone's Bitcoin, put a knife to his throat and ask him to hand over the private key. Whoever has the private key owns the Bitcoin. The encryption algorithm only recognizes the private key. This is the charm of decentralization. **We believe in Bitcoin not because Satoshi Nakamoto will not sell his huge amount of Bitcoin, but because we believe in individual sovereignty and cryptography.**
 
@@ -99,19 +99,19 @@ However, Satoshi Nakamoto had an amazing vision for the development of this tech
 
 At the same time, Satoshi Nakamoto was also worried about the consequences he brought to the world. He worried about how governments would deal with his virtual currency. When blockchain users pushed WikiLeaks to use Bitcoin to avoid government sanctions, Satoshi Nakamoto strongly opposed it, saying: "You would likely do more harm than good at this point." He was also worried about the emergence of super miners. He wrote: "We should have an gentleman's agreement to postpone the GPU arms race as long as we can for the good of the network." His biggest concern may have been network security. After detailing improvements to virtual currencies, he summarized in his last public message: "There are still more ways to attack than I can calculate."
 
-The mystery surrounding Satoshi Nakamoto will only increase people's curiosity about him and his technology. Although journalists have tried their best to uncover his mysterious veil, we may never know who he is. Satoshi Nakamoto is like a star shining in the middle of the night, always twinkling in our sight but unattainable. **This is very punk and poetic. The inventor of Bitcoin refuses to become the center of his invention.** Blockchain technology is a technology that removes trusted intermediaries from our lives and empowers everyone. He refused to become the focus of people's attention. The success or failure of the blockchain must depend on its own advantages - relying on the characteristics of the technology itself and the efforts of users to make it work.
+The mystery surrounding Satoshi Nakamoto will only increase people's curiosity about him and his technology. Although journalists have tried their best to uncover his mysterious veil, we may never know who he is. Satoshi Nakamoto is like a star shining in the middle of the night, always twinkling in our sight but unattainable. **This is very punk and poetic. The inventor of Bitcoin refuses to become the centre of his invention.** Blockchain technology is a technology that removes trusted intermediaries from our lives and empowers everyone. He refused to become the focus of people's attention. The success or failure of the blockchain must depend on its own advantages - relying on the characteristics of the technology itself and the efforts of users to make it work.
 
 Satoshi Nakamoto's idea may be quite innovative, but the rise of Bitcoin was not inevitable. Bitcoin was born against the backdrop of the 2008 financial crisis. The financial crisis swept the globe, and no country could stand alone. Fiat currencies became unreliable. Satoshi Nakamoto and his supporters often pleaded over and over again to convince others to believe in Bitcoin. They often said one sentence: Imagine if Bitcoin became the world's currency. Imagine how much each Bitcoin would be worth then! And all you have to do is download the software and run it on your home computer to earn hundreds of them. Of course, most people believed that this was a pyramid scam under Satoshi Nakamoto's tireless efforts.
 
 But it did not prevent some tech geeks from becoming interested in Bitcoin eventually. Satoshi Nakamoto's efforts paid off, and people began to use and accept Bitcoin in the real world. Then on May 22, 2010, programmer Laszlo Hanyecz bought 2 boxes of pizza for 10,000 bitcoins.
 
-![v2-78c9d1428dbc9b7dd0ea56ad20ab40f0_1440w](assets/ThingsaboutCryptoPunks/v2-78c9d1428dbc9b7dd0ea56ad20ab40f0_1440w.webp)
+<img src="assets/ThingsaboutCryptoPunks/v2-78c9d1428dbc9b7dd0ea56ad20ab40f0_1440w.webp" alt="v2-78c9d1428dbc9b7dd0ea56ad20ab40f0_1440w" style="zoom:50%;" />
 
 Then, fundamental changes began to happen in the entire Internet world: once people started using Bitcoin in the real world, an ecosystem surrounding Bitcoin emerged. Cryptocurrency exchanges like Mt.Gox, Binance, and Coinbase were born to make it easier for people to buy and sell this currency. To solve the difficult mathematical problems behind the currency, professional miners began to build mines around the world. Chip manufacturers began to produce dedicated chips.
 
 People's growing interest in Bitcoin stimulated the development of the Bitcoin and cryptocurrency market. The value of Bitcoin began to soar wildly. In 2010, Bitcoin was less than 1 cent. By mid-2021, it rose to $60,000. This crazy surge led many outsiders to compare it with historical bubbles such as the Tulip Mania in the 17th century and the South Sea Bubble in the 18th century. Concerns about the collapse of Bitcoin prices began to spread. Secondly, the emergence of competitive cryptocurrencies.
 
-![3](assets/ThingsaboutCryptoPunks/3.jpg)
+<img src="assets/ThingsaboutCryptoPunks/3.jpg" alt="3" style="zoom:30%;" />
 
 Seeing the success of Bitcoin, some entrepreneurial-minded computer scientists have launched cryptocurrencies based on blockchain technology. For example, Litecoin, Dogecoin, and Ethereum. Ethereum built a new type of computer on top of Bitcoin that runs on decentralized virtual machines around the world. It cannot be tampered with, shut down by governments, or controlled by governments. People of different races, living in different regions and with different lifestyles from all over the world come together to form a decentralized network. Unless the United Nations shuts down the Internet on Earth, as long as the Internet is up, this decentralized organization will continue to exist.
 
@@ -119,6 +119,6 @@ In 2017, initial coin offerings (ICOs), where individuals or groups raise funds 
 
 However, the network speed of almost all electronic devices is too slow. Think about it, in the early days, any ordinary computer could join the Bitcoin network to mine, but now with more and more people mining Bitcoin and the increasing difficulty of hash, people have to buy more high-performance graphics cards and combine more computers to mine. This is equivalent to a decentralized server room.
 
-Dominic thought, why not let data center server rooms act as nodes, which can also improve performance!
+Dominic thought, why not let data centre server rooms act as nodes, which can also improve performance!
 
 As a result, IC has become "server room chain", a decentralized network composed of server rooms around the world. Ethereum is better at financial dapps, while IC is good at general dapps. This has led to a "personal sovereignty" revolution in various Internet applications: envisioning the future of blockchain.
