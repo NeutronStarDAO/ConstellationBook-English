@@ -12,7 +12,7 @@ The message routing layer, as its name suggests, is responsible for message tran
 
 The consensus layer packages messages into block **payloads**. Once a block is finalized, each replica in the subnet parses the payloads in the block. The message routing layer then passes the messages to the corresponding canisters in the execution layer. After executing the messages, the canisters update their internal state and return message responses to the message routing layer.
 
-<img src="assets/Messageroutinglayer/image-20230709152648678.png" alt="image-20230709152648678" style="zoom:39%;" />
+<img src="assets/Messageroutinglayer/image-20230709152648678.png" alt="image-20230709152648678" style="zoom: 80%;" />
 
 The messages received by the message routing layer are of two types:
 
@@ -22,13 +22,13 @@ The messages **sent** by the message routing layer are also of two types:
 
 One is responses to user messages, called **ingress message responses**. The other type is still **cross-subnet messages**, which are messages sent by canisters in its own subnet to canisters in other subnets.
 
-<img src="assets/Messageroutinglayer/image-20230709153313437.png" alt="image-20230709153313437" style="zoom:40%;" />
+<img src="assets/Messageroutinglayer/image-20230709153313437.png" alt="image-20230709153313437" style="zoom: 80%;" />
 
 ### Message queues
 
 Each canister in the execution layer has an input queue and an output queue. The message routing layer routes the payloads in the blocks to the input queues of the target canisters.
 
-<img src="assets/Messageroutinglayer/IMG21.png" alt="IMG21" style="zoom:25%;" />
+<img src="assets/Messageroutinglayer/IMG21.png" alt="IMG21" style="zoom: 67%;" />
 
 Each canister has its own **input queues** and **output queues**.
 
@@ -56,7 +56,7 @@ In addition to the output queues, there is an **ingress history** data structure
 
 Looking at the message routing and execution layers separately, it looks like this:
 
-<img src="assets/Messageroutinglayer/IMG22.png" alt="IMG22" style="zoom:25%;" />
+<img src="assets/Messageroutinglayer/IMG22.png" alt="IMG22" style="zoom: 80%;" />
 
 ## Intra-subnet messages
 
@@ -74,11 +74,11 @@ Think about it, the data states in the replicas are the same, and consensus is a
 
 Consensus is used when everyone faces different choices to make everyone execute the same operation.
 
-<img src="assets/Messageroutinglayer/IMG23.png" alt="IMG23" style="zoom:25%;" />
+<img src="assets/Messageroutinglayer/IMG23.png" alt="IMG23" style="zoom: 67%;" />
 
 So when a canister in a subnet calls another canister within the same subnet, each replica will make the same cross-canister call. Each replica stores all the data in the subnet. When the replicas execute cross-canister calls, the consistency of data in the subnet is still maintained.
 
-<img src="assets/Messageroutinglayer/IMG24.png" alt="IMG24" style="zoom:15%;" />
+<img src="assets/Messageroutinglayer/IMG24.png" alt="IMG24" style="zoom: 67%;" />
 
 **Guarantees provided by the message routing layer**
 
@@ -90,7 +90,7 @@ So when a canister in a subnet calls another canister within the same subnet, ea
 
 At this point, let's summarize. The state of a replica (subnet) includes the state of Canisters and "system state". The "system state" includes the input and output queues of Canisters, cross-subnet data streams, and the ingress history data structure.
 
-<img src="assets/Messageroutinglayer/IMG25.png" alt="IMG25" style="zoom:25%;" />
+<img src="assets/Messageroutinglayer/IMG25.png" alt="IMG25" style="zoom: 80%;" />
 
 In other words, the message routing layer and the execution layer together maintain the state of a replica. And the state of the replica is updated under fully deterministic conditions, so that all replicas in the subnet maintain exactly the same state. The consensus layer does not need to keep exactly the same progress as the message routing layer.
 
@@ -100,13 +100,13 @@ In each round, the state of each replica in the subnet will change.
 
 Of course, the part that changes in each round also needs to be recorded separately. Because IC's consensus only guarantees that honest replicas process messages in the same order. Consensus only guards before messages enter the execution layer, but the exit after message processing lacks a "guard": What if the message response is not sent successfully due to network issues? How does the client verify the authenticity of the message after receiving the message? If the message response is forged by hackers, it will be troublesome. In case the server system has strange bugs that prevent messages from being executed...
 
-<img src="assets/Messageroutinglayer/IMG26.png" alt="IMG26" style="zoom:22%;" />
+<img src="assets/Messageroutinglayer/IMG26.png" alt="IMG26" style="zoom: 80%;" />
 
 Replicas need to verify the state again after processing messages. The **per-round certified state**, also known as the system state tree, serves as the last guard in a complete round. The per-round certified state can record the state changes of replicas in one round, and re-broadcast a threshold signature to everyone for confirmation by two-thirds of the replicas.
 
 Both input and output must be certified by consensus, otherwise there is a risk of divergence.
 
-Therefore, in order to ensure that each replica processes the message correctly, after the Canister executes the message, the executed message must be recorded to allow the replicas to verify each other again.<img src="assets/Messageroutinglayer/IMG28.png" alt="IMG28" style="zoom:25%;" />
+Therefore, in order to ensure that each replica processes the message correctly, after the Canister executes the message, the executed message must be recorded to allow the replicas to verify each other again.<img src="assets/Messageroutinglayer/IMG28.png" alt="IMG28" style="zoom: 80%;" />
 
 After executing messages in each round, each replica hashes its own per-round certified state, packs it into a Merkle tree, and signs it with a private key fragment. Collect two-thirds of the signature fragments to aggregate into a complete signature. The state tree and the certified signature are called the per-round certified state.
 

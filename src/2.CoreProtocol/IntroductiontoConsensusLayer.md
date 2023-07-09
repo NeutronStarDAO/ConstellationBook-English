@@ -8,7 +8,7 @@ Consensus on IC ? Take a look at this term: PoUW, Proof of Useful Work.
 
 Does it looks familiar to you?
 
-![image-20230131200036914](assets/IntroductiontoConsensusLayer/image-20230131200036914.png)
+<img src="assets/IntroductiontoConsensusLayer/image-20230131200036914.png" alt="image-20230131200036914" style="zoom:25%;" />
 
 Proof of Work (PoW) is the consensus algorithm of Bitcoin, which is very inefficient from today's perspective, but still it is relatively secure. 
 
@@ -58,12 +58,12 @@ The method: Rely on some means to select a node to pack the block, and others co
 
 Let us analyse the purpose only. Since the purpose is to maintain data consistency between nodes, as long as the nodes receive messages at the same time, the problem will be solved.
 
-![image-20230531145221186](assets/IntroductiontoConsensusLayer/image-20230531145221186.png)
+<img src="assets/IntroductiontoConsensusLayer/image-20230531145221186.png" alt="image-20230531145221186" style="zoom:21%;" />
 
 
 In the actual network environment ,it could not be achieved. Information transmission always has varying delays, not to mention that nodes are not located in a same place. The locations of clients are also far and near,the transmission distances are different. It is chaotic and sounds impossible to guarantee that all nodes receive messages at the same time. What should we do?
 
-![IMG2](assets/IntroductiontoConsensusLayer/IMG2.png)
+<img src="assets/IntroductiontoConsensusLayer/IMG2.png" alt="IMG2" style="zoom:33%;" />
 
 The answer is simple. Building a "relay station" can solve this problem. No matter where the messages come from, they are first queued in the relay station, then the relay station sends the messages and execution order to the nodes. As long as the nodes execute the operations in the order received from the relay station, data consistency can be guaranteed!
 
@@ -81,7 +81,7 @@ So how can we design it? The nodes need to reach consensus on the order of execu
 
 We could not rely on a relay station. Although the time for messages to arrive at each replica may be different (that is, the time of executing messages is different), all replicas must execute messages in the same order.
 
-![IMG3](assets/IntroductiontoConsensusLayer/IMG3.png)
+<img src="assets/IntroductiontoConsensusLayer/IMG3.png" alt="IMG3" style="zoom:25%;" />
 
 Then if everyone's order is different, which order should be executed? It will use random number to decide! (IC's Random Beacon)
 
@@ -93,7 +93,7 @@ VRF uses threshold BLS signature scheme. The threshold BLS signature algorithm u
 
 If a message is confirmed, no matter which private key shares participate in the signature, as long as the threshold quantity is reached (the threshold for generating the Random Beacon is one-third), the final unique signature information can be aggregated. For example, the threshold in the following figure is 6. In order for the 16 replicas to generate the random beacon signature for this round, as long as the signature is greater than 6, it can be aggregated.
 
-![IMG4](assets/IntroductiontoConsensusLayer/IMG4.png)
+<img src="assets/IntroductiontoConsensusLayer/IMG4.png" alt="IMG4" style="zoom:25%;" />
 
 As long as the bad guys get less than one-third of the private key shares, they cannot interfere with the threshold BLS signature. It is also impossible to predict the signature result because the private key shares are not enough. That is to say, no one knows the signature result.
 
@@ -118,17 +118,17 @@ Let us take a closer look on how IC's consensus protocol produces a block
 
 The consensus protocol produce block by rounds. For example, consensus is reached on the genesis block in round 1, and round 6 for block 6.
 
-![IMG5](assets/IntroductiontoConsensusLayer/IMG5.png)
+<img src="assets/IntroductiontoConsensusLayer/IMG5.png" alt="IMG5" style="zoom: 67%;" />
 
 Before start, the subnet first randomly selects some replicas to form a "consensus committee" according to the number of replicas. If the number of replicas is too low, all replicas will join the committee. The members in the committee are responsible for producing the blocks, so even if there are a large number of replicas in the subnet, it will not affect performance.
 
-![IMG6](assets/IntroductiontoConsensusLayer/IMG6.png)
+<img src="assets/IntroductiontoConsensusLayer/IMG6.png" alt="IMG6" style="zoom: 67%;" />
 
 There is also the concept of "**epoch**" in the subnet. An epoch is approximately a few hundred rounds. The NNS can adjust the epochs for each subnet.
 
 Each subnet operates within epochs that contain multiple rounds (typically around a few hundred rounds). Different replicas make up the committees in each epoch.
 
-![IMG7](assets/IntroductiontoConsensusLayer/IMG7.png)
+<img src="assets/IntroductiontoConsensusLayer/IMG7.png" alt="IMG7" style="zoom: 80%;" />
 
 At the end of each epoch, the consensus committee members for the next epoch are selected through the random beacon, and the current consensus committee members will all become random beacon committee members in the next epoch.
 
@@ -216,15 +216,15 @@ During notarization, the members of the consensus committee verify the following
 
 If the block information is correct, the replica responsible for verification first signs the block height and block hash, and then forms a "**notarization share**" with the just signed signature, hash, height, and its own identity. Broadcast the notarized shares.
 
-![IMG11](assets/IntroductiontoConsensusLayer/IMG11.png)
+<img src="assets/IntroductiontoConsensusLayer/IMG11.png" alt="IMG11" style="zoom: 25%;" />
 
 Notarization also uses BLS threshold signatures. When a replica receives enough (the threshold is two-thirds) notarization share, it aggregates the signature share to form a notarization for this block.
 
-![IMG12](assets/IntroductiontoConsensusLayer/IMG12.png)
+<img src="assets/IntroductiontoConsensusLayer/IMG12.png" alt="IMG12" style="zoom:67%;" />
 
 The aggregated notarization information includes the block hash, block height, aggregated signature, and more than two-thirds of the identity identifiers. Replicas either find that they have collected enough notarization shares and aggregate them into notarizations themselves; or they receive aggregated notarizations from others.
 
-![IMG13](assets/IntroductiontoConsensusLayer/IMG13.png)
+<img src="assets/IntroductiontoConsensusLayer/IMG13.png" alt="IMG13" style="zoom:67%;" />
 
 After notarization, the block is still broadcast. When other members receive the notarized block, they will re-broadcast the notarized block and will not generate notarization shares for other blocks.
 
@@ -232,11 +232,11 @@ After notarization, the block is still broadcast. When other members receive the
 
 For example, in the figure below, the girl holding the cell phone and the blue hat enter the next round of consensus. When the girl sends messages to the other three people, the network is interrupted for 700 milliseconds. The message forwarded by the blue hat plays a key role. Otherwise, five missing three would not be able to work.
 
-![IMG14](assets/IntroductiontoConsensusLayer/IMG14.png)
+<img src="assets/IntroductiontoConsensusLayer/IMG14.png" alt="IMG14" style="zoom:25%;" />
 
 If the leader's block has a problem and the notarization fails, the weighting of the second block will now be the largest. If the blocks of the second member and the third member have both passed notarization, the leader of the next round will choose to produce block after the block with the greatest weight. As in round 5 and 6 below, the weight of the 2nd block is greater than the weight of the 3rd block. Adding up the weights of all blocks, the chain composed of yellow and purple blocks is the chain with the greatest weight.
 
-![IMG15](assets/IntroductiontoConsensusLayer/IMG15.png)
+<img src="assets/IntroductiontoConsensusLayer/IMG15.png" alt="IMG15" style="zoom:67%;" />
 
 <br>
 
