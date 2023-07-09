@@ -22,7 +22,7 @@ The messages **sent** by the message routing layer are also of two types:
 
 One is responses to user messages, called **ingress message responses**. The other type is still **cross-subnet messages**, which are messages sent by canisters in its own subnet to canisters in other subnets.
 
-<img src="assets/Messageroutinglayer/image-20230709153313437.png" alt="image-20230709153313437" style="zoom: 80%;" />
+<img src="assets/Messageroutinglayer/image-20230710010119385.png" alt="image-20230710010119385" style="zoom: 67%;" />
 
 ### Message queues
 
@@ -144,7 +144,7 @@ Simply put, cross-subnet messages are transmitted as follows:
 
 After the Canister in the execution layer processes the message, it puts the cross-subnet message into the output queue. The message routing layer has a component called the **Stream builder**, which is responsible for forming cross-subnet messages into data streams. After **Per-round state** threshold signature certification, the XNet endpoint of the replica executes and sends. The **XNet endpoint** sends messages to the nearest replica of subnet B. After the replica XNet payload builder of subnet B receives the message, it broadcasts the payload. Then pack it out and reach consensus.
 
-<img src="assets/Messageroutinglayer/image-20230709153754066.png" alt="image-20230709153754066" style="zoom: 43%;" />
+<img src="assets/Messageroutinglayer/image-20230710010807353.png" alt="image-20230710010807353" style="zoom:43%;" />
 
 **The Stream builder** extracts messages from the Canister's output queue and queues the messages. It needs to meet determinism, orderliness and fairness:
 
@@ -166,13 +166,13 @@ If a replica of subnet B wants to get new messages from subnet A, it will choose
 
 In addition to cross-subnet messages, user ingress messages and Bitcoin transactions (for subnets enabling Bitcoin integration) will also be packaged as payloads into blocks.
 
-<img src="assets/Messageroutinglayer/image-20230709153820152.png" alt="image-20230709153820152" style="zoom: 50%;" />
+<img src="assets/Messageroutinglayer/image-20230710010416109.png" alt="image-20230710010416109" style="zoom: 25%;" />
 
 After combining and packaging these payloads into a block, the consensus protocol will verify the entire block and reach consensus. After the consensus is reached, the messages in the payload will be processed.
 
 This is the process of transmitting messages from one subnet to another subnet. As shown in the figure below.
 
-<img src="assets/Messageroutinglayer/image-20230709153832704.png" alt="image-20230709153832704" style="zoom:37%;" />
+<img src="assets/Messageroutinglayer/image-20230710010538417.png" alt="image-20230710010538417" style="zoom:67%;" />
 
 Garbage collection: After sending the messages, subnet A still needs to tell subnet B which messages have been processed so that subnet A can clear those messages that are no longer needed.
 
