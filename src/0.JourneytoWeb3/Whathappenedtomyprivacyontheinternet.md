@@ -22,7 +22,7 @@ No one knows what they have done with the data.
 
 We already know about PRISM, Facebook's leak of hundreds of millions of user data in 2018, Amazon was fined 746 million euros by the EU privacy regulator in July 2020 for violating the EU General Data Protection Regulation, which was also the largest data privacy leak fine in EU history. Domestic takeaway platforms such as Meituan and Ele.me have also been exposed to user information leaks and resales, down to order contents, addresses and other private information; Li Yanhong: Chinese people can be more open to data privacy and are willing to exchange privacy for efficiency...
 
-<img src="assets/Whathappenedtomyprivacyontheinternet/QmakePKSRkDQSQx79BT7PzgqSJzekQ7nz63nG9Sr2coHw5.png" alt="QmakePKSRkDQSQx79BT7PzgqSJzekQ7nz63nG9Sr2coHw5" style="zoom:67%;" />
+<img src="assets/Whathappenedtomyprivacyontheinternet/Leeqj.png" alt="Leeqj" style="zoom:70%;" />
 
 (Screenshot of Li Yan Hong's claim on the internet:"Users are willing to exchange privacy for efficiency!)
 
@@ -36,9 +36,11 @@ The large-scale disclosure of personal privacy data has become a major global so
 
 Just last week, on March 21, 2023, Pinduoduo was forcibly removed from Google Play and prompted existing Pinduoduo users to uninstall it as soon as possible. This was the first time Google prompted users to uninstall an app. Subsequently, the well-known antivirus software laboratory Kaspersky confirmed that Pinduoduo recklessly collected user information by exploiting vulnerabilities in the Android system, cracked system shielding mechanisms, tampered with mobile phone system records, concealed its own whereabouts, ran in the background of the system to monitor mobile phones, evaded system cleanup processes, and read mobile phone input method information.
 
-<img src="assets/Whathappenedtomyprivacyontheinternet/QmTLR4GV6fiZFQb9DEj7MpAC1NRJ2eT4Y9VZ7LbPQf2Joa.png" alt="QmTLR4GV6fiZFQb9DEj7MpAC1NRJ2eT4Y9VZ7LbPQf2Joa" style="zoom:33%;" />
+![125](assets/Whathappenedtomyprivacyontheinternet/125.png)
 
 (A famous shopping app in China: Pinduoduo. Had been exposed that they implemented malicious code in users' device for purpose of tracking and collecting users' information)
+
+<b>
 
 <img src="assets/Whathappenedtomyprivacyontheinternet/QmQ3RstyXP52LdWbDLdmrLyTKLbz8kkaKeEN3mbsBpRKxV.png" alt="QmQ3RstyXP52LdWbDLdmrLyTKLbz8kkaKeEN3mbsBpRKxV" style="zoom:63%;" />
 

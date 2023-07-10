@@ -176,10 +176,7 @@
                     <div class="sidetoc"><nav class="pagetoc"></nav></div>
                     <main>
                         <h1 id="overview"><a class="header" href="#overview">Overview</a></h1>
-<p><img src="assets/1/46a30ba04d3efffc2d16aa5218bad81c-1688786330018-2.jpg" alt="46a30ba04d3efffc2d16aa5218bad81c" /></p>
-<blockquote>
-<p>Umm...No more technical analysis,instead let us see some technology analysis!</p>
-</blockquote>
+<img src="assets/1/-2023-06-12-2125.jpg" alt="-2023-06-12-2125" style="zoom:50%;" />
 <p>What are IC and ICP?</p>
 <ul>
 <li>
@@ -194,45 +191,47 @@
 <p>IC is built with high performance and decentralized cloud services through technologies such as sharding, VRF random numbers, BLS threshold signatures, DKG, and embedded DAO governance models.</p>
 <p>How high is its performance?</p>
 <p>The current confirmed block rate of subnets is 36 blocks per second.</p>
-<p><img src="assets/1/image-20230218171608203.png" alt="image-20230218171608203" /></p>
-<p>For every second, 6,355 transactions could be handled.<img src="assets/1/image-20230218171944539.png" alt="image-20230218171944539" /></p>
+<img src="assets/1/image-20230218171608203.png" alt="image-20230218171608203" style="zoom:67%;" />
+<p>For every second, 6,355 transactions could be handled.</p>
+<p><img src="assets/1/image-20230218171944539.png" alt="image-20230218171944539" /></p>
 <p><a href="https://dashboard.internetcomputer.org/">Here</a> you can see the real time statistics of the IC network. While the number of the subnet keeps growing, the performance of the network will also get higher. (TPS is unlimited!)</p>
 <h2 id="the-new-era-of-software-development"><a class="header" href="#the-new-era-of-software-development">The new era of software development</a></h2>
 <p>The Internet Computer (IC) is a brand new blockchain design built on the Internet Computer Protocol. Its core part is divided into 4 layers, running on nodes of each subnet. By running the core protocol, the nodes of a subnet implement a blockchain-based replicated state machine that progresses independently of other subnets (but communicates asynchronously with them). IC adopts a multi-subnet shards structure, which overcomes the performance bottlenecks of traditional blockchains while maintaining decentralization. This architecture allows IC to generate subnets (shards) indefinitely, allowing IC to scale almost limitlessly.</p>
-<p><img src="assets/1/image-20230708123832309.png" alt="image-20230708123832309" /></p>
+<img src="assets/1/image-20230708123832309.png" alt="image-20230708123832309" style="zoom: 20%;" />
 <p>IC scales horizontally by creating new subnets, just as traditional cloud infrastructure scales by adding new machines. Once IC's Network Nervous System (NNS) decides to create a new subnet, it will select a group of spare nodes that have not been allocated to any subnet and create the initial configuration for the new subnet. Then, the selected nodes form a new subnet blockchain.</p>
-<p><img src="assets/1/gc5YGvUU_400x400.jpg" alt="gc5YGvUU_400x400" /></p>
+<img src="assets/1/gc5YGvUU_400x400.jpg" alt="gc5YGvUU_400x400" style="zoom:50%;" />
 <p>IC eliminates the speed, storage cost and computing power limitations of smart contracts on traditional blockchains. Making smart contracts fully decentralized, from front-end to back-end can be hosted on the blockchain. IC's smart contracts are called Canisters. Canisters can store data, perform general computing on data, and provide a complete technology stack to provide network access services directly to end users.</p>
 <p>Computing and storage overhead uses a &quot;reverse gas model&quot;, and gas fees are paid by the developer who deployed the Canister by exchanging native tokens ICP into Cycles. ICP tokens are also used for governance: IC is managed by a decentralized autonomous organization (DAO). IC embeds the DAO system as its base: Network Nervous System. The DAO can decide to change IC's network topology and upgrade the IC protocol.</p>
 <p>IC can also interoperate with other blockchains. IC's chain key cryptography enables it to interact with other blockchains and integrate other cryptocurrencies.</p>
 <p>IC uses WebAssembly (WASM) as the standard for code execution, so developers can write smart contracts in a variety of popular programming languages (such as Rust, Motoko, Java, etc.).</p>
 <p>Traditional IT developers face many problems: they have to go through a series of hurdles such as multiple commercial cloud services, cloud tools, proprietary and open source variants of operating systems, databases and firewalls, virtualization technologies, software development platforms, etc., to address the high customization of assembling systems, the labor costs of specialist developers needed to maintain them, and related vendor relationships, making it expensive and difficult to change, migrate and adjust old systems as needs change. The result is high development and operating costs, and security issues with centralized data storage.</p>
-<p><img src="assets/1/image-20230705124029401.png" alt="image-20230705124029401" /></p>
+<img src="assets/1/image-20230705124029401.png" alt="image-20230705124029401" style="zoom:33%;" />
 <p>IC allows developers to build applications, enterprise systems and Internet service apps in an open world. Based on the decentralized blockchain concept, it ensures that it can operate safely and stand the test of time. IC can automatically scale, resist attacks, and never go down. This novel design allows developers to focus on creating new applications and services without worrying about the security, cost and scalability of the underlying infrastructure. This will have a profound impact on the new era of software development.</p>
 <h2 id="architecture"><a class="header" href="#architecture">Architecture</a></h2>
 <p>IC's architecture is unique:</p>
-<p>The <strong>nodes</strong> in each <strong>data centre</strong> are <strong>virtualized into many replicas</strong> <strong>through the node software IC-OS</strong>, and then some replicas are randomly selected to form a <strong>subnet</strong> .![Data Center](assets/1/Data Center.jpg)</p>
-<p>A subnet consists of nodes from multiple data centres. Each node establishes a TCP session with IPv6 and connects to NNS nodes and other nodes in the same subnet.<img src="assets/1/image-20230612165423635.png" alt="image-20230612165423635" /></p>
+<p>The <strong>nodes</strong> in each <strong>data centre</strong> are <strong>virtualized into many replicas</strong> <strong>through the node software IC-OS</strong>, and then some replicas are randomly selected to form a <strong>subnet</strong> .<img src="assets/1/Data Center.jpg" alt="Data Center" style="zoom:33%;" /></p>
+<p>A subnet consists of nodes from multiple data centres. Each node establishes a TCP session with IPv6 and connects to NNS nodes and other nodes in the same subnet.</p>
+<img src="assets/1/image-20230612165423635.png" alt="image-20230612165423635" style="zoom: 33%;" />
 <p><strong>NNS (Network Nervous System)</strong> is the governance system embedded in IC, a DAO. Anyone who staked ICP can vote on proposals on NNS.</p>
 <p>The nodes of the Bitcoin network can join whenever and wherever they want, but the problem is that the confirmation of transactions is too slow; the consortium blockchain first determines several nodes in the network, and then these few fixed nodes reach consensus, the speed is fast. IC combines the advantages from both, like a consortium blockchain composed of several fixed nodes to form subnets, the consensus speed between nodes (replicas) is very fast, and controlled by a DAO: NNS, to control subnets and nodes (replicas). Win-win.</p>
 <p>IC integrates a DAO at the bottom layer of the blockchain protocol: a <strong>DAO-controlled network</strong>. This DAO controls each subnet, configures the network topology, creates subnet public keys, and upgrades the protocol version of replicas. Therefore, all NNS decisions are made by community members, and the voting weight of community members is determined by the amount of IC native governance tokens they stake in NNS.</p>
 <p>If the proposal is approved by voting, the Canister in NNS will automatically execute the according decision. For example, if a proposal to change the network topology is approved, the NNS will automatically update the registry Canister with the new configuration.</p>
-<p><img src="assets/1/image-20230708125428147.png" alt="image-20230708125428147" /></p>
+<img src="assets/1/023-06-12-2125.png" alt="023-06-12-2125" style="zoom:33%;" />
 <p>NNS is also a decentralized governance system that helps the IC network achieve self-evolution. The purpose of NNS is to manage the Internet Computer network in an open, decentralized and secure manner. It is a system subnet of IC that controls IC subnets. It can also upgrade node protocols; adjust the exchange ratio of Cycles to ICP; in extreme cases, it can even freeze malicious Canisters to protect the network.</p>
 <p>Replicas can be understood as &quot;virtual nodes&quot; virtualized in subnets. In the following content, we will call IC &quot;nodes&quot; as replicas.</p>
-<p><img src="assets/1/image-20230708125740045.png" alt="image-20230708125740045" /></p>
+<p><img src="assets/1/111111.png" alt="111111" /></p>
 <p>IC's subnets are similar to the idea of sharding. Sharding is a blockchain scalability solution. Take Bitcoin as an example. Nodes all over the world are competing for the accounting rights of a block, which is equivalent to a network covering the entire earth. If all nodes in Asia constitute a &quot;Bitcoin subnet&quot;, Europe, Africa, America and Oceania also constitute their own subnets. Then consensus is reached within the subnet, with relatively fewer nodes and shorter communication distances, which can improve performance.</p>
 <p>IC consists of many subnets, without the concept of mother network, main chain, side chain, beacon chain, etc. Each subnet is equal (except NNS). Each subnet runs independently, reaches consensus within the subnet, and there is no &quot;global consensus&quot; like Bitcoin. Different subnets synchronize and generate blocks in parallel. It can be understood that each subnet is a blockchain, and many chains together constitute IC. Cross-subnet communication is solved by <strong>Chain Key</strong> at the bottom layer of IC. Developers and users do not need to worry about which subnet the smart contract is deployed in, how to communicate across subnets, etc.</p>
 <p><strong>Chain Key</strong> is the core technology behind the Internet Computer that solves the problem of inter-subnet communication of IC. Chain Key allows each subnet to generate its own unique <strong>subnet public key</strong> (or Subnet Key) based on the <strong>root key</strong>. This is the underlying technology for IC's unlimited scalability.</p>
 <p>Each subnet has a public key of only 48kb. Anyone can verify that the message they receive is from the IC network and has not been tampered with. Of course, various IoT devices and other blockchains can also verify information from IC. In comparison, when verifying traditional blockchains such as ETH, since each block is signed by different nodes, the device needs to synchronize hundreds of GB of signature data. In IC, all replicas sign a block together. Therefore, the device only needs to save a unique 48kb public key to verify each block.</p>
-<p><img src="assets/1/image-20230708130720418.png" alt="image-20230708130720418" /></p>
+<img src="assets/1/image-20230708130720418.png" alt="image-20230708130720418" style="zoom:33%;" />
 <p>Subnets can dynamically increase, delete, merge and split according to the network resource usage. The number of subnets has no upper limit, so theoretically it supports &quot;infinite expansion&quot; by adding subnets around the world.</p>
 <p>But who decides the splitting and reorganization of subnets? NNS!</p>
 <p>NNS is a special subnet, just like other subnets composed of some nodes. <strong>NNS can manage other subnets</strong>. However, NNS has more nodes than other subnets, so its security is naturally higher than other subnets. Becoming a node in a data centre, which subnet a node joins, which nodes make up a subnet, selecting a few nodes to create a new subnet, splitting a subnet into several subnets, etc., these operations require NNS permission.</p>
 <p>The architecture of many subnets allows IC to scale infinitely.</p>
-<p><img src="assets/1/image-20230708131321649.png" alt="image-20230708131321649" /></p>
+<img src="assets/1/image-20230708131321649.png" alt="image-20230708131321649" style="zoom:33%;" />
 <p>The core part of the IC protocol is divided into 4 layers, running on the nodes of each subnet. Now we turn our perspective into the interior of the subnet to take a look at the core protocol of IC. For easy understanding, I change the top view of the subnet to a side view; the purple square blocks represent subnets, and the blue spheres represent replicas in the subnet.</p>
-<p><img src="assets/1/image-20230708131813975.png" alt="image-20230708131813975" /></p>
+<img src="assets/1/image-20230708131813975.png" alt="image-20230708131813975" style="zoom:37%;" />
 <p>The IC core protocol has a total of 4 layers, and each replica has this 4-layer structure. From bottom to top are the P2P layer, consensus layer, message routing layer, and execution layer:</p>
 <ul>
 <li><strong>P2P layer</strong> collects and sends messages from users, other replicas in the subnet and other subnets. It ensures that messages can be delivered to all nodes in the subnet to ensure security, reliability and elasticity.</li>
@@ -244,7 +243,7 @@
 <p>The P2P network is like a large party, and the participants in the party are replicas in the subnet. At this party, people want to share the latest news and hope that as many people as possible can hear this news. However, it is tiring for everyone to shout out the complete message loudly (occupying network resources). We can adopt a more efficient approach.</p>
 <p>This approach is the advertise-request-deliver mechanism. Just like at a party, someone (replica) loudly announces: &quot;Hey, I have big news to share!&quot; This is a small announcement. After hearing this announcement, others (other replicas) who heard and think that the message is important will come over (request) and ask that person to tell them the specific content of the message (deliver). This process may sacrifice some time (delay) but can save energy (reduce bandwidth usage).</p>
 <p>If this party is very large, such as a huge music festival. In such a huge event, the advertise-request-deliver mechanism will run on an <strong>overlay network</strong>. This overlay network is like a large circle of friends, and everyone only shares messages with their good friends (peers).</p>
-<p><img src="assets/1/1577.png" alt="1577" /></p>
+<img src="assets/1/1577.png" alt="1577" style="zoom:20%;" />
 <p>When someone wants to broadcast a message, he will first tell his good friends about the announcement of the message. Those good friends, upon receiving the announcement, may request the delivery of the message and, under certain conditions, tell their good friends about the announcement of the message. This is like a gossip network.</p>
 <p>The P2P layer can effectively reduce bandwidth usage and achieve high throughput at the cost of some latency by using the advertise-request-deliver mechanism and running on the overlay network.</p>
 <p>Learn more about how the IC P2P layer works <strong>here</strong>.</p>
@@ -262,7 +261,7 @@
 <p>Learn more about how the IC message routing layer works <strong>here</strong>.</p>
 <h2 id="execution"><a class="header" href="#execution">Execution</a></h2>
 <p>The basic computing unit in IC is called a Canister. IC provides a runtime environment that allows programs to run in Canisters and communicate (via messages) with other Canisters and external users.</p>
-<p><img src="assets/1/image-20230708133700851.png" alt="image-20230708133700851" /></p>
+<img src="assets/1/image-20230708133700851.png" alt="image-20230708133700851" style="zoom: 50%;" />
 <p>The execution layer has many functions that other blockchains do not have:</p>
 <ul>
 <li>
@@ -279,7 +278,7 @@
 <h2 id="boundary-node"><a class="header" href="#boundary-node">Boundary node</a></h2>
 <p>As mentioned earlier, IC is a decentralized cloud that can provide users with complete network services directly without relying on any centralized services.</p>
 <p>So how are user requests sent to replicas (nodes) in a subnet? How does IC defend against DDoS attacks? Is there a firewall? Is there a CDN cache?</p>
-<p><img src="assets/1/image-20230708134432946.png" alt="image-20230708134432946" /></p>
+<img src="assets/1/image-20230708134432946.png" alt="image-20230708134432946" style="zoom:39%;" />
 <p>These services are provided by IC's boundary nodes.</p>
 <p>Boundary nodes are responsible for forwarding requests to the corresponding subnets, protecting subnets, and providing caching.</p>
 <p>When a user accesses IC through a browser, we will find the Canister through the URL link on the ic0.app domain name. First, the browser will look up the DNS record corresponding to the URL link and get the IP address of the boundary node. Then it sends an HTTPS request to the boundary node. The boundary node returns a JS library &quot;Service Worker&quot; to run on the browser.</p>
@@ -292,28 +291,28 @@
 <p>User requests are divided into query calls and update calls.</p>
 <p>Query call:</p>
 <p>The client sends a request message to the boundary node wanting to access a Canister. The boundary node forwards this message to replicas in the subnet hosting the target Canister. After receiving the message, the replicas return a response and send it to the user through the boundary node.</p>
-<p><img src="assets/1/image-20230708205341898.png" alt="image-20230708205341898" /></p>
+<img src="assets/1/image-20230708205341898.png" alt="image-20230708205341898" style="zoom:37%;" />
 <p>Update call:</p>
 <p>The client sends a request message M to the boundary node, targeting Canister C. The boundary node forwards the message M to the subnet replica hosting Canister C.</p>
 <p>Upon receiving message M, the replica broadcasts message M to all replicas in the subnet through the P2P layer.</p>
-<p><img src="assets/1/image-20230708205602606.png" alt="image-20230708205602606" /></p>
+<img src="assets/1/image-20230708205602606.png" alt="image-20230708205602606" style="zoom:39%;" />
 <p>The main node that receives message M will package message M and other inputs into a block B.</p>
 <p>After a while, the block B is finalized, and the contents are sent to the message routing layer for processing.</p>
 <p>The message routing layer puts the message into Canister C's input message queue.</p>
 <p>The execution layer processes message M and updates Canister C's internal state.</p>
 <p>Subsequently, the message routing layer takes out the response R and returns it to the boundary node, which returns it to the user.</p>
-<p><img src="assets/1/image-20230708205753787.png" alt="image-20230708205753787" /></p>
+<img src="assets/1/image-20230708205753787.png" alt="image-20230708205753787" style="zoom:37%;" />
 <p>Sometimes processing a request message M requires calling canisters from other subnets. For example, Canister C needs to initiate a request M' to Canister C' in another subnet. Request M' will be placed in Canister C's output queue, and then the following steps are performed:</p>
 <ul>
 <li>The message routing layer moves the call request M' to the corresponding cross-subnet data stream, which eventually transports it to the subnet hosting Canister C'.</li>
 <li>Upon receiving request M', the second subnet processes it through the consensus layer and message routing layer, and finally the execution layer updates the state of Canister C' and generates a response R' to request M'. Response R' enters Canister C's output queue and is eventually passed back to the first subnet.</li>
 <li>Upon returning to the first subnet, after receiving the response R' from the second subnet, it is processed through the consensus layer, message routing layer, and execution layer. The execution layer updates the state of Canister C and generates a response R to the original request M. This response R is recorded in the ingress history data structure.</li>
 </ul>
-<p><img src="assets/1/image-20230708210008700.png" alt="image-20230708210008700" /></p>
+<img src="assets/1/image-20230708210008700.png" alt="image-20230708210008700" style="zoom:35%;" />
 <h2 id="chain-key"><a class="header" href="#chain-key">Chain Key</a></h2>
 <p>IC uses an advanced cryptographic toolkit called Chain Key cryptography. This technology enables IC to achieve functionality and scalability that other blockchains cannot.</p>
 <p>A key component is the threshold signature scheme, similar to ordinary digital signature schemes, but with the difference that the secret signature keys are distributed among the subnet replicas, making the keys less prone to leakage or get stolen.</p>
-<p><img src="assets/1/image-20230708163522799.png" alt="image-20230708163522799" /></p>
+<img src="assets/1/image-20230708163522799.png" alt="image-20230708163522799" style="zoom:33%;" />
 <p>Chain Key brings many benefits. For example:</p>
 <ul>
 <li>Anyone (mobile phone, tablet, laptop) can easily verify signatures to validate content received from IC without synchronizing the entire blockchain.</li>
@@ -330,7 +329,7 @@
 <p>Each subnet runs a permissioned consensus protocol with fixed replicas (nodes) in the subnet. When the network topology needs to be adjusted, a DAO called the <strong>Network Nervous System (NNS)</strong> determines which nodes can join a subnet, configures the network topology, configures public keys, and controls the protocol version deployed by replicas. <strong>NNS decisions are made by community members voting, with voting rights related to the ICP they stake in the NNS. The more ICP, longer period they stake, the more votes, the greater the weight they have.</strong></p>
 <p>Through this governance system, IC can add or remove replicas in existing subnets; deploy software updates; upgrade replicas; create new blockchain subnets for expansion; split subnets to balance network load; configure economic parameters such as adjusting the exchange ratio of Cycles to ICP and the Cycles burn rate; in extreme cases, it can freeze malicious Canisters to protect the network, and so on. The NNS runs on a specific subnet, similar to other subnets. However, it has more replicas, is more secure, and the NNS subnet is a system subnet that only deploys a few of the most critical Canisters.</p>
 <p>The Canisters in the system subnet do not charge Cycles fees because only a few of IC's own Canisters are deployed. Ordinary developers cannot deploy Canisters on the system subnet. So IC is managed by a DAO across all subnets.</p>
-<p><img src="assets/1/image-20230708141930460.png" alt="image-20230708141930460" /></p>
+<img src="assets/1/image-20230708141930460.png" alt="image-20230708141930460" style="zoom: 67%;" />
 <p>The NNS maintains a database called the <strong>registry</strong> to track the network topology of the IC, such as which replicas belong to which subnets, the public keys of the replicas, etc.</p>
 <p>The DAO-governed IC network allows the IC to enjoy the benefits of permissioned networks in efficiency while retaining the advantages of decentralized networks under DAO governance. Moreover, the replicas running the IC protocol are hosted in geographically distributed and independently operated data centres, which also enhances the security and decentralization of the IC.</p>
 <h2 id="canister"><a class="header" href="#canister">Canister</a></h2>
@@ -339,16 +338,16 @@
 <p>A canister is the IC's smart contract that can store code logic, data state, and front-end resources. Developers do not need to care about the underlying communication. As long as the code is deployed in the Canister, users can directly access the application through the URL.</p>
 <p>For example, there is a canister dedicated to front-end pages in the project and a back-end canister. After the client sends a request, the browser first downloads a Service Worker from the boundary node to check whether the browser supports WASM, whether the network environment is secure, etc. The Service Worker can verify whether the front-end page comes from the IC and whether it has been tampered with. The request message passes through the IC protocol to locate a front-end canister, and the front-end canister directly sends an HTML page to the client. Then it interacts with the back-end canister through the official JS proxy library. Canisters can also call and interact with each other.</p>
 <p>ETH is a synchronous state update machine triggered by transactions, and then reaches consensus; IC is an asynchronous state update machine. As long as the client sends a message to the IC, a result will be returned: success or failure.</p>
-<p><img src="assets/1/image-20230708142450951.png" alt="image-20230708142450951" /></p>
+<img src="assets/1/image-20230708142450951.png" alt="image-20230708142450951" style="zoom:25%;" />
 <p>IC simplifies the development of Ethereum Dapps and traditional web development. Developing Dapps does not require third-party wallets, nor do developers need to consider load balancing and firewalls, which are solved by the IC protocol layer.</p>
 <p>Above is just the simplest Dapp project example. In actual development, a Dapp usually has many canisters.</p>
 <p>The meaning of Canister is a jar or container. On IC, it is a lightweight WASM (WebAssembly) container.</p>
 <p>Canister automatically persists data in memory without the need for database servers and storage management, improving computational efficiency and simplifying software development. In theory, all languages that can be compiled into WASM bytecode can be used to write IC smart contracts: Motoko, Rust, C, C++, Go, JavaScript, etc. (Now Motoko and Rust's CDKs are more mature, and the SDKs of other languages are under development) Therefore, both front-end and back-end can be compiled into WASM and installed in the container for on-chain deployment. Of course, only browsers that support WASM can open Dapps, but more and more browsers will support WASM in the future.</p>
-<p><img src="assets/1/image-20230708164544441.png" alt="image-20230708164544441" /></p>
+<img src="assets/1/image-20230708164544441.png" alt="image-20230708164544441" style="zoom: 80%;" />
 <p>In addition,with integration on HTTP, Canisters could access to webpages outside IC without the use of Oracle!</p>
 <p>See <strong>here</strong> for more content about Canister.</p>
 <h2 id="internet-identity"><a class="header" href="#internet-identity">Internet Identity</a></h2>
-<p>On the Internet, we usually use usernames and passwords to identify and authenticate identities, but these methods are difficult to manage and have many security vulnerabilities. To solve these problems, IC has created a more advanced and secure encrypted authentication method called <strong>Internet Identity</strong>, which can be used on Dapps in the IC ecosystem. When logging in to Dapps, no password is required, nor do you need to remember complicated private keys or mnemonics to easily control your decentralized identity.</p>
+<p>On the Internet, we usually use usernames and passwords to identify and authenticate identities, but these methods are difficult to manage and have many security vulnerabilities. To solve these problems, IC has created a more advanced and secure encrypted authentication method called <strong>Internet Identity</strong>, which can be used on Dapps in the IC ecosystem. When logging in to Dapps, no password is required, nor do you need to remember complicated private keys or recoverys to easily control your decentralized identity.</p>
 <p>When users use Internet Identity, websites will not collect information about the user's online activities. Since it will help you create and manage anonymous, independent accounts on each website, allowing you to enjoy the privacy protection of having many different accounts without worrying about managing these accounts. It not only frees you from complex username and password management but also makes you safer and more private when using network services.</p>
 <p>Users can perform face scanning, fingerprint recognition, Ledger or <a href="https://en.wikipedia.org/wiki/YubiKey">Yubikey</a> hardware wallets to create a decentralized identity. This identity can be used to log in/register to various Dapps.</p>
 <p>Logging in to different Dapps with this identity will have different accounts. That is to say, it is isolated, and the identities are not interoperable (different from ETH). This identity is a completely isolated account in different Dapps. In each Dapp, it is like a split derived from the main identity. Use one DID identity to control all Dapps.</p>
@@ -356,15 +355,15 @@
 <p>ii is an identity authentication mechanism. The underlying principle is still private keys, public keys, and things like that.</p>
 <p>The user's mobile phone and computer have a TPM security chip that can generate a pair of keys. The public key is uploaded and stored in the ii Canister. The private key is saved by the TPM chip of the device, and no one can get it (including the user).</p>
 <p>On the IC, user and Dapp interactions require signature authentication each time. Since the private key exists in the security chip, of course, the user cannot use fingerprint signature for each interaction request. So ii uses a delegated key to form a delegated key chain. Set an expiration time for the delegated key and then sign with the private key of the delegated key.</p>
-<p><img src="assets/1/image-20230708154022580.png" alt="image-20230708154022580" /></p>
+<img src="assets/1/image-20230710130244492.png" alt="image-20230710130244492" style="zoom:67%;" />
 <p>So what exactly does this delegated key mean?</p>
 <p>You see, the device security chip generates a pair of keys, and then let the browser generate a pair of keys (Session key). Let the private key generated by the security chip sign the public key, expiration time, and other information generated by the browser. The generated signature is the delegation. With this delegation, you can sign the request with the private key of the browser.</p>
-<p><img src="assets/1/image-20230708150930793.png" alt="image-20230708150930793" /></p>
+<img src="assets/1/image-20230710130302358.png" alt="image-20230710130302358" style="zoom:50%;" />
 <p>As shown in the figure above. The recipient receives the blue public key, Delegation, the pink private key signed content, and the pink public key. Unlock the Delegation with the blue public key and find the pink public key inside, indicating that the blue private key has signed the pink public key. That is, the blue private key has granted permission, just like a general holding the emperor's tiger symbol to dispatch troops and generals. The tiger symbol represents the emperor's authorization.</p>
 <p>Since the domain names of each Dapp are different, the generated pid (Principal id) are also different. Pid is a user's identity identifier in a Dapp. This will be described in detail later.</p>
 <p>An anchor is equivalent to a username, that is, the User number in the above figure. Each device saved by the user in ii is a private key. The user can add or delete devices, that is, the user can add or delete private keys. So if the user's phone is lost, it is equivalent to losing a private key. As long as you log in to anchor on other devices, you can delete the phone device.</p>
-<p>One thing ii does is to add the user's different devices and bind them to the anchor's corresponding Master key. This Master key is hosted on the Canister. As long as one device can be added, the devices saved in ii can be changed. The user does not need to contact the private key. The Master key can be understood as a total private key. As long as the device is bound to this total private key, there is no need to worry about losing the ii identity. If all are lost, only the mnemonic phrase can be recovered. If the mnemonic phrase is lost, there is no way to recover it. All lost 😝.</p>
-<p><img src="assets/1/image-20230708151526303.png" alt="image-20230708151526303" /></p>
+<p>One thing ii does is to add the user's different devices and bind them to the anchor's corresponding Master key. This Master key is hosted on the Canister. As long as one device can be added, the devices saved in ii can be changed. The user does not need to contact the private key. The Master key can be understood as a total private key. As long as the device is bound to this total private key, there is no need to worry about losing the ii identity. If all are lost, only the recovery phrase can be recovered. If the recovery phrase is lost, there is no way to recover it. All lost 😝.</p>
+<img src="assets/1/image-20230710004109053.png" alt="image-20230710004109053" style="zoom:33%;" />
 <p>So ii is an identity authentication mechanism. ii does not save user information, only the user's ii identity. User related information is saved by Dapp itself.</p>
 <p>The Canister stores anchors and the corresponding Master keys. Anchors start from 10000 and increment.</p>
 <p>This gives ii the following two characteristics:</p>
@@ -382,7 +381,7 @@
 <p>In addition, NNS will send ICP token incentives to data centre providers every month. This is another inflation mechanism.</p>
 <p>The amount of Cycles consumed in the Canisters of these data centres and the amount of ICP obtained by these data centres are dynamically balanced. The amount of ICP incentives depends on the contribution of data centres to the IC network. The more Canisters deployed and the more computing power and storage provided, the more ICP incentives.</p>
 <p>In the process of using Ethereum smart contracts to sign, transfer and trade, cryptocurrency users need to pay a certain amount of gas fee to the network. The gas fee will rise with network congestion. Especially when the De-Fi market is booming, high gas fees have become a barrier for the majority of ordinary users to participate.</p>
-<p><img src="assets/1/1688483328530.jpg" alt="1688483328530" /></p>
+<img src="assets/1/1688483328530.jpg" alt="1688483328530" style="zoom:77%;" />
 <p>ICP can be exchanged for Cycles tokens. The exchange rate between the two is dynamically changing to ensure the relative stability of the value of Cycles and prevent Gas fees from fluctuating sharply.</p>
 <h2 id="future-has-come"><a class="header" href="#future-has-come">Future has come!</a></h2>
 <p>Due to the existence of cross-chain bridges, there are inherent 51% attack security issues in cross-chain.</p>
@@ -397,8 +396,8 @@
 <p>Realizing the vision of Web3. For end-users, accessing IC-based services is largely transparent. Their personal data is more secure than when accessing applications on a public or private cloud, but the experience of interacting with the application is the same. For the people creating and managing those IC-based services, however, the IC eliminates many of the costs, risks, and complexities associated with developing and deploying modern applications and microservices. For example, the IC platform provides an alternative to the consolidation driven by large technology companies that are monopolizing the Internet. In addition, its secure protocol guarantees reliable message delivery, transparent accountability, and resilience without relying on firewalls, backup facilities, load balancing services, or failover orchestration.</p>
 </blockquote>
 <p>That's why I believe that IC will start a new era on the internet. The singularity!</p>
-<p>Dominic Williams was very excited in his blog post on January 6, 2021:<img src="assets/1/image-20230704200917524-1688801791453-16.png" alt="image-20230704200917524" /></p>
-<p><img src="../../../../image-20230704201553626.png" alt="image-20230704201553626" /></p>
+<p>Dominic Williams was very excited in his blog post on January 6, 2021:<img src="assets/1/image-20230704200917524.png" alt="image-20230704200917524" style="zoom:67%;" /></p>
+<img src="assets/1/image-20230704201553626.png" alt="image-20230704201553626" style="zoom:67%;" />
 <p>WAGMI!!</p>
 
                         <div id="giscus-container"></div>
