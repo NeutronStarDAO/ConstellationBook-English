@@ -56,7 +56,7 @@ In addition to the output queues, there is an **ingress history** data structure
 
 Looking at the message routing and execution layers separately, it looks like this:
 
-<img src="assets/Messageroutinglayer/IMG22.png" alt="IMG22" style="zoom: 80%;" />
+![image-20230710141512786](assets/Messageroutinglayer/image-20230710141512786.png)
 
 ## Intra-subnet messages
 
@@ -74,11 +74,11 @@ Think about it, the data states in the replicas are the same, and consensus is a
 
 Consensus is used when everyone faces different choices to make everyone execute the same operation.
 
-<img src="assets/Messageroutinglayer/IMG23.png" alt="IMG23" style="zoom: 67%;" />
+![image-20230710142242883](assets/Messageroutinglayer/image-20230710142242883.png)
 
 So when a canister in a subnet calls another canister within the same subnet, each replica will make the same cross-canister call. Each replica stores all the data in the subnet. When the replicas execute cross-canister calls, the consistency of data in the subnet is still maintained.
 
-<img src="assets/Messageroutinglayer/IMG24.png" alt="IMG24" style="zoom: 67%;" />
+![image-20230710142515440](assets/Messageroutinglayer/image-20230710142515440.png)
 
 **Guarantees provided by the message routing layer**
 
@@ -106,7 +106,9 @@ Replicas need to verify the state again after processing messages. The **per-rou
 
 Both input and output must be certified by consensus, otherwise there is a risk of divergence.
 
-Therefore, in order to ensure that each replica processes the message correctly, after the Canister executes the message, the executed message must be recorded to allow the replicas to verify each other again.<img src="assets/Messageroutinglayer/IMG28.png" alt="IMG28" style="zoom: 80%;" />
+Therefore, in order to ensure that each replica processes the message correctly, after the Canister executes the message, the executed message must be recorded to allow the replicas to verify each other again.
+
+<img src="assets/Messageroutinglayer/image-20230710144332663.png" alt="image-20230710144332663" style="zoom:67%;" />
 
 After executing messages in each round, each replica hashes its own per-round certified state, packs it into a Merkle tree, and signs it with a private key fragment. Collect two-thirds of the signature fragments to aggregate into a complete signature. The state tree and the certified signature are called the per-round certified state.
 
@@ -172,7 +174,7 @@ After combining and packaging these payloads into a block, the consensus protoco
 
 This is the process of transmitting messages from one subnet to another subnet. As shown in the figure below.
 
-<img src="assets/Messageroutinglayer/image-20230710010538417.png" alt="image-20230710010538417" style="zoom:67%;" />
+<img src="assets/Messageroutinglayer/image-20230710135919388.png" alt="image-20230710135919388" style="zoom:67%;" />
 
 Garbage collection: After sending the messages, subnet A still needs to tell subnet B which messages have been processed so that subnet A can clear those messages that are no longer needed.
 
