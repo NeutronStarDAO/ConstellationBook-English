@@ -78,7 +78,7 @@ Consensus is used when everyone faces different choices to make everyone execute
 
 So when a canister in a subnet calls another canister within the same subnet, each replica will make the same cross-canister call. Each replica stores all the data in the subnet. When the replicas execute cross-canister calls, the consistency of data in the subnet is still maintained.
 
-![image-20230710142515440](assets/Messageroutinglayer/image-20230710142515440.png)
+![image-20230710151201556](assets/Messageroutinglayer/image-20230710151201556.png)
 
 **Guarantees provided by the message routing layer**
 
