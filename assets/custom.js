@@ -136,10 +136,10 @@ var initAll = function () {
     script.src = "https://giscus.app/client.js";
     script.async = true;
     script.crossOrigin = "anonymous";
-    script.setAttribute("data-repo", "NeutronstarPRO/ICCookbook");
-    script.setAttribute("data-repo-id", "R_kgDOI0J1bg");
+    script.setAttribute("data-repo", "NeutronStarDAO/discussions");
+    script.setAttribute("data-repo-id", "R_kgDOJaRMyQ");
     script.setAttribute("data-category", "General");
-    script.setAttribute("data-category-id", "DIC_kwDOI0J1bs4CTuGp");
+    script.setAttribute("data-category-id", "DIC_kwDOJaRMyc4CV-zr");
     script.setAttribute("data-mapping", "pathname");
     script.setAttribute("data-term", pagePath);
     script.setAttribute("data-reactions-enabled", "1");
