@@ -22,7 +22,7 @@
 - [Consensus layer](./2.CoreProtocol/IntroductiontoConsensusLayer.md)
 - [Message routing layer](./2.CoreProtocol/Messageroutinglayer.md)
 - [Execution layer](./2.CoreProtocol/executionLayer.md)
-- [Related concepts](./2.CoreProtocol/Relatedconcepts/introduction.md)
+- [Related concepts](./2.CoreProtocol/Relatedconcepts/Introduction.md)
   - [How to pick the number of consensus committee?](./2.CoreProtocol/Relatedconcepts/HowToPickNumberInConsensus.md)
   - [How does P2P layer reduce malicious attack?](./2.CoreProtocol/Relatedconcepts/P2PLayerAndMaliciousAttack.md)
 
