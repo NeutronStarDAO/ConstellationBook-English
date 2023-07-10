@@ -182,13 +182,13 @@ It created an open ledger system: people from all over the world can join or lea
 
 In the traditional network architecture, user data is indiscriminately stuffed into servers. Users cannot truly control their own data, and whoever controls the server has the final say. If we can view this one-to-many relationship as "**points**" scattered around the world, the user's data flows into each point tirelessly.
 
-<img src="https://s1.imagehub.cc/images/2023/03/12/114ae224b59654899e49f3e6da932b50.png" alt="image-20230124222808798" style="zoom:25%;" />
+<img src="https://s1.imagehub.cc/images/2023/03/12/114ae224b59654899e49f3e6da932b50.png" alt="image-20230124222808798" style="zoom: 15%;" />
 
 So the Bitcoin network can be seen as a "**line**", it connects isolated points into a line, making the internet more fair and open. What Bitcoin does is to combine computers from all over the world to form a huge "**world ledger**". So what if you want to record something else? Just imitate Bitcoin and create a new one!
 
 Six years after the birth of Bitcoin, a "**surface**" that can deploy software on a decentralized network gradually emerged, called [Ethereum](WhatisEthereum.md). Ethereum is not a replica of Bitcoin's world ledger. Ethereum has created a shared and universal virtual "**world computer**", with Ethereum's virtual machine running on everyone's computer. Like the Bitcoin ledger, it is tamper-proof and cannot be modified. Everyone can write software and deploy it on the virtual machine, as long as they pay a bit of ether to the miners. (There are no miners anymore, but that's another article 😋)
 
-<img src="https://s1.imagehub.cc/images/2023/01/26/38d3219e513911f18db5c8468841e030.png" alt="image-20230124190858096" style="zoom:27%;" />
+<img src="https://s1.imagehub.cc/images/2023/01/26/38d3219e513911f18db5c8468841e030.png" alt="image-20230124190858096" style="zoom: 15%;" />
 
 Deployed software on the blockchain becomes an automated vending machine, permanently stored within a distributed and decentralized network that fairly and justly evaluates each transaction to determine if conditions are met. With the blockchain's immutable storage capabilities, the phrase "code is law" is coined. Here, software is referred to by another name: "smart contracts". 
 
@@ -212,7 +212,7 @@ The opportunity finally arrived in November 2015, in London.
 
 Dominic presented the consensus algorithm he had been studying at devcon one.
 
-<img src="https://s1.imagehub.cc/images/2023/01/26/93504674b2894befb3c529b248726f50.png" style="zoom:50%;" />
+<img src="https://s1.imagehub.cc/images/2023/01/26/93504674b2894befb3c529b248726f50.png" style="zoom: 67%;" />
 
 Now we can see from Dominic's presentation at devcon one in 2015 that he described the IC as Ethereum 3.0. In fact, it wouldn't be too much to call it Blockchain 3.0. If Bitcoin and Ethereum are called "Blockchain 1.0" and "Blockchain 2.0", he wanted to create a "**solid**", a true world computer, even naming the project the Internet Computer (IC for short). Based on the "face" to support large-scale applications, it can horizontally expand and achieve unlimited scalability as a "**world computer**". 
 
@@ -226,7 +226,7 @@ During the conversation, Dominic discovered that even the staunchest Bitcoin sup
 
 Dominic had an even grander vision than Ethereum. He wanted to create a public network of servers that would provide a "decentralized cloud" - a trusted computing platform. Software would be deployed and run on this decentralized cloud.
 
-<img src="https://s1.imagehub.cc/images/2023/01/26/73d313475c9ef0586de3a71b9b05f7c5.png" style="zoom:50%;" />
+<img src="https://s1.imagehub.cc/images/2023/01/26/73d313475c9ef0586de3a71b9b05f7c5.png" style="zoom: 67%;" />
 
 Dominic is working on reshaping a completely decentralized infrastructure, which can also be understood as the next generation of internet infrastructure or as a decentralized trusted computing platform combined with blockchain😉.
 
@@ -242,7 +242,7 @@ Trusted computing: based on cryptographic computation and protection, combined w
 
 Blockchain has something called a consensus algorithm, which is responsible for coordinating the nodes in the network (a node is a group of servers, which can be understood as a high-performance computer). The consensus algorithm can ensure that everyone's information in the network is in agreement, because this is a network that anyone can join or leave at any time, and it is not known which node might intentionally disrupt it (you can refer to my future blog post about the Byzantine Generals problem). With the consensus algorithm, even if one-third of the nodes in the network are malicious, the other nodes can still reach a consensus normally (the resistance of different consensus algorithms varies).
 
-![image-20230622144401316](assets/JourneyoftheDreamWeaver/image-20230622144401316.png)
+<img src="assets/JourneyoftheDreamWeaver/image-20230622144401316.png" alt="image-20230622144401316" style="zoom: 15%;" />
 
 Decentralized platforms not only involve token transfers between parties, but also rely on consensus algorithms to establish a barrier and keep malicious actors at bay. However, efficiency and decentralization are difficult to achieve simultaneously, and it's challenging to create a fully decentralized system that can both protect nodes and allow for coordination and data synchronization among them. Dominic's goal is to merge trusted computing and blockchain to create a limitless, open, high-performance, strongly consistent, scalable, and data-intensive blockchain network composed of servers from all over the world, without the need for firewalls.
 
@@ -290,7 +290,7 @@ Ben Lynn is one of the creators of the BLS signature algorithm, and the "L" in B
 
 May 10th. The IC mainnet was launched. 
 
-<img src="https://s1.imagehub.cc/images/2023/01/26/df5b4b83d7b278dd3fdb923135947a16.jpeg" alt="Image" style="zoom:30%;" />
+<img src="https://s1.imagehub.cc/images/2023/01/26/df5b4b83d7b278dd3fdb923135947a16.jpeg" alt="Image" style="zoom: 50%;" />
 
 The chart above shows a comparison of performance, storage data costs, and energy consumption against other blockchains.
 
@@ -405,7 +405,7 @@ Focus on the research and development of underlying infrastructure until various
 
 Scalability / Zero marginal cost / Open system → Increase in number of applications → Exponential increase in various connections → Valuable ideas emerge → Form applications → System complexity → Quantity continues to increase exponentially → Positive feedback loop → Ecosystem prosperity.
 
-![image-20230622150511970](assets/JourneyoftheDreamWeaver/image-20230622150511970.png)
+![333333](assets/JourneyoftheDreamWeaver/333333.jpg)
 
 All technological development options have advantages and disadvantages. Judging who will eventually win based on the partial and one-sided technological advantages and disadvantages is naive and dangerous. The ultimate winner on the blockchain will be the one with the richest ecosystem, the largest number of developers, software applications, and end users.
 
@@ -415,7 +415,7 @@ The huge changes in industries brought about by technological revolutions are su
 
 Once a few critical parameters affecting the industrial pattern cross the critical point, the ecosystem enters a period of great prosperity, and changes are extremely rapid. The profound impact on most people is completely unexpected. After the change ends, the industry enters a new long-term balance. For some time, almost no competitors can catch up with the leaders in the industry.
 
-![d906dc0876066d58bf33d4a2c619bc20-1674887452159-35](assets/JourneyoftheDreamWeaver/d906dc0876066d58bf33d4a2c619bc20-1674887452159-35.png)
+<img src="assets/JourneyoftheDreamWeaver/d906dc0876066d58bf33d4a2c619bc20-1674887452159-35.png" alt="d906dc0876066d58bf33d4a2c619bc20-1674887452159-35" style="zoom: 33%;" />
 
 After 2 years of development, the IC ecosystem has emerged with many excellent applications. The front end and back end are all on-chain, and Dapps that do not rely on centralized services at all.
 
@@ -427,7 +427,9 @@ In the decentralized finance (DeFi) field, the IC ecosystem also has some very g
 
 There is also the decentralized NFT market [Yumi](https://tppkg-ziaaa-aaaal-qatrq-cai.raw.ic0.app/). Users can create, buy and trade digital artworks, providing artists and collectors with new opportunities and markets.
 
-The IC ecosystem has already emerged with many impressive Dapps, covering social, finance, NFT markets and wallets, providing rich and diverse experiences and services. As the IC ecosystem continues to grow and innovate, we look forward to more excellent applications. There are more interesting projects waiting for you to discover on the [official website](https://internetcomputer.org/ecosystem).![image-20230704224645360](assets/JourneyoftheDreamWeaver/image-20230704224645360.png)
+The IC ecosystem has already emerged with many impressive Dapps, covering social, finance, NFT markets and wallets, providing rich and diverse experiences and services. As the IC ecosystem continues to grow and innovate, we look forward to more excellent applications. There are more interesting projects waiting for you to discover on the [official website](https://internetcomputer.org/ecosystem).
+
+<img src="assets/JourneyoftheDreamWeaver/image-20230704224645360.png" alt="image-20230704224645360" style="zoom: 37%;" />
 
 Switzerland is now a prominent "Crypto Valley", where many well-known blockchain projects have been born. Dfinity is the first completely non-profit foundation here.
 
@@ -435,25 +437,15 @@ Dominic has assembled a very strong team of blockchain developers, including cry
 
 I believe that blockchain will still be one of the most interesting, influential, and fastest-growing technology fields in the next 10 years. Currently, there is no other chain better suited for deploying applications than IC.
 
-<br>
-
-<br>
-
 This is the story I wanted to tell about Dominic, but his own story is far from over, and has just begun...
 
-![WeCha(1)@1.5x](assets/JourneyoftheDreamWeaver/WeCha(1)@1.5x.jpg)
+
+
+<img src="assets/JourneyoftheDreamWeaver/WeCha(1)@1.5x.jpg" alt="WeCha(1)@1.5x" style="zoom: 25%;" />
 
 Who could have imagined that a blog post from distant 1998 would ignite the "crypto movement" that has been sweeping the world for the past twenty years, fueled by Dominic's passion for unlimited distribution...
 
 That was a new world.
-
-<br>
-
-<br>
-
-<br>
-
-<br>
 
 <br>
 
@@ -481,6 +473,6 @@ Maybe it was just a dream.
 
 Or maybe it was something that could change the world.
 
-![image-20230705214715102](assets/JourneyoftheDreamWeaver/image-20230705214715102.png)<br>
+<img src="assets/JourneyoftheDreamWeaver/image-20230705214715102.png" alt="image-20230705214715102" style="zoom: 67%;" /><br>
 
 <br>

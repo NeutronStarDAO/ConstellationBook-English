@@ -25,7 +25,7 @@ The basic position of "anarchism" is to oppose all forms of domination and autho
 - Then, when there are a large number of "profitable" organizations, someone will stand up to protect everyone. The emergence of violent organizations to prevent violence - the army. Everyone pays a little money (taxes) in exchange for protection. People form governments to provide protection services more efficiently. People deposit their money in banks because banks can provide protection: vaults, safe deposit boxes, security guards, police, etc. This system relies on the government to operate, banks, police, either accept government regulation or are established by the government. My money is not on me, it's in the bank, haha you can't rob it.
 - In this way, two large organizations (governments) will engage in larger-scale wars due to collective interest conflicts if the benefits outweigh the costs of launching the war. Recruit more armies to protect collective property...The violent conflicts become larger and larger, where is the peace? Nuclear deterrence.
 
-<img src="assets/ThingsaboutCryptoPunks/image-20230622122919949.png" alt="image-20230622122919949" style="zoom:25%;" />
+<img src="assets/ThingsaboutCryptoPunks/image-20230622122919949.png" alt="image-20230622122919949" style="zoom: 80%;" />
 
 By the 21st century, people's property, including social and entertainment, gradually shifted to the Internet. So the organizations that protect people's property also migrated online: online banks, Alipay.
 
