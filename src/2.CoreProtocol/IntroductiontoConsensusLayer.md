@@ -313,7 +313,8 @@ As the protocol progresses round by round, the blocks connected from the genesis
 Honest replicas have a consistent view of the path of the blockchain. The blocks record the messages that have been sorted, which are sent by the message routing layer to the execution layer for processing.
 
 <br>
-<br>
+
+## Comparison of consensus mechanisms
 
 |                       |             Classic public chain             |                    Consortium Blockchain                     |                      Internet Computer                       |
 | :-------------------: | :------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
