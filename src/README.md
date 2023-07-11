@@ -2,7 +2,7 @@
 
 <img src="assets/README/Book0.jpg">
 
-If you have only heard of IC but have been busy with Ethereum and Polkadot projects without delving into IC, then you've come to the right place to learn more about it [here](1.OverviewofIC/1.md)!
+If you have only heard of IC but have too busy with Ethereum and Polkadot projects without delving into IC, then you've come to the right place to learn more about it [here](1.OverviewofIC/1.md)!
 
 If you are still unfamiliar with Web3, blockchain, Bitcoin, and IC, don't worry, start [here](0.JourneytoWeb3/JourneyoftheDreamWeaver.md). Let me guide you through the history of encryption and quickly get you started in Web3 development!
 
@@ -10,9 +10,9 @@ If you are still unfamiliar with Web3, blockchain, Bitcoin, and IC, don't worry,
 
 The structure of the "Internet Computer Roaming Guide": the first half is vivid and interesting, and the second half is concise; the first half talks about IC principles, and the second half discusses development in practice.
 
-## Why write this book?
+## Why do I write this book
 
-Initially, after learning about IC, I collected and organized materials from IC whitepapers, Medium, ICPL forums, and IC Developer Forums. After talking to a friend about the IC architecture, I told her that I was organizing notes on IC resources and would share them when they were ready. I didn't expect that it would take a year. After experiencing the long years of procrastination, and with what I learned later, I finally put together the first version of the notes. After a period of further study, I thought it would be better to share these notes. Making it an open-source book helps everyone learn about IC and contributes to the IC developer community.
+Early on, after learning about IC, I collected and arranged materials from the IC Whitepaper, Medium, ICPL forums, and IC Developer Forums. After talking to a friend about the IC architecture, I told her I was making notes on the IC resources and would share them when they were ready. I didn't expect that it would take a year. After experiencing the long years of procrastination, and with what I learned later, I finally put together the first version of the notes. After a period of further study, I thought it would be better to share these notes. Making it an open-source book helps everyone learn about IC and contributes to the IC developer community.
 
 <br>
 
@@ -26,7 +26,7 @@ I really like the Rust open-source community. There are many open-source books a
 
 <br>
 
-In addition, the IC content is updated and iterated quickly. With open-source, everyone can contribute, keeping the content fresh and up-to-date.
+In addition, the IC content is updated and iterated quickly. With open-source references, everyone can contribute, keeping the content fresh and up-to-date.
 
 <br>
 

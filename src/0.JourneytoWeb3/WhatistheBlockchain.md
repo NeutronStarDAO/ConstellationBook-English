@@ -1,10 +1,10 @@
-# What is the Blockchain?
+# What Is Blockchain?
 
 What is blockchain?
 
 Blockchain is a decentralized distributed system formed through cryptography.
 
-Wait, what does decentralized mean?
+Wait, what does decentralization mean?
 
 Don't worry, let me explain it one step at a time.
 
@@ -22,7 +22,7 @@ The capabilities of a single server are continuously challenged, and it starts t
 
 <img src="assets/WhatistheBlockchain/image-20230622173625314.png" alt="image-20230622173625314" style="zoom: 25%;" />
 
-On one hand, storage capacity is insufficient to meet the massive storage demands of transaction data; on the other hand, during shopping frenzies like Double 11 and 618, system access volume surges, CPU loads continue to climb, and overload situations occur frequently. Even more severe, server failures sometimes occur, resulting in the entire system becoming paralyzed and transaction data being lost.
+For one thing, storage capacity is insufficient to meet the massive storage demands of transaction data; for another, during shopping frenzies like Double 11 and 618, system access volume surges, CPU loads continue to climb, and overload situations occur frequently. Even more severe, server failures sometimes occur, resulting in the entire system becoming paralyzed and transaction data being lost.
 
 <br>
 
@@ -198,4 +198,4 @@ Cross-border payments: Digital currencies can be used to make cross-border payme
 - Legal services: Blockchain can be used to store and verify legal documents such as contracts and wills. This helps improve the efficiency of legal services and reduce the cost of legal services.
 - Food safety: Blockchain can be used to track the circulation of food in the supply chain to ensure food safety and quality. This helps prevent food safety issues and boost consumer confidence.
 
-The above are only some of the applications of blockchain technology in various fields. With the development and innovation of technology, blockchain will show great potential in more fields. At the same time, we should also pay attention to the challenges brought by blockchain technology, such as energy consumption, network congestion, privacy protection, and other issues. Continuous discussion and improvement of blockchain technology will help create a safer, more transparent and efficient digital world.
+The above are only some of the applications of blockchain technology in various fields. With the development and innovation of technology, blockchain will show great potential in more fields. At the same time, we should also pay attention to the challenges brought by blockchain technology, such as energy consumption, network congestion, privacy protection, and other issues. Continuous discussion and improvement of blockchain technology will help create a safer, more transparent and more efficient digital world.

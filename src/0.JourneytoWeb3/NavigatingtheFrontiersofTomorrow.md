@@ -1,6 +1,6 @@
-# Future has come
+# The Future Has Come
 
-I read through a lot of thoughts about blockchain,and summarise them into this article. Which I hope to give a relatively objective view about blockchain and internet technologies in the future.
+I read through a lot of thoughts about blockchain, and summarise them into this article. Which I hope to give a relatively objective view about blockchain and internet technologies in the future.
 
 
 
@@ -10,7 +10,7 @@ I read through a lot of thoughts about blockchain,and summarise them into this a
 
 Blockchain is all the rage these days. It seems like everyone is buying cryptocurrencies.
 
-The quadrennial bull market, digital gold Bitcoin, red-hot ICOs, meme coins with hundredfold increases...
+The quadrennial bull market, digital gold Bitcoin, red-hot IXOs, meme coins with hundredfold increases...
 
 Hold on, let me check the calendar. It's May 2023... Looks like we're almost due for another bull market, if it comes on schedule. Last time was 2020, so maybe this time it'll be 2024.
 
@@ -36,7 +36,7 @@ During the late '90s Internet bubble, the market experienced several ups and dow
 
 <img src="assets/NavigatingtheFrontiersofTomorrow/image-20230603203923583.png" alt="image-20230603203923583" style="zoom:65%;" />
 
-As people went through several bull and bear cycles, this unwavering belief was further reinforced. When the real, prolonged bear market began, they continued to follow their own summarized experience, doubling down and buying at what they thought were the lowest points...
+As people went through several bull and bear cycles, this unwavering belief was further reinforced. When the real, prolonged bear market began, they continued to follow their own summarized experience, doubling down and buying at what they thought were the dips... 
 
 <img src="assets/NavigatingtheFrontiersofTomorrow/image-20230603205835532.png" alt="image-20230603205835532" style="zoom:65%;" />
 
@@ -46,7 +46,7 @@ When the bubble burst, stock prices plummeted more than 50% in just a few days, 
 
 The essence of the Internet is to reduce the cost of searching and interacting with information to almost zero, and on this basis, it has given birth to many highly scalable, highly profitable, and monopolistic business models that traditional economists cannot comprehend. However, many projects and ideas from the '90s were launched prematurely, before the necessary hardware and software infrastructure was in place, and before personal computers and broadband internet became widespread. As a result, they ended up failing miserably, like Webvan, founded in 1996 and bankrupt by 2001, with a total funding of around $800 million.
 
-After the dot-com bubble burst in 2001, the maturation of infrastructure and the decrease in various costs led to the emergence of new applications (such as Taobao, YouTube, Netflix, Facebook, Amazon, AWS, iPhone, Uber, TikTok, and so on). Their explosive growth and massive scale far surpassed even the most pessimistic imaginations.
+After the dot-com bubble burst in 2001, the maturation of infrastructure and the decrease in various costs led to the emergence of new applications (such as Taobao, YouTube, Netflix, Facebook, Amazon, AWS, iPhone, Uber, TikTok). Their explosive growth and massive scale far surpassed even the most pessimistic imaginations.
 
 <img src="assets/NavigatingtheFrontiersofTomorrow/image-20230603211039212.png" alt="image-20230603211039212" style="zoom:60%;" />
 
@@ -113,7 +113,9 @@ The essence of blockchain technology is that innovation can be carried out by ev
 
 Visa's TPS is 2400, Bitcoin's is 7. Even at Bitcoin's slow speed, it has gained the support of enthusiasts, organizations and some governments around the world. If the previous centralized applications, such as Telegram and Dropbox, can be transferred to a decentralized blockchain, what kind of scenario would that be? Productivity will definitely be improved.
 
-Despite the widespread application and development of blockchain technology in recent years, there are still some obvious drawbacks. One of the main issues is scalability. As blockchain technology is widely applied in areas such as digital currencies, smart contracts, and supply chain tracing, the transaction and data volume in blockchain networks are growing rapidly, presenting significant challenges to the scalability of the blockchain. The current blockchain architecture faces problems such as low throughput and high latency, making it difficult to support large-scale application scenarios. This is because the traditional blockchain technology adopts distributed consensus algorithms, which require all nodes to participate in the process of block verification and generation, thus limiting the network throughput and latency. Additionally, as blockchain data is stored on each node, data synchronization and transmission can also become bottlenecks for scalability.<img src="assets/NavigatingtheFrontiersofTomorrow/image-20230705184046350.png" alt="image-20230705184046350" style="zoom:30%;" />
+Despite the widespread application and development of blockchain technology in recent years, there are still some obvious drawbacks. One of the main issues is scalability. As blockchain technology is widely applied in areas such as digital currencies, smart contracts, and supply chain tracing, the transaction and data volume in blockchain networks are growing rapidly, presenting significant challenges to the scalability of the blockchain. The current blockchain architecture faces problems such as low throughput and high latency, making it difficult to support large-scale application scenarios. This is because the traditional blockchain technology adopts distributed consensus algorithms, which require all nodes to participate in the process of block verification and generation, thus limiting the network throughput and latency. Additionally, as blockchain data is stored on each node, data synchronization and transmission can also become bottlenecks for scalability. 
+
+<img src="assets/NavigatingtheFrontiersofTomorrow/image-20230705184046350.png" style="zoom:30%;" />
 
 Therefore, solving the scalability problem of blockchain has become one of the important directions for the development of blockchain technology. Researchers have proposed many solutions to improve the throughput and latency performance of blockchain networks, such as sharding technology, sidechain technology, and Lightning Network. These technologies are designed to decompose the blockchain network into smaller parts, allowing for separate processing of transactions and data, and can be interoperable through cross-chain communication protocols. Through these innovative technologies, blockchain scalability can be improved to better meet the needs of actual application scenarios.
 

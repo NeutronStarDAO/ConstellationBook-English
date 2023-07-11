@@ -1,14 +1,18 @@
 # Journey of the Dream Weaver
 
-In every geek's heart lies a dream of decentralization. This is a story about Dominic Williams.
+In every geek's heart lies a dream of decentralization. 
 
-## The Geek from London
+This is a story about Dominic Williams.
+
+<br>
+
+## JAHEBIL😎
 
 He liked to call himself "JAHEBIL", which stands for "Just Another Hacker Entrepreneur Based in London".
 
 He wrote code, started businesses, and worked as a "dream maker" in London.
 
-He was brave and optimistic, living a secluded life, not interested in socializing, and only concerned about the brand of his company, living a repetitive and focused life. Even working 18-hour days in an unfriendly entrepreneurial environment in the UK, he could still hum the happiest tunes. 
+He was brave and optimistic, living secludedly, was not interested in socializing, and was only concerned about the brand of his company, living a repetitive and focused life. Even working 18 hours per day in an unfriendly entrepreneurial environment in the UK, he could still hum the happiest tunes.
 
 <br>
 
@@ -16,7 +20,7 @@ Compared to Silicon Valley, the UK's entrepreneurial environment was like a livi
 
 <br>
 
-Tired of the cyclical life that was only draining his enthusiasm, the seed of hope ground at Dominic's heart. In 2010, as a dream maker, he decided to take a big risk!
+Tired of the cyclical life that was only draining his enthusiasm, the seed of hope ground at Dominic's heart. In 2010, as a dream maker, he decided to take chances!
 
 Fight My Monster was a massively multiplayer online game and a children's social network. He planned to connect children from all over the world to play this game online. Players have their own monsters and use different skills to attack each other in a turn-based battle. At that time, on the other side of the earth, China was also going crazy for "Roco Kingdom" developed by Tencent.
 
@@ -158,7 +162,7 @@ While learning, Dominic didn't forget to trade Bitcoin. Investing in Bitcoin bro
 
 <br>
 
-Dominic's research focuses on protocols and cryptography, which are like dry kindling that reignites the dreamer's inner spark. Dominic believes that these protocols and cryptographic algorithms can change the world. He took the "D" for decentralized and the "finity" for infinity and combined them to create "Dfinity". Dfinity aims to create a decentralized application platform with infinite scalability.
+Dominic's research focuses on protocols and cryptography, which are like dry kindling that reignites the dreamer's inner spark. Dominic believes that these protocols and cryptographic algorithms can change the world. He took the "D" for decentralized and the "finity" for infinity and combined them to create "DFINITY". DFINITY aims to create a decentralized application platform with infinite scalability.
 
 After returning to Mountain View, California from China, Dominic tweeted, "China Loves Blockchain :)". 
 
@@ -168,7 +172,7 @@ Like Ethereum, Dominic also received investment in China. The reason is simple. 
 
 <br>
 
-Next, I need to introduce what the Dfinity team is doing in detail.
+Next, I need to introduce what the DFINITY team is doing in detail.
 
 <br>
 
@@ -254,7 +258,7 @@ In the fall of 2016, Dominic announced his return as a "decentralized adventurer
 
 <br>
 
-## Dfinity !
+## DFINITY !
 
 IC re-designed the blockchain architecture and developed more efficient consensus, along with innovative cryptographic combinations, in order to achieve the idea of a "world computer". The goal is to solve the limitations of speed, efficiency, and scalability in traditional blockchain architectures. 
 
@@ -278,7 +282,7 @@ Ben Lynn (second from left in the red T-shirt) is demonstrating a mind-blowing t
 
 By the way, engineer Timo Hanke (third from left in the middle) was a mathematics and cryptography professor at RWTH Aachen University in Germany before he created AsicBoost in 2013, which increased the efficiency of Bitcoin mining by 20-30% and is now a standard for large-scale mining operations.
 
-Ben Lynn is one of the creators of the BLS signature algorithm, and the "L" in BLS stands for the "L" in his name. After graduating from Stanford with a Ph.D., he worked at Google for 10 years before joining Dfinity in May 2017. If you haven't heard of the BLS algorithm, you must have read Ben Lynn's "Git Magic," which was all the rage on the internet a few years ago.
+Ben Lynn is one of the creators of the BLS signature algorithm, and the "L" in BLS stands for the "L" in his name. After graduating from Stanford with a Ph.D., he worked at Google for 10 years before joining DFINITY in May 2017. If you haven't heard of the BLS algorithm, you must have read Ben Lynn's "Git Magic," which was all the rage on the internet a few years ago.
 
 <img src="https://s1.imagehub.cc/images/2023/03/12/fed23c8e27a52bd194abd072f602c2d3.png" style="zoom:57%;" />
 
@@ -318,7 +322,7 @@ The whiteboard of the Zurich office's computing Bitcoin integration.
 
 <img src="https://s1.imagehub.cc/images/2023/01/26/6d6fa714d370a66d05a6c0d443c585b2.jpeg" style="zoom:77%;" />
 
-Since the data is on the chain, the **Gas fee has to be very low** so people will use it: 1 G for 1 year is $5! Low Gas alone is not enough. In order for users to use Dapps without barriers, IC uses a **reverse Gas fee model** where the Gas is paid by the development team. The Dfinity team also pegged Gas to SDR, turning it into **stable Gas** that does not fluctuate with the coin price. IC has a unified decentralized anonymous identity: **Internet Identity (ii)** as the login for Dapps and joins the network neural system to participate in governance...
+Since the data is on the chain, the **Gas fee has to be very low** so people will use it: 1 G for 1 year is $5! Low Gas alone is not enough. In order for users to use Dapps without barriers, IC uses a **reverse Gas fee model** where the Gas is paid by the development team. The DFINITY team also pegged Gas to SDR, turning it into **stable Gas** that does not fluctuate with the coin price. IC has a unified decentralized anonymous identity: **Internet Identity (ii)** as the login for Dapps and joins the network neural system to participate in governance...
 
 IC architecture and consensus are also unique. IC theoretically has unlimited computing and storage, just add more server nodes. The improved consensus is a bit like practical Byzantine, but more complex, because it is quite different from the current consensus. Dominic gave it a name called "PoUW" consensus, Proof of Useful Work. The BLS threshold signature scheme's VRF generates truly unpredictable random numbers, and everyone can verify that the random number is not forged by others. Anti-Sybil attack edge nodes, layered architecture, randomly designated block generation, no need to say more, just one word, wonderful.
 
@@ -336,13 +340,13 @@ The photo on the office wall when IC was about to reach 30 million blocks after 
 
 <br>
 
-In July 2021, many new Dfinity members interviewed and joined the team via video conferencing during the COVID-19 pandemic without meeting in person. On this day, a small group of people came to the office located in Zurich to meet face-to-face. 
+In July 2021, many new DFINITY members interviewed and joined the team via video conferencing during the COVID-19 pandemic without meeting in person. On this day, a small group of people came to the office located in Zurich to meet face-to-face. 
 
 <img src="https://s1.imagehub.cc/images/2023/01/26/3adc64294313d748a0fe347ee81007b3.jpeg" alt="图片" style="zoom:17%;" />
 
 <br>
 
-Dominic has written two visions for Dfinity in his blog: 
+Dominic has written two visions for DFINITY in his blog: 
 
 On the one hand, many traditional monopolistic technology intermediaries, such as Uber, eBay, social networks, instant messaging, and even search engines, may be redesigned as "open-source enterprises," using proprietary software and their own decentralized governance systems to update themselves. 
 
@@ -431,7 +435,7 @@ The IC ecosystem has already emerged with many impressive Dapps, covering social
 
 <img src="assets/JourneyoftheDreamWeaver/image-20230704224645360.png" alt="image-20230704224645360" style="zoom: 37%;" />
 
-Switzerland is now a prominent "Crypto Valley", where many well-known blockchain projects have been born. Dfinity is the first completely non-profit foundation here.
+Switzerland is now a prominent "Crypto Valley", where many well-known blockchain projects have been born. DFINITY is the first completely non-profit foundation here.
 
 Dominic has assembled a very strong team of blockchain developers, including cryptography, computer science, and mathematics professors, PhDs and postdocs, cryptocurrency experts, senior engineers, and professional managers.
 

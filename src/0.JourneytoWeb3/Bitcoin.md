@@ -8,5 +8,5 @@ Bitcoin pioneered a solution to the problem of distributed computing.
 
 Satoshi Nakamoto's invention was also a feasible solution to the "Byzantine Generals Problem", an unsolved problem in distributed computing. In simple terms, the problem involves trying to achieve consensus on an action protocol through communication within an untrustworthy network that has potential threats. Nakamoto's solution was to achieve consensus without a central authority using the concept of proof-of-work, which represented a breakthrough in distributed computing science and has far surpassed mere currency applicability.
 
-There is a lot of information about Bitcoin online, so I won't go into a detailed introduction here.
+There is a lot of information about Bitcoin online, so I won't go into a detailed explanation here. 
 

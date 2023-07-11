@@ -18,9 +18,9 @@ But I still have to say a fair word. In fact, when you first installed the app, 
 
 Although on the surface, you agreed to the "User Agreement" first, and then they used your data to improve the experience.
 
-No one knows what they have done with the data.
+No one knows what they will have done with the data.
 
-We already know about PRISM, Facebook's leak of hundreds of millions of user data in 2018, Amazon was fined 746 million euros by the EU privacy regulator in July 2020 for violating the EU General Data Protection Regulation, which was also the largest data privacy leak fine in EU history. Domestic takeaway platforms such as Meituan and Ele.me have also been exposed to user information leaks and resales, down to order contents, addresses and other private information; Li Yanhong: Chinese people can be more open to data privacy and are willing to exchange privacy for efficiency...
+We already know about PRISM, Facebook's leak of hundreds of millions of user data in 2018, Amazon was fined 746 million euros by the EU privacy regulator in July 2020 for violating the EU General Data Protection Regulation, which was also the largest data privacy leak fine in EU history. Chinese takeaway platforms such as Meituan and Ele.me have also been exposed to user information leaks and resales, down to order contents, addresses and other private information; Li Yanhong: Chinese people can be more open to data privacy and are willing to exchange privacy for efficiency...
 
 <img src="assets/Whathappenedtomyprivacyontheinternet/Leeqj.png" alt="Leeqj" style="zoom:70%;" />
 
@@ -28,7 +28,7 @@ We already know about PRISM, Facebook's leak of hundreds of millions of user dat
 
 And they think that unfavorable content to them can be deleted directly without your consent. (Of course, illegal content must be deleted)
 
-The current situation of the Internet can be said to be: When I open my mobile phone, my apps want to read through my private information. Otherwise, you can't use it.
+The current situation of the Internet can be said to be: **When I open my mobile phone, my apps want to read through my private information. Otherwise, you can't use it.**
 
 <img src="assets/Whathappenedtomyprivacyontheinternet/7q6n5u.jpg" alt="7q6n5u" style="zoom: 67%;" />
 
