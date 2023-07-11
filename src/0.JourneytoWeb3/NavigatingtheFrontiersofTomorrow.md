@@ -1,4 +1,4 @@
-# Navigating the Frontiers of Tomorrow
+# Future has come
 
 I read through a lot of thoughts about blockchain,and summarise them into this article. Which I hope to give a relatively objective view about blockchain and internet technologies in the future.
 
