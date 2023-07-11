@@ -246,7 +246,7 @@ If a replica does not receive messages for several consecutive rounds due to net
 
 At this time, replicas can appropriately increase the delay and wait a little longer. This makes it more likely to receive messages in the next round.
 
-![image-20230706132653764](assets/IntroductiontoConsensusLayer/image-20230706132653764.png)
+![image-20230711215857942](assets/IntroductiontoConsensusLayer/image-20230711215857942.png)
 
 ### Finalization
 
