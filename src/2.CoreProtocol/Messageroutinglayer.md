@@ -56,7 +56,7 @@ In addition to the output queues, there is an **ingress history** data structure
 
 Looking at the message routing and execution layers separately, it looks like this:
 
-![image-20230710141512786](assets/Messageroutinglayer/image-20230710141512786.png)
+<img src="assets/Messageroutinglayer/image-20230712194634346.png" alt="image-20230712194634346" style="zoom:67%;" />
 
 ## Intra-subnet messages
 
