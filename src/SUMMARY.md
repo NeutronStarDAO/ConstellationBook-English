@@ -5,11 +5,11 @@
 # Journey of the Dream Weaver
 
 - [Journey of the Dream Weaver](0.JourneytoWeb3/JourneyoftheDreamWeaver.md)
-  - [Future has come](0.JourneytoWeb3/NavigatingtheFrontiersofTomorrow.md)
-  - [Things about Crypto Punks](0.JourneytoWeb3/ThingsaboutCryptoPunks.md)
+  - [Future Has Come](0.JourneytoWeb3/NavigatingtheFrontiersofTomorrow.md)
+  - [Things About Crypto Punks](0.JourneytoWeb3/ThingsaboutCryptoPunks.md)
   - [What is Blockchain?](0.JourneytoWeb3/WhatistheBlockchain.md)
   - [What is Ethereum?](0.JourneytoWeb3/WhatisEthereum.md)
-  - [What happened to my privacy on the internet?](0.JourneytoWeb3/Whathappenedtomyprivacyontheinternet.md)
+  - [What Happened to My Privacy on the Internet?](0.JourneytoWeb3/Whathappenedtomyprivacyontheinternet.md)
   - [Bitcoin](0.JourneytoWeb3/Bitcoin.md)
 
 # Overview of IC
@@ -18,13 +18,13 @@
 ---
 
 # Core Protocol
-- [Peer-to-peer layer](./2.CoreProtocol/P2Player.md)
-- [Consensus layer](./2.CoreProtocol/IntroductiontoConsensusLayer.md)
-- [Message routing layer](./2.CoreProtocol/Messageroutinglayer.md)
-- [Execution layer](./2.CoreProtocol/executionLayer.md)
-- [Related concepts](./2.CoreProtocol/Relatedconcepts/Introduction.md)
-  - [How to pick the number of consensus committee?](./2.CoreProtocol/Relatedconcepts/HowToPickNumberInConsensus.md)
-  - [How does P2P layer reduce malicious attack?](./2.CoreProtocol/Relatedconcepts/P2PLayerAndMaliciousAttack.md)
+- [Peer-to-peer Layer](./2.CoreProtocol/P2Player.md)
+- [Consensus Layer](./2.CoreProtocol/IntroductiontoConsensusLayer.md)
+- [Message Routing Layer](./2.CoreProtocol/Messageroutinglayer.md)
+- [Execution Layer](./2.CoreProtocol/executionLayer.md)
+- [Related Concepts](./2.CoreProtocol/Relatedconcepts/Introduction.md)
+  - [How to Pick the Number of Consensus Committee?](./2.CoreProtocol/Relatedconcepts/HowToPickNumberInConsensus.md)
+  - [How Does P2P Layer Reduce Malicious Attack?](./2.CoreProtocol/Relatedconcepts/P2PLayerAndMaliciousAttack.md)
 
 # Chain-Key Cryptography
 
