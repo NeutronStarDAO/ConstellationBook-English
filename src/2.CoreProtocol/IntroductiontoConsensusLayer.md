@@ -260,7 +260,7 @@ After a replica finds a notarized block, it will check whether it has notarized 
 
 To achieve the finalization of a block, two-thirds of different replicas need to issue finalization share, and then aggregate for the finalization of a block. The format of the finalization share is exactly the same as the notarization share (but marked in a specific way to prevent confusion). After receiving the finalized block, like the notarization process, it will broadcast to other members again.
 
-Note: The replica does not deliberately wait for the aggregation of the finalization share into the finalized before entering the next round. After receiving a finalization share of a certain height, the replica only checks whether it has notarized blocks other than that block, and then broadcasts its own signed finalization share; or forwards the finalization share intact.
+Note: Replicas do not wait until finalizing all the fragments before proceeding to the next round. The replica just checks if it has notarized any fragments other than the received one whenever it receives a fragment at a certain height, then broadcasts its signed finalized fragment or forwards the received finalized fragment.
 
 <br>
 
@@ -281,6 +281,14 @@ If a replica only generates a notarization share for one block in Round 5, the r
 It is possible that in Round 4, half of the replicas generated notarization shares for the leader and the 2nd blocks, and the other half of the replicas only generated notarization shares for the leader's block. Then the finalization share proposed by the replicas that only notarized the leader's block cannot reach the threshold and cannot obtain finalization. Only half of the replicas generate notarization shares for the 2nd member's block, so the 2nd member's block does not obtain notarization.
 
 ![IMG18](assets/IntroductiontoConsensusLayer/IMG18.png)
+
+In summary, if a block is not finalized in a round, the replicas will stay in that round waiting for the block to be finalized.
+
+If at the end of the round, still no block is finalized, it will proceed to the next round and try to finalize the block from the previous round.
+
+In subsequent rounds, as long as the network resumes synchronization and the leader is honest, the block for that round will eventually be finalized.
+
+Once a block in a round is finalized, all the blocks in the previous rounds will also be finalized formally. Notarization only ensures the block exists in the block tree, while finalization locks it on the canonical chain.
 
 Compared with many other blockchains, the advantage of the IC consensus protocol is that it adopts asynchronous finalization. In other blockchains, nodes usually need to find the longest chain. If the chain forks, the nodes need to wait for a while to find the longest chain. If some blocks are missed due to network failures, the longest chain cannot be found, and data from other nodes needs to be synchronized.
 
