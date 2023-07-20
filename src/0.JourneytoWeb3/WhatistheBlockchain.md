@@ -14,13 +14,17 @@ Don't worry, let me explain it one step at a time.
 
 Suppose a few neutron star beings want to establish an online banking system called "Neutron Star Bank." They purchase a server to handle all requests. The balance and transaction information for all users are stored on this single server. Thus, Neutron Star Bank begins its operations.
 
-<img src="assets/WhatistheBlockchain/image-20230622173500306.png" alt="image-20230622173500306" style="zoom: 25%;" />
+<div class="center-image">
+    <img src="assets/WhatistheBlockchain/image-20230512185621148.png" style="zoom:40%;" />
+</div>
 
 As online payments become increasingly popular, the number of users and use cases continue to grow, leading to exponential growth in transaction data.
 
 The capabilities of a single server are continuously challenged, and it starts to struggle: 
 
-<img src="assets/WhatistheBlockchain/image-20230622173625314.png" alt="image-20230622173625314" style="zoom: 25%;" />
+<div class="center-image">
+    <img src="assets/WhatistheBlockchain/image-20230512162525366.png" style="zoom:33%;" />
+</div>
 
 For one thing, storage capacity is insufficient to meet the massive storage demands of transaction data; for another, during shopping frenzies like Double 11 and 618, system access volume surges, CPU loads continue to climb, and overload situations occur frequently. Even more severe, server failures sometimes occur, resulting in the entire system becoming paralyzed and transaction data being lost.
 
@@ -30,13 +34,17 @@ The growth in business is putting a heavy strain on the system, and to prevent s
 
 They purchase one server to act as an "administrator" and several additional servers dedicated to data storage. When the administrator server receives transaction data, it forwards it to the servers responsible for data storage. Once one server is full, the data is stored in another server.
 
-<img src="assets/WhatistheBlockchain/image-20230622130157337.png" alt="image-20230622130157337" style="zoom:20%;" />
+<div class="center-image">
+    <img src="assets/WhatistheBlockchain/image-20230717094647994.png" style="zoom:40%;" />
+</div>
 
 If the administrator becomes overwhelmed, more administrator servers can be added. In this way, the system is finally expanded.
 
 However, at this point, a group of hackers set their sights on Neutron Star Bank. After all, money is just a string of numbers, and by secretly infiltrating the bank's database to modify account balances and transaction records, they could achieve financial freedom.
 
-<img src="assets/WhatistheBlockchain/image-20230622130259974.png" alt="image-20230622130259974" style="zoom:25%;" />
+<div class="center-image">
+    <img src="assets/WhatistheBlockchain/image-20230717095157658.png" style="zoom:35%;" />
+</div>
 
 Initially, the bank's system lacked proper protection measures, making it vulnerable to attacks.
 
@@ -72,7 +80,9 @@ If the hackers managed to cut off the power supply to the data centre, the entir
 
 To address this concern, two power plants were set up near the data centre to provide electricity simultaneously. Each power plant could meet the data centre's entire power demand, with a backup power supply in case both power plants experienced outages. Each power plant was equipped with an independent power distribution room.
 
-<img src="assets/WhatistheBlockchain/image-20230622131852832.png" alt="image-20230622131852832" style="zoom:33%;" />
+<div class="center-image">
+    <img src="assets/WhatistheBlockchain/image-20230717092740474.png" style="zoom:40%;" />
+</div>
 
 No, it's still not reassuring enough. What if, after a city-wide power grid interruption, both power plants experience accidents and can't generate electricity?
 
@@ -110,7 +120,9 @@ You see, having another data centre would be beneficial in such situations.
 
 This is what's known as a "dual-active data centre," where two data centres operate simultaneously. If one is destroyed, the other continues to function, leaving the system virtually unaffected.
 
-<img src="assets/WhatistheBlockchain/image-20230622133204080.png" alt="image-20230622133204080" style="zoom: 33%;" />
+<div class="center-image">
+    <img src="assets/WhatistheBlockchain/image-20230717094041999.png" style="zoom:35%;" />
+</div>
 
 What if, by chance, an asteroid strikes the very area where the data centre is located? Wouldn't everything be wiped out in one fell swoop?
 
@@ -130,31 +142,43 @@ Have you noticed? After all these preparations, the ultimate goal is singular: *
 
 Although distributed systems are geographically distributed in different places with multiple data centres undertaking business. But all servers still need banks for protection. This is a centralized approach, and many people are calling for visibility, choice and reasonable control over existing networks and data. Users need the right to know who can access their data, how their data is used, and if users don't want to share certain data, we also have the right to refuse. Perhaps most importantly, users want their own data to be used for their own benefit. If you are interested in the history of this, you can take a look [here](ThingsaboutCryptoPunks.md) first.
 
+<br>
+
 So what is the essence of blockchain?
 
 A globally distributed network, a "decentralized" system, a "shared distributed" system, a "fault tolerant, disaster tolerant" system.
+
+<br>
 
 The concept of blockchain consists of two parts: "blocks" and "chains". Let's start with "blocks". Blocks are like pages in a ledger that contain some information. In the blockchain world, this information is usually transaction records, such as A transfers 10 bitcoins to B, which is a transaction. Packaging a certain number of transactions together forms a block.
 
 Now let's look at "chains". The concept of chains is very simple, just connect these blocks in a certain order. With chains, we can trace the connection between each block. Each newly generated block is connected to the previous block to form a chain.
 
+<br>
+
 The full picture of the blockchain is: a series of blocks arranged in chronological order, connected together by a specific algorithm. This structure ensures the security and integrity of the data.
 
 Next, we need to understand an important concept - encryption. In the blockchain, each block has a unique digital string called a "hash value". The hash value is generated by an algorithm called a "hash function". This algorithm is magical, even if only a small piece of information is changed, the hash value will change dramatically. This ensures the security of the blockchain, because tampering with any block information will change the hash value and affect all subsequent blocks.
+
+<br>
 
 Another key concept is "decentralization". In a traditional database, data is controlled by a centralized institution. This means that if there is a problem with this institution, the security of the entire system will be affected. The blockchain is different, it is jointly maintained by tens of thousands of computers around the world. These computers are called "nodes".
 
 The decentralized nature of the blockchain means that it does not rely on a single centralized entity to maintain the data. Traditional databases are controlled by a centralized institution. In this way, if there is a problem with this institution, the security of the entire system will be affected. The blockchain, on the other hand, is jointly maintained by tens of thousands of computers around the world. These computers are called "nodes". For a transaction to be recorded on the blockchain, it must reach a consensus from most nodes. This brings many advantages, such as higher security, better privacy protection, lower operating costs, etc. On the blockchain, for a transaction to be recorded on the blockchain, it must reach a consensus from most nodes. This consensus mechanism ensures the transparency and security of the blockchain.
 
+<br>
+
 So how to reach a consensus? Here we take Bitcoin as an example. Bitcoin uses a consensus mechanism called "Proof of Work" (PoW). The core idea of Proof of Work is to let nodes participate in competition and compete for the right to keep accounts by solving a complex mathematical problem. Whoever solves this problem first has the right to package transactions into a new block and add it to the blockchain. At the same time, other nodes will verify this block and accept it after confirming that it is correct. This process is known as "mining".
 
-
+<br>
 
 The mining process ensures the security and decentralization of the blockchain. However, this method also has some problems. For example, it requires a lot of computing power and energy consumption. To solve this problem, other consensus mechanisms have emerged, such as "Proof of Stake" (PoS) and "Delegated Proof of Stake" (DPoS).
 
 Proof of Stake (PoS) is a more environmentally friendly consensus mechanism. In a PoS system, a node's right to keep accounts depends on the amount of currency it holds. Nodes with more currency have a higher probability of obtaining the right to keep accounts. This method reduces energy consumption but may lead to uneven distribution of currency.
 
 Delegated Proof of Stake (DPoS) is a variant of PoS. In a DPoS system, token holders can delegate their token interests to other nodes, allowing them to keep accounts on their behalf. This can further reduce energy consumption while improving system efficiency and security.
+
+<br>
 
 Blockchain is like a public, secure, distributed ledger. It can be used to record transactions, store data, and more. Blockchain technology has already been applied in many fields, such as finance, the Internet of Things, healthcare, and more. Blockchain technology has a lot of potential for the future. Other technologies such as AI and VR improve productivity. Blockchain changes the way that work is organized.
 
@@ -164,25 +188,26 @@ First, use technology to solve the "trust" problem.
 
 Second, achieve "autonomy" based on technology.
 
+<br>
+
 For example, in a massive multiplayer online game set many years in the future like Ready Player One, character and equipment assets must be stored on the blockchain, otherwise game companies or hackers could tamper with the data at will.
+
+<br>
 
 In the world of blockchain, you only need a blockchain account identity to join any network without permission, without sacrificing privacy or paying costs to use a service. Unlike the Web2 era when commercial value was completely controlled by major platforms, Web3 is built on decentralized networks. Application developers are responsible for developing and deploying to the blockchain platform. Once deployed on the blockchain, they cannot monopolize and use user data. This will fundamentally change business logic and the attribution of commercial value, creating a fairer internet business environment and breaking the monopoly of industry giants.
 
 The blockchain emphasizes equality, fairness, democracy and autonomy more, which is completely inherited from the idea of communist society. In the blockchain network, the mechanisms of shared interests and democratic autonomy will curb the emergence of all monopolistic giants. The way to accumulate wealth by exploiting the surplus value of users and content creators has been completely subverted.
 
+<br>
+
 The application scenarios of the blockchain are very extensive, covering all aspects of daily life, health care, energy charity, elections and finance:
 
-Digital currency: The most famous application of blockchain is digital currency, such as Bitcoin and Ethereum. Digital currency is a kind of virtual currency based on blockchain technology, which can be used for point-to-point transactions without going through centralized financial institutions.
-
-Smart contract: A smart contract is a blockchain-based, automatically executed contract. It can automatically trigger corresponding operations when certain conditions are met, thereby reducing the cost and risk of contract execution. Platforms such as Ethereum support smart contracts, enabling developers to build various decentralized applications (DApps) on the blockchain.
-
-Supply chain management: Blockchain can be used to track the circulation of goods in the supply chain. This can improve the transparency of the supply chain, prevent counterfeit products, and reduce costs.
-
-Identity authentication: The blockchain can be used as a decentralized identity authentication system to help users verify their identity on the network. This can reduce dependence on centralized institutions and improve privacy protection.
-
-Copyright protection: Blockchain can be used to store and verify intellectual property information to prevent piracy and counterfeiting. This is very valuable for creators and intellectual property owners.
-
-Cross-border payments: Digital currencies can be used to make cross-border payments, which can reduce the fees and time costs of remittances.
+* Digital currency: The most famous application of blockchain is digital currency, such as Bitcoin and Ethereum. Digital currency is a kind of virtual currency based on blockchain technology, which can be used for point-to-point transactions without going through centralized financial institutions.
+* Smart contract: A smart contract is a blockchain-based, automatically executed contract. It can automatically trigger corresponding operations when certain conditions are met, thereby reducing the cost and risk of contract execution. Platforms such as Ethereum support smart contracts, enabling developers to build various decentralized applications (DApps) on the blockchain.
+* Supply chain management: Blockchain can be used to track the circulation of goods in the supply chain. This can improve the transparency of the supply chain, prevent counterfeit products, and reduce costs.
+* Identity authentication: The blockchain can be used as a decentralized identity authentication system to help users verify their identity on the network. This can reduce dependence on centralized institutions and improve privacy protection.
+* Copyright protection: Blockchain can be used to store and verify intellectual property information to prevent piracy and counterfeiting. This is very valuable for creators and intellectual property owners.
+* Cross-border payments: Digital currencies can be used to make cross-border payments, which can reduce the fees and time costs of remittances.
 
 - Internet of Things: The blockchain can be used to record and verify the data of Internet of Things devices to ensure data security and integrity.
 - Healthcare: Blockchain can be used to store and share medical data, improve data security and availability. This helps to improve medical standards and reduce medical costs.
@@ -198,4 +223,12 @@ Cross-border payments: Digital currencies can be used to make cross-border payme
 - Legal services: Blockchain can be used to store and verify legal documents such as contracts and wills. This helps improve the efficiency of legal services and reduce the cost of legal services.
 - Food safety: Blockchain can be used to track the circulation of food in the supply chain to ensure food safety and quality. This helps prevent food safety issues and boost consumer confidence.
 
+<br>
+
 The above are only some of the applications of blockchain technology in various fields. With the development and innovation of technology, blockchain will show great potential in more fields. At the same time, we should also pay attention to the challenges brought by blockchain technology, such as energy consumption, network congestion, privacy protection, and other issues. Continuous discussion and improvement of blockchain technology will help create a safer, more transparent and more efficient digital world.
+
+<br>
+
+Continue reading [Dominic's story](JourneyoftheDreamWeaver.html#point-line-surface-solid).
+
+<br>

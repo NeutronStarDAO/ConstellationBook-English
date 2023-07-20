@@ -10,3 +10,6 @@ Satoshi Nakamoto's invention was also a feasible solution to the "Byzantine Gene
 
 There is a lot of information about Bitcoin online, so I won't go into a detailed explanation here. 
 
+<br>
+
+Continue exploring [the early stories of the cypherpunks movement](./ThingsaboutCryptoPunks.html).

@@ -110,14 +110,33 @@ var initAll = function () {
         pagePath = "index"
     }
 
-    // 选取浏览器默认使用的语言
-    // const lang = navigator.language || navigator.userLanguage
+    document.getElementById("theme-list").addEventListener("click", function (e) {
+        const theme = document.getElementsByTagName("html")[0].className;
+        if (theme.indexOf("light") != -1 || theme.indexOf("rust") != -1) {
+            var pageElement = document.querySelector('.page');
+            var pageElement2 = document.querySelector('.sidebar-scrollbox');
+            pageElement.style.backgroundImage = 'url("../topography.png")';
+            pageElement2.style.backgroundImage = 'url("../topography.png")';
+        } else {
+            var pageElement = document.querySelector('.page');
+            var pageElement2 = document.querySelector('.sidebar-scrollbox');
+            pageElement.style.backgroundImage = 'none';
+            pageElement2.style.backgroundImage = 'none';
+        }
+    });
+
+    const themeClass = document.getElementsByTagName("html")[0].className;
+    if (themeClass.indexOf("coal") != -1 || themeClass.indexOf("navy") != -1) {
+        var pageElement = document.querySelector('.page');
+        var pageElement2 = document.querySelector('.sidebar-scrollbox');
+        pageElement.style.backgroundImage = 'none';
+        pageElement2.style.backgroundImage = 'none';
+    }
 
     // 若当前 mdbook 主题为 Light 或 Rust ，则将 giscuz 主题设置为 light
     var theme = "transparent_dark";
-    const themeClass = document.getElementsByTagName("html")[0].className;
     if (themeClass.indexOf("light") != -1 || themeClass.indexOf("rust") != -1) {
-        theme = "light"
+        theme = "light";
     }
 
     var script = document.createElement("script")
@@ -125,10 +144,10 @@ var initAll = function () {
     script.src = "https://giscus.app/client.js";
     script.async = true;
     script.crossOrigin = "anonymous";
-    script.setAttribute("data-repo", "NeutronStarDAO/discussions");
-    script.setAttribute("data-repo-id", "R_kgDOJaRMyQ");
+    script.setAttribute("data-repo", "NeutronStarDAO/constellation.github.io");
+    script.setAttribute("data-repo-id", "R_kgDOJ50ehQ");
     script.setAttribute("data-category", "General");
-    script.setAttribute("data-category-id", "DIC_kwDOJaRMyc4CV-zr");
+    script.setAttribute("data-category-id", "DIC_kwDOJ50ehc4CX6RB");
     script.setAttribute("data-mapping", "pathname");
     script.setAttribute("data-term", pagePath);
     script.setAttribute("data-reactions-enabled", "1");
@@ -137,7 +156,7 @@ var initAll = function () {
     script.setAttribute("data-theme", theme);
     script.setAttribute("data-strict", "1");
     script.setAttribute("crossorigin", "anonymous");
-    // script.setAttribute("data-lang", lang);
+    script.setAttribute("data-lang", "en");
     // 预先加载评论会更好，这样用户读到那边时，评论就加载好了
     script.setAttribute("data-loading", "lazy");
     document.getElementById("giscus-container").appendChild(script);

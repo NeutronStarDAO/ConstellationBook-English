@@ -1,5 +1,7 @@
 Ethereum is a decentralized platform that allows developers to build various applications on top of it. You can imagine it as a global computer that does not rely on any central server. This computer runs smart contracts - programs that automatically execute predetermined tasks.
 
+<br>
+
 First, you can imagine it as a giant computer that can run all sorts of applications. But this computer is not a physical entity, but a virtual network maintained by many people. These people, whom we call "nodes", are distributed all over the world and collectively maintain the Ethereum network.
 
 So what's the difference between Ethereum and computers we commonly use? The biggest difference is that Ethereum is decentralized. That means data is not stored on a central server, but distributed across many different nodes. This makes the data difficult to tamper with and attack because an attacker would need to compromise thousands of nodes simultaneously.
@@ -16,6 +18,8 @@ There are many types of tokens on Ethereum, the most common being ERC-20 tokens.
 
 In addition to ERC-20 tokens, there is also a token standard called ERC-721. These tokens are unique in that they represent unique and non-fungible assets. These assets can be artwork, collectibles, properties, etc. With ERC-721 tokens, we can transact unique assets on Ethereum without worries of forgery or replication. This is also why many crypto arts and collectibles are traded on Ethereum.
 
+<br>
+
 So what are the practical applications of Ethereum? In fact, Ethereum has had an impact in many fields. For example:
 
 Ethereum can be used for financial services. Through smart contracts, we can create decentralized financial products such as lending, insurance, and derivatives. These financial products do not require intermediaries, so they can reduce costs and improve efficiency. At the same time, the transparency of smart contracts can also reduce the risk of fraud.
@@ -23,6 +27,8 @@ Ethereum can be used for financial services. Through smart contracts, we can cre
 Ethereum can be used for supply chain management. Through smart contracts, we can track information about the source and distribution channels of goods in real time. This allows consumers to ensure that the products they buy are genuine and reliable, and allows companies to better monitor supply chains and improve efficiency.
 
 Ethereum can also be used for identity authentication. Through smart contracts, we can create a decentralized identity system that allows users to share authentication information across different platforms. This way, users do not have to resubmit their personal information each time, while still being able to protect their privacy.
+
+<br>
 
 Although Ethereum has many advantages, it also has some limitations. For example, Ethereum's current transaction speed and scalability still needs to improve. In order to solve these problems, the Ethereum team is carrying out a series of upgrades. Ethereum 2.0 aims to address the performance bottlenecks and scalability issues in Ethereum 1.0. This upgrade will have the following impacts on Ethereum's performance:
 
@@ -32,6 +38,8 @@ Although Ethereum has many advantages, it also has some limitations. For example
 4. Higher security: Ethereum 2.0 introduces a new role called "validators," which replaces the miners in Ethereum 1.0. By requiring validators to stake a certain amount of Ether to participate in consensus, it becomes more costly to attack the Ethereum 2.0 network, thus improving security.
 5. Higher scalability: Ethereum 2.0's sharding technology and other optimizations can improve the network's scalability.
 
+<br>
+
 While Ethereum has brought many innovations to the blockchain world, it still has some shortcomings, mainly including the following points:
 
 1. **Scalability issues**: Although Ethereum has upgraded its scalability, this does not mean that the scalability issue is permanently solved. This is not a one-time engineering effort, if the number of users continues to increase, engineers still need to further scale and improve Ethereum.
@@ -39,6 +47,8 @@ While Ethereum has brought many innovations to the blockchain world, it still ha
 3. **Centralization issues**: Although the original intent of blockchain is decentralization, traditional blockchain technology has some degree of centralization issues, which gives some nodes too much control over the entire network, bringing security and manipulation risks.
 4. **Privacy protection issues**: Traditional blockchain technology has privacy protection issues. Once transaction data is recorded on the blockchain, it will be permanently saved, which will pose a great risk of privacy leakage.
 5. **Development and maintenance costs**: Building and maintaining blockchain applications may require high development and operational costs. In addition, the constant development of blockchain technology means that developers need to continually update and optimize existing applications.
+
+<br>
 
 Compared to Ethereum, IC has the following features that can solve some of Ethereum's issues:
 

@@ -11,10 +11,10 @@
         max-width: 877px !important;
     }
     .sidetoc {
-        margin-left: auto;
+        margin-left: 0;
         margin-right: auto;
         /*left: calc(100% + (var(--content-max-width))/4 - 180px);*/
-        left: calc(100% - 252px);
+        left: calc(100% - 217px);
         position: absolute;
     }
     .pagetoc {
@@ -44,6 +44,19 @@
         background: var(--sidebar-bg);
         color: var(--sidebar-fg);
     }
+}
+
+body {
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+.page {
+    background-image: url("../topography.png");
+}
+
+.sidebar-scrollbox {
+    background-image: url("../topography.png");
 }
 
 .content {
@@ -108,7 +121,7 @@ table {
     font-weight: 550;
 }
 .fa-github:after{
-    content: "Our Github🌟";
+    content: " Our Github🌟";
     margin-left: 4px;
 }
 
@@ -131,4 +144,21 @@ code.editable, .ace_scroller {
 
 .chapter li .md-viewed {
     color: #777;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.zoom-img {
+    transition: all 0.7s ease;
+}
+
+.zoom-img:hover {
+    transform: scale(1.2);
+}
+
+.center-image {
+    display: flex;
+    justify-content: center;
 }

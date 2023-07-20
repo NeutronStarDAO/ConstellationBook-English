@@ -1,29 +1,27 @@
 ## Web3
 
-Web3 is the next generation of the Internet. It aims to bring more decentralization, security and transparency to our online world. Imagine that the current Internet (what we call Web2) is largely controlled by a few large companies, while Web3 attempts to decentralize power and control to users. This means that in the Web3 world, users have more control over their own data and identities, rather than giving them completely to companies like Google and Facebook.
+Web3 is the next generation version of the internet that aims to bring more decentralization, security and transparency to our online world. Imagine that the current internet (what we call Web2) is mainly controlled by a few big companies, while Web3 tries to distribute power and control to users. This means that in the Web3 world, users have more control over their own data and identities, rather than handing them entirely over to companies like Google, Facebook, etc.
 
-The core technology of Web3 is blockchain, a decentralized and secure distributed database. You can think of the blockchain as a public ledger that records everyone's transactions and activities and cannot be tampered with once recorded. Blockchain-based applications such as smart contracts, decentralized finance (DeFi) and decentralized applications (Dapps) are an important part of Web3.
+The core technology behind Web3 is blockchain, which is a decentralized, secure distributed database. You can think of blockchain as a public ledger that can record transactions and activities for everyone, and once recorded, cannot be tampered with. Blockchain-based applications such as smart contracts, decentralized finance (DeFi), and decentralized apps (Dapps) are all important components of Web3.
 
-Let's use an example to illustrate how Web3 changes the existing Internet. In Web2, if artists want to sell their works online, they usually have to rely on some centralized platforms (such as eBay and Amazon). These platforms often charge high fees and control the user's trading process. In the Web3 world, artists can sell their works on decentralized markets (such as OpenSea). Here, artists can turn their works into non-fungible tokens (NFTs) and sell them directly to buyers without third-party intervention. In this way, artists can get greater returns and have more control over transactions.
+Let's use an example to illustrate how Web3 is changing the existing internet. In Web2, if an artist wants to sell their work online, they usually have to rely on some centralized platforms (like eBay, Amazon, etc). These platforms often charge high fees and control the transaction process for users. But in the Web3 world, artists can sell their work on decentralized marketplaces (like OpenSea). Here, artists can turn their work into non-fungible tokens (NFTs) and sell directly to buyers without third party intervention. This way, artists can earn more profits and have more control over the transactions.
 
-Web3 also provides better protection for online privacy. On today's Internet, users' data and privacy are often easily compromised. In Web3, users can ensure the security of their data through encryption and self-managed identities. This makes the entire network more secure and reliable.
+Web3 also provides better protection for online privacy. On today's internet, users' data and privacy are often easily compromised. With Web3, users can ensure their data security through encryption and self-sovereign identity. This makes the entire network more secure and reliable.  
 
-Web3 is the new era of the Internet based on blockchain technology. It redistributes power and control back to users, increases security and transparency. Through decentralized applications and services, Web3 is poised to change the way we interact with the Internet and create a fairer, freer online world.
-
+Web3 represents a new era of the internet built on blockchain technology that redistributes power and control back to users, increasing security and transparency. Through decentralized apps and services, Web3 has the potential to transform how we interact with the internet, creating a more fair and open online world.
 
 
 ## Smart contract
 
-Smart contracts are like automatically executed digital contracts. It defines a set of prewritten rules. Once these rules are met, the smart contract will automatically execute the corresponding operations. It is based on blockchain technology, which means it is decentralized, secure, and cannot be modified once deployed. Simply put, a smart contract is a piece of automatically executed computer program that ensures that the parties can complete transactions, sign contracts, etc. without a third party.
+A smart contract is like a self-executing digital contract that defines a set of pre-programmed rules. Once these rules are met, the smart contract automatically executes the corresponding actions. It is based on blockchain technology, meaning it is decentralized, secure, and cannot be modified once deployed. Simply put, a smart contract is a piece of self-executing computer code that ensures transactions, agreements, etc. can be carried out between parties without the need for a third party. 
 
-It's like a vending machine where you put in 5 dollars and same worth of drinks.
+It's like a vending machine - you put in $5, it spits out a $5 drink for you.
 
-Imagine you and your friend bet on which football team will win the match. In real life, you may need to find a reliable third party to hold the stakes. But with smart contracts, you can create a program to replace this third party. This program will receive your stakes and automatically pay out the winnings after the match based on the match result. In this way, there is no need for a real person to be involved, and you don't have to worry about the other party being dishonest.
+Imagine you and a friend bet on which football team would win a match. In real life, you may need a trusted third party to hold the stakes. But with a smart contract, you can create a program to replace this third party. This program would receive your stakes, and automatically pay out the winner based on the match result after the game ends. This way, no real person needs to be involved, and you don't need to worry about the other party not keeping their word.
 
-Smart contracts have a wide range of applications such as finance, real estate, insurance, etc. For example, imagine an insurance company. If you purchase flight delay insurance and your flight is actually delayed, you usually need to submit some materials and wait for the insurance company's approval. However, if there is a smart contract-based insurance system, as long as your flight information is confirmed to be delayed, the smart contract will automatically execute and immediately pay you compensation. In this way, the whole process becomes simpler, more efficient and transparent.
+Smart contracts have a wide range of applications in areas like finance, real estate, insurance, etc. For example, imagine an insurance company. If you purchase flight delay insurance, normally you would need to submit paperwork and wait for the insurance company's approval when your flight is delayed. But with a smart contract-based insurance system, as soon as your flight info is confirmed as delayed, the smart contract would automatically execute and instantly pay you the compensation. This makes the whole process much simpler, more efficient and transparent.
 
-A smart contract is an automatically executed, blockchain-based digital contract. It can streamline processes, improve efficiency and ensure transaction security in various scenarios.
-
+Smart contracts are self-executing, blockchain-based digital contracts. They can streamline processes, improve efficiency and ensure transaction security in many different scenarios.
 
 
 ## DApp
@@ -37,13 +35,6 @@ A great example of a DApp is a cryptocurrency exchange. In traditional centraliz
 In addition to exchanges, DApps have many other use cases such as decentralized finance (DeFi) platforms, games, markets, etc. These decentralized applications provide users with a freer, more secure and transparent Internet environment.
 
 DApps are decentralized applications based on blockchain technology that are free from the control of centralized entities. By using DApps, users can better protect their data and privacy while enjoying higher security and transparency. DApps are a key part of the Web3 era, and together they help build a fairer, more secure Internet future.
-
-
-
-## Big Pie/Big biscuit 
-
-A meme name of Bitcoin from Chinese community.
-
 
 
 ## All in / Show hand
@@ -142,40 +133,47 @@ Liquidity providers play an important role in the decentralized finance market. 
 
 
 
-## Automated Market Makers (AMMs)
+## Automated Market Maker (AMM)
 
-Automated market makers (AMMs) are algorithms used in decentralized finance (DeFi) exchanges to ensure trading liquidity in the market. Unlike traditional exchanges, AMMs do not require matching between buyers and sellers. Instead, AMMs automatically calculate asset trading prices through a pre-set mathematical formula.
+Automated Market Maker (AMM) is an algorithm used in decentralized finance (DeFi) exchanges to ensure liquidity in the market. Unlike traditional exchanges, AMM does not require matching buyers and sellers. Instead, AMM automatically calculates the transaction price of assets using a predetermined mathematical formula.
 
-AMMs are implemented through smart contracts and liquidity pools. Liquidity pools consist of assets injected by liquidity providers. Users can exchange assets in these pools. When a user wants to exchange two assets, the AMM calculates the exchange ratio according to a preset mathematical formula. This ratio is adjusted in real time as the transaction occurs to maintain market balance.
+AMM is implemented through smart contracts and liquidity pools. A liquidity pool consists of assets injected by liquidity providers, and users can exchange assets within these pools. When a user wants to exchange two assets, AMM calculates the exchange ratio based on a predefined mathematical formula. This ratio is adjusted in real time as transactions occur to maintain market balance.
 
-Uniswap is a typical decentralized exchange that adopts the AMM (automated market maker) algorithm. It uses a formula called $x*y=k$ to determine trading prices. In this formula, x and y represent the quantities of two assets in the liquidity pool respectively, while k is a constant. When users trade in the pool, the quantities of x and y change, but the k value remains unchanged. This ensures that trading prices automatically adjust to maintain market equilibrium.
+Uniswap is a typical decentralized exchange that adopts the AMM algorithm. It uses a formula called \\(x * y = k\\) to determine the transaction price. In this formula, x and y represent the quantities of the two assets in the liquidity pool, and k is a constant value. When users trade in the pool, the quantities of x and y change, but the value of k remains constant. This ensures that the transaction price automatically adjusts to maintain market balance.
 
-Suppose we have a decentralized exchange with an AMM-based liquidity pool that allows users to exchange between two tokens (Token A and Token B). We use Uniswap's formula $x*y=k$as the AMM algorithm.
+Suppose we have a decentralized exchange with an AMM-based liquidity pool that allows users to exchange two tokens (Token A and Token B). We use the Uniswap formula \\(x * y = k\\) as the AMM algorithm.
 
-First, liquidity providers inject Token A and Token B into the liquidity pool. Assume that initially, there are 1000 Token A and 1000 Token B in the liquidity pool. According to the AMM formula, we have:
+First, liquidity providers inject Token A and Token B into the pool. Let's say initially there are 1000 Token A and 1000 Token B in the pool. Per the AMM formula: 
 
-$x*y=k$
+$$
+x*y=k
+$$
 
-$1000*1000=1,000,000$
+$$
+1000*1000=1,000,000
+$$
 
-In this case, the constant k is 1,000,000.
+Here the constant k equals 1,000,000.
 
-Now, suppose a user wants to purchase Token B with 100 Token A. They will inject 100 Token A into the liquidity pool, bringing the quantity of Token A in the pool to 1100. To keep the constant k unchanged, we need to recalculate the quantity of Token B. According to the AMM formula:
+Now suppose a user wants to purchase Token B with 100 Token A. They will inject 100 Token A into the pool, changing the Token A quantity to 1100. To keep k constant, we recalculate Token B's quantity per the formula:
 
-$1100*y=1,000,000$
+$$
+1100*y=1,000,000
+$$
 
-$y ≈ 909.09$
+$$
+y≈909.09
+$$
 
-Therefore, there are now approximately 909.09 Token B left in the liquidity pool. The user exchanged 100 Token A for about 90.91 Token B (1000 - 909.09). In addition, transaction fees (if any) will be allocated to liquidity providers.
+So now there are about 909.09 Token B left in the pool. The user got about 90.91 Token B (1000 - 909.09) for 100 Token A. Additionally, trading fees (if any) are awarded to liquidity providers. 
 
-In this process, the AMM automatically adjusts the exchange ratio of Token A and Token B according to the preset formula. As transactions occur, token prices are adjusted in real time to maintain market equilibrium. This is the basic working principle of the AMM.
+In this process, the AMM automatically adjusted the exchange rate of Token A and Token B based on the preset formula. As trades occur, prices adjust in real-time to maintain market equilibrium. This is how AMMs work at a basic level. 
 
-It should be noted that this example is a simplified version, and the actual operation may involve additional details such as fees and slippage. However, this example should be sufficient to help you understand the core concepts and working principles of the AMM.
+Note this is a simplified example - actual implementations may involve additional details like fees, slippage, etc. But it should give you a good grasp of AMM's core concepts and mechanics.
 
-The AMM brings some advantages such as simplifying the trading process, increasing market liquidity and reducing transaction latency. However, it also has some disadvantages, such as potential impermanent loss and potential price slippage.
+AMMs provide advantages like simplified trading, increased liquidity, and reduced latency. However, they also have downsides like potential impermanent loss and price slippage.
 
-Automated market makers (AMMs) are algorithms used in decentralized finance exchanges to ensure market liquidity. Through smart contracts and liquidity pools, AMMs can automatically calculate asset transaction prices, simplify the trading process and reduce latency. Although AMMs have certain advantages, it is also necessary to pay attention to potential risks when using them.
-
+In summary, AMM is an algorithm used in DeFi exchanges to ensure trading liquidity via smart contracts and liquidity pools. AMMs can automatically calculate asset prices to simplify trading and reduce latency. While AMMs have merits, potential risks should also be watched out for when using them.
 
 
 ## GameFi
@@ -204,6 +202,35 @@ In addition, SocialFi also includes a series of social network-based financial t
 
 SocialFi is an emerging field that combines social media and decentralized finance. By integrating social networks and financial tools, SocialFi provides users with more convenient, interesting and personalized financial services. It is expected to change our perception of financial services and make the financial market more socialized, fair and inclusive.
 
+
+## Multi-party computation (MPC)
+
+Multi-party computation (MPC) is a cryptographic protocol that allows multiple nodes that don't trust each other to jointly compute something without revealing their private inputs.
+
+Let's take a simple example with Alice, Bob and Carol who want to compute the sum of their account balances but don't want to reveal their individual balances to each other.
+
+They can use a MPC protocol where each party performs encrypted computations using their private data, exchanges intermediate results, and after multiple rounds of calculation, the final result - the sum of all three account balances - can be obtained without any party knowing the inputs of the others.
+
+In blockchains, MPC is mainly used to manage private keys. The private key is split into fragments and held by multiple nodes separately. To use this private key, a threshold number of nodes need to participate in the computation to reconstruct the key.
+
+This distributed approach to private key management ensures both security of the keys and prevents any single node from having full control over the assets.
+
+MPC increases decentralization in blockchain systems since multiple nodes participate in computation and validation rather than relying on a single central node. This enhances the security and reliability of blockchains.
+
+In short, MPC is like a cryptographic technique that allows nodes to perform computations blindly, protecting privacy while maintaining system reliability.
+
+
+## Wallet
+
+A blockchain wallet is a tool for storing users' digital assets - simply put, it serves as a bank account in the blockchain world.
+
+For example, if you want to hold and use Bitcoin, you'll need a Bitcoin wallet. This wallet will provide you with a Bitcoin address, similar to a bank account number. You can receive Bitcoins to this address and also send Bitcoins from this address to others. The wallet helps you securely manage the assets in this address.
+
+Take an Ethereum wallet for another example. It stores not only Ether but various ERC-20 token assets, like a digital asset account for multiple cryptocurrencies. You can receive and send different tokens using the wallet address.
+
+The wallet is also responsible for private key management. It uses cryptography to generate the public and private keys. The public key is used to derive the blockchain address, while the private key is used to authorize transactions. Wallet software will require users to set a password to encrypt and protect the private key.
+
+In summary, just like a physical wallet stores banknotes, a blockchain wallet stores digital assets. It enables users to securely control their digital assets and is an essential tool to enter the blockchain world. However, it's not advisable to store large amounts of assets in a wallet. Reliable third-party custody services should be used instead.
 
 
 ## Token
@@ -234,6 +261,77 @@ In addition, DID allows you to reuse your identity information in different scen
 
 In summary, DID is an innovative digital identity verification method that enables decentralized and secure management of personal identity information through blockchain technology. It provides higher privacy protection and convenience to the Internet, allowing individuals to better control their own identity data.
 
+
+## KYC
+
+KYC stands for "Know Your Customer". In the digital currency and crypto asset space, KYC typically refers to the process where users are required to provide identity information for verification by trading platforms to prevent money laundering and other illicit activities. 
+
+For example, when registering for a cryptocurrency exchange account, the platform will ask you to provide ID cards, passports and other documents to confirm your identity through facial recognition and other technologies. This is a KYC process.
+
+The purpose of implementing KYC is to enable trading platforms to identify their users and ensure fund flows are legal and transparent. Otherwise it can easily be taken advantage of for money laundering or funding criminal activities. So any new user entering the crypto asset market needs to go through KYC screening.
+
+Over time, KYC rules have also become more stringent. Some platforms may only need your name and phone number to open an account initially, but mainstream platforms now require uploading ID photos, recording videos, etc. The KYC process also often takes some time to complete verification. 
+
+In summary, KYC is a necessary security measure for digital asset platforms to ensure regulatory compliance in asset trading. Users need to cooperate and provide authentic information to foster a healthy trading environment.
+
+
+## AMA
+
+AMA stands for "Ask Me Anything." It typically refers to a question and answer interactive activity between project teams and users in crypto communities. 
+
+For example, before a new project is launched, the project team may host an AMA event in their community and announce a time. Users can then ask anything about the project, and the team will come back at the scheduled time to answer user questions one by one.
+
+This process is like a face-to-face conversation - users act as the questioners, while the project team serves as the answer provider. The interaction between the two sides is quite active. Users can ask freely about the motivation behind the project, technical architecture, business plans, etc., and the team tries to answer as comprehensively as possible. 
+
+Through this method, both the project and community users can gain better understanding of each other, and users feel more engaged in the project. Some projects may host AMAs periodically for users to ask questions anytime. This high level of transparent communication also helps projects gain user trust.
+
+In summary, AMA is an open and efficient communication channel between projects and users. It helps shorten the distance between the two sides, allows users to learn more in-depth about the project, and assists project teams in gathering user feedback to improve the project. This benefits the healthy growth of both the project and community.
+
+
+## Roadmap
+
+It is the development plan outline formulated by project teams. It visually demonstrates a project's development path to let community users know what the project will do next. 
+
+Let's take a simple example of a roadmap for a digital collectibles trading platform:
+
+Phase 1: Establish platform, implement basic collectible minting and trading functions. 
+
+Phase 2: Add off-chain trading functions for collectibles, support more blockchain networks.
+
+Phase 3: Develop mobile App to allow trading through mobile phones. 
+
+Phase 4: Integrate DEX to enable exchange between collectibles and other tokens.
+
+Phase 5: Launch NFT lending system for users to get funds by staking NFTs.
+
+Through these simple steps, users can clearly understand the development path planned for this platform - what the team will work on, what new features will be launched.
+
+The roadmap serves like a blueprint for the future, guiding teams to develop products and achieve goals in a planned direction. It can also boost community users' confidence by letting them know the project is worth long-term investment. Meanwhile, project teams need to make steady progress following the roadmap, fulfill promises made in it, and maintain community confidence.
+
+
+## Whitepaper
+
+A whitepaper is a detailed technical and operational proposal published by project teams. It serves like a charter document for a project, comprehensively introducing information including technical frameworks, operational models, team backgrounds, etc. 
+
+In short, a whitepaper is like an instruction manual for a project that allows investors and users to fully understand its underlying logic.
+
+For example, the whitepaper of a new blockchain project would introduce:
+
+- The problems it aims to solve and positioning 
+
+- Technical principles such as consensus mechanisms, incentive schemes, etc.
+
+- Governance structure and roadmap
+
+- Token distribution and circulation models
+
+- Team background and advisor information
+
+Through the whitepaper, users can clearly understand the technological innovations of the project and compare its advantages and disadvantages to similar projects.
+
+Project teams need to put in significant efforts to write and update whitepapers to fully account for technical details. It is an important benchmark to evaluate a blockchain project's professionalism and rigor. Generally, higher-quality whitepapers also help projects gain more attention.
+
+In summary, a whitepaper is the foundation for community members to deeply understand a project, and its quality directly affects the professional recognition the project can gain externally.
 
 
 ## Seed Phrase
@@ -414,6 +512,22 @@ The cryptocurrency market is a huge rocket launch site, with rockets representin
 This phrase reflects investors' optimistic expectations for the future performance of an asset. They believe the asset price will rise sharply. "To the Moon" is usually popular on social media and online communities. People use this phrase to express their enthusiasm and confidence in an investment. "To the Moon" is largely influenced by market sentiment. When the market has a strong optimistic mood towards an asset, the frequency of using this phrase will increase.
 
 
+## Bull & Bear
+
+A bull market is a financial term referring to a prolonged period of rising prices and optimism in the market. 
+
+For example, if the price of Bitcoin surges from $10,000 to $30,000 and maintains an upward momentum, this is a typical bull market. Investors would feel it is a great opportunity to buy in and continue holding assets for profit.
+
+We can compare a bull market to a charging bull that powers upward, knocking down all obstacles in its way with no resistance to its rising force.
+
+In contrast, a bear market describes the overall downward trend when asset prices plummet in value. If Bitcoin's price drops from $30,000 to $10,000, that is a bear market. 
+
+The crypto market also generally follows this cyclical boom-bust pattern. Identifying market trends and making the right decisions is key to success.
+
+In a bull market, investors need to watch for risks, as a meteoric rise is often unsustainable. A bear market is not without opportunity either, sometimes allowing investors to buy quality assets cheaply for future gains. 
+
+In short, a bull market represents upward prosperity while a bear market signals downward corrections. Gauging and harnessing market rhythms is an important part of investing.
+
 
 ## FOMO
 
@@ -429,7 +543,6 @@ The cryptocurrency market is a lively party where everyone is dancing, cheering 
 FOMO is a psychological phenomenon that refers to the fear of missing important events, opportunities or trends. In the investment field, especially in the cryptocurrency market, FOMO can lead to blind follow-up and high-risk investment behavior. To avoid FOMO, investors should remain calm, fully understand and analyse the market and investment targets, and follow their investment strategies and risk tolerance.
 
 
-
 ## FUD
 
 FUD refers to Fear, Uncertainty and Doubt. It is a psychological phenomenon that people have negative emotions due to fear, uncertainty and doubt about the future in a certain field, especially in investment markets.
@@ -437,4 +550,187 @@ FUD refers to Fear, Uncertainty and Doubt. It is a psychological phenomenon that
 FUD is an emotionally based reaction. When facing fear, uncertainty and doubt about the future, people tend to feel anxious and worried. FUD is usually accompanied by the spread of negative news, which may come from media reports, online forums or social media and can easily trigger market panic. To some extent, FUD can become a self-fulfilling prophecy. The spread of panic and selling behavior of investors may lead to further price drops in the market. For experienced investors, FUD may also bring investment opportunities. During market panic, they may look for undervalued high-quality assets and take countercyclical operations.
 
 In the cryptocurrency market, FUD can lead to market panic, investor selling and price drops. To avoid the influence of FUD, investors should remain rational, fully understand and analyze the market and investment targets, and make wise investment decisions.
+
+
+## PoW
+
+Proof of Work (PoW) is a consensus algorithm used in cryptocurrencies and blockchain networks. Its core idea is to require participants in the network to prove their work by solving complex mathematical problems. This approach ensures network security while incentivizing participation.
+
+PoW is like a math competition where participants race to find a number that satisfies certain conditions. Combined with block data, this number goes through a specific computational process to produce a hash value starting with a certain number of zeros. This process is like cracking a code, as finding the right answer requires a lot of computational trial and error, but verifying the answer is very simple. 
+
+To help you better understand PoW, we can use mining as an analogy. In cryptocurrency networks like Bitcoin, mining is participants trying different numbers repeatedly to find a suitable solution to unlock new blocks. Once successfully unlocked, participants are rewarded with a certain amount of Bitcoin, like striking gold while mining.
+
+However, PoW has some issues. First, the computational process consumes huge amounts of energy, impacting the environment. Second, as cryptocurrency prices rise, more and more people join mining, increasing the mining difficulty and making it hard for average users to participate. This may lead to network centralization, going against blockchain's decentralized ethos. 
+
+In summary, PoW is a consensus algorithm used in cryptocurrencies and blockchains. It ensures network security and incentives to some extent by making participants prove their work through solving hard problems. But PoW also has issues like energy consumption and centralization. To address these, researchers and developers have proposed other consensus models like Proof of Stake to reduce energy use and improve decentralization.
+
+
+## PoS
+
+Proof of Stake (PoS) is a consensus algorithm used in cryptocurrencies and blockchain networks. Unlike Proof of Work (PoW) which proves work through solving complex math problems, PoS selects block validators based on the quantity and age of cryptocurrencies held by participants. This design aims to reduce energy consumption, increase decentralization, and enhance network security.
+
+To help you understand PoS, we can think of it as a staking savings program for cryptocurrencies. In a PoS network, you can "stake" or "lock up" your holdings at a specific address, a process called staking. The more crypto you stake, the higher chance you get randomly selected as a validator (miner). Validators are responsible for creating new blocks and verifying transactions, and receive rewards after completing these operations. 
+
+We can analogize PoS to a lottery drawing. Participants need to purchase tickets to join the draw, and more tickets purchased means a higher chance to win. In a PoS network, cryptocurrencies held and staked are like lottery tickets, increasing your odds of becoming a validator.
+
+PoS has some advantages over PoW. Firstly, PoS reduces computational work, lowering energy consumption and environmental impact. Secondly, PoS encourages long-term holding of crypto which helps price stability. Moreover, PoS lowers the risk of centralization as validator selection does not rely on computing power, making it easier for average users to participate.
+
+Of course, PoS also has some drawbacks like ensuring validator honesty and preventing stake concentration. Still, PoS is considered an effective blockchain consensus model, and many new cryptocurrencies and blockchain projects have adopted PoS algorithms, like Ethereum 2.0, Cardano, etc.
+
+In summary, PoS is a consensus algorithm that selects validators based on crypto holdings. Compared to PoW, PoS has advantages like lower energy use and higher decentralization. It is seen as a promising blockchain consensus mechanism.
+
+
+## Subnet
+
+A subnet is a collection of replicas that run their own instance of a consensus algorithm to generate a subnet blockchain, and use cryptographic chain keys to interoperate with other subnets on the IC.
+
+
+## Actor model
+
+The actor model is a programming model for concurrency and distributed computing. In this model, an actor is a container encapsulating state, behavior, and address. For example, we can think of an actor as a person with their own name (address), personality (behavior), and possessions (state). 
+
+Actors can communicate with each other by sending messages. Just like people can make phone calls or send text messages to each other. When an actor receives a message, it will change its state or behavior based on the message content. For instance, when Mike receives a text from his mom saying "Remember to buy groceries", he will change his state from "playing games" to "going grocery shopping", and send back the results of buying groceries to his mom.
+
+Each actor runs concurrently and independently. Message passing between actors is asynchronous. Just like how everyone can do their own thing at the same time, without needing to know what others are doing. This makes the actor model very suitable for writing highly concurrent and distributed programs.
+
+The actor model achieves high performance and scalability through actor concurrency and distribution. It uses message passing for communication and collaboration between actors. This pattern is very common and important in today's internet systems.
+
+
+## Boundary node
+
+A Boundary Node is an entry point into the Internet Computer (IC), allowing users seamless access to the Canister smart contracts running on it. Boundary Nodes make up the globally distributed edge of the IC, and all access to Canister smart contracts must pass through one of these nodes. They provide a public endpoint for the IC, routing all incoming requests to the correct subnet, load balancing requests across replica nodes, and caching responses to enhance performance.
+
+Boundary Nodes provide two ways to access the Canister smart contracts hosted on the IC: One is through the HTTP gateway using a standard browser, and the other is via API Boundary Nodes using API Canister calls. The HTTP gateway enables users to access Dapps hosted on the IC in the same way as any Web 2.0 service through a browser. To this end, the HTTP gateway translates all incoming HTTP requests into API Canister calls, then routes them to the correct subnet. API Boundary Nodes allow native IC applications to directly call Canister smart contracts. In this case, the Boundary Node simply routes the API Canister calls to the right subnet. Therefore, there is no need for trust between the users and the Boundary Nodes.
+
+
+## Canister
+
+Canister is a key concept in Internet Computer (IC) that provides the foundation for an open, private, censorship-resistant and collaborative internet. Canister is a compute unit (i.e. smart contract) designed for internet-scale applications and services running at web speed. They are driven by cycles. 
+
+A canister is an instance of a WebAssembly module implemented on the Internet Computer. A canister is not just a WebAssembly module, but an instance of a WebAssembly module. Canisters are based on the Actor programming model, where a canister is an actor. Canisters can contain various Dapps logic, not just limited to finance. It encapsulates all the programming logic, public entrypoint methods, interface descriptions of the messages it provides, and the state information of the Dapp it describes. Canisters are able to export their own APIs to be called by other canisters.
+
+Canisters have unlimited scalability potential, they are the smart contracts of the Internet Computer. They have all the properties of traditional smart contracts, plus additional capabilities and memory to store software and user data, making them an evolution of smart contracts.
+
+
+## Candid UI
+
+Candid UI is a web interface based on the Candid interface description language that allows you to test canister functions in the browser. It presents service descriptions in the form of forms, enabling you to quickly view and test functions, and try different data types as input without writing any frontend code.
+
+
+## Controller
+
+A controller of a canister is a person, organization, or another canister that has administrative authority over that canister. The controller is identified by its principal. For example, a canister's controller can upgrade the WebAssembly code of the canister or remove the canister.
+
+A controller is a Principal with permissions to install, upgrade, and delete Canisters.
+
+In general, a Canister's Controller can be designated as a certain identity, or the Wallet Canister corresponding to a certain identity.
+
+After dfx 0.9, the default "identity" is now the Canister's Controller, and the Wallet Canister is no longer the default Controller (equivalent to dfx specifying --no-wallet).
+
+
+## Cycle
+
+On the Internet Computer, a "cycle" is a unit of measurement for processing, memory, storage, and network bandwidth consumption. Each "canister" has a "cycles account", and the resources consumed by the canister are credited to this account. The Internet Computer's utility token, ICP, can be converted into "cycles" and transferred to a canister. "Cycles" can also be transferred between canisters by attaching them to a message between canisters.
+
+ICP can be converted according to the current ICP price in SDR, based on an agreement that one trillion "cycles" corresponds to one SDR.
+
+
+## Motoko
+
+Motoko is a new, modern, type-safe programming language designed specifically for developers wanting to build the next generation of distributed applications and run them on the Internet Computer blockchain network. Motoko is designed to support the unique capabilities of the Internet Computer, offering a familiar and powerful programming environment. As a new language, Motoko continues to evolve, supporting new features and other improvements. The Motoko compiler, documentation, and other tools are all open source, and are released under the Apache 2.0 license.
+
+Motoko has native support for Canister smart contracts, with Canisters represented as Motoko Actors. An Actor is an autonomous object that completely encapsulates its state and communicates with other Actors solely through asynchronous messages. For example, the following code defines a stateful Counter Actor:
+
+```motoko
+actor Counter {
+    var value = 0;
+    public func inc () : async Nat {
+        value += 1;
+        return value;
+    };
+}
+```
+
+Its sole public function inc() can be called by this Actor and other Actors to update and read the current state of its private field value.
+
+Motoko has the following characteristics:
+
+- **Accessibility**: Motoko is a modern language designed to be convenient for programmers familiar with JavaScript and other popular languages. It supports modern programming habits, including special programming abstractions for distributed applications (Dapps).
+
+- **Asynchronous Messaging and Type-Safe Execution**: Each Dapp is made up of one or more Actors that communicate solely through asynchronous message passing. The state of an Actor is isolated from all other Actors, supporting distribution. There is no way to share state between multiple Actors. Motoko's Actor-based programming abstraction allows human-readable message passing patterns and enforces certain rules and avoidance of common errors for each network interaction. Specifically, Motoko programs are type-safe, as Motoko includes a practical, modern type system that checks each program before execution. The Motoko type system statically checks each Motoko program will execute safely on all possible inputs, without any dynamic type errors. Therefore, a whole category of common programming pitfalls common in other languages, and especially in Web programming languages, are excluded. These include null reference errors, mismatched argument or result types, missing field errors, etc.
+
+- **Direct Style Sequential Encoding**: On the IC, Canisters can communicate with other Canisters by sending asynchronous messages. Asynchronous programming is hard, so Motoko allows you to write asynchronous code in a simpler, sequential style. Asynchronous messages are function calls that return future values, and the await construct allows you to suspend execution until the future is complete. This simple feature avoids the "callback hell" of explicit asynchronous programming in other languages.
+
+- **Modern Type System**: Motoko is designed to be intuitive to people familiar with JavaScript and other popular languages, but offers modern features such as sound structural typing, generics, variant types, and static checking of pattern matching.
+
+- **Auto-Generated IDL Files**: A Motoko actor always presents its clients with a suite of named functions with argument and (future) result types as a typed interface.
+
+
+## Query call
+
+Users can query the current state of a canister or call a function that does not change the canister's state via a Query call. Responses to Query calls are very fast. Users can send Query calls to any replica within a subnet, with the result not going through consensus. 
+
+That is to say, there is an inherent tradeoff between security and performance: replies from a single replica are fast but may not be trustworthy or accurate. Query calls are not allowed to change the state of a canister to persist, so they are essentially read-only operations.
+
+
+## Update call
+
+Initiating an Update call can change a canister's state or call a function that changes the canister's state. Update calls are asynchronous and take some time to get a reply. They must be sent to all the replicas that hold the canister within a subnet, with the result going through consensus.
+
+That is to say, there is an inherent tradeoff between security and performance: replies from all replicas are slow but trustworthy and accurate. Update calls allow changing the state of a canister to persist, so they are essentially read-write operations.
+
+
+## Replica
+
+In IC, a replica refers to the client/replica software running on IC nodes. A "replica" is a collection of protocol components that are prerequisites for a node to join a subnet.
+
+
+## Wallet Canister
+
+A Wallet Canister is a dedicated smart contract (Canister) that allows storing and managing Cycles. A Wallet Canister belongs to a developer identity. Cycles are used to pay for Gas on the IC. 
+
+When a developer needs to deploy a Canister, it is actually the developer's controlled Wallet Canister that allocates Cycles and creates the Canister.
+
+
+## Service Worker
+
+When a browser requests resources from the Internet Computer (IC), these resources may be stored on a special neuron called an API canister. To make these resources available, a service worker is needed to implement the HTTP gateway protocol, converting the browser's requests into API canister calls, and verifying the authenticity of these resources. Therefore, this service worker will act as an intermediary, connecting the browser and the API canister, thus enabling the browser to access resources stored on the IC.
+
+Its role is to implement the HTTP gateway protocol, converting the browser's requests for static resources into API canister calls for communication with the IC, and verifying resource authentication. In simple terms, it can help the browser request static resources and convert them into API canister calls for communication with the IC (Internet Computer), and also ensure that these resources are trustworthy.
+
+The HTTP gateway protocol refers to the communication protocol between the browser and the service worker, the API canister call refers to the way the service worker sends requests to the IC, and asset authentication refers to ensuring the authenticity and security of assets during the request process.
+
+
+## Node
+
+A Node is a physical machine node that hosts the IC.
+
+
+## WebAssembly (Wasm)
+
+WebAssembly (Wasm) is a binary instruction format that provides a virtual machine abstraction layer with features like security, portability, efficiency, lightweight, etc. It can easily achieve millisecond cold start time and extremely low resource consumption.
+
+WebAssembly was first applied in browsers, and is now gradually expanding to the backend. It can compile code from languages like C/C++, Rust, Motoko into WebAssembly bytecode and run in a sandboxed environment. 
+
+Currently, mainstream public blockchains support WebAssembly. IC is a typical WebAssembly-enabled blockchain where DApps can be written in Motoko or Rust and deployed on IC. 
+
+Apart from IC, blockchains like Dot and Near also support WebAssembly.
+
+
+## Ledger
+
+IC records all transactions involving ICP tokens in a dedicated governance container smart contract called the Ledger canister. 
+
+The Ledger canister implements a smart contract that maintains accounts and balances, and keeps a history of transactions that affect accounts and balances.
+
+It provides the following capabilities:
+
+- Minting ICP tokens into accounts
+
+- Transferring ICP tokens from one account to another 
+
+- Burning ICP tokens to eliminate their existence
+
+The Ledger canister must be owned by an identity.
+
 

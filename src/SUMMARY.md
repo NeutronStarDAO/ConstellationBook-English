@@ -1,6 +1,5 @@
 # Constellation Book
-- [Constellation Book](./README.md)
-
+[Constellation Book](./about.md)
 
 # Journey of the Dream Weaver
 
@@ -15,8 +14,6 @@
 # Overview of IC
 - [Internet Computer](./1.OverviewofIC/1.md)
 
----
-
 # Core Protocol
 - [Peer-to-peer Layer](./2.CoreProtocol/P2Player.md)
 - [Consensus Layer](./2.CoreProtocol/IntroductiontoConsensusLayer.md)
@@ -26,16 +23,16 @@
   - [How to Pick the Number of Consensus Committee?](./2.CoreProtocol/Relatedconcepts/HowToPickNumberInConsensus.md)
   - [How Does P2P Layer Reduce Malicious Attack?](./2.CoreProtocol/Relatedconcepts/P2PLayerAndMaliciousAttack.md)
 
-# Chain-Key Cryptography
-
-
-# Network Nervous System
+# Chain Key Cryptography
 
 
 # Canister
 
 
-# Economic Model
+# Network Nervous System
+
+
+# Blockchain Web Services
 
 
 # Internet Identity
