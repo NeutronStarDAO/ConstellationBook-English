@@ -14,7 +14,7 @@ If you are still unfamiliar with Web3, blockchain, Bitcoin, and IC, don't worry,
 
 <img src="src/assets/README/iclogo.png" alt="DFINITY logo" width="377px" />
 
-The structure of the "Internet Computer Roaming Guide": the first half is vivid and interesting, and the second half is concise; the first half talks about IC principles, and the second half discusses development in practice.
+The structure of the Constellation Book: the first half is vivid and interesting, and the second half is concise; the first half talks about IC principles, and the second half discusses development in practice.
 
 ## Why write this book?
 
