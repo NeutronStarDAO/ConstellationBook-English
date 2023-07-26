@@ -68,35 +68,35 @@ So the diagram actually looks like this:
 >
 > 1. Setup phase:
 >
-> (1) Choose a bilinear group (G1,G2,GT,e): This is a set of groups G1, G2 and GT with special mathematical relationships. Some computations can be done through the pairing operation e() between these groups.
+> (1) Choose a bilinear group \\((G1,G2,GT,e)\\): This is a set of groups \\(G1\\), \\(G2\\) and \\(GT\\) with special mathematical relationships. Some computations can be done through the pairing operation \\(e()\\) between these groups.
 >
-> (2) Choose a random generator P∈G1, where P is a base point in group G1. 
+> (2) Choose a random generator \\(P∈G1\\), where \\(P\\) is a base point in group \\(G1\\). 
 >
-> (3) Choose a random master secret key s ∈ Zp: s is a random number.
+> (3) Choose a random master secret key \\(s ∈ Zp\\): \\(s\\) is a random number.
 >
-> (4) A hash function H: {0,1}* → G1: used to map identity information to group G1.
+> (4) A hash function \\(H\\): \\({0,1}* → G1\\): used to map identity information to group \\(G1\\).
 >
 > 2. Key Extraction phase: 
 >
-> (1) For identity ID, compute H1(ID) to get public key QID: QID = H1(ID). QID ∈ G1*.
+> (1) For identity ID, compute \\(H1(ID)\\) to get public key \\(QID\\): \\(QID = H1(ID)\\). \\(QID ∈ G1*\\).
 >
-> (2) Use master secret key s and public key QID to compute decryption key SID = sQID. The decryption key generator center computes the user's private key based on their identity, and sends it to the corresponding user.
+> (2) Use master secret key s and public key \\(QID\\) to compute decryption key \\(SID = sQID\\). The decryption key generator center computes the user's private key based on their identity, and sends it to the corresponding user.
 >
 > 3. Encryption phase:
 >
-> (1) To encrypt message M for ID, choose a random number r, r ∈ Zq*.
+> (1) To encrypt message \\(M\\) for ID, choose a random number \\(r\\), \\(r ∈ Zq*\\).
 >
-> (2) Compute ciphertext C which contains two parts: C1 = rP, C2 = M⊕e(H2(ID), P)r. So C = (rP, M⊕e(H2(ID), P)r).
+> (2) Compute ciphertext \\(C\\) which contains two parts: \\(C1 = rP\\), \\(C2 = M⊕e(H2(ID), P)r\\). So \\(C = (rP, M⊕e(H2(ID), P)r)\\).
 >
-> Breaking it down: After choosing random r, first compute ciphertext component C1 = rP. Then compute gID = e(QID, P) ∈ G2, where P is a master public key and e is the bilinear map. Next compute ciphertext component C2 = M ⊕ H2(grID), where M is the plaintext and H2 is a hash function. The ciphertext C is <C1, C2>.
+> Breaking it down: After choosing random \\(r\\), first compute ciphertext component \\(C1 = rP\\). Then compute \\(gID = e(QID, P) ∈ G2\\), where \\(P\\) is a master public key and \\(e\\) is the bilinear map. Next compute ciphertext component \\(C2 = M ⊕ H2(grID)\\), where \\(M\\) is the plaintext and H2 is a hash function. The ciphertext \\(C\\) is \\(<C1, C2>\\).
 >
 > 4. Decryption phase:
 >
-> (1) Receive ciphertext C. 
+> (1) Receive ciphertext \\(C\\). 
 >
-> (2) Use decryption key SID and C1 to compute pairing e(SID, C1), which can restore e(H2(ID), P)r: e(SID, C1) = e(sQID, rP) = e(QID, P)r.
+> (2) Use decryption key \\(SID\\) and \\(C1\\) to compute pairing \\(e(SID, C1)\\), which can restore \\(e(H2(ID), P)r: e(SID, C1) = e(sQID, rP) = e(QID, P)r\\).
 >
-> (3) Then decrypt message M = C2⊕e(H2(ID), P)r.
+> (3) Then decrypt message \\(M = C2⊕e(H2(ID), P)r\\).
 
 <br>
 
@@ -158,9 +158,9 @@ VetIBE replaces the traditional IBE's third party Private Key Generator (PKG) wi
 
 In regular IBE, the PKG derives a user's decryption key by multiplying the master private key with the hash of the user ID.
 
-> dID = sQID. Here dID is the user's decryption key. sQID represents multiplying the master private key s with the point QID on the elliptic curve group G1.
+> \\(dID = sQID\\). Here \\(dID\\) is the user's decryption key. \\(sQID\\) represents multiplying the master private key \\(s\\) with the point \\(QID\\) on the elliptic curve group \\(G1\\).
 >
-> The decryption key dID is obtained by multiplying the master key s with the user public key QID on the elliptic curve group.
+> The decryption key \\(dID\\) is obtained by multiplying the master key s with the user public key \\(QID\\) on the elliptic curve group.
 
 <br>
 
@@ -210,13 +210,13 @@ The user receives t encrypted signature shards from t different replicas, and th
 
 > The specific encryption process is:
 >
-> The user calls the interface, inputting the identity ID and plaintext message m.
+> The user calls the interface, inputting the identity ID and plaintext message \\(m\\).
 >
-> Invoke the hash function, perform hash operation on ID h = H1(id), obtaining value h.
+> Invoke the hash function, perform hash operation on ID \\(h = H1(id)\\), obtaining value h.
 >
-> Choose a random number s, compute t = H2(s, M), where H2 is another hash function.
+> Choose a random number \\(s\\), compute \\(t = H2(s, M)\\), where H2 is another hash function.
 >
-> Compute C1 = g2^t, C2 = s ⊕ H3(e(H1(id), mpk)^t) = s ⊕ H3(e(h, mpk)^t), C3 = M ⊕ H4(s). The ciphertext is C = (C1, C2, C3).
+> Compute \\(C1 = g2^t\\), \\(C2 = s ⊕ H3(e(H1(id), mpk)^t) = s ⊕ H3(e(h, mpk)^t)\\), \\(C3 = M ⊕ H4(s)\\). The ciphertext is \\(C = (C1, C2, C3)\\).
 >
 > With vetKD, now each subnet is a "decentralized PKG"!
 
@@ -322,15 +322,15 @@ It's quite similar to vetIBE, except vetIBE derives a decryption key from an ID,
 
 The steps are:
 
-1. The user generates tpk, tsk, and sends tpk to the nodes.
+1. The user generates \\(tpk\\), \\(tsk\\), and sends \\(tpk\\) to the nodes.
 
-2. When a user wants the BLS signature of message m, they send m and tpk to the nodes.
+2. When a user wants the BLS signature of message \\(m\\), they send m and tpk to the nodes.
 
-3. Each node uses its sk share to compute a signature share σi of m, encrypts it with tpk, and sends eki to the user. 
+3. Each node uses its sk share to compute a signature share \\(σi\\) of \\(m\\), encrypts it with \\(tpk\\), and sends \\(eki\\) to the user. 
 
-4. The user receives t eki's, decrypts to obtain the signature shares, and recovers the full signature σ.
+4. The user receives t \\(eki\\)'s, decrypts to obtain the signature shares, and recovers the full signature \\(σ\\).
 
-5. The user uses σ as the signature of m relative to public key pk, thus achieving vetSIG.
+5. The user uses \\(σ\\) as the signature of \\(m\\) relative to public key \\(pk\\), thus achieving vetSIG.
 
 <br>
 
@@ -340,15 +340,15 @@ The uniqueness of BLS signatures, combined with a hash function under a random o
 
 The steps are:
 
-1. The user generates tpk, tsk, and sends tpk.
+1. The user generates \\(tpk\\), \\(tsk\\), and sends \\(tpk\\).
 
-2. When a user wants to compute the PRF output for input x, they send x and tpk to the nodes.
+2. When a user wants to compute the PRF output for input \\(x\\), they send \\(x\\) and \\(tpk\\) to the nodes.
 
-3. Each node computes a BLS signature share of x, encrypts it, and sends to the user. 
+3. Each node computes a BLS signature share of \\(x\\), encrypts it, and sends to the user. 
 
-4. The user receives the encrypted shares, recovers the full signature σ.
+4. The user receives the encrypted shares, recovers the full signature \\(σ\\).
 
-5. The user computes y = H'(pk,x,σ) as the PRF output on x, thus achieving vetPRF.
+5. The user computes \\(y = H'(pk,x,σ)\\) as the PRF output on \\(x\\), thus achieving vetPRF.
 
 <br>
 
@@ -358,11 +358,11 @@ Building on vetPRF, using the BLS signature as proof constructs a verifiable VRF
 
 The steps are:
 
-1. Based on vetPRF, the user wants to prove correctness of y.
+1. Based on vetPRF, the user wants to prove correctness of \\(y\\).
 
-2. They send the signature σ as proof, along with y to the verifier.
+2. They send the signature \\(σ\\) as proof, along with \\(y\\) to the verifier.
 
-3. The verifier checks e(σ, g2) = e(H(x), pk) to verify correctness of y, thus achieving vetVRF.
+3. The verifier checks \\(e(σ, g2) = e(H(x), pk)\\) to verify correctness of \\(y\\), thus achieving vetVRF.
 
 <br>
 

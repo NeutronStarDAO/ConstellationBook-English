@@ -24,7 +24,7 @@ Now let's talk about CDFhg and CDFbinom.
 
 ## Hypergeometric cumulative distribution function (CDFhg)
 
-In this formula, we use CDFhg(x, n, M, N) to represent the cumulative distribution function of the hypergeometric distribution.
+In this formula, we use \\(CDFhg(x, n, M, N)\\) to represent the cumulative distribution function of the hypergeometric distribution.
 
 Here:
 
@@ -43,7 +43,7 @@ This formula tells that: given the number of honest and dishonest people in a gr
 
 ## Binomial cumulative distribution function (CDFbinom)
 
-When the size of group U approaches infinity, we can use the binomial distribution to approximate the hypergeometric distribution. The cumulative binomial distribution function is expressed as CDFbinom(x, n, p).
+When the size of group U approaches infinity, we can use the binomial distribution to approximate the hypergeometric distribution. The cumulative binomial distribution function is expressed as \\(CDFbinom(x, n, p)\\).
 
 Here:
 
