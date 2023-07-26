@@ -78,7 +78,7 @@ So the diagram actually looks like this:
 >
 > 2. Key Extraction phase: 
 >
-> (1) For identity ID, compute H(ID) to get public key QID: QID = H(ID). QID ∈ G1*.
+> (1) For identity ID, compute H1(ID) to get public key QID: QID = H1(ID). QID ∈ G1*.
 >
 > (2) Use master secret key s and public key QID to compute decryption key SID = sQID. The decryption key generator center computes the user's private key based on their identity, and sends it to the corresponding user.
 >
@@ -86,17 +86,17 @@ So the diagram actually looks like this:
 >
 > (1) To encrypt message M for ID, choose a random number r, r ∈ Zq*.
 >
-> (2) Compute ciphertext C which contains two parts: C1 = rP, C2 = M⊕e(H(ID), P)r. So C = (rP, M⊕e(H(ID), P)r).
+> (2) Compute ciphertext C which contains two parts: C1 = rP, C2 = M⊕e(H2(ID), P)r. So C = (rP, M⊕e(H2(ID), P)r).
 >
-> Breaking it down: After choosing random r, first compute ciphertext component C1 = rP. Then compute gID = e(QID, Ppub) ∈ G2, where Ppub is a system parameter and e is the bilinear map. Next compute ciphertext component C2 = M ⊕ H2(grID), where M is the plaintext and H2 is a hash function. The ciphertext C is <C1, C2>.
+> Breaking it down: After choosing random r, first compute ciphertext component C1 = rP. Then compute gID = e(QID, P) ∈ G2, where P is a master public key and e is the bilinear map. Next compute ciphertext component C2 = M ⊕ H2(grID), where M is the plaintext and H2 is a hash function. The ciphertext C is <C1, C2>.
 >
 > 4. Decryption phase:
 >
 > (1) Receive ciphertext C. 
 >
-> (2) Use decryption key SID and C1 to compute pairing e(SID, C1), which can restore e(H(ID), P)r: e(SID, C1) = e(sQID, rP) = e(QID, P)r.
+> (2) Use decryption key SID and C1 to compute pairing e(SID, C1), which can restore e(H2(ID), P)r: e(SID, C1) = e(sQID, rP) = e(QID, P)r.
 >
-> (3) Then decrypt message M = C2⊕e(H(ID), P)r.
+> (3) Then decrypt message M = C2⊕e(H2(ID), P)r.
 
 <br>
 
@@ -300,11 +300,11 @@ The communication ID is designed so only A and B can get the keys.
 
 Only ciphertext travels, third parties can't decrypt.
 
-Even if A or B's device gets hacked, the private key doesn't leak directly. Just re-derive through the subnet.
+The way the keys get made has built-in protections, so even if some nodes get hacked, the secrets stay secret. 
 
-Threshold protection in key derivation prevents leaks even if some nodes are compromised.
+Even if someone hacks device A or B, the private key won't leak directly, 'cause the user ID private key ain't stored locally. You just need a new comm ID, and you can re-generate the comm ID private key through the subnet.
 
-So it ensures secure transmission while handling compromised devices - an upgrade over basic end-to-end encryption relying on local key storage alone. vetIBE leverages the blockchain for superior intrusion resistance.
+This keeps the transmission secure while also solving the issue of user devices being hacked. Compared to old school end-to-end encryption that just stores keys locally, the vetIBE system can get better hack resistance with the blockchain's help.
 
 <br>
 
