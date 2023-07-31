@@ -302,7 +302,7 @@ Only ciphertext travels, third parties can't decrypt.
 
 The way the keys get made has built-in protections, so even if some nodes get hacked, the secrets stay secret. 
 
-Even if someone hacks device A or B, the private key won't leak directly, 'cause the user ID private key ain't stored locally. You just need a new comm ID, and you can re-generate the comm ID private key through the subnet.
+Even if someone hacks device A or B, the private key won't leak directly. Decryption keys can be deleted after use instead of being permanently stored locally. This is more secure than traditional public-key encryption methods, where users must always store their private keys locally. You just need a new comm ID, and you can re-generate the comm ID private key through the subnet.
 
 This keeps the transmission secure while also solving the issue of user devices being hacked. Compared to old school end-to-end encryption that just stores keys locally, the vetIBE system can get better hack resistance with the blockchain's help.
 
