@@ -3,7 +3,7 @@ authors = ["NeutronStarPRO"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Constellation Book"
+title = "Book"
 description = "The constellation book for you."
 
 [rust]
@@ -14,13 +14,13 @@ additional-css = ["theme/style.css"]
 additional-js = ["assets/custom.js", "assets/bigPicture.js"]
 git-repository-url = "https://github.com/NeutronStarDAO/ConstellationBook-English"
 mathjax-support = true
+no-section-label = true
 
 [output.html.playground]
 editable = true
 copy-js = true
-# line-numbers = true
+line-numbers = true
 
 [output.html.fold]
 enable = true
 level = 0
-

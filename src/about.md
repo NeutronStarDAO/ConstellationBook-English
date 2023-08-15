@@ -1,16 +1,77 @@
-# Constellation Book: Your Journey to the Internet Computer
+<div class="center-image">
+    <h1 class="home-h1">👽Constellation Book🛸</h1>
+</div>
+<div class="center-image">
+    <h3 class="home-h3">Your Journey to the Internet Computer</h3>
+</div>
+
+(｡･∀･)ﾉﾞ Hey there! Yeah! 🫡 Welcome aboard! 🎉 
+
+1️⃣If you're not yet familiar with blockchain, bitcoin, and IC, no worries. I'm [here](0.JourneytoWeb3/WhatistheBlockchain.md) to give you the lowdown on the history of crypto!
+
+2️⃣If you've heard of IC but haven't gotten the full scoop yet, you've come to [the right place to learn more](1.OverviewofIC/1.md).
+
+3️⃣Wanna hear Dominic's story? He's [right here](0.JourneytoWeb3/JourneyoftheDreamWeaver.md)!
+
+<div class="home-box">
+    <div class="box box1">1️⃣📡
+            <div>
+                Crypto's past
+            </div>
+            <div>
+                Starting web3 from scratch
+            </div>
+    </div>
+    <div class="box box2">2️⃣📖
+            <div>
+                Get the facts fast
+            </div>
+            <div>
+                IC's web3 dispatched
+            </div>
+    </div>
+    <div class="box box3">3️⃣🔍
+            <div>
+                The tale behind
+            </div>
+            <div>
+                Dominic's adventure ride
+            </div>
+    </div>
+</div>
+
+<div class="zoom-font">
+    &nbsp; 2015 &nbsp;&nbsp;&nbsp;&nbsp; 2018 &nbsp;&nbsp;&nbsp;
+    &nbsp; 2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Now &nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 Years
+    <br>
+    —〦———〦———〦———〦—————〦———→ ∞ 💥 Blockchain Singularity
+</div>
+
+<img src="assets/README/iclogo.png" width="30%" style="float: right; margin-left: 35px;" class="zoom-img"/>
+
+The Internet Computer is the next generation of blockchain for general computing. It originated from Dominic's idea in 2015 of a horizontally scalable, decentralized world computer. The prototype was completed in 2018. After deep optimizations of the underlying protocol, it was launched in 2021. After years of development, it aims to become a decentralized cloud service capable of
+<span class="hover-win0">
+    <span class="hover-win2">
+        The underlying infrastructure has been developed into a decentralized cloud, while the upper-layer applications achieve decentralization through DAO-controlled permissions to accomplish the goal of decentralization.
+    </span>
+    <span class="hover-win1">
+        deploying various dapps
+    </span>
+</span>
+100% on-chain without the need for other centralized services.
+
 
 <div class="center-image">
     <img src="assets/README/Book0.jpg">
 </div>
 
-If you have only heard of IC but have too busy with Ethereum and Polkadot projects without delving into IC, then you've come to the right place to learn more about it [here](1.OverviewofIC/1.md)!
+The structure of the Constellation Book:
 
-If you are still unfamiliar with Web3, blockchain, Bitcoin, and IC, don't worry, start [here](0.JourneytoWeb3/JourneyoftheDreamWeaver.md). Let me guide you through the history of encryption and quickly get you started in Web3 development!
+* The first half is vivid and interesting, and the second half is concise
 
-<img src="assets/README/iclogo.png" width="30%" style="float: right; margin-left: 35px;" class="zoom-img"/>
+* The first half talks about IC principles, and the second half discusses development in practice
 
-The structure of the Constellation Book: the first half is vivid and interesting, and the second half is concise; the first half talks about IC principles, and the second half discusses development in practice.
 
 ## Why do I Write this book
 
@@ -18,7 +79,7 @@ Early on, after learning about IC, I collected and arranged materials from the I
 
 <br>
 
-Learn blockchain with zero thresholds and level the learning field for IC.
+Learn blockchain with zero thresholds and level the learning field for IC.👨‍💻👩‍💻
 
 <div class="center-image">
     <img src="assets/README/1.jpg" style="zoom:15%;" >
@@ -28,16 +89,14 @@ Learn blockchain with zero thresholds and level the learning field for IC.
 
 I really like the Rust open-source community. There are many open-source books and high-quality projects in the Rust community, which have helped me a lot. I have learned a lot from the Rust open-source community. Projects like Bitcoin, Ethereum, and their related projects also have a strong open-source atmosphere, and I hope that more and more open-source projects will emerge in the IC community for everyone to learn from each other.
 
-<br>
-
 In addition, the IC content is updated and iterated quickly. With open-source references, everyone can contribute, keeping the content fresh and up-to-date.
 
+<br>
 <br>
 
 Join the developer discussion group for this book, correct errors, make modifications, suggest improvements, and contribute to the open-source book together!
 
-<br>
-
+🌎
 [OpenChat](https://oc.app/4jwox-pyaaa-aaaar-amjbq-cai/?ref=3iq22-xyaaa-aaaar-amjrq-cai&code=834791b392db154c), [Discord](https://discord.gg/5Y8QPHvR), [Github](https://github.com/NeutronStarDAO/ConstellationBook-English)
 
 <div class="center-image">

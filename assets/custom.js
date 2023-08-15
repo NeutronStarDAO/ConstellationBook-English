@@ -1,4 +1,52 @@
 var initAll = function () {
+    document.getElementById("theme-list").addEventListener("click", function (e) {
+        const theme = document.getElementsByTagName("html")[0].className;
+        if (theme.indexOf("light") != -1 || theme.indexOf("rust") != -1) {
+            var pageElement = document.querySelector('.page');
+            var pageElement2 = document.querySelector('.sidebar-scrollbox');
+            pageElement.style.backgroundImage = 'url("../topography.png")';
+            pageElement2.style.backgroundImage = 'url("../topography.png")';
+        } else {
+            var pageElement = document.querySelector('.page');
+            var pageElement2 = document.querySelector('.sidebar-scrollbox');
+            pageElement.style.backgroundImage = 'none';
+            pageElement2.style.backgroundImage = 'none';
+        }
+    });
+
+    const themeClass = document.getElementsByTagName("html")[0].className;
+    if (themeClass.indexOf("coal") != -1 || themeClass.indexOf("navy") != -1) {
+        var pageElement = document.querySelector('.page');
+        var pageElement2 = document.querySelector('.sidebar-scrollbox');
+        pageElement.style.backgroundImage = 'none';
+        pageElement2.style.backgroundImage = 'none';
+    }
+
+    // 若当前 mdbook 主题为 Light 或 Rust ，则将 giscuz 主题设置为 light
+    var theme = "transparent_dark";
+    if (themeClass.indexOf("light") != -1 || themeClass.indexOf("rust") != -1) {
+        theme = "light";
+    }
+
+    const btn1 = document.querySelector('.box1');
+    if (btn1) {
+        btn1.addEventListener('click', () => {
+            window.location.href = '/constellation.github.io/0.JourneytoWeb3/WhatistheBlockchain.html';
+        });
+    }
+    const btn2 = document.querySelector('.box2'); 
+    if (btn2) {
+        btn2.addEventListener('click', () => {
+            window.location.href = '/constellation.github.io/1.OverviewofIC/1.html';
+        });
+    }
+    const btn3 = document.querySelector('.box3');
+    if (btn3) {
+        btn3.addEventListener('click', () => {
+            window.location.href = '/constellation.github.io/0.JourneytoWeb3/JourneyoftheDreamWeaver.html';
+        });
+    }
+
     var path = window.location.pathname;
     if (path.endsWith("/print.html")) {
         return;
@@ -103,43 +151,14 @@ var initAll = function () {
     pagePath = pagePath.replace("index.md", "");
     pagePath = pagePath.replace(".md", "");
     if (pagePath.length > 0) {
-        if (pagePath.charAt(pagePath.length-1) == "/"){
-            pagePath = pagePath.substring(0, pagePath.length-1)
+        if (pagePath.charAt(pagePath.length-1) == "/") {
+            pagePath = pagePath.substring(0, pagePath.length-1);
         }
-    }else {
-        pagePath = "index"
+    } else {
+        pagePath = "index";
     }
 
-    document.getElementById("theme-list").addEventListener("click", function (e) {
-        const theme = document.getElementsByTagName("html")[0].className;
-        if (theme.indexOf("light") != -1 || theme.indexOf("rust") != -1) {
-            var pageElement = document.querySelector('.page');
-            var pageElement2 = document.querySelector('.sidebar-scrollbox');
-            pageElement.style.backgroundImage = 'url("../topography.png")';
-            pageElement2.style.backgroundImage = 'url("../topography.png")';
-        } else {
-            var pageElement = document.querySelector('.page');
-            var pageElement2 = document.querySelector('.sidebar-scrollbox');
-            pageElement.style.backgroundImage = 'none';
-            pageElement2.style.backgroundImage = 'none';
-        }
-    });
-
-    const themeClass = document.getElementsByTagName("html")[0].className;
-    if (themeClass.indexOf("coal") != -1 || themeClass.indexOf("navy") != -1) {
-        var pageElement = document.querySelector('.page');
-        var pageElement2 = document.querySelector('.sidebar-scrollbox');
-        pageElement.style.backgroundImage = 'none';
-        pageElement2.style.backgroundImage = 'none';
-    }
-
-    // 若当前 mdbook 主题为 Light 或 Rust ，则将 giscuz 主题设置为 light
-    var theme = "transparent_dark";
-    if (themeClass.indexOf("light") != -1 || themeClass.indexOf("rust") != -1) {
-        theme = "light";
-    }
-
-    var script = document.createElement("script")
+    var script = document.createElement("script");
     script.type = "text/javascript";
     script.src = "https://giscus.app/client.js";
     script.async = true;
