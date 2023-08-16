@@ -46,7 +46,7 @@ Join the developer discussion group for this book, correct errors, make modifica
 
 Thank you for reading our content! We have always been committed to providing high-quality works for the community and will continue to maintain, enhance, and improve them. If you find our works helpful and would like to support our ongoing creations and maintenance, we would be extremely grateful.
 
-NeutronStarDAO: A community for premium content.
+NeutronStarDAO: A community for free premium content.
 
 Donation Address ([NNS Wallet](https://nns.ic0.app)): 747b2c25bc6314e473f406520e339bbd60568129961be5f32137683a03eea2c2
 
