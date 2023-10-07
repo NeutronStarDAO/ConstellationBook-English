@@ -147,6 +147,8 @@ Dominic said, "I love algorithms and distributed computing, and I won many award
 
 <br>
 
+In 2013, Dominic started trading cryptocurrencies full-time, while picking up some basics about consensus algorithms on the side 🤣😉. He was interested in designing faster consensus mechanisms to work in conjunction with proof-of-stake (PoS) architectures.
+
 Here is Dominic's "Bitcoin ATM kiss" in 2014.
 
 <div class="center-image">
@@ -154,8 +156,6 @@ Here is Dominic's "Bitcoin ATM kiss" in 2014.
 </div>
 
 <br>
-
-In 2014, while trading cryptocurrencies, Dominic immersed himself in learning the fundamentals of consensus algorithms.
 
 On February 7th, Mt. Gox, the world's largest Bitcoin exchange, announced its bankruptcy. Dominic took to Twitter to express his distress at the beloved Bitcoin's plummeting value.
 
@@ -165,7 +165,7 @@ Bitcoin crashed to 666 USD. (It's currently priced at 23,000 USD, down from its 
     <img src="assets/JourneyoftheDreamWeaver/77ae5916be556e50b88f07b00bf1343f.png" style="zoom:50%;" />
 </div>
 
-Dominic immersed himself in the research of traditional Byzantine fault tolerance and combined it with his previous experience. He came up with a decentralized network that can scale horizontally like Cassandra - allowing more and more servers to join and maintain high performance. Within a few days, Dominic published a paper describing a scalable cryptocurrency called Pebble. The paper quietly circulated within a small circle of cryptography enthusiasts, and it was the first system to describe a decentralized sharding approach. In this system, each shard uses an asynchronous Byzantine fault tolerance algorithm to achieve consensus.
+He buckled down, diving deep into traditional Byzantine fault tolerance, combined with his previous experience building online games. Dominic conceived a decentralized network that could horizontally scale like Cassandra - allowing more and more servers to join while maintaining high performance. In just a few days, Dominic published a [paper](https://drive.google.com/file/d/1agn88cO5ED1phN2vVx_Tj-jWmrfJ8Hmo/view?usp=sharing) describing a scalable cryptocurrency called Pebble. The paper quietly circulated in the small crypto circles, the first to describe a decentralized sharded system. In this system, each shard uses an asynchronous Byzantine consensus algorithm to reach agreement.
 
 <br>
 
@@ -174,6 +174,14 @@ While learning, Dominic didn't forget to trade Bitcoin. Investing in Bitcoin bro
 <div class="center-image">
     <img src="assets/JourneyoftheDreamWeaver/60f45fe06eb9fa990443162691e7cab8.png" alt="image-20230123222606352" style="zoom:52%;" />
 </div>
+
+<br>
+
+Later Dominic fused the early Ethereum ethos, like an intricate tapestry. Inspired by Ethereum, after Dominic heard of the concept of the "World Computer", it became his ultimate goal - he thought perhaps this was what the future internet would look like.
+
+He realized smart contracts were actually a brand new, extremely advanced form of software. He saw that if the limitations of performance and scalability could be broken through, then undoubtedly almost everything would eventually be rebuilt on blockchains. Because smart contracts run on open public networks, superior to private infrastructure, they are inherently tamper-proof, unstoppable, can interconnect on one network, making each contract simultaneously part of multiple systems, providing extraordinary network effects, and can operate autonomously, inheriting blockchain properties, and so on.
+
+Most of the details have faded over time into the mists of history - although not much time has passed, in the rapidly changing evolution of blockchain, this period seems to have already spanned the peaks and valleys of an entire lifetime.
 
 <br>
 
@@ -221,13 +229,17 @@ However, ahem, interrupting for a moment. The idea is beautiful, but reality can
 
 <br>
 
+Dominic eagerly hoped his research could be put to use by the Ethereum project. His motivation was not for money, but a long-held passion for distributed computing, now sublimated into boundless aspirations for blockchain, making it hard for him to imagine anything that could eclipse the excitement and determination before him. He soon became a familiar face in Ethereum circles, often discussing at various conferences the possibilities of applying new cryptography and distributed computing protocols in next-generation blockchains.
+
 The solution to this problem can take two approaches. The first is to improve the existing architecture, such as transitioning Ethereum's consensus from PoW to PoS (Casper), building shard chains, or creating sidechains. The other approach is to start over and design a new architecture that can handle information processing and large-scale data storage at high speeds. 
 
-The question is whether to keep improving and scaling the old Ethereum architecture or design a new "world computer" from scratch. 
+Should they keep improving, scaling and retrofitting Ethereum's old architecture, or start from scratch to design a real "World Computer"?
+
+At the time, people were interested in his ideas, but the inertia was that his concepts were too complex and distant, requiring too much time to realize and fraught with difficulties. Even though Ethereum did not adopt Dominic's ideas later, he was still grateful to early Ethereum members like Vitalik and Joe Lubin for patiently listening to his ideas in many early discussions.
+
+Finally, Dominic made the difficult decision to start from scratch and design a real "World Computer".
 
 <br>
-
-In the face of these challenges, Dominic made a difficult decision and chose the latter option.
 
 When we try to solve a specific problem, we often find that the key is to create powerful "tools". With a more advanced and practical tool, and continuously maintain and improve it, it gradually becomes a more powerful tool to solve many valuable problems. A common business phenomenon is that in order to realize a product or service, a tool is developed, and then it is found that this tool has wider applicability, and then the tool itself evolves into a larger, more successful and higher-valued product.
 
@@ -284,6 +296,8 @@ Decentralized platforms not only involve token transfers between parties, but al
 For Dominic, the future of blockchain is the future of the internet, and vice versa. The internet is no longer just about connecting servers in data centers to users, but first forming a trusted and secure blockchain network composed of servers from around the world, and then deploying apps and serving users on top of it. Dominic hopes that banking and finance, the sharing economy (such as Uber), social networks, email, and even web searches can all be transferred to such a network.
 
 <br>
+
+In retrospect, Ethereum made the right call not adopting Dominic's ideas back then. Because while focused on proof-of-work (PoW), Ethereum was also exploring upgrade paths to proof-of-stake (PoS). The blueprint he outlined was too ambitious to realize in a limited timeframe. To achieve his vision would have required an enormous, stellar team relentlessly researching, inventing new cryptographic techniques, and more.
 
 In the fall of 2016, Dominic announced his return as a "decentralized adventurer". With the theoretical framework in place, the adventure of a dreamer has officially begun!
 
@@ -374,7 +388,7 @@ The whiteboard of the Zurich office's computing Bitcoin integration.
 
 Since the data is on the chain, the **Gas fee has to be very low** so people will use it: 1 G for 1 year is $5! Low Gas alone is not enough. In order for users to use Dapps without barriers, IC uses a **reverse Gas fee model** where the Gas is paid by the development team. The DFINITY team also pegged Gas to SDR, turning it into **stable Gas** that does not fluctuate with the coin price. IC has a unified decentralized anonymous identity: **Internet Identity (ii)** as the login for Dapps and joins the network neural system to participate in governance...
 
-IC architecture and consensus are also unique. IC theoretically has unlimited computing and storage, just add more server nodes. The improved consensus is a bit like practical Byzantine, but more complex, because it is quite different from the current consensus. Dominic gave it a name called "PoUW" consensus, Proof of Useful Work. The BLS threshold signature scheme's VRF generates truly unpredictable random numbers, and everyone can verify that the random number is not forged by others. Anti-Sybil attack edge nodes, layered architecture, randomly designated block generation, no need to say more, just one word, wonderful.
+The IC architecture and consensus are also unique. In theory, IC has unlimited computation and storage - just keep adding server nodes. The improved consensus is a bit like practical Byzantine fault tolerance, yet more complex, because it's quite different from existing consensuses. Dominic gave it the name "PoUW" consensus, for [Proof of Useful Work](../2.CoreProtocol/IntroductiontoConsensusLayer.md). BLS threshold signatures with VRF produce truly unpredictable random numbers, and everyone can verify the randomness is not forged. Sybil attack-resistant edge nodes, hierarchical architecture, randomly assigned block production - no need to elaborate, just one word: exquisite.
 
 <br>
 
@@ -514,10 +528,15 @@ Switzerland is now a prominent "Crypto Valley", where many well-known blockchain
 
 Dominic has assembled a very strong team of blockchain developers, including cryptography, computer science, and mathematics professors, PhDs and postdocs, cryptocurrency experts, senior engineers, and professional managers.
 
-I believe that blockchain will still be one of the most interesting, influential, and fastest-growing technology fields in the next 10 years. Currently, there is no other chain better suited for deploying applications than IC.
+The Internet Computer is the crystallization of 5 years of R&D by top cryptographers, distributed systems experts, and programming language experts. Dfinity currently has close to 100,000 academic citations and over 200 patents.
 
-This is the story I wanted to tell about Dominic, but his own story is far from over, and has just begun...
+I believe that blockchain will still be one of the most interesting, influential, and fastest-growing technology fields in the next 10 years. 🚀🚀🚀
 
+Currently, there is no other chain better suited for deploying applications than IC.
+
+This is the story I wanted to tell about Dominic, but his own story is far from over, and has just begun... 
+
+As Dominic himself said: "Our mission is to push towards a blockchain singularity, where the majority of the world's systems and services are created using smart contracts, and run entirely on chain, a transformation that will also take years."
 
 <div class="center-image">
     <img src="assets/JourneyoftheDreamWeaver/WeCha(1)@1.5x.jpg" style="zoom: 23%;" />

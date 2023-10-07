@@ -50,7 +50,9 @@
 
 <img src="assets/README/iclogo.png" width="30%" style="float: right; margin-left: 35px;" class="zoom-img"/>
 
-The Internet Computer is the next generation of blockchain for general computing. It originated from Dominic's idea in 2015 of a horizontally scalable, decentralized world computer. The prototype was completed in 2018. After deep optimizations of the underlying protocol, it was launched in 2021. After years of development, it aims to become a decentralized cloud service capable of
+Sometimes, I'm really awestruck to be living in such a miraculous era. Just a few years ago, we were mocking Bitcoin, and now decentralized finance, Ethereum and crypto have become deeply embedded. And in this rapidly evolving new world, a bunch of new technologies are adding color to our lives in their own unique ways: The Internet Computer, a next-gen general purpose blockchain compute platform.
+
+Originating from Dominic's ideas in 2015: a horizontally scalable decentralized World Computer. The embryo was completed in 2018. After years of deep optimization of the underlying protocols, it launched in 2021. After years of development, it aims to become a decentralized cloud services platform,
 <span class="hover-win0">
     <span class="hover-win2">
         The underlying infrastructure has been developed into a decentralized cloud, while the upper-layer applications achieve decentralization through DAO-controlled permissions to accomplish the goal of decentralization.

@@ -2,7 +2,15 @@ Ethereum is a decentralized platform that allows developers to build various app
 
 <br>
 
-First, you can imagine it as a giant computer that can run all sorts of applications. But this computer is not a physical entity, but a virtual network maintained by many people. These people, whom we call "nodes", are distributed all over the world and collectively maintain the Ethereum network.
+Smart contracts are a concept proposed by Nick Szabo in the 1990s, almost as old as the internet itself. Due to the lack of a trustworthy execution environment, smart contracts were not applied in real industries until the birth of Bitcoin. People realized that the underlying technology of Bitcoin, blockchain, provides a native trustworthy execution environment for smart contracts.
+
+Ethereum is a platform that provides various modules for users to build applications on, which is the core of Ethereum technology. The applications built on top of the platform are essentially contracts. Ethereum offers a powerful contract programming environment, enabling the implementation of complex business and non-business logics through contract development. By supporting contract programming, blockchain technology provides many more commercial and non-commercial use cases beyond just issuing cryptocurrencies.
+
+<br>
+
+You can think of it as a huge computer that can run all kinds of applications. But this computer is not a physical entity, it is a virtual network maintained collectively by many people. We call these people "nodes", distributed around the world, jointly maintaining the Ethereum network.
+
+<br>
 
 So what's the difference between Ethereum and computers we commonly use? The biggest difference is that Ethereum is decentralized. That means data is not stored on a central server, but distributed across many different nodes. This makes the data difficult to tamper with and attack because an attacker would need to compromise thousands of nodes simultaneously.
 

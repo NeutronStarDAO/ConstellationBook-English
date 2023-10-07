@@ -24,27 +24,27 @@
   - [How Does P2P Layer Reduce Malicious Attack?](./2.CoreProtocol/Relatedconcepts/P2PLayerAndMaliciousAttack.md)
 
 # Chain Key Cryptography🪄
-- [Chain Key]()
-- [Threshold BLS Signatures]()
-- [NIDKG]()
-- [Chain-evolution Technology]()
+- [Chain Key](./3.ChainKey/)
 - [VETKeys](./3.ChainKey/VETkeys.md)
 
 # Network Nervous System⚙️
-- [DAO]()
 - [NNS]()
-- [SNS]()
+- [DAO]()
+- [Economic Model]()
 
 # Canister🫙
-
+- [Canister]()
+- [XCR]()
 
 # Blockchain Web Services🎯
 
 
 # Internet Identity🔑
+- []()
 
 
 # Cryptography in IC🔒
+- [Threshold BLS Signatures]()
 
 
 # Dapp Development🌟

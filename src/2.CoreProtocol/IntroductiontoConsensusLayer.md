@@ -85,6 +85,8 @@ So how can we design it? The nodes need to reach consensus on the order of execu
 
 We could not rely on a relay station. Although the time for messages to arrive at each replica may be different (that is, the time of executing messages is different), all replicas must execute messages in the same order.
 
+The IC uses state machine replication, where each replica is a state machine. As long as the input messages are the same, the internal states of the replicas will be identical.
+
 <div class="center-image">
     <img src="assets/IntroductiontoConsensusLayer/IMG3.png" alt="IMG3" style="zoom:25%;" />
 </div>
@@ -109,6 +111,8 @@ As long as the bad guys get less than one-third of the private key shares, they 
 
 - In the traditional RSA algorithm, you control the private key and the message is public, which is equivalent to knowing the signature result yourself. After the private key is leaked, others can also know the signature result in advance.
 - However, in the threshold BLS  signature algorithm, a group of people control the private key shares. The signer himself does not have the complete private key, so he does not know the signature result. Only after everyone has signed and aggregated ,then they know the signature. Throughout the process, no one knows the global private key, but the signature result is the result recognized by most people. A group of people generate signatures, and no individual can predict the signature result. A single person cannot prevent the signature from being released.
+
+<img src="assets/IntroductiontoConsensusLayer/image-20230918231945413.png" style="zoom:70%;" />
 
 <br>
 

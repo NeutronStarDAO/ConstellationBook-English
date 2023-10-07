@@ -3,36 +3,33 @@
 I read through a lot of thoughts about blockchain, and summarise them into this article. Which I hope to give a relatively objective view about blockchain and internet technologies in the future.
 
 
-
-
-
 ## Turkeys on the Farm
 
 Blockchain is all the rage these days. It seems like everyone is buying cryptocurrencies.
 
-The quadrennial bull market, digital gold Bitcoin, red-hot IXOs, meme coins with hundredfold increases...
+The quadrennial bull market, digital gold Bitcoin, red-hot IXOs, meme coins with hundredfold increases... 
 
 Hold on, let me check the calendar. It's May 2023... Looks like we're almost due for another bull market, if it comes on schedule. Last time was 2020, so maybe this time it'll be 2024.
 
 <br>
 
-But don't get too excited, let me tell you a story:
+But don't get too excited, let me tell you a story: 
 
-In a farm, there was a group of turkeys. The farmer fed them every day at 11 a.m. One turkey, the scientist of the flock, observed this phenomenon for almost a year without any exception.
+In a farm, there was a group of turkeys. The farmer fed them every day at 11 a.m. One turkey, the scientist of the flock, observed this phenomenon for almost a year without any exception. 
 
-So, it proudly announced its great discovery: every day at 11 a.m., food would arrive. The next day at 11 a.m., the farmer came again, and the turkeys were fed once more. Consequently, they all agreed with the scientist's law.
+So, it proudly announced its great discovery: every day at 11 a.m., food would arrive. The next day at 11 a.m., the farmer came again, and the turkeys were fed once more. Consequently, they all agreed with the scientist's law. 
 
 But on Thanksgiving Day, there was no food. Instead, the farmer came in and killed them all.
 
-This story was originally put forth by British philosopher Bertrand Russell to satirize unscientific inductive reasoning and the abuse of induction.
+This story was originally put forth by British philosopher Bertrand Russell to satirize unscientific inductive reasoning and the abuse of induction. 
 
 <br>
 
 Let's not talk about whether the bull market will come or not. 
 
-Instead, let's look at some similar situations from history and see what happened:
+Instead, let's look at some similar situations from history and see what happened: 
 
-During the late '90s Internet bubble, the market experienced several ups and downs. In '96, '97, and '98, there were several fluctuations. The last and largest surge occurred from October '98 to March 2000 when the Nasdaq index rose from just over 2000 points to around 4900 points. This gradual climb instilled a resolute belief in speculators: no matter how badly the market falls, it will always bounce back.
+During the late '90s Internet bubble, the market experienced several ups and downs. In '96, '97, and '98, there were several fluctuations. The last and largest surge occurred from October '98 to March 2000 when the Nasdaq index rose from just over 2000 points to around 4900 points. This gradual climb instilled a resolute belief in speculators: no matter how badly the market falls, it will always bounce back. 
 
 <img src="assets/NavigatingtheFrontiersofTomorrow/image-20230603203923583.png" alt="image-20230603203923583" style="zoom:65%;" />
 
@@ -56,11 +53,11 @@ However, once the infrastructure matures, many of the boasts and dreams of the p
 
 <br>
 
-When bitcoin was viewed as an Internet payment in 2014, the actual throughput of bitcoin could not support payment when shopping in supermarkets. Ethereum initially called itself "a world computer". Many initially believed that Ethereum could replace Bitcoin because it had programmability. But this is actually a misconception, which can also easily lead to another mistaken view: That another next-generation smart contract platform is the killer of Ethereum, just because it provides more scalability.
+When bitcoin was viewed by the public as an Internet payment in 2014, the actual throughput of bitcoin could not support payment when shopping in supermarkets. Ethereum initially called itself "a world computer". Many initially believed that Ethereum could replace Bitcoin because it had programmability. But this is actually a misconception, which can also easily lead to another mistaken view: That another next-generation smart contract platform is the killer of Ethereum, just because it provides more scalability.
 
 Similarly, just as Ethereum cannot replace Bitcoin, the next "cloud service" blockchains are also unlikely to kill Ethereum, but expand adjacent possibilities and carry different applications, utilizing their unique characteristics. This does not mean that Bitcoin and Ethereum have established their position permanently. Bitcoin and Ethereum also have their own existing problems. More advanced technology does not necessarily replace existing technology, but is more likely to create a complex, specialized tech stack.
 
-Today's use of Ethereum is not computing, but as a battle-tested, slow and secure computer for token-based applications such as crowdfunding, lending, digital companies and voting in the world's accounting system. Even if the Ethereum network is a bit congested, Gas is super expensive and it takes a few minutes to complete a transaction, these Dapps can still compete with banks, shareholder voting and securities firms.
+Today Ethereum's purpose is no longer for general computation on a large scale, but as a battle-tested, slow and secure computer for token-based applications like crowdfunding, lending, digital corporations and voting - a global accounting system for those worlds. Even if the Ethereum network is a bit congested, Gas is super expensive and it takes a few minutes to complete a transaction, these Dapps can still compete with banks, shareholder voting and securities firms.
 
 Because these smart contracts allow completely free transactions between strangers without going through centralized institutions, and make the large personnel establishments of centralized institutions redundant. Automated market makers on Ethereum, like Uniswap, have only about 20 employees, currently worth about 20 billion. In comparison, Intercontinental, the parent company of the New York Stock Exchange, has nearly 9,000 employees and a market value of over $600 billion. Renowned blockchain investor Raoul Pal estimates that the global user base of blockchains is currently growing at over 110% per year, while global Internet users grew only 63% in 1997. Even following the trajectory of Internet development after 1997, the global user base of blockchains will grow from the current approximately 200 million to around 430 million by 2030.
 
