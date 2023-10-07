@@ -1,9 +1,3 @@
-# How to run locally
-Please check if Rust and [mdbook](https://rust-lang.github.io/mdBook/) are installed on your computer.
-Then open the directory and use the command line to enter `mdbook serve`.
-
-<br>
-
 # Constellation Book: Your Journey to the Internet Computer
 
 <img src="src/assets/README/Book0.jpg">
