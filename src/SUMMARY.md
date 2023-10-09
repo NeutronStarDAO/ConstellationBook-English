@@ -43,7 +43,7 @@
 
 # Internet Identity🔑
 - [Internet Identity](./7.ii/ii.md)
-
+- [pid](./7.ii/pid.md)
 
 # Cryptography in IC🔒
 - [Threshold BLS Signatures]()

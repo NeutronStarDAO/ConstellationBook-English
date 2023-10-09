@@ -376,6 +376,7 @@ Before generating the dealing, we already generated a public/private key pair, n
 Choose m random numbers \\(r_{m},\ s_{m}\\), uniformly randomly selected from \\(Z_{p}\\): \\(r_{1},\ s_{1},\ ...,\ r_{m},\ s_{m}\ \overset{$}{\leftarrow} \ Z_{p}\\).
 
 First compute: \\(C_{1,1},\ ...,\ C_{n,m},\ R_{1},S_{1},\ ...,\ R_{m},S_{m}\\):
+
 $$
 C_{i,j} \ = \ y_i^{r_{j}} \ * \ g_{1}^{s_{i,j}}
 $$
@@ -387,19 +388,23 @@ $$
 $$
 S_{j}\ =\ g_{1}^{s_{j}} 
 $$
+
 Then do some computations: (where \\(\tau\\) denotes epoch):
+
 $$
-\tau *{ λ* { T + 1 } } ... \tau *{ λ* { H } }\ =\ H *{ λ* { H } } ( pk *{ 1 },\ ...,\ pk* { n },\ C *{ 1 , 1 },\ ...,\ C* { n,m },\ R *{ 1 } , S* { 1 },\ ...,\ R *{ m }, S* { m } ,\ \tau )
+\tau _ { λ _ { T + 1 } } ... \tau _ { λ _ { H } }\ =\ H _ { λ _ { H } } ( pk _ { 1 },\ ...,\ pk _ { n },\ C _ { 1 , 1 },\ ...,\ C _ { n,m },\ R _ { 1 } , S _ { 1 },\ ...,\ R _ { m }, S _ { m } ,\ \tau )
 $$
 
 $$
-f\ =\ f(\tau *{1}\ ...\ \tau* {λ})
+f\ =\ f(\tau * { 1 }\ ...\ \tau * { λ } )
 $$
 
 $$
-Z_{j}\ =\ f^{r_{j}}h^{s_{j}} \ \ \ (Z_{1},\ ...,\ Z_{m}) 
+Z_{j}\ =\ f ^ { r_{ j } } h ^ {s_{j} } \ \ \ (Z_{1},\ ...,\ Z_{m} ) 
 $$
+
 We can use the same random number \\(R\\) for all chunks to optimize performance:
+
 $$
 r\ = {\textstyle \sum_{m}^{j=1}} r_{j} B^{j-1} \bmod p 
 $$
@@ -525,9 +530,10 @@ And \\(A_{j,k}\\) is \\(a_{j,k}\\) of each replica's polynomial computed as \\( 
 
 **Multiply \\(A_{j,k}\\) from each dealing to recover the public polynomial:**
 
-Compute the public polynomial's \\(A_{0}, ..., A_{t-1}\\) of all replicas, for each \\(k\ =\ 0,\ ...,\ t-1\\):
+Compute the public polynomial's \\(A_{0}, ..., A_{t-1}\\) of all replicas, for each \\(k\ =\ 0,\ ...,\ t-1\\) :
+
 $$
-A *{ k } \ =\ \prod* { j=1 } ^ { \ell } A *{ j , k } ^ { L ^ { I }* { i _ { \ell } } ( 0 ) }
+A _ { k } \ =\ \prod _ { j=1 } ^ { \ell } A _ { j , k } ^ { L ^ { I } _ { i _ { \ell } } ( 0 ) }
 $$
 
 <div class="center-image">
@@ -649,38 +655,37 @@ In the verification after public key aggregation, it is guaranteed that \\(shvk_
 That is, \\(vk\\) and \\(shvk_{1},...,shvk_{n}\\) satisfy the same \\(t-1\\) degree polynomial \\(a(i\\)):
 
 \\[
-
-vk\ =\ A *{ 0 } \ =\ \prod* { j=1 } ^ { \ell } A_ {j,0} ^ {L ^ { I } *{ i* { \ell } } ( 0 ) } \ = \ g *{ 2 } ^ { a* { 0 } }
-
+vk\ =\ A _ { 0 } \ =\ \prod _ { j=1 } ^ { \ell } A_ {j,0} ^ {L ^ { I } _{ i _ { \ell } } ( 0 ) } \ = \ g _ { 2 } ^ { a _{ 0 } }
 \\]
 
 \\[
-
-shvk_{ i } = g^{ a( i ) }_{ 2 }\ \ \ (i\ =\ 1,\ ...,\ n)\ = A_{ i }
-
+    shvk_{ i } = g^{ a( i ) }_ { 2 }\ \ \ (i\ =\ 1,\ ...,\ n)\ = A_{ i }
 \\]
 
 For any index set \\(I\\) containing \\(1<=i_{1} < ... < i_{t} <= n \\) , we can compute the public key \\(vk\\) from \\(shvk_{i}\\) using:
 
 \\[
-
 vk\ =\ \prod_{j=1}^{t} shvk_{ i_{ j } } ^ { L^{I}_ {i_{ j } }(0)}
-
 \\]
 
 During key resharing, given \\(t\\) dealings \\(d_{1},...,d_{t}\\) that correspond to valid \\(shvk_{ i_{ 1 } },...,shvk_{ i_{ t } }\\) respectively.
 
 When verifying the validity of these dealings, we know:
+
 $$
-A *{ 1 , 0 } = shvk* { i *{ 1 } } ,\ ...,\ A* { t , 0 } = shvk *{ i* { t } }
+A _ { 1 , 0 } = shvk _ { i _ { 1 } } ,\ ...,\ A _ { t , 0 } = shvk _ { i _ { t } }
 $$
+
 Compute the new public key \\(vk'\\) from these dealings:
+
 $$
-vk' \ = \ A *{ 0 } \ = \ \prod* { j = 1 } ^ { t } A *{ j , 0 } ^ { L ^ { I }* { i _ { \ell } } ( 0 ) }
+vk' \ = \ A _ { 0 } \ = \ \prod _ { j = 1 } ^ { t } A _ { j , 0 } ^ { L ^ { I } _ { i _ { \ell } } ( 0 ) }
 $$
-Substitute \\( A *{ 1 , 0 } = shvk* { i *{ 1 } },\ ...,\ A*{ t , 0 } = shvk *{ i* { t } } \\) into this formula, we get:
+
+Substitute \\( A _ { 1 , 0 } = shvk _ { i _ { 1 } },\ ...,\ A_{ t , 0 } = shvk _ { i _ { t } } \\) into this formula, we get:
+
 $$
-vk'\ =\ A *{ 0 } \ = \ \prod* { j = 1 } ^ { t } shvk *{ i* { j } } ^ { L ^ { I } *{ i* { j } } ( 0 ) }
+vk'\ =\ A _ { 0 } \ = \ \prod _ { j = 1 } ^ { t } shvk _ { i _ { j } } ^ { L ^ { I } _ { i _ { j } } ( 0 ) }
 $$
 
 The new \\(vk' = A_{0}\\), so \\(vk' = vk\\). Thus the verification keys are perfectly retained.

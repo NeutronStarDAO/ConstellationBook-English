@@ -16,7 +16,9 @@ However, IC must also remain decentralized and open.
 
 **So to enable massive computational capacity and ultra low-cost cross-subnet communication while preserving decentralization, IC chose a compromise - the DAO.** If you are unfamiliar with what a DAO is, you can check [here](DAO.md) first.
 
+<div class="center-image">
 <img src="assets/NNS/image-20230708141930460.png" alt="img" style="zoom: 20%;" />
+</div>
 
 After careful consideration, the Dfinity team decided to create a "super subnet" within IC called the system subnet. This subnet has the highest authority in IC, acting as the super admin: creating subnets, deleting subnets, adding new nodes to subnets, splitting subnets, upgrading subnet protocols, upgrading replica software versions, adjusting Cycles exchange rates, managing unique Canister IDs, user Principal IDs, public keys for each subnet, and other critical parameters of the entire IC blockchain system. These key settings are determined or voted on internally by the super admin.
 
@@ -36,11 +38,15 @@ One thing to note though, a DAO isn't built overnight. A DAO can't instantly bec
 
 The NNS is IC's super admin. If the major voting power of this DAO falls into bad actors' hands, the entire IC system is at risk, since the DAO is integrated at the base layer. The NNS subnet needs maximum security, so it has a very [large number of nodes](https://dashboard.internetcomputer.org/subnet/tdb26-jop6k-aogll-7ltgs-eruif-6kk7m-qpktf-gdiqx-mxtrf-vb5e6-eqe), making it difficult for hackers to control enough nodes and ensuring the NNS subnet's underlying security.
 
+<div class="center-image">
 <img src="assets/NNS/image-20230921102952706.png" alt="img" style="zoom:73%;" />
+</div>
 
 Currently there are 40 node machines. If one fails, no biggie:
 
+<div class="center-image">
 <img src="assets/NNS/image-20230921103600826.png" alt="img" style="zoom:67%;" />
+</div>
 
 Deployed within the NNS subnet is a sophisticated engine: the DAO's smart contracts.
 

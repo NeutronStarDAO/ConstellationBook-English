@@ -1,6 +1,8 @@
 ## What is Canister?
 
+<div class="center-image"> 
 <img src="assets/Canister/image-20230918171556133.png" alt="img" style="zoom:33%;" />
+</div>
 
 Inside a Canister there is something called WebAssembly (Wasm) bytecode that represents the program of the smart contract; there are also a set of memory pages that represent the state of the contract. A Canister is like a miniature server that can store data, maintain state, communicate over WebSocket, etc.
 
@@ -10,7 +12,9 @@ Each Canister runs in a sandboxed environment, isolated from other Canisters and
 
 It's worth mentioning that currently many public blockchains like Ethereum, Polkadot, etc are considering transitioning to the Wasm virtual machine. Dfinity Foundation engineer Andreas, as the inventor, has participated in establishing most standards related to the Wasm VM.
 
+<div class="center-image">
 <img src="assets/Canister/image-20230918204707755.png" alt="img" style="zoom:43%;" />
+</div>
 
 WebAssembly is a virtual machine abstraction that provides a safe, portable, efficient, and lightweight execution environment. It enables fast cold start times in milliseconds and extremely low resource consumption. Existing programming languages like C/C++, Rust, etc. can be compiled to WebAssembly bytecode and executed in a sandboxed environment.
 
@@ -22,7 +26,9 @@ WebAssembly (Wasm) is a universal code format that is efficient, portable, and s
 
 Wasm's portability and high performance have quickly made it one of the most popular code formats on the internet. Most high-level languages can compile to efficient, portable Wasm code. In addition to LLVM producing Wasm, popular languages like C/C++, Rust, Go, Java, JavaScript can efficiently compile to Wasm.
 
+<div class="center-image">
 <img src="assets/Canister/image-20230918192150462.png" alt="img" style="zoom:37%;" />
+</div>
 
 Wasm code can execute internally in browsers and also run in virtual machines with very little efficiency loss compared to native execution. For example, Cloudflare uses Wasm to provide “serverless functions”, and advanced blockchains use it to run performant smart contracts.
 
@@ -45,7 +51,9 @@ What's a controller? It is responsible for deploying the Canister to the IC, and
 
 A developer identity (dfx can generate multiple identities, i.e. principal ids) can act as a controller, controlling multiple Canisters. A Canister's controller can also add other controllers to the Canister.
 
+<div class="center-image">
 <img src="assets/Canister/image-20230918191710205.png" alt="img" style="zoom:37%;" />
+</div>
 
 To ensure smooth running of a Canister, the controller also needs to add sufficient Cycles to the Canister. Cycles are like Gas on the IC, used for the computational and storage resources required to execute the Canister. The subnet will monitor each Canister's resource consumption and deduct from its Cycles balance.
 
@@ -110,7 +118,9 @@ On platforms like Ethereum, smart contract computation and storage are bundled t
 
 This means, unlike monolithic smart contracts, Canisters can completely focus on computational logic while relying on the independent, persistent chain for data storage. If a Canister runs out of storage, additional Canisters can be created for storage. Or a "parent Canister" can be deployed solely for spawning Canisters - here's a demo project to try it out!
 
+<div class="center-image">
 <img src="assets/Canister/image-20230918205247224.png" alt="img" style="zoom:42%;" />
+</div>
 
 Canisters can also be dynamically instantiated and load balanced on demand. Internet Computer services can elastically scale to internet size, impossible on platforms bundling storage and computation.
 
@@ -124,7 +134,9 @@ In blockchain systems, every replica must reach consensus to update state - ensu
 
 Each query call can be responded to autonomously by a single replica, like reading from a database, without going through consensus. This greatly reduces latency. Operations like viewing account balances or getting game leaderboards can leverage query calls. Query calls are like going to a restaurant and having the waiter immediately tell you what's on the menu, without needing to hold a staff meeting to decide!
 
+<div class="center-image">
 <img src="assets/Canister/image-20230918202408934.png" alt="img" style="zoom:33%;" />
+</div>
 
 Canisters expose two types of calls: **update calls** and **query calls**.
 
@@ -165,7 +177,9 @@ One is **heap memory**, the memory heap exposed by WebAssembly, similar to the h
 
 The other is **stable memory**, additional 64-bit addressable memory provided by the Canister, currently **96 GiB** in size. Developers must explicitly use stable memory via related APIs. Stable memory can be seen as persistent storage where developers can place data needing long-term retention. A common usage pattern is serializing heap state into bytes before and after upgrades and saving that to stable memory, then deserializing and loading it back in during recovery.
 
+<div class="center-image">
 <img src="assets/Canister/image-20230918233748532.png" alt="img" style="zoom:37%;" />
+</div>
 
 To enable orthogonal persistence and allow programs to resume after upgrades, Canisters employ some special mechanisms:
 
@@ -207,7 +221,9 @@ $$ 1\times\ 10^{12}\ cycles\ =\ 1\ SDR $$
 
 (1 T Cycles is 1 Trillion Cycles. 1 TC is 1 T Cycles, where C is the abbreviation for Cycles.)
 
+<div class="center-image">
 <img src="assets/Canister/image-20230917152439549.png" alt="img" style="zoom:30%;" />
+</div>
 
 A [Canister](https://neutronstardao.github.io/constellationzh.github.io/4.%E5%AE%B9%E5%99%A8(Canister)/4.XRC.html) on the system subnet fetches price data from off-chain exchanges via HTTP out call to calculate how many Cycles can be exchanged for 1 SDR.
 
@@ -229,7 +245,9 @@ Random numbers are critical for many blockchain applications like gambling and l
 
 The IC solves this problem through a unique technical mechanism at its core - a component called the "random tape." Each subnet generates a random tape during every round of the consensus protocol. It is a special digital signature that can seed a deterministic pseudorandom number generator.
 
+<div class="center-image">
 <img src="assets/Canister/image-20230918211050335.png" alt="img" style="zoom:38%;" />
+</div>
 
 The random tape has two key characteristics:
 
@@ -256,7 +274,9 @@ Specifically, the random tape mechanism plays a crucial role in:
 
 Additionally, the IC needed a simple, safe language. The reason is simple - while the IC uses Wasm for smart contracts and is very open, programming languages with good Wasm support like C++ and Rust are relatively difficult for beginners.
 
+<div class="center-image">
 <img src="assets/Canister/image-20230918212727579.png" alt="img" style="zoom:33%;" />
+</div>
 
 The IC provides a purpose-built language called Motoko that embraces the IC's programming model and leverages unique blockchain capabilities. Motoko has a powerful type system, actor model, persistence support, asynchronous messaging, and other features, while also providing automatic memory management, generics, pattern matching and other modern language capabilities. This enables developers to write Canister smart contracts in a safe and efficient manner.
 
