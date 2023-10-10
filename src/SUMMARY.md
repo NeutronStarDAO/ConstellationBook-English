@@ -13,6 +13,7 @@
 
 # Overview of IC📡
 - [Internet Computer](./1.OverviewofIC/1.md)
+- [ICP = Web 3.0](./1.OverviewofIC/ICP=Web3.0.md)
 
 # Core Protocol⭐
 - [Peer-to-peer Layer](./2.CoreProtocol/P2Player.md)
