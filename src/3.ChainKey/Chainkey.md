@@ -333,9 +333,9 @@ $$
 
 Then put these \\(A_{i}\\) as public parameters into the dealing \\(d\\).
 
-So \\(A_{i0},\ ...,\ A_{i(t-1)}\\) correspond to the coefficients of the Shamir secret sharing polynomial \\(a(x\\)) used to generate the dealing. They are part of dealing d, used to verify the correctness of the secret sharing.
+So \\(A_{i0},\ ...,\ A_{i(t-1)}\\) correspond to the coefficients of the Shamir secret sharing polynomial \\(a(x)\\) used to generate the dealing. They are part of dealing d, used to verify the correctness of the secret sharing.
 
-When the threshold number of dealings are collected, the public polynomial \\(a(x\\)) of all replicas can be recovered using Lagrangian interpolation, where \\(a(0\\)) is the public key of the subnet.
+When the threshold number of dealings are collected, the public polynomial \\(a(x)\\) of all replicas can be recovered using Lagrangian interpolation, where \\(a(0)\\) is the public key of the subnet.
 
 <div class="center-image">
 <img src="assets/Chainkey/image-20230825213313484.png" alt="img" style="zoom:35%;" /> 
