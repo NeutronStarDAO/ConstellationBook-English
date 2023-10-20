@@ -37,7 +37,7 @@
 - [Canister](./4.Canister/Canister.md)
 - [Motoko](./4.Canister/Motoko.md)
 - [Deploy Your Canister](./4.Canister/DeployCanister.md)
-- [XCR](./4.Canister/XRC.md)
+- [XRC](./4.Canister/XRC.md)
 
 # Blockchain Web Services🎯
 
