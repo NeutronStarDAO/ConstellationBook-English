@@ -34,7 +34,7 @@ Join the developer discussion group for this book, correct errors, make modifica
 
 <br>
 
-[OpenChat](https://oc.app/4jwox-pyaaa-aaaar-amjbq-cai/?ref=3iq22-xyaaa-aaaar-amjrq-cai&code=834791b392db154c), [Discord](https://discord.gg/5Y8QPHvR), [Github](https://github.com/NeutronStarDAO/ConstellationBook-English)
+[OpenChat](https://oc.app/4jwox-pyaaa-aaaar-amjbq-cai/?ref=3iq22-xyaaa-aaaar-amjrq-cai&code=834791b392db154c), [Discord](https://discord.gg/mQ7kcuEQbq), [Github](https://github.com/NeutronStarDAO/ConstellationBook-English)
 
 <img src="src/assets/README/2.jpg">
 
