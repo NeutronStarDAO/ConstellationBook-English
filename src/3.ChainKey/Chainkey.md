@@ -48,7 +48,13 @@ A signature value only needs one coordinate of an elliptic curve point, around 1
 
 Although BLS signatures verification is slower due to requiring some pairing computations, signature generation is very fast, requiring only a simple point multiplication. RSA and DSA are the opposite - signing is slow but verification is fast.
 
-Another advantage of BLS signatures is they don't require maintaining signature state, the signature is fixed as long as the message content doesn't change. But RSA and DSA signature need to save randomness to prevent replay attacks. 
+Another advantage of BLS signatures is they don't require maintaining signature state, the signature is fixed as long as the message content doesn't change. 
+
+<br>
+
+However, RSA and DSA signatures still need to save random numbers to prevent replay attacks. In RSA signatures, a scheme called "Probabilistic Signature Scheme" (PSS) is commonly used, which utilizes random numbers (salt) during signature generation to enhance security. Therefore, for the same message and private key, the resulting signature may vary slightly due to the introduced randomness. This variation is achieved by introducing random salt values into the signature, to increase security and prevent attackers from gaining information about the private key by observing multiple signatures of the same message.
+
+<br>
 
 Additionally, BLS signatures can be efficiently batch verified together, greatly improving efficiency in many use cases. This is not possible with RSA and DSA.
 
@@ -56,15 +62,15 @@ These properties make BLS signatures very suitable for many blockchain applicati
 
 The algorithm itself is very elegant and a promising signature algorithm. You can learn more about the cryptographic principles of BLS signatures here.
 
-Most importantly, BLS signatures can split the private key into share fragments and be upgraded to multi-signature or **threshold signature** schemes! Doing this directly with RSA and DSA would be very difficult.
+Most importantly, BLS signatures can split the private key into share fragments and be upgraded to multi-signature or **threshold signature** schemes! Doing this directly with RSA and DSA would be very difficult. 
 
-
+<br>
 
 ### Threshold BLS signatures
 
-Splitting the private key into share fragments!
+Splitting the private key into share fragments! 
 
-It sounds very sophisticated, but it's actually just an algorithm that allows multiple parties to participate in signing. The private key is split into many shares and given to different people to keep. When signing, enough people (meeting the threshold) have to collaborate to combine the signature fragments into a valid signature.
+It sounds very sophisticated, but it's actually just an algorithm that allows multiple parties to participate in signing. The private key is split into many shares and given to different people to keep. When signing, enough people (meeting the threshold) have to collaborate to combine the signature fragments into a valid signature. 
 
 <div class="center-image">
     <img src="assets/Chainkey/image-20231008154650846.png" alt="image-20231008154650846" style="zoom:39%;" />
@@ -214,7 +220,17 @@ With NIZKs, the new DKG gained wings, and soon NIDKG was born!
 
 The novel NIDKG can run on asynchronous networks with great robustness - it keeps operating even if a third of replicas in a subnet fail or crash. Replicas just generate transactions without interacting further with others. The remaining replicas can aggregate transactions to compute the subnet's public key for the threshold scheme. Each replica can also decrypt its own private key share from the transactions.
 
+<br>
 
+NIDKG is the most critical part of ChainKey. Nothing less! 
+
+BLS threshold signatures are very simple, convenient, and highly useful. However, if you want to use BLS threshold signatures in a distributed system, how to securely and reliably distribute the private key shards is quite challenging. 
+
+Efficient non-interactive protocols like NIDKG can address the limitations of BLS threshold signatures very well. It enables deep integration of BLS threshold signatures in blockchain systems, using them for consensus, generating randomness, and validating information emitted on-chain. 
+
+More introduction to on-chain randomness can be found [here](). 
+
+<br>
 
 As Dfinity boasted about their scientific team 👇.
 
@@ -333,7 +349,7 @@ $$
 
 Then put these \\(A_{i}\\) as public parameters into the dealing \\(d\\).
 
-So \\(A_{i0},\ ...,\ A_{i(t-1)}\\) correspond to the coefficients of the Shamir secret sharing polynomial \\(a(x)\\) used to generate the dealing. They are part of dealing d, used to verify the correctness of the secret sharing.
+So \\(A_{i0},\ ...,\ A_{i(t-1)}\\) correspond to the coefficients of the Shamir secret sharing polynomial \\(a(x)\\) used to generate the dealing. They are polynomial commitments. They are part of dealing d, used to verify the correctness of the secret sharing.
 
 When the threshold number of dealings are collected, the public polynomial \\(a(x)\\) of all replicas can be recovered using Lagrangian interpolation, where \\(a(0)\\) is the public key of the subnet.
 
@@ -736,7 +752,7 @@ If backward compatibility is not considered and protocols are directly upgraded 
 
 The first block of each epoch is a Summary Block. It is the beginning of an epoch, serving as a transition between epochs.
 
-It is key to the smooth running of each epoch. The Summary Block records important information about an epoch, such as which replicas have the right to produce blocks, who has the right to validate blocks, who has the right to sign messages, etc. Each epoch has different characteristics, and this information is updated every epoch.
+It is the key to the smooth running of each era. The summary block records important information about an era, such as which replicas are responsible for consensus, which replicas are responsible for random beacons, etc. during that era. Each era has different characteristics, and this information is updated at the start of each new era. 
 
 The Summary Block provides base parameters and initialization information for an epoch. With the Summary Block as the cornerstone, the subnet can stably run throughout the entire epoch. It is like rules set before a competition, to let all players clearly understand their positioning and responsibilities.
 

@@ -136,7 +136,7 @@ The per-round state tree only contains some data information that has changed af
 
 Each round of certification states contains the following in this round:
 
-- Various metadata about each Canister (such as the hash of wasm, etc., not the complete status of the Canister)
+- Various metadata about each Canister (such as the hash of Wasm, etc., not the complete status of the Canister)
 - The root node hash of the Merkle tree of the certification status of the previous round
 - Intra-subnet messages added to the data flow between subnets
 - Ingress history, various responses to messages

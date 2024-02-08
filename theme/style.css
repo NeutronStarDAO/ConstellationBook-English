@@ -271,3 +271,8 @@ img:hover {
         transform: translateY(-101%);
     }
 }
+
+a:hover {
+    text-decoration: none !important;
+}
+

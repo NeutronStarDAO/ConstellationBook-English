@@ -66,7 +66,7 @@ Dominic was in a constant flurry of activity.
 
 He raced between his home and the company like a wound-up toy car: just after fixing a bug, he was off to meet with investors without even testing it first; he barely had time to eat, his head buried in meetings with engineers to discuss system adjustments; as soon as he left the company, he was off to the supermarket to buy Christmas gifts for his wife...
 
-The team relied heavily on him, and his workload became overwhelmingly heavy - a rare sight even in the startup capital of Silicon Valley. Dominic worked 12 to 18 hours every day, a work pattern that is almost unheard of in today's startup world. He juggled business management, system administration, and coding, all while trying to maintain a personal life. In no time, his wife became accustomed to this lifestyle: during the day, she directed and planned games, perfecting game play and project processes, and at night, she cooked and cleaned the house, all in seamless cooperation with Dominic.
+The team leans heavily on him in all aspects. His workload has become insanely heavy, even in a place like Silicon Valley where securing investments is a piece of cake. Back in the day, Dominic was putting in 12-18 hours a day – a work rhythm that's rarer than a unicorn in today's startup scene. Balancing business management, system oversight, and coding, he had to carve out time for his personal life. Before you knew it, Dominic's wife had also acclimated to this lifestyle: during the day, she directed and planned game scenarios, optimizing gameplay and devising project workflows; come evening, she seamlessly transitioned into cooking, tidying up the house, perfectly in sync with Dominic. It's a juggling act that makes Cirque du Soleil look like child's play.
 
 <br>
 
@@ -76,7 +76,7 @@ Dominic's photos.
 
 Dominic became even more hardworking after that. Fortunately, he happened to meet a company willing to invest in him in Silicon Valley. Finally, an investor was moved by this dreamer in front of them. Within a few weeks of raising funds, Fight My Monster's user count quickly reached 1 million. A few months later, Dominic relocated the company to San Mateo (a small town near San Francisco). 
 
-He went downstairs to have coffee and when he came back, his memo was filled with common problems and solutions for ConcurrentHashMap, he listened to geeks talking about how to build a team for a startup, and he made connections with venture capitalists in Silicon Valley. 
+HHe went downstairs to grab a coffee, and when he got back, his notepad was chock-full of common ConcurrentHashMap issues and fixes. He listened to geeks dish on startup team-building tips and networked with Silicon Valley venture capitalists.
 
 <br>
 
@@ -469,28 +469,42 @@ After work, one must not neglect their musical pursuits.
 
 <br>
 
-After talking for so long, what problems does IC actually solve? In general, it solves the problems that traditional blockchains have low TPS, poor scalability, and Dapps still rely on some centralized services.
+After talking for so long, what problems does IC actually solve? In general, it solves the problems that traditional blockchains have low TPS, poor scalability, and Dapps still rely on some centralized services. 
 
-Bitcoin is a decentralized ledger.
+<br>
 
-Ethereum created a decentralized computer.
+Bitcoin is a decentralized ledger. A chain is a network. 
 
-Cosmos and Polkadot implemented the composability and scalability of blockchains.
+Ethereum created decentralized computing. There are also side chains, cross-chain interactions. 
 
-The Internet Computer is building a highly scalable, ultra-high TPS decentralized cloud service.
+Cosmos, Polkadot achieved composability and scalability of blockchains. In the multi-chain era, many blockchain networks come together, with interactions between chains. And these chains have organizational protocols that can scale indefinitely. 
 
-The key to scalability is near-zero marginal cost. Polkadot's scalability is built on software engineers' development, while IC's scalability is automatically completed at the lower level. This greatly reduces the development cost of application teams on IC.
+The Internet Computer built a decentralized cloud service that can auto-scale elastically with ultra high TPS. It's a brand new system and architecture, redesigned from bottom to top. 
 
-To build a highly scalable and high-performance public chain:
+<div class="center-image">
+<img src="assets/JourneyoftheDreamWeaver/image-20231130151540666.png" style="zoom:53%;" />
+</div>
 
-- First, scalability and performance must be valued in the planning stage, and the design and layout in all aspects are aimed at achieving scalability and TPS as soon as possible.
+The IC is designed to be decentralized at the base layer, which means deployed websites, smart contracts cannot be forcibly shut down by others. 
 
-- Second, confidence and strength are needed to stick to their own path until the day the ecosystem explodes. In the short term, we need to endure the suppression of other competitors, withstand the pressure of cash flow for a long time, and ignore the incomprehension of the world.
+Applications deployed on top can be controlled by users themselves, storing their private data. They can also choose to be controlled through a DAO, becoming fully decentralized Dapps, with community governance. 
+
+IC's smart contracts are Wasm containers, like small servers in the cloud, very capable, can directly provide computing, storage, web hosting, HTTP queries (oracles), WebSocket and other services. 
+
+<br>
+
+The key to scalability is near-zero marginal cost. Polkadot's scalability is built on software engineers' development, while IC's scalability is automatically completed at the lower level. This greatly reduces the development cost of application teams on IC. 
+
+To build a highly scalable and high-performance public chain: 
+
+- First, scalability and performance must be valued in the planning stage, and the design and layout in all aspects are aimed at achieving scalability and TPS as soon as possible. 
+
+- Second, confidence and strength are needed to stick to their own path until the day the ecosystem explodes. In the short term, we need to endure the suppression of other competitors, withstand the pressure of cash flow for a long time, and ignore the incomprehension of the world. 
 
 
-Focus on the research and development of underlying infrastructure until various creative applications appear and increase the number of participants in the ecosystem. The increase in quantity leads to the further emergence of new ideas and applications. This forms a positive feedback loop, making the ecosystem spontaneously more prosperous and more complex:
+Focus on the research and development of underlying infrastructure until various creative applications appear and increase the number of participants in the ecosystem. The increase in quantity leads to the further emergence of new ideas and applications. This forms a positive feedback loop, making the ecosystem spontaneously more prosperous and more complex: 
 
-Scalability / Zero marginal cost / Open system → Increase in number of applications → Exponential increase in various connections → Valuable ideas emerge → Form applications → System complexity → Quantity continues to increase exponentially → Positive feedback loop → Ecosystem prosperity.
+Scalability / Zero marginal cost / Open system → Increase in number of applications → Exponential increase in various connections → Valuable ideas emerge → Form applications → System complexity → Quantity continues to increase exponentially → Positive feedback loop → Ecosystem prosperity. 
 
 <div class="center-image">
     <img src="assets/JourneyoftheDreamWeaver/image-20230716235313525.png" style="zoom:40%;" />

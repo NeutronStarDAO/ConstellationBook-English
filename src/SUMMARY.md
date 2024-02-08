@@ -33,25 +33,38 @@
 - [DAO](./5.NNS/DAO.md)
 - [Economic Model](./5.NNS/EconomicModel.md)
 
-# Canister🫙
+# Canister🧰
 - [Canister](./4.Canister/Canister.md)
 - [Motoko](./4.Canister/Motoko.md)
 - [Deploy Your Canister](./4.Canister/DeployCanister.md)
 - [XRC](./4.Canister/XRC.md)
 
 # Blockchain Web Services🎯
-
+- [Random Number On Chain](./6.InternetServices/RandomNumberOnChain.md)
+- [TEE](./6.InternetServices/TEE.md)
 
 # Internet Identity🔑
 - [Internet Identity](./7.ii/ii.md)
 - [pid](./7.ii/pid.md)
 
 # Cryptography in IC🔒
-- [Threshold BLS Signatures]()
-- [Threshold ECDSA Signatures]()
+- [Introduction to basic cryptography](./8.CryptographyInIC/BasicCryptography.md)
+- [Secret Sharing](./8.CryptographyInIC/SecretSharing.md)
+- [Threshold BLS Signatures](./8.CryptographyInIC/BLS.md)
+- [Hash Algorithm](./8.CryptographyInIC/HashAlgorithm.md)
 
-# Dapp Development🌟
-- [Dapp]()
+# Developing DApp🌟
+- [Common dfx Commands](./9.DevelopingDApp/CommonDfxCommands.md)
+- [Install Development Environment](./9.DevelopingDApp/InstallDevelopmentEnvironment.md)
+- [Getting Started with DApp](./9.DevelopingDApp/1.GettingStartedwithDApp.md)
+- [Designing DApp](./9.DevelopingDApp/2.DesigningDApp.md)
+- [Developing Proton](./9.DevelopingDApp/3.DevelopingProton.md)
+- [User Module](./9.DevelopingDApp/4.UserModule.md)
+- [Post Module](./9.DevelopingDApp/5.PostModule.md)
+- [Feed Module](./9.DevelopingDApp/6.FeedModule.md)
+- [Fetch Module](./9.DevelopingDApp/7.FetchModule.md)
+- [Shared Types](./9.DevelopingDApp/8.SharedTypes.md)
+- [Completion!](./9.DevelopingDApp/9.Completion.md)
 
 ---
 

@@ -11,15 +11,13 @@ There are two main types of these messages: one is the signed messages used to r
 
 ## Artefacts
 
-
-For example, we have a Neutron Star Express Company (IC), and the P2P layer is the distribution network of the express company, responsible for transmitting parcels (information) between distribution points (replicas) in different regions (subnets). 
+For example, we have a Neutron Star Express Company (IC), and the P2P layer is the distribution network of the express company, responsible for transmitting parcels (message) between distribution points (replicas) in region (subnet). 
 
 The P2P layer is a broadcast channel. The design of the P2P layer ensures that if an honest distribution point (replica) broadcasts a message, the message will eventually be received by all honest replicas in the subnet. Even if someone tries to maliciously interfere or the network is occasionally interrupted, the parcel can still be delivered efficiently to the recipient. Even if some replicas fail, it cannot affect the mutual communication between honest replicas. 
 
 <div class="center-image">
     <img src="assets/P2Player/2023-06-12-2125.png" style="zoom:50%;" />
 </div>
-
 
 Each delivery terminal (replica) has some parcels, these parcels are "artefacts". So each delivery terminal (replica) has an "artefact pool" to store its own information. Artefacts are the information used by the delivery terminals to create, verify and reach consensus. This information can be consensus block proposals, user ingress information or response signatures for HTTPS external calls. The delivery terminals will distribute these parcels to other delivery terminals so that they all know the status of the subnet.
 
