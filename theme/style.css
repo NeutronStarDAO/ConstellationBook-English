@@ -48,7 +48,6 @@
 
 body {
     font-size: 18px;
-    scroll-behavior: smooth;
 }
 
 .page {
@@ -88,8 +87,6 @@ body {
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #b8b8b8;
-    /* background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.15,rgb(177, 21, 244)),color-stop(0.37,rgb(245, 26, 201)),color-stop(0.65,rgb(245, 128, 11)),color-stop(0.80,rgb(248, 224, 7))); */
-    transition: 0.3s ease-in-out;
 }
 ::-webkit-scrollbar-track {
     border-radius: 10px;

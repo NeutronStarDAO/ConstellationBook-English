@@ -11,11 +11,13 @@ The most important among these is threshold BLS signatures.
 
 ## Threshold BLS signatures
 
-What is threshold BLS signatures? `ฅʕ•̫͡ •ʔฅ` 
+What is [threshold BLS signatures](../8.CryptographyInIC/BLS.md)? `ฅʕ•̫͡ •ʔฅ` 
 
 It is the most important, fundamental, and core component of cryptographic key chains. Subnet operations rely on threshold BLS signatures to achieve consensus, provide message authentication to users, generate random beacons on which consensus depends, and sign catch-up packages, among other tasks. 
 
 To give an example, a threshold BLS signature is like a "DAO" - any place the subnet needs to sign something requires enough replicas in the subnet to "agree" (sign) before it can go through. When enough replicas agree, that represents consensus and the majority rules.
+
+<br>
 
 > In traditional asymmetric cryptography, we can generate a public and private key pair; the public key is shared openly while the private key is kept secret. The public key encrypts information, the private key decrypts it. The private key signs information, the public key verifies it. You can learn more about asymmetric cryptography here.
 
@@ -39,11 +41,15 @@ One reason for using BLS signatures is that the final signature produced by the 
 
 Due to the security properties of BLS signatures, no one can predict or tamper with this randomness.
 
+<br>
+
 BLS signatures are quite different from common signature algorithms like RSA and DSA in many ways. 
 
 First, BLS signatures are much shorter and more secure. 
 
 A signature value only needs one coordinate of an elliptic curve point, around 160 bits is enough. But RSA and DSA signature contain two large integers, usually 320 bits are needed to achieve an equivalent security level, so BLS signatures have a clear advantage in length. The security of BLS signatures does not rely on integer factorization or other mathematical problems, but rather on computationally hard problems on elliptic curves, like the CDH problem. These kinds of problems seem even harder to break today.
+
+<br>
 
 Although BLS signatures verification is slower due to requiring some pairing computations, signature generation is very fast, requiring only a simple point multiplication. RSA and DSA are the opposite - signing is slow but verification is fast.
 
@@ -51,13 +57,17 @@ Another advantage of BLS signatures is they don't require maintaining signature 
 
 <br>
 
-However, RSA and DSA signatures still need to save random numbers to prevent replay attacks. In RSA signatures, a scheme called "Probabilistic Signature Scheme" (PSS) is commonly used, which utilizes random numbers (salt) during signature generation to enhance security. Therefore, for the same message and private key, the resulting signature may vary slightly due to the introduced randomness. This variation is achieved by introducing random salt values into the signature, to increase security and prevent attackers from gaining information about the private key by observing multiple signatures of the same message.
+However, RSA and DSA signatures still need to save random numbers to prevent replay attacks. In RSA signatures, a scheme called "Probabilistic Signature Scheme" (PSS) is commonly used, which utilizes random numbers (salt) during signature generation to enhance security. Therefore, for the same message and private key, the resulting signature may vary slightly due to the introduced randomness. 
+
+This variation is achieved by introducing random salt values into the signature, to increase security and prevent attackers from gaining information about the private key by observing multiple signatures of the same message.
 
 <br>
 
 Additionally, BLS signatures can be efficiently batch verified together, greatly improving efficiency in many use cases. This is not possible with RSA and DSA.
 
 These properties make BLS signatures very suitable for many blockchain applications with high requirements on signature size and scalability. 
+
+<br>
 
 The algorithm itself is very elegant and a promising signature algorithm. You can learn more about the cryptographic principles of BLS signatures here.
 
@@ -83,7 +93,7 @@ In movies, books, and games, there are often quests that require collecting mult
 
 Plots involving collecting or combining items to produce some magical effect are common tropes across various media.
 
-
+<br>
 
 In reality, threshold BLS signatures implement this kind of magic through cryptography. Each person generates a signature fragment using their private key share, and when enough fragments meet the threshold, they can be combined into a complete signature. Even if some replicas (less than one third) in the subnet fail or lose network connectivity, signing can still complete. Yet the public key used to verify the signature is unique!
 
@@ -97,7 +107,7 @@ Without the full private key, only dispersed key shares, even replicas holding s
 
 BLS is the only signature scheme that enables a very simple and efficient threshold signing protocol. Replicas holding private key shares can easily generate fragmentary signatures on messages, and reaching the threshold number of fragments allows composing the complete signature for the message. Moreover, the replicas don't need interaction, each one just broadcasts out its fragment. And inheriting excellent genes from BLS, the signature is unique - for a given public key and message, there is only one valid signature. No matter which private key fragments sign, as long as enough fragments are combined, the final signature is always the same.
 
-
+<br>
 
 Threshold BLS signatures are the foundation of the Internet Computer. With threshold signatures, replicas in a subnet can use threshold BLSs to achieve consensus:
 
@@ -107,13 +117,13 @@ Threshold BLS signatures are the foundation of the Internet Computer. With thres
 
 * When enough replicas sign a Merkle tree root, their fragments make a complete signature, meaning most replicas in the subnet have consistent state. Users can verify the output using the subnet's public key.
 
-
+<br>
 
 Additionally, these threshold signatures serve as the source of unpredictable pseudorandomness:
 
 As an unpredictable and unbiasable source of pseudorandomness available to any smart contract, this is a unique capability that enables applications impossible on other blockchains (e.g. NFT lotteries).
 
-
+<br>
 
 Threshold BLS signatures have another critical benefit - users need to ensure messages returned from the subnet haven't been tampered with, otherwise there could be trouble if a hacker swaps them out. 
 
@@ -127,7 +137,7 @@ With threshold BLSs, even if some replica nodes fail or go offline, the remainin
 
 The fragments from honest nodes are sufficient to compose valid signatures that users can verify with the subnet's public key. Threshold signatures provide decentralization, scalability, and antifragility!
 
-
+<br>
 
 As I mentioned earlier - if every replica generated their own key pair, managing all those keys would be complex and inefficient 🥲. And if different replicas signed each block, for users to verify chain contents they'd have to download hundreds of GBs to check everything themselves 😭. That's just unfriendly.
 
@@ -165,7 +175,7 @@ Then cache a few common subnet keys on user devices, and we're good to go 👌.
 
 Alright, threshold BLS verification is no problem now.
 
-
+<br>
 
 But this is still far from enough.
 
@@ -185,11 +195,11 @@ The main reason is traditional DKGs either assume synchronous networks for commu
 
 Synchronous communication means if there's even a slight delay in messages, the whole DKG process would fail or be insecure. And no robustness means if any replica crashes during DKG, the whole protocol fails.
 
-
+<br>
 
 But to realize threshold BLSs on a blockchain requires DKG, otherwise it wouldn't be a blockchain! With no choice, Dfinity's masters had to research improving DKG efficiency.
 
-
+<br>
 
 For ordinary people, the complex crypto theory would look like hieroglyphics. Luckily Dfinity's masters each have incredible skills.
 
@@ -199,7 +209,7 @@ CTO **Jan Camenisch** is a computer scientist, IEEE and IACR fellow, published o
 
 There's also cryptographic wizard **Jens Groth**, who invented pairing-based NIZKs, pairing-based SNARKs, and sub-logarithmic sized proof systems for Bulletproofs. With a PhD from Aarhus University, he did postdoctoral research at UCLA, became a cryptography professor at UCL, and has published over 50 papers.
 
-
+<br>
 
 Ah yes, [Jens](https://medium.com/dfinity/jens-groth-principal-researcher-at-dfinity-receives-the-iacr-test-of-time-award-512bcddceed9) is our protagonist here.
 
@@ -207,27 +217,41 @@ Ah yes, [Jens](https://medium.com/dfinity/jens-groth-principal-researcher-at-dfi
     <img src="assets/Chainkey/image-20230820221756941.png" alt="img" style="zoom:80%;" />
 </div>
 
-No existing DKG could meet the Internet Computer's high standards - it needed one that was secure and robust even on an asynchronous network with many faulty replicas.
+Jens Groth, the big shot in the cryptography world, is no doubt a top player. He dives into the realm of zero-knowledge proof technology, allowing two strangers to prove a point without spilling any crucial beans. This wizardry finds massive applications in privacy protection, and the legendary zero-knowledge proof algorithm, Groth16, is his brainchild.
 
-To tackle inefficient DKGs, Jens went back to basics and heavily optimized the complex multi-round interaction required in DKG. DKGs use zero knowledge proofs, but normal proofs require multiple rounds of interaction just between two parties, let alone the many replicas in a subnet. And proofs have high computation complexity, needing intricate crypto and protocols, with expensive proof generation and verification.
+In his early days, Groth crunched numbers in Denmark, but soon discovered a burning passion for cryptography. He took a detour into the world of ciphers, rode shotgun with a few heavyweights during his postgrad, and snagged a master's degree. Later, he joined forces with a company, crafting an industrial doctorate on electronic voting.
 
-
-
-So master Jens rolled up his sleeves and got to work on the cryptography: inventing efficient non-interactive zero knowledge proofs (NIZKs) that complete proofs without interaction.
-
-With NIZKs, the new DKG gained wings, and soon NIDKG was born!
-
-The novel NIDKG can run on asynchronous networks with great robustness - it keeps operating even if a third of replicas in a subnet fail or crash. Replicas just generate transactions without interacting further with others. The remaining replicas can aggregate transactions to compute the subnet's public key for the threshold scheme. Each replica can also decrypt its own private key share from the transactions.
+Post-graduation, he set sail for UCLA as a postdoc, where he crossed paths with his bosom buddy Amit Sahai. Like a match made in crypto-heaven, they teamed up to figure out how to spice up zero-knowledge proofs with pairings. After a long stretch of hair-pulling and brainstorming, they cracked the code, birthing practical pairing-based zero-knowledge proof technology. This tech later became a rockstar, playing a crucial role in many cryptographic schemes.
 
 <br>
 
-NIDKG is the most critical part of ChainKey. Nothing less! 
+This groundbreaking tech bagged two rounds of time-tested awards, showcasing its impact. Later, Groth continued his quest, concocting the Non-Interactive Zero-Knowledge (NIZK) proof, catapulting efficiency to new heights. This laid the groundwork for the development of privacy-protected blockchains.
 
-BLS threshold signatures are very simple, convenient, and highly useful. However, if you want to use BLS threshold signatures in a distributed system, how to securely and reliably distribute the private key shards is quite challenging. 
+Presently, Groth is at the DFINITY Foundation, dissecting the security of the Internet Computer and juicing up its privacy protection with NIZK. His contributions have been colossal in pushing forward blockchain technology. Beyond the 9 to 5 grind, he enjoys impromptu performances and badminton in his downtime, proving that even crypto-geniuses know how to have a good time.
 
-Efficient non-interactive protocols like NIDKG can address the limitations of BLS threshold signatures very well. It enables deep integration of BLS threshold signatures in blockchain systems, using them for consensus, generating randomness, and validating information emitted on-chain. 
+<br>
 
-More introduction to on-chain randomness can be found [here](). 
+Traditional DKG protocols just weren't cutting it for IC's high standards. IC needed a DKG protocol that could handle the hustle in an asynchronous network, even with a bunch of faulty copies, all while guaranteeing security and robustness.
+
+To tackle the inefficiencies and headaches of DKG, he went hands-on, diving deep into the nitty-gritty. He optimized the complex back-and-forth dance DKG requires. DKG involves tossing around zero-knowledge proofs, and your run-of-the-mill zero-knowledge proof usually needs multiple rounds of chit-chat. Two people already make things tricky, and with all those copies in the subnet, who's got time for endless interactions? Plus, the complexity of zero-knowledge proof calculations demands fancy encryption algorithms and interaction protocols, gobbling up computational resources for proof generation and verification.
+
+<br>
+
+So, our guy Jens took charge, pulling off a cryptographic showdown: he cooked up a slick and efficient Non-Interactive Zero-Knowledge Proof (NIZK). Now, zero-knowledge proofs can be done without the need for a back-and-forth tango.
+
+With NIZK in the mix, the new DKG protocol got wings. Before you knew it, NIDKG strutted onto the scene!
+
+The fresh NIDKG protocol can work its magic in an asynchronous network with sky-high robustness. Even if a third of the copies in the subnet hit the hay, it keeps on truckin'. Copies only toss in their transactions without bothering to have a chit-chat with other copies. The other copies can bundle up transactions, crunch the numbers from the provided material to calculate the subnet public key for a threshold signature scheme, and even decrypt their own private key fragments from the transactions.
+
+<br>
+
+NIDGK is the MVP in the ChainKey game. No ifs, ands, or buts!
+
+BLS threshold signatures are as simple and handy as a pocketknife. But slapping BLS threshold signatures onto a distributed system, securely and reliably distributing private key fragments, is a bit of a head-scratcher.
+
+Enter NIDKG, the efficient and non-interactive protocol that patches up the weak spots in BLS threshold signatures. Now, you can seamlessly integrate BLS threshold signatures into a blockchain system, using them for consensus, tossing in some random numbers, and verifying messages from IC – it's like a cryptographic party trick.
+
+More introduction to on-chain randomness can be found [here](../6.InternetServices/RandomNumberOnChain.md). 
 
 <br>
 
@@ -239,9 +263,9 @@ As Dfinity boasted about their scientific team 👇.
 
 The "non-interactive" in NIDKG means replicas don't need interaction. Without multiple communications, each replica just generates its polynomial secrets and NIZK proofs based on the protocol, then broadcasts them out. If interaction was required, complexity scales exponentially with more replicas, messing up the whole subnet. And any replica's slight delay could cause failure across the subnet.
 
+<br>
 
-
-By the way, zero knowledge (ZK) proofs are a cutting-edge cryptography technique that lets you prove something to someone without revealing what it is. Sounds unbelievable right! But it's possible in cryptography. It's like when your girlfriend says "I want to tell you something, but you have to promise me first." And you ask "What do you need to tell me?" She replies "You have to promise first!"
+By the way, let me drop a nugget of wisdom here: Zero-Knowledge Proof (ZK) is a cutting-edge cryptographic technique that lets you prove something to someone without spilling the beans on what that something is. Sounds mind-boggling, right? Well, in the world of cryptography, it's totally doable. It's like when your significant other tells you, "I want to tell you something, but you have to promise me first." You ask, "You've got to tell me what it is." And they respond, "You have to promise me first." It's a cryptographic dance, just like that!
 
 Besides integrating new tech into the low-level system, Dfinity has also started applying it to other areas recently, building the encrypted utopia Dominic envisions. In 2021 they proposed using ZK proofs for identity on the Internet Computer. And in 2023 the crypto wizards are already planning to add zero knowledge proofs!
 
@@ -252,11 +276,11 @@ Besides integrating new tech into the low-level system, Dfinity has also started
 
 ### The Specific Process
 
-Whoops, I rambled too much just now. Been feeling lonely lately, tend to babble on and on when talking. Anyway, let's dive into the NIDKG internals and see how it enables our operation.
+Alright, let's dive into the inner workings of NIDKG and get a closer look at how it throws down.
 
-After the previous overview, we know NIDKG has each replica independently generate a transaction (dealing) and broadcast it out. The transaction contains the replica's secret encrypted file, NIZK proof of the encryption, and material to generate the subnet's public key. Other replicas receive and verify the NIZK proofs, and once 2/3 of dealings are collected, they can reconstruct the subnet public key and their own private key shares.
+After laying the groundwork earlier, we're in the loop that NIDKG is all about each copy independently cooking up a transaction (or dealing, as we like to call it) and blasting it out into the digital cosmos. Now, this transaction isn't just any run-of-the-mill data dump – it's packing the copy's secret encrypted files, a splash of NIZK for file validation, and the blueprint to whip up the subnet's public key. It's like each copy is sending out a party invitation, but way fancier.
 
-
+The other copies get wind of these transactions and play detective, verifying the NIZK magic. Once they've got enough of these transactions – we're talking a two-thirds majority here – they can piece together the subnet's public key and their very own secret slices of the cryptographic pie. It's like putting together a puzzle, but with a dash of cryptographic flair.
 
 #### Public Parameters
 
@@ -822,7 +846,7 @@ It contains all the key information a replica needs to start working in a new ep
 * The first random beacon of the current epoch, which is the random number seed needed to generate new blocks.
 * Threshold signature of the subnet. This can verify validity and authority of the CUP.
 
-The CUP still relies on threshold BLS signatures, which are fundamental to subnet consensus. The replicated state of the entire subnet is several hundred GBs, too large. So we can split the entire subnet state into chunks, then convert into a Merkle tree. We just need to give the root of the Merkle tree to the replicas for a low threshold signature! (\*\^▽^*) 
+The catch-up packet still leans on threshold BLS signatures because, let's face it, threshold BLS signatures are the lifeblood of subnet consensus. The replication state of the whole subnet is a hefty beast, running into the hundreds of Gs. That's way too much for comfort. So, what do we do? Chop up the whole subnet state into chunks and transform it into a Merkle tree. Just toss the root node of that Merkle tree to the replicas for a breeze of a low-threshold signature! (\*\^▽^*) 
 
 <div class="center-image">
 <img src="assets/Chainkey/image-20231008161915908.png" alt="image-20231008161915908" style="zoom:50%;" />
@@ -848,13 +872,13 @@ This is undoubtedly an important step for Internet Computer towards being practi
 
 #### The Role of Catch-Up Packages
 
-Like I mentioned before, when a new replica joins a subnet, it can quickly get up to speed on the subnet's current state thanks to the magic of Catch-Up Packages. Also, if a replica falls way behind the other replicas (maybe it was offline or disconnected from the network for a while), it relies on the Catch-Up Package to catch back up with the latest state.
+I mentioned before that when a new replica joins a subnet, it can quickly catch up to the subnet's current state using catch-up packages. Catch-up packages also allow replicas that have fallen far behind other replicas (due to downtime or long network disconnects) to get up to date.
 
-Subnets don't permanently store every single block forever and ever. They don't need historical blocks for validation or anything. So each replica only keeps blocks from the most recent epoch to stay healthy, and deletes old blocks when they're no longer useful. Once a block gets finalized in consensus, the execution layer can just update the state. The subnet only needs the latest container state - old blocks and old state are kaput.
+Subnets do not permanently store all blocks and do not rely on historical blocks for validation. Instead, each replica only keeps the most recent blocks to maintain network health, deleting older blocks when no longer needed. Once a block is finalized in consensus, the execution layer can update state. Subnets only need to persist the latest container state - old blocks and old state become useless.
 
-So whenever a subnet generates a Catch-Up Package, it can take out the trash and delete those old blocks. This gives Internet Computer way higher storage efficiency compared to typical blockchains (which keep every block and state forever).
+So whenever a subnet generates a catch-up package, it can delete old blocks. This gives IC much better storage efficiency compared to typical blockchains that permanently retain all blocks and state.
 
-Also based on Internet Computer's economic model where it uses a reverse Gas thingamajig. If developers don't top up their deployed smart contracts (Canisters) and the Canister runs outta Gas (Cycles), it goes buh-bye for good.
+Also, based on IC's economic model, it uses a reverse Gas model. If developers do not replenish their deployed smart contracts (Canisters) in time, the smart contracts will be permanently deleted once they consume all their Gas (Cycles).
 
 <div class="center-image">
     <img src="assets/Chainkey/image-20230912233446307.png" alt="img" style="zoom:50%;" />
@@ -910,9 +934,13 @@ In traditional ECDSA, there is only one private key that can be used for signing
 
 To sign, each replica will use its private key share to generate a "signature share". Then combine all the signature shares from the replicas, and that gives the full signature. When combining the shares, malicious shares from dishonest replicas will be filtered out. Each replica's private key share is only known to itself.
 
+<br>
+
 Let's take a simple example, say there are 7 replicas in the subnet, each holding a private key share. Of them 2 replicas may be compromised and dishonest. We set a threshold of at least 5 replicas needing to collaborate to generate a signature.
 
 When a user requests a signature, the 7 replicas each generate a signature share. The 5 honest replicas will generate correct shares, while the 2 dishonest may generate incorrect shares. The system will then choose any 5 of the 7 shares at random to combine, reconstructing the full signature. Since there are only 2 dishonest replicas, when choosing 7 shares there will definitely be 5 from honest ones, so incorrect signature shares can be filtered out, correctly generating the signature.
+
+<br>
 
 Dfinity's expert mentors also made threshold ECDSA satisfy multiple properties fitting Internet Computer:
 
@@ -953,4 +981,5 @@ The greatest innovation of the Internet Computer lies in its use of a series of 
 
 Hence, the threshold BLS signature is the cryptographic heart that keeps the Internet Computer running, with consensus requiring the threshold BLS signature. A host of other cryptographic technologies revolve around the threshold BLS signature. For instance, the secure distribution of threshold BLS signature keys, secret resharing, on-chain evolution technology, and randomness based on threshold BLS signature form the core protocols of the Internet Computer's foundation. Technologies such as Chain-Key Token and VETKey are advanced applications that indirectly use the threshold BLS signature.
 
+<br>
 <br>
