@@ -1,8 +1,7 @@
 ## Chain-key cryptography
 
-<div class="center-image">
-    <img src="assets/Chainkey/image-20230925163327385.jpg" alt="img" style="zoom:67%;" />
-</div>
+<img src="assets/Chainkey/chainkey.jpg" alt="chainkey" style="zoom:50%;" />
+
 
 Chain-key cryptography refers to the suite of cryptogenic protocols embedded in Internet Computer lower-level systems. It is the complete set of cryptographic protocols that Internet Computers rely on for runtime operations, including threshold BLS signatures, non-interactive key distribution (NIDKG), non-interactive zero-knowledge proofs (NIZK), Threshold ECDSA signatures, verifiable encrypted threshold keys (VETKeys) and so on.
 
