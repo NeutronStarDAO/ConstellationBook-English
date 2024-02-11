@@ -80,7 +80,6 @@ body {
 /* 修改滚动条 */
 * {
     scrollbar-color: #F5F5F5 #b8b8b8;
-    scrollbar-width: thin;
     scroll-snap-type: mandatory;
     scroll-behavior: smooth;
 }
