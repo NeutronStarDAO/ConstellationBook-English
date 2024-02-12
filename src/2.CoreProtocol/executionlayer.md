@@ -22,7 +22,7 @@ For security and reliability, each Canister executes in an isolated sandbox envi
     <img src="assets/executionlayer/image-20230706150853074.png" style="zoom: 50%;" />
 </div>
 
-As shown in the figure above, for more details about Canisters, please refer to **Chapter 4**.
+As shown in the figure above, for more details about Canisters, please refer to [Chapter 4](../4.Canister/Canister.md).
 
 To manage the execution time of Canisters, the IC limits the number of instructions executed by each Canister. Each Canister has a fixed number of instructions in each round. At the end of a round of execution, the Canister's execution will pause and continue in the next round. To prevent Canisters from occupying too many resources, the maximum number of instructions that can be executed in a single call of each Canister is limited. If the limit is exceeded, the execution will be terminated, the state of the Canister will be rolled back, and the consumed Cycles will be deducted.
 
@@ -96,10 +96,9 @@ Each Canister has a Cycles account, and Canisters can hold, send and receive Cyc
 
    When a Canister initiates a call to another Canister, the execution environment will deduct Cycles from the calling Canister's account to pay for the cost of the outgoing call message and the cost of the reply message that the callee will send. Since the size of the reply message is unknown, the maximum message size is deducted first, and excess Cycles are returned to the caller if the reply is short.
 
-3. **Storage fee**: Canisters pay a fee to store data (including Wasm bytecode and state). The system reaches consensus on the "current" time after each round of consensus and then charges according to the number of rounds. For more details, please refer to the **source code**.
+3. **Storage fee**: Canisters pay a fee to store data (including Wasm bytecode and state). The system reaches consensus on the "current" time after each round of consensus and then charges according to the number of rounds. For more details, please refer to the [source code](https://github.com/dfinity/ic/blob/master/rs/cycles_account_manager/src/lib.rs#L568).
 
 4. **Creating a Canister**: When deploying a Canister online for the first time, you need to top up some Cycles for the Canister. The default is 3T cycles, with a minimum top-up of 0.01T.
-
 
 
 ## Cycles Calculation
@@ -126,7 +125,7 @@ Since it is a reverse gas model, Canisters pay for their own Gas fees for runnin
 
 - When a Canister sends a message to another Canister, it is called a cross-Canister message. The sending Canister must pay for the transmission of the request and the final response. See [here](https://github.com/dfinity/ic/blob/master/rs/config/src/subnet_config.rs#L120) for operating fees.
 
-  
+
 
 ## Freeze Threshold
 
@@ -138,6 +137,6 @@ In addition, if deducting Cycles for a certain operation will drop below the fre
 
 <br>
 
-Now that we have covered all four layers of the core protocol in IC, in the next chapter, let's take a look at IC's flagship capability: [Chain Key Cryptography]().
+Now that we have covered all four layers of the core protocol in IC, in the next chapter, let's take a look at IC's flagship capability: [Chain Key Cryptography](../3.ChainKey/Chainkey.md).
 
 <br>

@@ -175,11 +175,12 @@ Canisters utilize two different types of memory. The first is heap memory, used 
 
 One is **heap memory**, the memory heap exposed by WebAssembly, similar to the heap used by programs at runtime. All variables and data structures defined in high-level languages are stored in the Wasm heap, which is a **4 GiB** 32-bit address space. However, the heap is best suited only as temporary space since it can be wiped clean on each smart contract upgrade. Data layouts may also change. Thus, it is not recommended to persist important data long-term in heap memory.
 
-The other is **stable memory**, additional 64-bit addressable memory provided by the Canister, currently **96 GiB** in size. Developers must explicitly use stable memory via related APIs. Stable memory can be seen as persistent storage where developers can place data needing long-term retention. A common usage pattern is serializing heap state into bytes before and after upgrades and saving that to stable memory, then deserializing and loading it back in during recovery.
+The other is **stable memory**, additional 64-bit addressable memory provided by the Canister, currently **400 GiB** in size. Developers must explicitly use stable memory via related APIs. Stable memory can be seen as persistent storage where developers can place data needing long-term retention. A common usage pattern is serializing heap state into bytes before and after upgrades and saving that to stable memory, then deserializing and loading it back in during recovery.
 
 <div class="center-image">
-<img src="assets/Canister/image-20230918233748532.png" alt="img" style="zoom:37%;" />
+<img src="assets/Canister/image-20240212223906760.png" alt="image-20240212223906760" style="zoom:37%;" />
 </div>
+
 
 To enable orthogonal persistence and allow programs to resume after upgrades, Canisters employ some special mechanisms:
 
