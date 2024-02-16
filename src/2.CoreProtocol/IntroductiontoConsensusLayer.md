@@ -91,7 +91,7 @@ The IC uses state machine replication, where each replica is a state machine. As
     <img src="assets/IntroductiontoConsensusLayer/IMG3.png" alt="IMG3" style="zoom:25%;" />
 </div>
 
-Then if everyone's order is different, which order should be executed? It will use random number to decide! (IC's Random Beacon)
+Then if everyone's order is different, which order should be executed? It will use random number to decide! (IC's [Random Beacon](../6.InternetServices/RandomNumberOnChain.md))
 
 IC uses a verifiable random function (VRF) at the base layer. It can generate unpredictable random numbers, and everyone can verify that the random numbers are not made by human.
 
@@ -154,7 +154,7 @@ The first block of the new epoch contains the list of consensus committee member
 
 <br>
 
-And at the beginning of the new epoch, the private key shares will be redistributed to the members. This process is called [Pro-active Resharing of Secrets](). There are two reasons for doing this:
+And at the beginning of the new epoch, the private key shares will be redistributed to the members. This process is called [Pro-active Resharing of Secrets](../3.ChainKey/Chainkey.md#resharing-protocol). There are two reasons for doing this:
 
 - When the members of the subnet change, resharing can ensure that any new member will have new private key shares, and any member exiting the subnet will not have a new private key share.
 - Even if a small amount of private key shares are leaked to attackers in each epoch, it will not threaten the consensus.
@@ -167,7 +167,7 @@ The number of consensus committees is related to the total number of replica mem
 
 The number of consensus committee members cannot be too large or too small. Too few are insecure, too many affect the consensus speed.
 
-So the relationship between the number of committees and the total number of members has a mathematical model to describe: When the total number of members in the subnet tends to infinity, the hypergeometric distribution tends to the binomial distribution, that is, non-replacement random sampling tends to replacement random sampling. Because the total number of replica members is infinite, there is no difference between replacement and non-replacement. If you are interested, you can read the introduction [here](Relatedconcepts/HowToPickNumberInConsensus.md).
+So the relationship between the number of committees and the total number of members has a mathematical model to describe: When the total number of members in the subnet tends to infinity, the hypergeometric distribution tends to the binomial distribution, that is, non-replacement random sampling tends to replacement random sampling. Because the total number of replica members is infinite, there is no difference between replacement and non-replacement. If you are interested, you can read the introduction [here](./Relatedconcepts/HowToPickNumberInConsensus.md).
 
 <br>
 
