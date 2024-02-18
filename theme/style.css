@@ -78,25 +78,53 @@ body {
 }
 
 /* 修改滚动条 */
-* {
-    scrollbar-color: #F5F5F5 #b8b8b8;
-    scroll-snap-type: mandatory;
-    scroll-behavior: smooth;
-}
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    background-color: #F5F5F5;
+    height: 16px;
+    overflow: visible;
+    width: 16px;
 }
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: #b8b8b8;
+
+::-webkit-scrollbar-button {
+    height: 0;
+    width: 0;
 }
+
 ::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background-color: #efefef;
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 0 0 0 4px;
 }
+
+::-webkit-scrollbar-track:horizontal {
+    border-width: 4px 0 0;
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: rgba(0,0,0,.05);
+    -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1);
+    -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1);
+    box-shadow: inset 1px 0 0 rgba(0,0,0,.1);
+}
+
+::-webkit-scrollbar-track:horizontal:hover {
+    -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: inset 0 1px 0 rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 0 rgba(0,0,0,.1);
+}
+
+::-webkit-scrollbar-track:active {
+    background-color: rgba(0,0,0,.05);
+    -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.14),inset -1px 0 0 rgba(0,0,0,.07);
+    -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.14),inset -1px 0 0 rgba(0,0,0,.07);
+    box-shadow: inset 1px 0 0 rgba(0,0,0,.14),inset -1px 0 0 rgba(0,0,0,.07);
+}
+
+::-webkit-scrollbar-track:horizontal:active {
+    -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,.14),inset 0 -1px 0 rgba(0,0,0,.07);
+    -moz-box-shadow: inset 0 1px 0 rgba(0,0,0,.14),inset 0 -1px 0 rgba(0,0,0,.07);
+    box-shadow: inset 0 1px 0 rgba(0,0,0,.14),inset 0 -1px 0 rgba(0,0,0,.07);
+}
+
 
 /* 表格靠左对齐 */
 table {
