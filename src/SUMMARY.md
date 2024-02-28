@@ -48,7 +48,7 @@
 - [pid](./7.ii/pid.md)
 
 # Cryptography in IC🔒
-- [Introduction to basic cryptography](./8.CryptographyInIC/BasicCryptography.md)
+- [Introduction to Basic Cryptography](./8.CryptographyInIC/BasicCryptography.md)
 - [Secret Sharing](./8.CryptographyInIC/SecretSharing.md)
 - [Threshold BLS Signatures](./8.CryptographyInIC/BLS.md)
 - [Hash Algorithm](./8.CryptographyInIC/HashAlgorithm.md)
