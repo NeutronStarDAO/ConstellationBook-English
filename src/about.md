@@ -74,6 +74,21 @@ The structure of the Constellation Book:
 
 * The first half talks about IC principles, and the second half discusses development in practice
 
+## Quick IC Overview in Videos
+
+<iframe width="437" height="246" src="https://www.youtube.com/embed/H1fFI9JjbEw?si=1DU5qIcAUaGrWaUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="437" height="246" src="https://www.youtube.com/embed/f_YvUJc1S0E?si=l5j7g409EtPz_9i3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="437" height="246" src="https://www.youtube.com/embed/ftNYUZtw5VY?si=HIeGHDZIEXtaDLOb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="437" height="246" src="https://www.youtube.com/embed/2GRFMvtlH-E?si=W9PEjr6NM8eAedC0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="437" height="246" src="https://www.youtube.com/embed/4mhOAoYU-xU?si=Hic6NxNwAIp3rSXj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="437" height="246" src="https://www.youtube.com/embed/cgkPP0F2imk?si=TZRMRrmVrABW019R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br>
 
 ## Why do I Write this book
 
