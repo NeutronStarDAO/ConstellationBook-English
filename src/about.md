@@ -16,26 +16,26 @@
 <div class="home-box">
     <div class="box box1">1️⃣📡
             <div>
-                Crypto's past
+                Crypto's Past
             </div>
             <div>
-                Starting web3 from scratch
+                Starting Web3 from Scratch
             </div>
     </div>
     <div class="box box2">2️⃣📖
             <div>
-                Get the facts fast
+                Get the Facts Fast
             </div>
             <div>
-                IC's web3 dispatched
+                IC's Web3 Dispatched
             </div>
     </div>
     <div class="box box3">3️⃣🔍
             <div>
-                The tale behind
+                The Tale Behind
             </div>
             <div>
-                Dominic's adventure ride
+                Dominic's Adventure Ride
             </div>
     </div>
 </div>

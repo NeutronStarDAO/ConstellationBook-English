@@ -1,6 +1,6 @@
 # Execution Layer
 
-The execution layer is responsible for executing smart contracts. On IC, a smart contract is a virtualized container: Canister.
+The execution layer is responsible for executing smart contracts. On IC, a smart contract is a virtualized container: Canister. 
 
 ## Introduction
 
