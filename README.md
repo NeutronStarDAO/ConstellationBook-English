@@ -42,7 +42,7 @@ Thank you for reading our content! We have always been committed to providing hi
 
 NeutronStarDAO: A community for free premium content.
 
-Donation Address ([NNS Wallet](https://nns.ic0.app)): 747b2c25bc6314e473f406520e339bbd60568129961be5f32137683a03eea2c2
+Donation ICP Address ([NNS Wallet](https://nns.ic0.app)): 747b2c25bc6314e473f406520e339bbd60568129961be5f32137683a03eea2c2
 
 <br>
 <br>
