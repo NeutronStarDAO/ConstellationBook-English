@@ -52,9 +52,6 @@ Deployed within the NNS subnet is a sophisticated engine: the DAO's smart contra
 
 > Oh right, on IC smart contracts are virtual containers called Canisters. They're like Docker or Kubernetes containers, but for Wasm code instead of images or pods. Pretty futuristic! Check out this link to learn more about Canisters if you haven't already. They're pretty neat.
 
-I aimed to give the translation an authentic, conversational style that flows naturally for English speakers. I took a few liberties to inject some light humor around the comparisons to familiar technologies like Docker and Kubernetes, while staying true to the original meaning. Please let me know if you would like me to modify the translation at all - I'm happy to adjust the style and tone as needed.
-
-
 
 ## Exploring the NNS Internals
 
