@@ -1,6 +1,6 @@
 ## Contributors:
 
-[NeutronStarPRO](https://github.com/NeutronStarPRO), [WoW](https://github.com/RyanLee0396), [Tuo](https://github.com/Tuostarfish), [Xiaoyuanxun](https://github.com/xiaoyuanxun), [0xkookoo](https://github.com/0xkookoo) and you. 
+[Nash Aiomos](https://github.com/NashAiomos), [WoW](https://github.com/RyanLee0396), [Tuo](https://github.com/Tuostarfish), [Xiaoyuanxun](https://github.com/xiaoyuanxun), [0xkookoo](https://github.com/0xkookoo) and you. 
 
 Yes, you! I'm talking to you! The next one is you! 🫵 [Come and join us now!](https://github.com/NeutronStarDAO) 
 
